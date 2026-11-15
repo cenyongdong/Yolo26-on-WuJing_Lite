@@ -13,4 +13,6 @@
 | `yolo26l_ZG.json` | `ae1e6ec0422d527546a2a7dbf100f79fffcc19e1ad85e4300a66729277bffd4e` |
 | `yolo26l_ZG.raw` | `7921e992eb49edb91b6c620061330b63143b9ad1efaed009c0af765ae7b318ec` |
 
-在仓库根把 `--model model/YOLO26/deployed-512x384` 传给打包工具，并指定 `--model-variant int8_psa_rect --output-read plain_fp32`。打包工具会将这两个文件写成板端契约使用的 `model.json` 和 `model.raw`。两项哈希已与最近 600 秒实板复测的契约核对。[打包工具](../FPGA/yolo26_lite/tools/package_probe.py) · [转换回执](../artifacts/models/icraft-512x384-int8-psa/generate.review.json) · [板端实测契约](../artifacts/measurements/r5/returned/contract.json)
+在仓库根把 `--model model/YOLO26/deployed-512x384` 传给打包工具，并指定 `--model-variant int8_psa_rect --output-read plain_fp32`。打包工具会将这两个文件写成板端契约使用的 `model.json` 和 `model.raw`。两项哈希已与最近 600 秒实板复测的契约核对。[打包工具](../FPGA/yolo26_lite/tools/package_probe.py) · [生成图与验收范围](../FPGA/yolo26_lite/RECTANGULAR.md#离线基线) · [实板模型哈希](../FPGA/yolo26_lite/evidence/rectangular-video-board-r5.json)
+
+原生转换及板端契约回执的本机路径分别为 `artifacts/models/icraft-512x384-int8-psa/generate.review.json` 和 `artifacts/measurements/r5/returned/contract.json`。

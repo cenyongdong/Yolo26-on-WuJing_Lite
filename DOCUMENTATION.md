@@ -12,6 +12,6 @@
 
 `FPGA/yolo26_lite/` 内的版本文件按原样保存。其 `.local/yolo26-*` 路径引用记录了早期运行位置；历史源码、编译结果及日志可按同名文件夹在 `artifacts/history/` 查询。主模型、签核产物和两批实测的实际位置见 [README](README.md)。
 
-历史实验的原生 `.log` 保存在对应目录的 `raw-logs.tar.gz` 中，相对路径和原文件字节保留，同目录的 `raw-logs.sha256` 可逐项核对。根目录 `SOURCE-INVENTORY.json` 可查询复制源及文件身份。
+历史实验的原生 `.log` 保存在对应目录的 `raw-logs.tar.gz` 中，相对路径和原文件字节保留，同目录的 `raw-logs.sha256` 可逐项核对。根目录 `SOURCE-INVENTORY.json` 记录本机导出包的来源和文件身份。
 
-`AGENTS.md` 是原项目的完整副本。该文件中姿态模型专属 ADR、路由器启动服务及个人课程进度的链接沿用原项目路径。当前快照带有与 YOLO26l 有关的共享资源和 [早期 DMA 学习模块](Studying_plan/README.md)。
+`AGENTS.md` 是原项目的完整副本。该文件中姿态模型专属 ADR、路由器启动服务及个人课程进度的链接沿用原项目路径。YOLO26l 的 DMA 设计与练习见 [DMA](FPGA/yolo26_lite/DMA.md) 和[学习手册](FPGA/yolo26_lite/LEARNING-GUIDE.md)。早期单拍练习保存在本机 `Studying_plan/work/dma-lab/`。

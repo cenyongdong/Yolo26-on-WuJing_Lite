@@ -12,6 +12,8 @@ YOLO26l 的 PS／ARM64 软件随 FPGA 工程组织，源文件位于 [FPGA/yolo2
 | 模型与板测工具 | [tools](../FPGA/yolo26_lite/tools) |
 | RTL、约束和仿真 | [rtl](../FPGA/yolo26_lite/rtl) · [constraints](../FPGA/yolo26_lite/constraints) · [tb](../FPGA/yolo26_lite/tb) |
 
-本目录的 `pose180_pipeline` 提供 ARM64 软件直接引用的 [ReleaseGuard](pose180_pipeline/src/inference/release_guard.hpp) 及其编码配置。部署包中的 327 个 YOLO26l 版本文件与导出基准 `e60badd9` 对应，从实板 ELF 构建清单映射出的 59 份源码与记录的 SHA-256 全部一致。[实板源码清单](../artifacts/software/arm64/manifest.json)
+本目录的 `pose180_pipeline` 提供 ARM64 软件直接引用的 [ReleaseGuard](pose180_pipeline/src/inference/release_guard.hpp) 及其编码配置。部署包中的 327 个 YOLO26l 版本文件与导出基准 `e60badd9` 对应，从实板 ELF 构建清单映射出的 59 份源码与记录的 SHA-256 全部一致。[实板 ELF 与复测证据](../FPGA/yolo26_lite/evidence/rectangular-video-board-r5.json)
 
-r5 实时板测的 [原始主机调度](../artifacts/history/yolo26-live-20261115-r5/board_host.py) 和 [汇总脚本](../artifacts/history/yolo26-live-20261115-r5/summarize.py) 保存在历史记录中。它们记录原批次的路径、命令和结果来源。当前板测的构建与设备入口见 [SDK](../FPGA/yolo26_lite/SDK.md) 和 [恢复说明](../FPGA/yolo26_lite/RESUME.md)。
+构建使用的源码清单保存在本机 `artifacts/software/arm64/manifest.json`。
+
+r5 实时板测的原始主机调度 `board_host.py` 和汇总脚本 `summarize.py` 保存在本机 `artifacts/history/yolo26-live-20261115-r5/`。它们记录原批次的路径、命令和结果来源。当前板测的构建与设备入口见 [SDK](../FPGA/yolo26_lite/SDK.md) 和 [恢复说明](../FPGA/yolo26_lite/RESUME.md)。

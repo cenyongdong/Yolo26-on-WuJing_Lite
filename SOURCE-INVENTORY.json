@@ -5,9 +5,10 @@
     {
       "file": ".gitignore",
       "origin": "prepared/drafts/.gitignore",
-      "bytes": 178,
-      "sha256": "29e8620d02975f81fb689c79be05bf6f7669d2aae1d66012f195866ee8915158",
-      "category": "docs"
+      "bytes": 138,
+      "sha256": "f58a5b102d127f53167a43107558d816570e5809f5a34a42990fee7a8f19e7e4",
+      "category": "docs",
+      "modified_in_export": true
     },
     {
       "file": "ADR/ADR_50.md",
@@ -63094,8 +63095,8 @@
     {
       "file": "DOCUMENTATION.md",
       "origin": "prepared/drafts/DOCUMENTATION.md",
-      "bytes": 2069,
-      "sha256": "5fd7db2bd6d0aa717714f96d225fda87738d7e65d184f2bd24794337e0b5e7bb",
+      "bytes": 2161,
+      "sha256": "6657053a79e69f4acdf37b8462e1ebdca2c6ca22700777d92e805bf244ccd46c",
       "category": "docs",
       "modified_in_export": true
     },
@@ -64278,9 +64279,10 @@
     {
       "file": "FPGA/yolo26_lite/PERFORMANCE.md",
       "origin": "project/FPGA/yolo26_lite/PERFORMANCE.md",
-      "bytes": 7768,
-      "sha256": "ab5c1368e9feddbe362a98452a289525f9eee943427ef327a14987a47f510230",
-      "category": "project"
+      "bytes": 7778,
+      "sha256": "09530ff8e59ab448218075240de45774f2c267d8069dcef89f2e40699732d39d",
+      "category": "project",
+      "modified_in_export": true
     },
     {
       "file": "FPGA/yolo26_lite/PREPROCESS.md",
@@ -65615,16 +65617,18 @@
     {
       "file": "LICENSE",
       "origin": "project/LICENSE",
-      "bytes": 1092,
-      "sha256": "c7bd90c7b19f005b7eaa54ae88cc328ec18b98a05df00902a95fa866287f7522",
-      "category": "shared"
+      "bytes": 1067,
+      "sha256": "173a40b315f86db357043f2ac201f50a6e61bc798d34672a1a56e96929975130",
+      "category": "shared",
+      "modified_in_export": true
     },
     {
       "file": "model/README.md",
       "origin": "prepared/docs/model/README.md",
-      "bytes": 1469,
-      "sha256": "8bd3e3d9a7385a33cba8e426abffa3202667a72c8c78697d7e3113acaebc3834",
-      "category": "docs"
+      "bytes": 1654,
+      "sha256": "f8952ba16f10a54eba2c73ce3ebb1a21e561eb2729837dcf3699416914902b7e",
+      "category": "docs",
+      "modified_in_export": true
     },
     {
       "file": "model/YOLO26/deployed-512x384/yolo26l_ZG.json",
@@ -65664,17 +65668,18 @@
     {
       "file": "README.md",
       "origin": "prepared/drafts/README.md",
-      "bytes": 4586,
-      "sha256": "54bb6765321d2c3bc580e9d416c104e5be770c5cda99518b4348137df50551c8",
+      "bytes": 4539,
+      "sha256": "c395a7481514cb2e728ecef9098d74c088a2fe6bb9a6c8ce4121b18c74f4b691",
       "category": "docs",
       "modified_in_export": true
     },
     {
       "file": "REFERENCES.md",
       "origin": "prepared/docs/REFERENCES.md",
-      "bytes": 960,
-      "sha256": "97983463552fe936da8c0fcc484497dab9707de009357d87d5f5d8b28a5a7c0c",
-      "category": "docs"
+      "bytes": 927,
+      "sha256": "33645e7149d12c4542372400cb5faf1710bf26272517fe339f6bb6a3ec49a68c",
+      "category": "docs",
+      "modified_in_export": true
     },
     {
       "file": "SECURITY.md",
@@ -65714,9 +65719,10 @@
     {
       "file": "software/README.md",
       "origin": "prepared/docs/software/README.md",
-      "bytes": 2541,
-      "sha256": "8fa6a9f301062777fc73542625e31f706a24ac717b44ef85885d4f004f990888",
-      "category": "docs"
+      "bytes": 2598,
+      "sha256": "d554bc6273d3d6dcca8c6f149f0c95edaa416ade7cde95deefd97f8fca793c9a",
+      "category": "docs",
+      "modified_in_export": true
     },
     {
       "file": "Studying_plan/README.md",

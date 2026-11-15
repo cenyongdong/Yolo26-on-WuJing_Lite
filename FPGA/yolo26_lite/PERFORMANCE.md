@@ -20,7 +20,7 @@ YOLO26l 640×640、FP32 NHWC 输入／FP16 计算、PS 无 NMS 尾处理，固�
 后两次总耗时均值 222.281ms、约相当于 4.50 次串行调用／秒；这不是长期吞吐或新画面 FPS 验收。
 主要时间处于 NPU 提交／等待区间，仅优化输入拷贝、DMA 或叠框不足以达到 33.33ms 的目标。
 该首次基线没有细分硬件算子、布局转换和传输。后续四批 OCM／逐层诊断已完成，结果统一见
-[NPU-DIAGNOSTICS](NPU-DIAGNOSTICS.md#2026-11-14-板测结果)：主耗时集中在卷积，默认 OCM 策略保持。
+[NPU-DIAGNOSTICS](NPU-DIAGNOSTICS.md#2026-11-14-ocm-四批板测基线)：主耗时集中在卷积，默认 OCM 策略保持。
 完成计数／后端、原始数值差异和恢复证明见 [SDK.md](SDK.md) 及 [npu-board-r1.json](evidence/npu-board-r1.json)。
 
 ## ARM64 软件基线：2026-11-14
