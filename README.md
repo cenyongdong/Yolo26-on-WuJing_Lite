@@ -5,18 +5,7 @@
 
 ## 系统架构
 
-```mermaid
-flowchart TB
-    Cam["USB UVC 摄像头"] --> Capture["PS · V4L2 采集<br/>640×480 YUYV，原始帧池"]
-    Capture --> Video["PL · 自研 MM2S → 色彩转换／缩放／补边 → S2MM<br/>512×384 RGB888"]
-    Video --> Input["PS · 归一化与 Icraft SDK 提交<br/>NHWC FP32"]
-    Input --> Net["NPU · YOLO26l one-to-one<br/>INT8／FP16 混合计算，独立 PL DDR"]
-    Net --> Decode["PS · FP32 读回、坐标解码与 TopK<br/>1×84×4032，无 NMS"]
-    Decode --> Compose["PS · 同帧叠框与 RGB565 显示三缓冲"]
-    Capture -. "同一 FrameKey 的原始帧" .-> Compose
-    Compose --> Scan["PL · HDMI 读 DMA 与 FIFO<br/>帧边界采用显示缓冲"]
-    Scan --> Display["HDMI 1280×720@60Hz"]
-```
+![YOLO26l 在悟净 Lite 的系统架构](FPGA/yolo26_lite/figures/system-architecture.png)
 
 采集、预处理、推理和显示通过 `FrameKey` 关联。各阶段保留最新完整的待处理帧，在途 DMA 与扫描缓冲由租约保护。PS 用同一帧原图和检测框合成画面，HDMI 在帧边界采用准备好的缓冲。[系统时序与计时探针](FPGA/yolo26_lite/ARCHITECTURE.md) · [整机闭环验证](FPGA/yolo26_lite/RECTANGULAR-LIVE.md)
 
