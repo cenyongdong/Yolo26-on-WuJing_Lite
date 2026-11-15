@@ -1,0 +1,179 @@
+{
+  "date": "2026-11-14",
+  "scope": "live pipeline static library compile only",
+  "build": {
+    "command": [
+      "cmake",
+      "--build",
+      "/root/yolo26-lite-live-20261114-r1/build",
+      "--parallel",
+      "1"
+    ],
+    "native_exit": 0,
+    "child_returned": true
+  },
+  "tests": {
+    "native_exit": 0,
+    "tests": [
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_postprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_frames"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_preprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_compose"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_metrics"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_display_buffers"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_display_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_inference_completion"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_video_engine"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-live-20261114-r1/build/test_capture_color"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      }
+    ]
+  },
+  "warnings": [],
+  "source_manifest": {
+    "purpose": "finite_cpu_only_modules",
+    "sdk_starts": 0,
+    "camera_starts": 0,
+    "sources": {
+      "CMakeLists.txt": "284a95497d4b15a3e056df779500a64115d7abd94cbb28da2195f6af98c1df20",
+      "camera_board.py": "cdd3e64a3d07f77b871900d05fcd497b26d37a3eb2436dc7c2674a7e52f2fc9d",
+      "software/src/camera_probe.cpp": "3190139a8b16a879e01e6f27bc68e1190bc6e96d4f267ca353ced7905ee74a9c",
+      "software/src/capture.cpp": "d6b68a3ab4034532219965cf0692a7af5e7a13126afec0014c8fe56cbe16b644",
+      "software/src/capture_color.cpp": "31920055ed6246baed9bebd16b6b686b539e1fff382dfa8ef3c87f104e6e1f88",
+      "software/src/compose.cpp": "65c6398025aec8cb3d5469d8404a5a0f48eb09d4b621a383297893de927cff3c",
+      "software/src/control.cpp": "dfe2dbef36c06e30ddfec7cf709ad8a7ea1fe19edeb78a6c31e37ef7f9ce81a2",
+      "software/src/cpu_benchmark.cpp": "ca60779a5ffd7ed494573b79c83835db18f6b94a887fda7a811d9e6f1bc27baf",
+      "software/src/display_buffers.cpp": "5681249a8f27ba7877ff62e6ed858d61bfcfb4d7dd196865a442460d750a2ab3",
+      "software/src/display_control.cpp": "024e36f607cf47c8ae49bf4e47f1a2408fc94a51b068c950384b0758c8f6d16a",
+      "software/src/frames.cpp": "61d4d185af80cd77ee9425a5b6a400363a8694a7417ecd4221bf57a65061f149",
+      "software/src/icraft_runtime.cpp": "6f427d7a8de2d5a0ef28c781da1db74b5eccdac462c2f8e5247a3f2fb7b9549d",
+      "software/src/icraft_video_io.cpp": "ba57c55ee7fc5ab5c024bda56c8592ad0001be4df4d4a5f8a0ff3612fa843201",
+      "software/src/icraft_video_io.hpp": "d8240b6cf5ddd2272fcaa790de7a0caa53c7488f8466dce9102e2df0efa26ad1",
+      "software/src/inference_completion.cpp": "29a7e4274016b506dbe2e70ff19d8fa82f9a2cb0be81a389aa1099bfe803859f",
+      "software/src/infer_probe.cpp": "951f1b742899a4862ab169a6261ecbd6cabfe72984903712a26097da167b781b",
+      "software/src/live_pipeline.cpp": "b16657306bbb81500eeb71223e51c476f2d8f51fdf1bac3aafbe0ad8414e6e83",
+      "software/src/metrics.cpp": "05ccce231c47808e2ae0824d2f077f866c6a6872f31780148bf4db8f532aa964",
+      "software/src/postprocess.cpp": "6e848b6c1f977ecac58b913bb6d4ae41e801134923c007bdb57f370d6684ea5e",
+      "software/src/preprocess.cpp": "95146c0c37e0d8537b80764105613f7a3f003e23bed4477429d8b07ba0fa8625",
+      "software/src/video_engine.cpp": "7a30981035c474ce55a0d9b2e1a6ac0a7e15e9f7c663e2947b452b5b5ba2e911",
+      "software/tests/compose_fixture.cpp": "01010346762d1e00c8ed18a1f5d8ef2e060102c0f824a97a7a1f82824a3000c5",
+      "software/tests/postprocess_fixture.cpp": "6054704234d4ee4aec72edae9b23c78e2a3d02c30efd3aa3e5769365aa566652",
+      "software/tests/test_capture_color.cpp": "ea9f5b31cb6c1f8a181707f3c8d198af4fca1f903daef61b0e8973d12abb5871",
+      "software/tests/test_compose.cpp": "5199be41ee416d2965b0b18549f6a6f323796271e1f0f41a9b4be5d636d2ad44",
+      "software/tests/test_control.cpp": "3476a6fa85c10876fa865ca23212d5b66f9029d43fa0e2bdbf501c1821d7963a",
+      "software/tests/test_display_buffers.cpp": "56f436ac85f70e5759d46d7bcd23d8bb4eba057fd1b4a6b7e87de9974b2f8f4e",
+      "software/tests/test_display_control.cpp": "8c91fbdb27474240e952914da43f6fae65ffd85d1eeaeeecd5a36ac8224da31d",
+      "software/tests/test_frames.cpp": "ce4638aea1c6cad0f05499f2f36a15d95aac4cbb901e75f8952abb92ac3225fd",
+      "software/tests/test_inference_completion.cpp": "897383ff9ec3719442e0571c92c1628bcfadc0ffd8987d988a4e3fffc4e3ba3f",
+      "software/tests/test_metrics.cpp": "dcb1ca49dfe6b4ce8629ba652d4c6ae55a46d53704e51a1f19ae6fb9ef513d7a",
+      "software/tests/test_postprocess.cpp": "e901f08a0032514f8d40f044cf0d280456a90bd9f0207eeadd98de10cd64af42",
+      "software/tests/test_preprocess.cpp": "abd87503dba0c183ba5e5b2f6fb96f019577df1e6a03224f0d0bf6cb7c52c6d4",
+      "software/tests/test_video_engine.cpp": "ff8dbada4be685e4c72ba4f1ab314503647f318ed44d76465a9efabf79cd3818",
+      "software/include/yolo26/capture.hpp": "e0febd014cc9188056107227b7816e206bae9cb56c0c522dc3899ebf4fca3ca6",
+      "software/include/yolo26/compose.hpp": "1575097e429523fe282696843e100c9a7739ea31744714d9da8bcc41288178aa",
+      "software/include/yolo26/control.hpp": "35e5f8b8473c21adc51de390197114a6c7695d6a685765c9381b5e8ecedd6a13",
+      "software/include/yolo26/display_buffers.hpp": "7dd84b8b28f5b3ee6d015dac949f8fe3eb3a0cdda6db10b2434d6e5cf45382d8",
+      "software/include/yolo26/display_control.hpp": "64c318f35144445788432d4e24476a318719d9710dceda37f54306b530fcc0fc",
+      "software/include/yolo26/frames.hpp": "ddedb4fe4cbd80a3208d24fc599cd8603353463325212c2daa137bf9071ab9df",
+      "software/include/yolo26/icraft_runtime.hpp": "088bb0a8f7a62e7da0fc6b879b16f832266e69b63a2a7fb9c006d3e0a799dfc1",
+      "software/include/yolo26/inference_completion.hpp": "7aeed0f4a3a5c0e56cc928e29dbf89673d488d43604d54d3acc8c607e1dbe430",
+      "software/include/yolo26/latest_slot.hpp": "64b80e0bf0b0709e8a4b44354e22236652fd9995a6dd18793031cb07f3701c90",
+      "software/include/yolo26/live_pipeline.hpp": "32861ca83dc1fbe5802ed1553ca5966b0123299bcdd57eb9acca3f3da417fe01",
+      "software/include/yolo26/metrics.hpp": "f8d287a2310e8d5db81a45cfa4853383b02b3175106e0587fc1fd07060aa0a1d",
+      "software/include/yolo26/postprocess.hpp": "74e10214b5cc52a4470981e6fa7e5eed122d94d1a0602693c48cec668093a2bd",
+      "software/include/yolo26/preprocess.hpp": "daf38523938d9c67fb0e29ccba20ab3ec24c25aebb690c538163e21fe1f76097",
+      "software/include/yolo26/video_engine.hpp": "767c668a21e568d4b17fe0d860b6fc1bd8b22ea30bbf0bebc424387f8ddd7249",
+      "support/release_guard.hpp": "abc6ab842fed2ec8f163fa8af5ee22dec313d17a5d96295ec814bd44046a7ed4"
+    }
+  },
+  "recovery": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "full_evidence": ".local\\yolo26-live-r1",
+  "sdk_starts": 0,
+  "capture_starts": 0,
+  "live_pipeline_executed": false
+}

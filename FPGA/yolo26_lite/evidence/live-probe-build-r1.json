@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-14",
+  "scope": "finite live executable compile and link only",
+  "build": {
+    "command": [
+      "cmake",
+      "--build",
+      "/root/yolo26-lite-live-probe-20261114-r2/build",
+      "--parallel",
+      "1"
+    ],
+    "native_exit": 0,
+    "child_returned": true
+  },
+  "software_tests": 11,
+  "test_native_exit": 0,
+  "warnings": [],
+  "source_identity": {
+    "CMakeLists.txt": "895b943613e506a246c8379347528769a4e586b88035a6d64bb42dd6f4d35118",
+    "software/include/yolo26/icraft_runtime.hpp": "af4043cfb45bbd65b4b240b7884eb1e163a1e65729ac8ecf3ff00ca894ea3675",
+    "software/include/yolo26/live_pipeline.hpp": "229a6b264f106fcab5cc12c84517a50b826e903a3ed54a62e965feb3a17a1ea9",
+    "software/src/icraft_runtime.cpp": "58687709e8a0ea88df30c2bfc0bbfb374abe055ccecbc6a223af3d80f79ec8ac",
+    "software/src/live_pipeline.cpp": "16bffbbf876275c7ca0ac07a745fba65de8d0951bd93cd100cd9614b82c1840e",
+    "software/src/infer_probe.cpp": "25f8598206e5121c4012f240b95f4451312d0f5fdf4a40be2e2d291f3ff22568"
+  },
+  "source_manifest": ".local\\yolo26-live-probe-r2\\manifest.json",
+  "binary_sha256": "daac9d31d054c482565bd318fe4c04867bd635a05aef84fbaf22d072b466193e",
+  "recovery": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "full_evidence": ".local\\yolo26-live-probe-r2",
+  "sdk_starts": 0,
+  "capture_starts": 0,
+  "live_pipeline_executed": false
+}

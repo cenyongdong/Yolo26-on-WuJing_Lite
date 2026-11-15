@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "case": 0,
+      "source_sha256": "6a57d1bee6116889514e8b0a14cdf10f4a2f378a48118a217b33625ce14a25bf",
+      "detections_at_025": 0,
+      "timing": {
+        "repetitions": 50,
+        "mean_ms": 1.06924,
+        "detections": 300,
+        "board_tested": false
+      }
+    },
+    {
+      "case": 1,
+      "source_sha256": "b6d4a4f134e8d1eed739699045d9f1e09f959e28d1363b208063795e302c6233",
+      "detections_at_025": 0,
+      "timing": {
+        "repetitions": 50,
+        "mean_ms": 0.834508,
+        "detections": 300,
+        "board_tested": false
+      }
+    },
+    {
+      "case": 2,
+      "source_sha256": "0c2ff339ff1f1619d9b78e325fcf0a295953ca61840d87e398c589ef6ec88363",
+      "detections_at_025": 5,
+      "timing": {
+        "repetitions": 50,
+        "mean_ms": 0.959068,
+        "detections": 300,
+        "board_tested": false
+      }
+    }
+  ],
+  "board_tested": false,
+  "timing_scope": "native PC postprocess only; excludes NPU, DMA, capture, display"
+}

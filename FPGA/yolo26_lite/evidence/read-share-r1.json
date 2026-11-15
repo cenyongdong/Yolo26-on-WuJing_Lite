@@ -1,0 +1,53 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-read_share-20261114-031724-861135",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_axi_read_share.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_read_share.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-read_share-20261114-031724-861135",
+      "pid": 3376,
+      "started_utc": "2026-11-13T19:17:24.872252+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8130000000019209
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_read_share",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-read_share-20261114-031724-861135",
+      "pid": 5028,
+      "started_utc": "2026-11-13T19:17:25.687250+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.9680000000007567
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-read_share-20261114-031724-861135",
+      "pid": 16016,
+      "started_utc": "2026-11-13T19:17:28.654716+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 5.921999999998661
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 257,
+    "bursts_per_client": 128,
+    "max_priority_streak": 4
+  },
+  "board_tested": false
+}

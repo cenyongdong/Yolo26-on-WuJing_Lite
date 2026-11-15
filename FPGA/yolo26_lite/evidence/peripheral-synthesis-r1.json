@@ -1,0 +1,50 @@
+{
+  "native": {
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-notrace",
+      "-source",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-peripheral-synth-r1\\synthesize.tcl"
+    ],
+    "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-peripheral-synth-r1",
+    "pid": 17600,
+    "started_utc": "2026-11-13T19:03:19.920352+00:00",
+    "native_exit": 0,
+    "elapsed_seconds": 68.35900000000402
+  },
+  "top": "y26_peripheral",
+  "proxy_part": "xc7z030ffg676-2",
+  "physical_target": "JFMQL30TAI676H",
+  "synthesis_passed": true,
+  "timing_budget_ns": 5,
+  "integrated_timing_passed": false,
+  "bit_generated": false,
+  "board_tested": false,
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-peripheral-synth-r1",
+  "resources": {
+    "lut": 4218,
+    "ff": 4829,
+    "ramb36": 3,
+    "ramb18": 2,
+    "dsp": 35
+  },
+  "timing_estimate": {
+    "setup_wns_ns": -0.001,
+    "setup_tns_ns": -0.005,
+    "hold_whs_ns": 0.102,
+    "passed": false,
+    "unconstrained_internal": 0,
+    "missing_input_delay": 0,
+    "missing_output_delay": 0
+  },
+  "cdc": {
+    "single_bit_synchronizers": 3,
+    "stages_each": 3,
+    "held_bus_warning_CDC15": 533,
+    "critical": 0,
+    "max_delay_endpoint_coverage_percent": 100,
+    "false_paths_added": 0
+  }
+}

@@ -1,0 +1,1239 @@
+{
+  "schema": 1,
+  "compile": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "candidate.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-groups-selective-r1",
+      "pid": 12720,
+      "started_utc": "2026-11-14T11:07:29.869760+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 27.37787749999552
+    },
+    "graph": {
+      "json_sha256": "31fff9a8670dc655e96f6280a3211048a9fdbb78f2f9a168736146a85e90a3e3",
+      "raw_sha256": "70ea36f1d3b5211236d97a5cafcd5965dbe2e802e531f3104e28ec3276148efe",
+      "raw_bytes": 40019636,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 466,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    }
+  },
+  "numerical": {
+    "cases": [
+      {
+        "case": 0,
+        "comparison": {
+          "raw_max_abs": 12.125,
+          "raw_rms": 0.580814778804779,
+          "worst_index": [
+            0,
+            4,
+            7769
+          ],
+          "worst_reference": -27.859375,
+          "worst_actual": -15.734375,
+          "expected_high_detections": [],
+          "actual_high_detections": [],
+          "high_detection_matches": [],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "4c92f30fb40957c38433c5b8352ddf76b0ebb416ff57f8b75b4a7bb88e2c7f78",
+        "output_sha256": "1cdc26b371c955b72e683a6d6540b30a2e817758be08a2c54d060ba77cd71b1e",
+        "finite": true
+      },
+      {
+        "case": 1,
+        "comparison": {
+          "raw_max_abs": 7.0,
+          "raw_rms": 0.3831048607826233,
+          "worst_index": [
+            0,
+            4,
+            7893
+          ],
+          "worst_reference": -16.96875,
+          "worst_actual": -23.96875,
+          "expected_high_detections": [],
+          "actual_high_detections": [],
+          "high_detection_matches": [],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "0679e84ba971e44d717091ccfc95abceb3562704903abc5cc82f1f4221c4653f",
+        "output_sha256": "fcf46982827127c13fa5078b9dc989689580df152655e32e1b1d471b4119e04c",
+        "finite": true
+      },
+      {
+        "case": 2,
+        "comparison": {
+          "raw_max_abs": 11.484375,
+          "raw_rms": 0.4200323224067688,
+          "worst_index": [
+            0,
+            4,
+            7932
+          ],
+          "worst_reference": -17.875,
+          "worst_actual": -29.359375,
+          "expected_high_detections": [
+            [
+              110.21875,
+              236.875,
+              226.375,
+              534.75,
+              0.9585376977920532,
+              0.0
+            ],
+            [
+              84.875,
+              137.25,
+              549.0,
+              436.125,
+              0.957912266254425,
+              5.0
+            ],
+            [
+              476.125,
+              235.5,
+              560.78125,
+              522.875,
+              0.942081868648529,
+              0.0
+            ],
+            [
+              212.359375,
+              241.6875,
+              284.375,
+              510.25,
+              0.9207897186279297,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.578125,
+              517.6875,
+              0.8832359910011292,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              237.25,
+              226.4375,
+              534.75,
+              0.9600626826286316,
+              0.0
+            ],
+            [
+              84.625,
+              137.0,
+              549.5,
+              435.875,
+              0.954647421836853,
+              5.0
+            ],
+            [
+              476.1875,
+              235.625,
+              560.78125,
+              522.75,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              212.21875,
+              241.625,
+              284.34375,
+              510.375,
+              0.9252299070358276,
+              0.0
+            ],
+            [
+              80.1875,
+              327.4375,
+              126.71875,
+              517.625,
+              0.8807970285415649,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9973988905001957,
+              "max_coordinate_error": 0.375,
+              "score_error": 0.0015249848365783691
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9967191618007867,
+              "max_coordinate_error": 0.5,
+              "score_error": 0.0032648444175720215
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9983924189999632,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.002505362033843994
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9969224558794025,
+              "max_coordinate_error": 0.140625,
+              "score_error": 0.004440188407897949
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9946878299119104,
+              "max_coordinate_error": 0.3125,
+              "score_error": 0.002438962459564209
+            }
+          ],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "102e287f64cc0526894b877c4c96bc3df56ece9cb107474faa4f6f0fc94afff9",
+        "output_sha256": "4ce5937c159f608f1f338d5bcb1effa21fb06e0e823b21dfcb003ab42cc485dd",
+        "finite": true
+      }
+    ],
+    "fixture_passed": true,
+    "graph_sha256": "31fff9a8670dc655e96f6280a3211048a9fdbb78f2f9a168736146a85e90a3e3",
+    "raw_sha256": "70ea36f1d3b5211236d97a5cafcd5965dbe2e802e531f3104e28ec3276148efe",
+    "parameter_bytes_unchanged": true,
+    "public_input_output_unchanged": true,
+    "view_groups": 102,
+    "accuracy_sweep_performed": false
+  },
+  "static_storage": {
+    "view_groups": [
+      {
+        "operation": 3660,
+        "kind": "Reshape",
+        "chunk": 0,
+        "values": {
+          "2301": 0,
+          "3745": 0
+        }
+      },
+      {
+        "operation": 3661,
+        "kind": "Reshape",
+        "chunk": 1,
+        "values": {
+          "3755": 0,
+          "3757": 0
+        }
+      },
+      {
+        "operation": 3662,
+        "kind": "Reshape",
+        "chunk": 2,
+        "values": {
+          "3760": 0,
+          "2267": 0
+        }
+      },
+      {
+        "operation": 3559,
+        "kind": "Split",
+        "chunk": 3,
+        "values": {
+          "18": 0,
+          "20": 0,
+          "22": 1638400
+        }
+      },
+      {
+        "operation": 3722,
+        "kind": "Concat",
+        "chunk": 4,
+        "values": {
+          "58": 0,
+          "64": 819200,
+          "67": 0
+        }
+      },
+      {
+        "operation": 3723,
+        "kind": "Concat",
+        "chunk": 5,
+        "values": {
+          "109": 0,
+          "115": 819200,
+          "118": 0
+        }
+      },
+      {
+        "operation": 3724,
+        "kind": "Concat",
+        "chunk": 6,
+        "values": {
+          "6932": 0,
+          "6934": 1638400,
+          "73": 3276800,
+          "124": 4915200,
+          "129": 0
+        }
+      },
+      {
+        "operation": 3560,
+        "kind": "Split",
+        "chunk": 7,
+        "values": {
+          "147": 0,
+          "149": 0,
+          "151": 819200
+        }
+      },
+      {
+        "operation": 3725,
+        "kind": "Concat",
+        "chunk": 8,
+        "values": {
+          "187": 0,
+          "193": 409600,
+          "196": 0
+        }
+      },
+      {
+        "operation": 3726,
+        "kind": "Concat",
+        "chunk": 9,
+        "values": {
+          "238": 0,
+          "244": 409600,
+          "247": 0
+        }
+      },
+      {
+        "operation": 3727,
+        "kind": "Concat",
+        "chunk": 10,
+        "values": {
+          "6936": 0,
+          "6938": 819200,
+          "202": 1638400,
+          "253": 2457600,
+          "258": 0
+        }
+      },
+      {
+        "operation": 3561,
+        "kind": "Split",
+        "chunk": 11,
+        "values": {
+          "276": 0,
+          "278": 0,
+          "280": 409600
+        }
+      },
+      {
+        "operation": 3728,
+        "kind": "Concat",
+        "chunk": 12,
+        "values": {
+          "316": 0,
+          "322": 204800,
+          "325": 0
+        }
+      },
+      {
+        "operation": 3729,
+        "kind": "Concat",
+        "chunk": 13,
+        "values": {
+          "367": 0,
+          "373": 204800,
+          "376": 0
+        }
+      },
+      {
+        "operation": 3730,
+        "kind": "Concat",
+        "chunk": 14,
+        "values": {
+          "6940": 0,
+          "6942": 409600,
+          "331": 819200,
+          "382": 1228800,
+          "387": 0
+        }
+      },
+      {
+        "operation": 3562,
+        "kind": "Split",
+        "chunk": 15,
+        "values": {
+          "405": 0,
+          "407": 0,
+          "409": 102400
+        }
+      },
+      {
+        "operation": 3731,
+        "kind": "Concat",
+        "chunk": 16,
+        "values": {
+          "445": 0,
+          "451": 51200,
+          "454": 0
+        }
+      },
+      {
+        "operation": 3732,
+        "kind": "Concat",
+        "chunk": 17,
+        "values": {
+          "496": 0,
+          "502": 51200,
+          "505": 0
+        }
+      },
+      {
+        "operation": 3733,
+        "kind": "Concat",
+        "chunk": 18,
+        "values": {
+          "6944": 0,
+          "6946": 102400,
+          "460": 204800,
+          "511": 307200,
+          "516": 0
+        }
+      },
+      {
+        "operation": 3734,
+        "kind": "Concat",
+        "chunk": 19,
+        "values": {
+          "526": 0,
+          "528": 102400,
+          "530": 204800,
+          "532": 307200,
+          "537": 0
+        }
+      },
+      {
+        "operation": 3563,
+        "kind": "Split",
+        "chunk": 20,
+        "values": {
+          "552": 0,
+          "554": 0,
+          "555": 102400
+        }
+      },
+      {
+        "operation": 3663,
+        "kind": "Reshape",
+        "chunk": 21,
+        "values": {
+          "559": 0,
+          "4313": 0
+        }
+      },
+      {
+        "operation": 3664,
+        "kind": "Reshape",
+        "chunk": 22,
+        "values": {
+          "4316": 0,
+          "4318": 0
+        }
+      },
+      {
+        "operation": 3665,
+        "kind": "Reshape",
+        "chunk": 23,
+        "values": {
+          "4336": 0,
+          "4338": 0
+        }
+      },
+      {
+        "operation": 3666,
+        "kind": "Reshape",
+        "chunk": 24,
+        "values": {
+          "4340": 0,
+          "563": 0
+        }
+      },
+      {
+        "operation": 3667,
+        "kind": "Reshape",
+        "chunk": 25,
+        "values": {
+          "3713": 0,
+          "4374": 0
+        }
+      },
+      {
+        "operation": 3668,
+        "kind": "Reshape",
+        "chunk": 26,
+        "values": {
+          "5681": 0,
+          "4386": 0
+        }
+      },
+      {
+        "operation": 3669,
+        "kind": "Reshape",
+        "chunk": 27,
+        "values": {
+          "3727": 0,
+          "579": 0
+        }
+      },
+      {
+        "operation": 3670,
+        "kind": "Reshape",
+        "chunk": 28,
+        "values": {
+          "3715": 0,
+          "4436": 0
+        }
+      },
+      {
+        "operation": 3671,
+        "kind": "Reshape",
+        "chunk": 29,
+        "values": {
+          "4441": 0,
+          "4445": 0
+        }
+      },
+      {
+        "operation": 3672,
+        "kind": "Reshape",
+        "chunk": 30,
+        "values": {
+          "4447": 0,
+          "584": 0
+        }
+      },
+      {
+        "operation": 3673,
+        "kind": "Reshape",
+        "chunk": 31,
+        "values": {
+          "5705": 0,
+          "4453": 0
+        }
+      },
+      {
+        "operation": 3674,
+        "kind": "Reshape",
+        "chunk": 32,
+        "values": {
+          "4455": 0,
+          "586": 0
+        }
+      },
+      {
+        "operation": 3675,
+        "kind": "Reshape",
+        "chunk": 33,
+        "values": {
+          "621": 0,
+          "4532": 0
+        }
+      },
+      {
+        "operation": 3676,
+        "kind": "Reshape",
+        "chunk": 34,
+        "values": {
+          "4535": 0,
+          "4537": 0
+        }
+      },
+      {
+        "operation": 3677,
+        "kind": "Reshape",
+        "chunk": 35,
+        "values": {
+          "4555": 0,
+          "4557": 0
+        }
+      },
+      {
+        "operation": 3678,
+        "kind": "Reshape",
+        "chunk": 36,
+        "values": {
+          "4559": 0,
+          "625": 0
+        }
+      },
+      {
+        "operation": 3679,
+        "kind": "Reshape",
+        "chunk": 37,
+        "values": {
+          "3717": 0,
+          "4593": 0
+        }
+      },
+      {
+        "operation": 3680,
+        "kind": "Reshape",
+        "chunk": 38,
+        "values": {
+          "5685": 0,
+          "4605": 0
+        }
+      },
+      {
+        "operation": 3681,
+        "kind": "Reshape",
+        "chunk": 39,
+        "values": {
+          "3731": 0,
+          "641": 0
+        }
+      },
+      {
+        "operation": 3682,
+        "kind": "Reshape",
+        "chunk": 40,
+        "values": {
+          "3719": 0,
+          "4655": 0
+        }
+      },
+      {
+        "operation": 3683,
+        "kind": "Reshape",
+        "chunk": 41,
+        "values": {
+          "4660": 0,
+          "4664": 0
+        }
+      },
+      {
+        "operation": 3684,
+        "kind": "Reshape",
+        "chunk": 42,
+        "values": {
+          "4666": 0,
+          "646": 0
+        }
+      },
+      {
+        "operation": 3685,
+        "kind": "Reshape",
+        "chunk": 43,
+        "values": {
+          "5711": 0,
+          "4672": 0
+        }
+      },
+      {
+        "operation": 3686,
+        "kind": "Reshape",
+        "chunk": 44,
+        "values": {
+          "4674": 0,
+          "648": 0
+        }
+      },
+      {
+        "operation": 3735,
+        "kind": "Concat",
+        "chunk": 45,
+        "values": {
+          "6948": 0,
+          "679": 102400,
+          "682": 0
+        }
+      },
+      {
+        "operation": 3736,
+        "kind": "Concat",
+        "chunk": 46,
+        "values": {
+          "690": 0,
+          "393": 819200,
+          "693": 0
+        }
+      },
+      {
+        "operation": 3687,
+        "kind": "Reshape",
+        "chunk": 46,
+        "values": {
+          "693": 0,
+          "6975": 0
+        }
+      },
+      {
+        "operation": 3688,
+        "kind": "Reshape",
+        "chunk": 48,
+        "values": {
+          "6979": 0,
+          "6980": 0
+        }
+      },
+      {
+        "operation": 3564,
+        "kind": "Split",
+        "chunk": 49,
+        "values": {
+          "699": 0,
+          "701": 0,
+          "703": 409600
+        }
+      },
+      {
+        "operation": 3737,
+        "kind": "Concat",
+        "chunk": 50,
+        "values": {
+          "739": 0,
+          "745": 204800,
+          "748": 0
+        }
+      },
+      {
+        "operation": 3738,
+        "kind": "Concat",
+        "chunk": 51,
+        "values": {
+          "790": 0,
+          "796": 204800,
+          "799": 0
+        }
+      },
+      {
+        "operation": 3739,
+        "kind": "Concat",
+        "chunk": 52,
+        "values": {
+          "6950": 0,
+          "6952": 409600,
+          "754": 819200,
+          "805": 1228800,
+          "810": 0
+        }
+      },
+      {
+        "operation": 3740,
+        "kind": "Concat",
+        "chunk": 53,
+        "values": {
+          "818": 0,
+          "264": 3276800,
+          "821": 0
+        }
+      },
+      {
+        "operation": 3565,
+        "kind": "Split",
+        "chunk": 54,
+        "values": {
+          "827": 0,
+          "829": 0,
+          "831": 819200
+        }
+      },
+      {
+        "operation": 3741,
+        "kind": "Concat",
+        "chunk": 55,
+        "values": {
+          "867": 0,
+          "873": 409600,
+          "876": 0
+        }
+      },
+      {
+        "operation": 3742,
+        "kind": "Concat",
+        "chunk": 56,
+        "values": {
+          "918": 0,
+          "924": 409600,
+          "927": 0
+        }
+      },
+      {
+        "operation": 3743,
+        "kind": "Concat",
+        "chunk": 57,
+        "values": {
+          "6954": 0,
+          "6956": 819200,
+          "882": 1638400,
+          "933": 2457600,
+          "938": 0
+        }
+      },
+      {
+        "operation": 3744,
+        "kind": "Concat",
+        "chunk": 58,
+        "values": {
+          "950": 0,
+          "816": 409600,
+          "953": 0
+        }
+      },
+      {
+        "operation": 3689,
+        "kind": "Reshape",
+        "chunk": 58,
+        "values": {
+          "953": 0,
+          "6981": 0
+        }
+      },
+      {
+        "operation": 3690,
+        "kind": "Reshape",
+        "chunk": 60,
+        "values": {
+          "6985": 0,
+          "6986": 0
+        }
+      },
+      {
+        "operation": 3566,
+        "kind": "Split",
+        "chunk": 61,
+        "values": {
+          "959": 0,
+          "961": 0,
+          "963": 409600
+        }
+      },
+      {
+        "operation": 3745,
+        "kind": "Concat",
+        "chunk": 62,
+        "values": {
+          "999": 0,
+          "1005": 204800,
+          "1008": 0
+        }
+      },
+      {
+        "operation": 3746,
+        "kind": "Concat",
+        "chunk": 63,
+        "values": {
+          "1050": 0,
+          "1056": 204800,
+          "1059": 0
+        }
+      },
+      {
+        "operation": 3747,
+        "kind": "Concat",
+        "chunk": 64,
+        "values": {
+          "6958": 0,
+          "6960": 409600,
+          "1014": 819200,
+          "1065": 1228800,
+          "1070": 0
+        }
+      },
+      {
+        "operation": 3748,
+        "kind": "Concat",
+        "chunk": 65,
+        "values": {
+          "1082": 0,
+          "688": 204800,
+          "1085": 0
+        }
+      },
+      {
+        "operation": 3567,
+        "kind": "Split",
+        "chunk": 66,
+        "values": {
+          "1091": 0,
+          "1093": 0,
+          "1095": 102400
+        }
+      },
+      {
+        "operation": 3691,
+        "kind": "Reshape",
+        "chunk": 67,
+        "values": {
+          "1114": 0,
+          "5178": 0
+        }
+      },
+      {
+        "operation": 3692,
+        "kind": "Reshape",
+        "chunk": 68,
+        "values": {
+          "5181": 0,
+          "5183": 0
+        }
+      },
+      {
+        "operation": 3693,
+        "kind": "Reshape",
+        "chunk": 69,
+        "values": {
+          "5201": 0,
+          "5203": 0
+        }
+      },
+      {
+        "operation": 3694,
+        "kind": "Reshape",
+        "chunk": 70,
+        "values": {
+          "5205": 0,
+          "1118": 0
+        }
+      },
+      {
+        "operation": 3695,
+        "kind": "Reshape",
+        "chunk": 71,
+        "values": {
+          "3721": 0,
+          "5239": 0
+        }
+      },
+      {
+        "operation": 3696,
+        "kind": "Reshape",
+        "chunk": 72,
+        "values": {
+          "5689": 0,
+          "5251": 0
+        }
+      },
+      {
+        "operation": 3697,
+        "kind": "Reshape",
+        "chunk": 73,
+        "values": {
+          "3735": 0,
+          "1134": 0
+        }
+      },
+      {
+        "operation": 3698,
+        "kind": "Reshape",
+        "chunk": 74,
+        "values": {
+          "3723": 0,
+          "5301": 0
+        }
+      },
+      {
+        "operation": 3699,
+        "kind": "Reshape",
+        "chunk": 75,
+        "values": {
+          "5306": 0,
+          "5310": 0
+        }
+      },
+      {
+        "operation": 3700,
+        "kind": "Reshape",
+        "chunk": 76,
+        "values": {
+          "5312": 0,
+          "1139": 0
+        }
+      },
+      {
+        "operation": 3701,
+        "kind": "Reshape",
+        "chunk": 77,
+        "values": {
+          "5717": 0,
+          "5318": 0
+        }
+      },
+      {
+        "operation": 3702,
+        "kind": "Reshape",
+        "chunk": 78,
+        "values": {
+          "5320": 0,
+          "1141": 0
+        }
+      },
+      {
+        "operation": 3749,
+        "kind": "Concat",
+        "chunk": 79,
+        "values": {
+          "6962": 0,
+          "6964": 102400,
+          "1172": 204800,
+          "1176": 0
+        }
+      },
+      {
+        "operation": 3703,
+        "kind": "Reshape",
+        "chunk": 80,
+        "values": {
+          "944": 0,
+          "5403": 0
+        }
+      },
+      {
+        "operation": 3704,
+        "kind": "Reshape",
+        "chunk": 81,
+        "values": {
+          "5406": 0,
+          "5408": 0
+        }
+      },
+      {
+        "operation": 3705,
+        "kind": "Reshape",
+        "chunk": 82,
+        "values": {
+          "1198": 0,
+          "1364": 0
+        }
+      },
+      {
+        "operation": 3706,
+        "kind": "Reshape",
+        "chunk": 83,
+        "values": {
+          "1076": 0,
+          "5440": 0
+        }
+      },
+      {
+        "operation": 3707,
+        "kind": "Reshape",
+        "chunk": 84,
+        "values": {
+          "5443": 0,
+          "5445": 0
+        }
+      },
+      {
+        "operation": 3708,
+        "kind": "Reshape",
+        "chunk": 85,
+        "values": {
+          "1218": 0,
+          "1368": 0
+        }
+      },
+      {
+        "operation": 3709,
+        "kind": "Reshape",
+        "chunk": 86,
+        "values": {
+          "1182": 0,
+          "5477": 0
+        }
+      },
+      {
+        "operation": 3710,
+        "kind": "Reshape",
+        "chunk": 87,
+        "values": {
+          "5480": 0,
+          "5482": 0
+        }
+      },
+      {
+        "operation": 3711,
+        "kind": "Reshape",
+        "chunk": 88,
+        "values": {
+          "1238": 0,
+          "1372": 0
+        }
+      },
+      {
+        "operation": 3750,
+        "kind": "Concat",
+        "chunk": 89,
+        "values": {
+          "1366": 0,
+          "1370": 51200,
+          "1374": 64000,
+          "1246": 0
+        }
+      },
+      {
+        "operation": 3712,
+        "kind": "Reshape",
+        "chunk": 90,
+        "values": {
+          "5521": 0,
+          "5523": 0
+        }
+      },
+      {
+        "operation": 3713,
+        "kind": "Reshape",
+        "chunk": 91,
+        "values": {
+          "1252": 0,
+          "6965": 0
+        }
+      },
+      {
+        "operation": 3714,
+        "kind": "Reshape",
+        "chunk": 92,
+        "values": {
+          "6969": 0,
+          "1258": 0
+        }
+      },
+      {
+        "operation": 3715,
+        "kind": "Reshape",
+        "chunk": 93,
+        "values": {
+          "1264": 0,
+          "6970": 0
+        }
+      },
+      {
+        "operation": 3716,
+        "kind": "Reshape",
+        "chunk": 94,
+        "values": {
+          "6974": 0,
+          "1270": 0
+        }
+      },
+      {
+        "operation": 3717,
+        "kind": "Reshape",
+        "chunk": 95,
+        "values": {
+          "1274": 0,
+          "1376": 0
+        }
+      },
+      {
+        "operation": 3718,
+        "kind": "Reshape",
+        "chunk": 96,
+        "values": {
+          "5570": 0,
+          "5572": 0
+        }
+      },
+      {
+        "operation": 3719,
+        "kind": "Reshape",
+        "chunk": 97,
+        "values": {
+          "1306": 0,
+          "1380": 0
+        }
+      },
+      {
+        "operation": 3720,
+        "kind": "Reshape",
+        "chunk": 98,
+        "values": {
+          "5619": 0,
+          "5621": 0
+        }
+      },
+      {
+        "operation": 3721,
+        "kind": "Reshape",
+        "chunk": 99,
+        "values": {
+          "1338": 0,
+          "1384": 0
+        }
+      },
+      {
+        "operation": 3751,
+        "kind": "Concat",
+        "chunk": 100,
+        "values": {
+          "1378": 0,
+          "1382": 1024000,
+          "1386": 1280000,
+          "1346": 0
+        }
+      },
+      {
+        "operation": 3387,
+        "kind": "Cast",
+        "chunk": 101,
+        "values": {
+          "5674": 0,
+          "2307": 0
+        }
+      }
+    ],
+    "board_tested": false
+  },
+  "parameter_policy_unchanged": true,
+  "prior_proxy_map50_95": 0.6061101119,
+  "prior_proxy_does_not_measure_new_layout": true,
+  "no_new_calibration": true,
+  "no_new_accuracy_sweep": true,
+  "board_tested": false,
+  "artifact_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-groups-selective-r1"
+}

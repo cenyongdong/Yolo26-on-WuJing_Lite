@@ -1,0 +1,33 @@
+{
+  "build": ".local/yr3",
+  "flow": "factory Vivado 2018.3/030ai and Procise, JFMQL30TAI676H",
+  "timing_check": {
+    "WNS_ns": 0.012,
+    "WHS_ns": 0.007,
+    "TNS_ns": 0,
+    "THS_ns": 0,
+    "routable_nets": 107021,
+    "fully_routed_nets": 107021,
+    "net_routing_errors": 0,
+    "hdmi_pixel_clock_ns": 13.468,
+    "hdmi_serial_clock_ns": 2.694,
+    "mailbox_endpoints": 542,
+    "held_DSP_input_endpoints": 16,
+    "held_DSP_min_slack_ns": 3.516,
+    "legacy_mailbox_request_expected_ns": 5,
+    "legacy_mailbox_request_slack_ns": 2.331,
+    "legacy_AI_minimum_period_slack_ns": [-0.409, -0.071],
+    "existing_GT_DRC_errors": ["REQP-52#1", "REQP-56#1"],
+    "new_timing_or_DRC_waivers": false
+  },
+  "total_BRAM36": {"used": 261.5, "available": 265},
+  "routed_checkpoint_sha256": "f5c6e87859d03bace96c633e315791c90ac3aba703af77819e473271acb4aa48",
+  "raw_bit_sha256": "18f91faa18bef9a660c757aba35d64623e19e440005eb6302f84cbe234cecad7",
+  "adapted_bit_sha256": "2b74fb37c424ab541d4eb5a181da515c5786cef63eea385e7fe7aa5b4474a751",
+  "BOOT_sha256": "c1064d6622fd7f6a4d3a44c4633b48c8a1a9e9b83263b5a42d973ec4a50b174e",
+  "non_PL_bytes_identical_to_original": true,
+  "report_attempts": [
+    {"native_exit": 1, "reports": "initial-report-preserved", "finding": "legacy mailbox request was absent from the first query"},
+    {"native_exit": 0, "reports": "reports/physical-final-closure", "finding": "same routed DCP read only; retained request bound and all endpoints verified"}
+  ]
+}

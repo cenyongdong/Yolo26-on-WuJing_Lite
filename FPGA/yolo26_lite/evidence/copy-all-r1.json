@@ -1,0 +1,560 @@
+{
+  "schema": 1,
+  "candidate": {
+    "schema": 1,
+    "transformation": "complete_split_concat_prefix_copy_elision",
+    "groups": [
+      {
+        "split": 3355,
+        "concat": 3477,
+        "copies": [
+          3364,
+          3365
+        ],
+        "source_chunk": 1,
+        "destination_chunk": 4,
+        "prefix_bytes": 6553600,
+        "concat_bytes": 13107200,
+        "logical_copy_io_bytes": 13107200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3364,
+          3365
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1428,
+        "adapted_concat": 1463,
+        "adapted_copies": [
+          2560,
+          2561
+        ],
+        "parent_value": 18,
+        "source_values": [
+          20,
+          22
+        ],
+        "removed_values": [
+          6652,
+          6654
+        ],
+        "concat_output": 129
+      },
+      {
+        "split": 3356,
+        "concat": 3480,
+        "copies": [
+          3366,
+          3367
+        ],
+        "source_chunk": 5,
+        "destination_chunk": 8,
+        "prefix_bytes": 3276800,
+        "concat_bytes": 6553600,
+        "logical_copy_io_bytes": 6553600,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3366,
+          3367
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1470,
+        "adapted_concat": 1505,
+        "adapted_copies": [
+          2562,
+          2563
+        ],
+        "parent_value": 147,
+        "source_values": [
+          149,
+          151
+        ],
+        "removed_values": [
+          6656,
+          6658
+        ],
+        "concat_output": 258
+      },
+      {
+        "split": 3357,
+        "concat": 3483,
+        "copies": [
+          3368,
+          3369
+        ],
+        "source_chunk": 9,
+        "destination_chunk": 12,
+        "prefix_bytes": 1638400,
+        "concat_bytes": 3276800,
+        "logical_copy_io_bytes": 3276800,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3368,
+          3369
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1512,
+        "adapted_concat": 1547,
+        "adapted_copies": [
+          2564,
+          2565
+        ],
+        "parent_value": 276,
+        "source_values": [
+          278,
+          280
+        ],
+        "removed_values": [
+          6660,
+          6662
+        ],
+        "concat_output": 387
+      },
+      {
+        "split": 3358,
+        "concat": 3486,
+        "copies": [
+          3370,
+          3371
+        ],
+        "source_chunk": 13,
+        "destination_chunk": 16,
+        "prefix_bytes": 409600,
+        "concat_bytes": 819200,
+        "logical_copy_io_bytes": 819200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3370,
+          3371
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1554,
+        "adapted_concat": 1589,
+        "adapted_copies": [
+          2566,
+          2567
+        ],
+        "parent_value": 405,
+        "source_values": [
+          407,
+          409
+        ],
+        "removed_values": [
+          6664,
+          6666
+        ],
+        "concat_output": 516
+      },
+      {
+        "split": 3360,
+        "concat": 3492,
+        "copies": [
+          3373,
+          3374
+        ],
+        "source_chunk": 41,
+        "destination_chunk": 44,
+        "prefix_bytes": 1638400,
+        "concat_bytes": 3276800,
+        "logical_copy_io_bytes": 3276800,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3373,
+          3374
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1792,
+        "adapted_concat": 1827,
+        "adapted_copies": [
+          2569,
+          2570
+        ],
+        "parent_value": 699,
+        "source_values": [
+          701,
+          703
+        ],
+        "removed_values": [
+          6670,
+          6672
+        ],
+        "concat_output": 810
+      },
+      {
+        "split": 3361,
+        "concat": 3496,
+        "copies": [
+          3375,
+          3376
+        ],
+        "source_chunk": 46,
+        "destination_chunk": 49,
+        "prefix_bytes": 3276800,
+        "concat_bytes": 6553600,
+        "logical_copy_io_bytes": 6553600,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3375,
+          3376
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1834,
+        "adapted_concat": 1869,
+        "adapted_copies": [
+          2571,
+          2572
+        ],
+        "parent_value": 827,
+        "source_values": [
+          829,
+          831
+        ],
+        "removed_values": [
+          6674,
+          6676
+        ],
+        "concat_output": 938
+      },
+      {
+        "split": 3362,
+        "concat": 3500,
+        "copies": [
+          3377,
+          3378
+        ],
+        "source_chunk": 51,
+        "destination_chunk": 54,
+        "prefix_bytes": 1638400,
+        "concat_bytes": 3276800,
+        "logical_copy_io_bytes": 3276800,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3377,
+          3378
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1877,
+        "adapted_concat": 1912,
+        "adapted_copies": [
+          2573,
+          2574
+        ],
+        "parent_value": 959,
+        "source_values": [
+          961,
+          963
+        ],
+        "removed_values": [
+          6678,
+          6680
+        ],
+        "concat_output": 1070
+      },
+      {
+        "split": 3363,
+        "concat": 3502,
+        "copies": [
+          3379,
+          3380
+        ],
+        "source_chunk": 56,
+        "destination_chunk": 67,
+        "prefix_bytes": 409600,
+        "concat_bytes": 614400,
+        "logical_copy_io_bytes": 819200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3379,
+          3380
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1920,
+        "adapted_concat": 2017,
+        "adapted_copies": [
+          2575,
+          2576
+        ],
+        "parent_value": 1091,
+        "source_values": [
+          1093,
+          1095
+        ],
+        "removed_values": [
+          6682,
+          6684
+        ],
+        "concat_output": 1176
+      }
+    ],
+    "source": {
+      "ZG": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+      "adapted": "f5ecacccf83a3659fa9561d2157ca1c0668859f67f36eff83fa0915e39f366f8"
+    },
+    "source_raw_sha256": "00c78f114b8a2f8424502bd991f0dd8712aaaca93324c99c6fe02023fe096ef9",
+    "candidate_adapted_sha256": "340ca31de8db10921b6242b3cfacc5180e2e259ce0ad056d296853e4a3cd35bf",
+    "board_access": false
+  },
+  "generate": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "candidate.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-all-r1",
+      "pid": 25296,
+      "started_utc": "2026-11-14T03:19:40.549693+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 27.428718900002423
+    },
+    "graph": {
+      "json_sha256": "fb2ca6860348f53fdb93c2879eeabf6d0214500f04382b371afb574eb971e64e",
+      "raw_sha256": "74fbece3377127c538eba506875a65a0f2742614704002ee12d8b471f776b484",
+      "raw_bytes": 62251536,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 383,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    }
+  },
+  "static_storage": [
+    {
+      "parent_value": 18,
+      "concat_output": 129,
+      "destination_chunk": 1,
+      "base_offset": 0,
+      "prefix_bytes": 6553600,
+      "producer": 2910,
+      "prefix_writers": [
+        2910
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 147,
+      "concat_output": 258,
+      "destination_chunk": 5,
+      "base_offset": 0,
+      "prefix_bytes": 3276800,
+      "producer": 2927,
+      "prefix_writers": [
+        2927
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 276,
+      "concat_output": 387,
+      "destination_chunk": 9,
+      "base_offset": 0,
+      "prefix_bytes": 1638400,
+      "producer": 2944,
+      "prefix_writers": [
+        2944
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 405,
+      "concat_output": 516,
+      "destination_chunk": 13,
+      "base_offset": 0,
+      "prefix_bytes": 409600,
+      "producer": 2961,
+      "prefix_writers": [
+        2961
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 699,
+      "concat_output": 810,
+      "destination_chunk": 41,
+      "base_offset": 0,
+      "prefix_bytes": 1638400,
+      "producer": 2982,
+      "prefix_writers": [
+        2982
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 827,
+      "concat_output": 938,
+      "destination_chunk": 46,
+      "base_offset": 0,
+      "prefix_bytes": 3276800,
+      "producer": 2998,
+      "prefix_writers": [
+        2998
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 959,
+      "concat_output": 1070,
+      "destination_chunk": 51,
+      "base_offset": 0,
+      "prefix_bytes": 1638400,
+      "producer": 3015,
+      "prefix_writers": [
+        3015
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 1091,
+      "concat_output": 1176,
+      "destination_chunk": 56,
+      "base_offset": 0,
+      "prefix_bytes": 409600,
+      "producer": 3032,
+      "prefix_writers": [
+        3032
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    }
+  ],
+  "simulations": [
+    {
+      "case": 0,
+      "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+      "elements": 705600,
+      "finite": true,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "output_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+      "native_run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-all-sim-case0-r1",
+        "pid": 26508,
+        "started_utc": "2026-11-14T03:20:30.254294+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 72.67200000000594
+      }
+    },
+    {
+      "case": 1,
+      "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+      "elements": 705600,
+      "finite": true,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "output_sha256": "c088c552a104c845ec13c78e8ec2b189309cfc4062c75198b10cc7277d63a577",
+      "native_run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-all-sim-case1-r1",
+        "pid": 5000,
+        "started_utc": "2026-11-14T03:20:30.357004+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 74.0
+      }
+    },
+    {
+      "case": 2,
+      "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+      "elements": 705600,
+      "finite": true,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "output_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+      "native_run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-all-sim-case2-r1",
+        "pid": 16336,
+        "started_utc": "2026-11-14T03:20:30.499952+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 74.0
+      }
+    }
+  ],
+  "numerical_pass": true,
+  "board_pass": false,
+  "failures": [
+    "first comparison expected a newer baseline metadata field; actual input bytes then verified"
+  ]
+}

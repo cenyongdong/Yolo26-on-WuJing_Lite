@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "date": "2026-11-15",
+  "name": "512x384 PSA static RGB file baseline",
+  "local_archive": ".local/yolo26-rect-board-r1",
+  "size": [
+    512,
+    384
+  ],
+  "anchors": 4032,
+  "graph": {
+    "hardops": 428,
+    "host_compute": 0,
+    "physical_view_groups": 89
+  },
+  "identities": {
+    "model.json": "ae1e6ec0422d527546a2a7dbf100f79fffcc19e1ad85e4300a66729277bffd4e",
+    "model.raw": "7921e992eb49edb91b6c620061330b63143b9ad1efaed009c0af765ae7b318ec",
+    "input.rgb": "0288d895bb4c09f3689fd020107e00c3e418c135690c42916c45ef83b7056680",
+    "yolo26_infer_probe": "6e78d3a0a60491aa3bed8b824ec2840d4c476cad2c2ddc96fafc5cc3cc3dad26"
+  },
+  "boot_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+  "sdk_libraries": {
+    "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+    "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+    "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+  },
+  "closure": {
+    "boot_id": "82876cf5-53ba-4b99-b793-1cd235c72dd4",
+    "native_exit": 0,
+    "completed": 30,
+    "native_shutdown_complete": true,
+    "allocation_count_after": 0,
+    "sdk_starts": 1,
+    "capture_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "device_owners": [],
+    "source": "file_replay",
+    "camera_30fps_claim": false
+  },
+  "arm64_ctest_count": 13,
+  "ordinary_frame_range": [
+    3,
+    27
+  ],
+  "timings": {
+    "clear_ms": {
+      "samples": 24,
+      "mean": 0.013369583333333334,
+      "median": 0.013475,
+      "p95": 0.01414,
+      "p99": 0.01421,
+      "maximum": 0.01421,
+      "minimum": 0.01208
+    },
+    "final_wait_ms": {
+      "samples": 24,
+      "mean": 22.971936666666668,
+      "median": 22.971429999999998,
+      "p95": 22.99457,
+      "p99": 22.99498,
+      "maximum": 22.99498,
+      "minimum": 22.94724
+    },
+    "forward_ms": {
+      "samples": 24,
+      "mean": 4.688689583333334,
+      "median": 4.67615,
+      "p95": 4.76071,
+      "p99": 4.79039,
+      "maximum": 4.79039,
+      "minimum": 4.6176
+    },
+    "input_write_ms": {
+      "samples": 24,
+      "mean": 1.3484858333333334,
+      "median": 1.326035,
+      "p95": 1.39213,
+      "p99": 1.46021,
+      "maximum": 1.46021,
+      "minimum": 1.32187
+    },
+    "normalize_ms": {
+      "samples": 24,
+      "mean": 2.1861125,
+      "median": 2.17979,
+      "p95": 2.21804,
+      "p99": 2.2266,
+      "maximum": 2.2266,
+      "minimum": 2.1585
+    },
+    "output_read_ms": {
+      "samples": 24,
+      "mean": 1.3482741666666667,
+      "median": 1.34406,
+      "p95": 1.37076,
+      "p99": 1.37696,
+      "maximum": 1.37696,
+      "minimum": 1.33926
+    },
+    "postprocess_ms": {
+      "samples": 24,
+      "mean": 3.512443333333333,
+      "median": 3.51269,
+      "p95": 3.56335,
+      "p99": 3.56729,
+      "maximum": 3.56729,
+      "minimum": 3.45878
+    },
+    "forward_wait_ms": {
+      "samples": 24,
+      "mean": 27.66062625,
+      "median": 27.657899999999998,
+      "p95": 27.70973,
+      "p99": 27.77976,
+      "maximum": 27.77976,
+      "minimum": 27.58167
+    },
+    "complete_call_ms": {
+      "samples": 24,
+      "mean": 36.07859125,
+      "median": 36.06492,
+      "p95": 36.1997,
+      "p99": 36.22625,
+      "maximum": 36.22625,
+      "minimum": 35.99852
+    }
+  },
+  "native_timer_semantics": "durations",
+  "native_kinds_ms": {
+    "Conv2d": 17.610239999999994,
+    "Cast": 2.0050773333333316,
+    "Matmul": 1.4354773333333364,
+    "Copy": 0.5785599999999976,
+    "Add": 0.40209066666666926,
+    "Transpose": 0.38365866666666265,
+    "Upsample": 0.33348266666666676,
+    "Softmax": 0.23022933333333517,
+    "MaxPool2d": 0.10547199999999975,
+    "Concat": 0.05427200000000085,
+    "Multiply": 0.04795733333333313,
+    "Slice": 0.010410666666669082,
+    "Reshape": 0.0,
+    "Split": 0.0
+  },
+  "output_finite": true,
+  "output_sha256": "0aa47c813ae26ad8077b225d172ec669ff97bd550dd013f9d9d9103d612bceda",
+  "board_vs_generated_fixture": {
+    "raw_rms": 0.6408077478408813,
+    "raw_max_abs": 23.75,
+    "worst_index": [
+      0,
+      4,
+      3468
+    ],
+    "fixture_passed": false,
+    "high_detection_matches": [
+      {
+        "class_id": 5,
+        "matched": true,
+        "iou": 0.9967202365964692,
+        "max_coordinate_error": 0.375,
+        "score_error": 0.0019309520721435547
+      },
+      {
+        "class_id": 0,
+        "matched": true,
+        "iou": 0.9979243072938434,
+        "max_coordinate_error": 0.25,
+        "score_error": 0.00374603271484375
+      },
+      {
+        "class_id": 0,
+        "matched": true,
+        "iou": 0.9973267714023353,
+        "max_coordinate_error": 0.125,
+        "score_error": 0.0006303191184997559
+      },
+      {
+        "class_id": 0,
+        "matched": true,
+        "iou": 0.993164683628725,
+        "max_coordinate_error": 0.1875,
+        "score_error": 0.0025616884231567383
+      },
+      {
+        "class_id": 0,
+        "matched": true,
+        "iou": 0.9952708475701579,
+        "max_coordinate_error": 0.1875,
+        "score_error": 0.13849079608917236
+      },
+      {
+        "class_id": 27,
+        "matched": true,
+        "iou": 0.9798495304751963,
+        "max_coordinate_error": 0.046875,
+        "score_error": 0.004665970802307129
+      }
+    ]
+  },
+  "simulated_holdout": {
+    "images": 32,
+    "labels": 218,
+    "map50_95": 0.5855700386196893
+  },
+  "reciprocal_mean_call_fps": 27.717268478435948,
+  "measured_steady_state_fps": null
+}

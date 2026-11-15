@@ -1,0 +1,59 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-024742-095873",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_color_pipeline.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_pixel_unpack.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_color.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-024742-095873",
+      "pid": 23544,
+      "started_utc": "2026-11-13T18:47:42.300903+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8280000000013388
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_color",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-024742-095873",
+      "pid": 7744,
+      "started_utc": "2026-11-13T18:47:43.128625+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.5780000000013388
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-024742-095873",
+      "pid": 5072,
+      "started_utc": "2026-11-13T18:47:45.704049+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.453000000001339
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 26,
+    "cycles": 32267,
+    "seed": "26cc1234"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_color_pipeline.sv": "0b81f5081308e4e06cf6bc954f794e96199c028d9809c39f726aab63d5d5f763",
+    "rtl\\y26_pixel_unpack.sv": "b91e54d6e89b6c1be9d9bf8d2fa6502e64e2284d34f537fb4a4a6d9578203f56",
+    "tb\\tb_color.sv": "a8db569daa1826cc65862516ca2c5d69383aeac0c405e0521481eaac71262d33"
+  }
+}

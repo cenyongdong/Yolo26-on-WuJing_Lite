@@ -1,0 +1,42 @@
+{
+  "tool": "Vivado 2018.3 XSim",
+  "native_exits": [
+    0,
+    0,
+    0
+  ],
+  "result": {
+    "passed": true,
+    "cases": 1127,
+    "cycles": 3525224,
+    "frame_cycles": 3397222,
+    "output_bytes_compared": 1228800
+  },
+  "extra_competing_read_bursts": 64,
+  "extra_competing_write_bursts": 64,
+  "beats_per_competing_burst": 16,
+  "sources": {
+    "rtl\\y26_register_bank.sv": "7ee1b8db6c9efc958b603310a7de49a69489fcb9df5684d59b2afa16623afae7",
+    "rtl\\y26_mailbox.sv": "3b456938c7f7821abb5b4f22c1cc9b5dd58d583a54f2b57230f3e52dbd017e6d",
+    "rtl\\y26_command_dispatch.sv": "29de52fe2dbeb56dcf916aff45d1cd13276901d1aafa99749ab196e3c08f3815",
+    "rtl\\y26_control.sv": "597bd9cf8fe424b88a06c1d2d757cdf75607c8775489f3ff6165cedf116a6f6e",
+    "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+    "rtl\\y26_dma_mm2s.sv": "3b60fbbe11eb1c1c529edd46b7c1eb19332b25b5c4fd1d110b04dee506d22a47",
+    "rtl\\y26_color_pipeline.sv": "0b81f5081308e4e06cf6bc954f794e96199c028d9809c39f726aab63d5d5f763",
+    "rtl\\y26_pixel_unpack.sv": "b91e54d6e89b6c1be9d9bf8d2fa6502e64e2284d34f537fb4a4a6d9578203f56",
+    "rtl\\y26_resize_letterbox.sv": "162991037fe309e94a7f86613d79c0b9d097210068d413c36dc07babfa0f0ecb",
+    "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+    "rtl\\y26_dma_s2mm.sv": "6280d490d2b4f5bcbab5c8a23e0abf897581a140ac5cbd5628cfcf6a0497a339",
+    "rtl\\y26_preprocess.sv": "a1a44c5a54d826f9018e57f4c81d644186031060a08f40d6b5529c6adb47d9b2",
+    "rtl\\y26_peripheral.sv": "91a578f5c4251d37f25412d8c3a684bc01cf84714624eb078d2707091876fe2e",
+    "tb\\axi_memory_model.sv": "e3b54a8325776754b02d11f52e3f6ce8ab56f88f31c23fe260dd3827d0d41eff",
+    "tb\\tb_peripheral.sv": "3f9e6cb519c06d9808994094bcd232499818a782e009d46a8d9c86bc4acadc43",
+    "rtl\\y26_axi_read_share.sv": "5350b5e888d6289fd9f3f6b410f72c4e1d1c6526d11ff07e91998739e4646b9e",
+    "rtl\\y26_axi_write_share.sv": "1f2870a8e0489e971e4107997b1dff08095698e2ba173e0757b8d98736f824cf",
+    "rtl\\y26_soc_bridge.sv": "eeeb47666d42bcd06545426cc97db5c7b8d41748bb5d354277250fa2dd48cdd8",
+    "tb\\y26_soc_test_adapter.sv": "98612fb9f0c05bbed55c5b21fc124e5290a0850a9b7cd08a5cd78d7c658c8cb2"
+  },
+  "logs_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-soc-20261114-033200-729464",
+  "board_tested": false,
+  "full_soc_elaborated": false
+}

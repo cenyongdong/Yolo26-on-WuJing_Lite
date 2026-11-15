@@ -1,0 +1,79 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display-20261114-032059-598945",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_axi_read.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_scan_control.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_command_mailbox.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_candidate_core.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_register_bank.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_candidate_register_core.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_pixel_scan.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_stream_fifo.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\hdmi_scanout.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\sim\\tb_stream_fifo.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\sim\\tb_scanout.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_display.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display-20261114-032059-598945",
+      "pid": 16860,
+      "started_utc": "2026-11-13T19:20:59.614694+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8899999999994179
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_display",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical",
+        "--timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display-20261114-032059-598945",
+      "pid": 17836,
+      "started_utc": "2026-11-13T19:21:00.496593+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.375
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display-20261114-032059-598945",
+      "pid": 21148,
+      "started_utc": "2026-11-13T19:21:04.872194+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 60.42199999999866
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 3,
+    "pixels_compared": [
+      2073600,
+      921600
+    ],
+    "rasters": [
+      [
+        2200,
+        1125
+      ],
+      [
+        1650,
+        750
+      ]
+    ],
+    "underflow_drain": true,
+    "stop_with_pixel_clock_halted": true
+  },
+  "board_tested": false
+}

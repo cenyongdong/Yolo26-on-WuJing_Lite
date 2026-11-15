@@ -1,0 +1,57 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-022843-903364",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_resize_letterbox.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_resize.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-022843-903364",
+      "pid": 18324,
+      "started_utc": "2026-11-13T18:28:44.357455+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.875
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_resize",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-022843-903364",
+      "pid": 4736,
+      "started_utc": "2026-11-13T18:28:45.239530+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.764999999999418
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-022843-903364",
+      "pid": 27404,
+      "started_utc": "2026-11-13T18:28:48.006020+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 5.110000000000582
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 14,
+    "cycles": 425952,
+    "seed": "26161234"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_resize_letterbox.sv": "162991037fe309e94a7f86613d79c0b9d097210068d413c36dc07babfa0f0ecb",
+    "tb\\tb_resize.sv": "4077f2263d3b52111ed64b7667822dafc6eae3e105288e2bcf72cde37ca96288"
+  }
+}

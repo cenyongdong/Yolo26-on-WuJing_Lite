@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "kind": "arm64_normalization_comparison",
+  "selected": "fp32_division",
+  "decision": "all three tested replacements were slower; retain measured baseline",
+  "variants": [
+    {
+      "implementation": "prior_fp32_division",
+      "full_evidence": ".local\\yolo26-cpu-r3",
+      "normalization": {
+        "kind": "cpu_module",
+        "module": "rgb888_to_nhwc_fp32",
+        "iterations": 100,
+        "warmup": 16,
+        "mean_ns": 4479862,
+        "p50_ns": 4462050,
+        "p95_ns": 4598780,
+        "p99_ns": 4647600,
+        "maximum_ns": 4648130,
+        "npu_executed": false
+      },
+      "native_tests": 8,
+      "source_sha256": "5edd7720ad0cdef20b458a1c527575d9f26137513251d168543b4805fba2645d",
+      "compiler_native_exit": null,
+      "safe_cleanup": {
+        "before": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "after": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "sdk_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "capture_starts": 0,
+        "lease_held_until_children_returned": true
+      }
+    },
+    {
+      "implementation": "lookup_256_fp32",
+      "full_evidence": ".local\\yolo26-cpu-r4",
+      "normalization": {
+        "kind": "cpu_module",
+        "module": "rgb888_to_nhwc_fp32",
+        "iterations": 100,
+        "warmup": 16,
+        "mean_ns": 9955377,
+        "p50_ns": 9928560,
+        "p95_ns": 10063360,
+        "p99_ns": 10108120,
+        "maximum_ns": 10113260,
+        "npu_executed": false
+      },
+      "native_tests": 11,
+      "source_sha256": "96b123b5a30d18dee5bb7db3699ec4c6607972e466e89f298c5e1726191f057f",
+      "compiler_native_exit": 0,
+      "safe_cleanup": {
+        "before": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "after": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "sdk_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "capture_starts": 0,
+        "lease_held_until_children_returned": true
+      }
+    },
+    {
+      "implementation": "neon_fp64_reciprocal",
+      "full_evidence": ".local\\yolo26-cpu-r5",
+      "normalization": {
+        "kind": "cpu_module",
+        "module": "rgb888_to_nhwc_fp32",
+        "iterations": 100,
+        "warmup": 16,
+        "mean_ns": 5097956,
+        "p50_ns": 5078410,
+        "p95_ns": 5201220,
+        "p99_ns": 5227960,
+        "maximum_ns": 5256260,
+        "npu_executed": false
+      },
+      "native_tests": 11,
+      "source_sha256": "f2064c161e946a53cf493fe541570c86dab9b7f3e382871c400ab268f55becf1",
+      "compiler_native_exit": 0,
+      "safe_cleanup": {
+        "before": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "after": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "sdk_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "capture_starts": 0,
+        "lease_held_until_children_returned": true
+      }
+    },
+    {
+      "implementation": "neon_exact_integer_bits",
+      "full_evidence": ".local\\yolo26-cpu-r6",
+      "normalization": {
+        "kind": "cpu_module",
+        "module": "rgb888_to_nhwc_fp32",
+        "iterations": 100,
+        "warmup": 16,
+        "mean_ns": 5708620,
+        "p50_ns": 5690710,
+        "p95_ns": 5818120,
+        "p99_ns": 5856130,
+        "maximum_ns": 5916720,
+        "npu_executed": false
+      },
+      "native_tests": 11,
+      "source_sha256": "ec9ba81d52c84524b87bb06113010eff8a7430e37fe8401aca7388715fea8732",
+      "compiler_native_exit": 0,
+      "safe_cleanup": {
+        "before": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "after": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "sdk_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "capture_starts": 0,
+        "lease_held_until_children_returned": true
+      }
+    },
+    {
+      "implementation": "restored_fp32_division",
+      "full_evidence": ".local\\yolo26-cpu-r7",
+      "normalization": {
+        "kind": "cpu_module",
+        "module": "rgb888_to_nhwc_fp32",
+        "iterations": 100,
+        "warmup": 16,
+        "mean_ns": 4478595,
+        "p50_ns": 4461890,
+        "p95_ns": 4569430,
+        "p99_ns": 4655160,
+        "maximum_ns": 4671820,
+        "npu_executed": false
+      },
+      "native_tests": 11,
+      "source_sha256": "e5ca5fa21d63764b16bfea0958617e355a82bcb40577b59d319b39b5072746dc",
+      "compiler_native_exit": 0,
+      "safe_cleanup": {
+        "before": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "after": {
+          "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+          "startup_consumed": true,
+          "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+          "prior_shutdown_proven": true,
+          "device_owners": []
+        },
+        "sdk_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "capture_starts": 0,
+        "lease_held_until_children_returned": true
+      }
+    }
+  ],
+  "source_identity": {
+    "software/src/preprocess.cpp": "e5ca5fa21d63764b16bfea0958617e355a82bcb40577b59d319b39b5072746dc",
+    "software/include/yolo26/preprocess.hpp": "5d481e5f63733bb2361b7359820d5ed44522ce3355c63c6cee02c80f3df24d67",
+    "software/src/cpu_benchmark.cpp": "a2dbe42775843ed4832ffd541e6d3b29035df90e8aec6c94b08828a2b7fa19af",
+    "software/tests/test_preprocess.cpp": "9d43f0e4bf3acf2049ee145bc80d5a59b5c5ebffb25ca4d3c78730ade583156d"
+  },
+  "validation": "1,228,800 FP32 outputs compared by bits, all 256 RGB values and row padding covered",
+  "final_software_tests": 11,
+  "sdk_starts": 0,
+  "capture_starts": 0,
+  "npu_executed": false,
+  "final_measurements": [
+    {
+      "kind": "cpu_module",
+      "module": "one_to_one_tail",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 5082229,
+      "p50_ns": 5081180,
+      "p95_ns": 5122460,
+      "p99_ns": 5136880,
+      "maximum_ns": 5136990,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "rgb888_to_nhwc_fp32",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 4478595,
+      "p50_ns": 4461890,
+      "p95_ns": 4569430,
+      "p99_ns": 4655160,
+      "maximum_ns": 4671820,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "yuyv_vga_to_720p_with_boxes",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 9395759,
+      "p50_ns": 9387850,
+      "p95_ns": 9438240,
+      "p99_ns": 9445820,
+      "maximum_ns": 9601440,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "host_rgb565_copy",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 938854,
+      "p50_ns": 932620,
+      "p95_ns": 966160,
+      "p99_ns": 993750,
+      "maximum_ns": 1010560,
+      "npu_executed": false
+    },
+    {
+      "kind": "summary",
+      "input": "repeated_synthetic_fixture",
+      "checksum": 31088,
+      "postprocess_scan": "aarch64_neon",
+      "normalization": "fp32_division",
+      "sdk_starts": 0,
+      "camera_starts": 0,
+      "npu_executed": false
+    }
+  ]
+}

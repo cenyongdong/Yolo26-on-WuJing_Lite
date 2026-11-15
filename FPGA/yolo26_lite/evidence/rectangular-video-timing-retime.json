@@ -1,0 +1,50 @@
+{
+  "scope": "original full-SoC placement and offline RTL regression of the retimed candidate",
+  "first_candidate": {
+    "build": ".local/yr1",
+    "placement_setup_WNS_ns": -0.683,
+    "placement_setup_TNS_ns": -406.897,
+    "placement_hold_WHS_ns": -0.248,
+    "report": "reports/physical/physopt-csi-incremental-timing.rpt",
+    "worst_local_setup_paths": [
+      "unpacker/input_row_left_reg[7] to unpacker/byte_fifo_reg[81]",
+      "packer/row_left_reg[6] to packer/byte_fifo_reg[75]",
+      "resizer/x_map_reg to resizer/selected_x1_reg CE"
+    ]
+  },
+  "regression": {
+    "tool": "factory Vivado 2018.3 XSim",
+    "native_exit_codes_per_case": [0, 0, 0],
+    "pack": {"directory": "xsim-pack-20261115-095952-495841", "cases": 18},
+    "color": {"directory": "xsim-color-20261115-100000-756190", "cases": 26},
+    "resize": {"directory": "xsim-resize-20261115-100354-225527", "cases": 16},
+    "soc_rectangular": {"directory": "xsim-soc_rectangular-20261115-100403-670227", "cases": 903,
+                       "frame_cycles": 2412262, "output_bytes_compared": 589824},
+    "soc_square": {"directory": "xsim-soc-20261115-100443-269015", "cases": 1127,
+                   "frame_cycles": 3736612, "output_bytes_compared": 1228800},
+    "device_operations": 0
+  },
+  "second_candidate": {
+    "build": ".local/yr2",
+    "placement_setup_WNS_ns": -1.022,
+    "placement_setup_TNS_ns": -151.599,
+    "placement_hold_WHS_ns": -0.248,
+    "report": "reports/physical/physopt-csi-incremental-timing.rpt",
+    "worst_local_setup_paths": [
+      "resizer/source_height_reg[0] to resizer/line_odd_reg_0 WEA",
+      "resizer/source_height_reg[0] to resizer/line_even_reg_0 WEA",
+      "preprocess/rejected_reg to resizer/x_map_reg WEBWE"
+    ]
+  },
+  "registered_ram_write_regression": {
+    "tool": "factory Vivado 2018.3 XSim",
+    "native_exit_codes_per_case": [0, 0, 0],
+    "resize": {"directory": "xsim-resize-20261115-103337-379810", "cases": 17,
+               "covers_start_after_last_mapping_write": true, "covers_stop_after_accepted_source_pixel": true},
+    "soc_rectangular": {"directory": "xsim-soc_rectangular-20261115-103348-521374", "cases": 903,
+                       "frame_cycles": 2412262, "output_bytes_compared": 589824},
+    "soc_square": {"directory": "xsim-soc-20261115-103427-517905", "cases": 1127,
+                   "frame_cycles": 3736612, "output_bytes_compared": 1228800},
+    "device_operations": 0
+  }
+}

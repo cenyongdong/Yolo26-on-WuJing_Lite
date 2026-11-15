@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "offline_qualified": true,
+  "board_tested": false,
+  "parameter_objects": 815,
+  "changed_parameter_ids": [
+    8863
+  ],
+  "mathematical_parameter_bytes_unchanged": true,
+  "operator_descriptions_equal": true,
+  "view_groups": 106,
+  "complete_output_cases": [
+    {
+      "case": 0,
+      "values": 705600,
+      "bitwise_equal": true,
+      "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+      "reference_sha256": "8f1eadd8dc64767d4724b852cb0b30c964fe5cd7691e09750722aed4dcd5d9ad",
+      "actual_sha256": "8f1eadd8dc64767d4724b852cb0b30c964fe5cd7691e09750722aed4dcd5d9ad"
+    },
+    {
+      "case": 1,
+      "values": 705600,
+      "bitwise_equal": true,
+      "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+      "reference_sha256": "ffd7861865daaa8e76024e2a41b20185da824036019c02157bc1ae101e7251e6",
+      "actual_sha256": "ffd7861865daaa8e76024e2a41b20185da824036019c02157bc1ae101e7251e6"
+    },
+    {
+      "case": 2,
+      "values": 705600,
+      "bitwise_equal": true,
+      "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+      "reference_sha256": "82ebfaca0150d184032d9e31760ee88b7293ec4c620f2618aac24e29c0d3805f",
+      "actual_sha256": "82ebfaca0150d184032d9e31760ee88b7293ec4c620f2618aac24e29c0d3805f"
+    }
+  ],
+  "graph_sha256": "949a2ff1b3ba7812054dd43ad3ad2553e3c016d99136f77979e9853747ccd99e",
+  "raw_sha256": "c135a45ededfd5b2321b1f5cc39120821c432b6c028462a85f7e582ec637de6a",
+  "instruction_change": "KLM base +256 U32 words; no task reordering or prefetch yet"
+}

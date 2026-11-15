@@ -1,0 +1,3162 @@
+{
+  "schema": 1,
+  "comparison": [
+    {
+      "name": "baseline",
+      "full_call_ms": {
+        "samples": 24,
+        "mean": 83.21558999999999,
+        "median": 82.99494,
+        "p95": 84.14163,
+        "p99": 84.28232,
+        "maximum": 84.28232,
+        "minimum": 82.57412
+      },
+      "forward_wait_ms": {
+        "samples": 24,
+        "mean": 65.9747525,
+        "median": 65.90849499999999,
+        "p95": 66.3159,
+        "p99": 66.76336,
+        "maximum": 66.76336,
+        "minimum": 65.65396
+      },
+      "target_region_ms": {
+        "3404": {
+          "samples": 3,
+          "mean": 1.6610986666666667,
+          "median": 1.660928,
+          "p95": 1.6614400000000005,
+          "p99": 1.6614400000000005,
+          "maximum": 1.6614400000000005,
+          "minimum": 1.660928
+        },
+        "3405": {
+          "samples": 3,
+          "mean": 1.548117333333333,
+          "median": 1.5482879999999986,
+          "p95": 1.5482880000000006,
+          "p99": 1.5482880000000006,
+          "maximum": 1.5482880000000006,
+          "minimum": 1.5477759999999998
+        },
+        "3404+3405": {
+          "samples": 3,
+          "mean": 3.209216,
+          "median": 3.2092160000000005,
+          "p95": 3.2092160000000005,
+          "p99": 3.2092160000000005,
+          "maximum": 3.2092160000000005,
+          "minimum": 3.2092159999999987
+        }
+      },
+      "full_mean_delta_from_baseline_ms": 0.0
+    },
+    {
+      "name": "shift",
+      "full_call_ms": {
+        "samples": 24,
+        "mean": 82.460455,
+        "median": 82.42308,
+        "p95": 82.80179,
+        "p99": 82.86705,
+        "maximum": 82.86705,
+        "minimum": 82.26979
+      },
+      "forward_wait_ms": {
+        "samples": 24,
+        "mean": 65.70841041666667,
+        "median": 65.70820499999999,
+        "p95": 65.97286,
+        "p99": 66.09287,
+        "maximum": 66.09287,
+        "minimum": 65.52965
+      },
+      "target_region_ms": {
+        "3404": {
+          "samples": 3,
+          "mean": 1.6612693333333337,
+          "median": 1.6609280000000017,
+          "p95": 1.6619519999999992,
+          "p99": 1.6619519999999992,
+          "maximum": 1.6619519999999992,
+          "minimum": 1.660928
+        },
+        "3405": {
+          "samples": 3,
+          "mean": 1.5469226666666667,
+          "median": 1.5472639999999993,
+          "p95": 1.5477759999999998,
+          "p99": 1.5477759999999998,
+          "maximum": 1.5477759999999998,
+          "minimum": 1.5457280000000009
+        },
+        "3404+3405": {
+          "samples": 3,
+          "mean": 3.2081920000000004,
+          "median": 3.2081919999999995,
+          "p95": 3.2087040000000018,
+          "p99": 3.2087040000000018,
+          "maximum": 3.2087040000000018,
+          "minimum": 3.20768
+        }
+      },
+      "full_mean_delta_from_baseline_ms": -0.7551349999999957
+    },
+    {
+      "name": "prefetch",
+      "full_call_ms": {
+        "samples": 24,
+        "mean": 83.21889416666667,
+        "median": 82.7283,
+        "p95": 86.21508,
+        "p99": 87.04209,
+        "maximum": 87.04209,
+        "minimum": 82.38342
+      },
+      "forward_wait_ms": {
+        "samples": 24,
+        "mean": 66.05780333333334,
+        "median": 65.873955,
+        "p95": 67.2971,
+        "p99": 68.56262,
+        "maximum": 68.56262,
+        "minimum": 65.67872
+      },
+      "target_region_ms": {
+        "3404": {
+          "samples": 3,
+          "mean": 1.6621226666666662,
+          "median": 1.6619519999999992,
+          "p95": 1.662464,
+          "p99": 1.662464,
+          "maximum": 1.662464,
+          "minimum": 1.6619519999999992
+        },
+        "3405": {
+          "samples": 3,
+          "mean": 1.540778666666667,
+          "median": 1.5406080000000002,
+          "p95": 1.5411200000000007,
+          "p99": 1.5411200000000007,
+          "maximum": 1.5411200000000007,
+          "minimum": 1.5406080000000002
+        },
+        "3404+3405": {
+          "samples": 3,
+          "mean": 3.202901333333333,
+          "median": 3.2030719999999997,
+          "p95": 3.203072,
+          "p99": 3.203072,
+          "maximum": 3.203072,
+          "minimum": 3.202559999999999
+        }
+      },
+      "full_mean_delta_from_baseline_ms": 0.0033041666666804304
+    }
+  ],
+  "runs": [
+    {
+      "name": "baseline",
+      "boot_id": "fe0f19b4-db70-45e4-a29d-74e5f1f21e2e",
+      "identities": {
+        "model.json": "42ae1374714b0dd6b4dbe27fa69d845c34fe5d216e039155ad490e005eccf2b9",
+        "model.raw": "c2edc20012aa196181b3962b7eea6470f3c8e35f2911b3b619b7e15ceeb054fd",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "25df914b32aaeb387b29427d657711a9f15e62bc470be547e95669e3ee090b15"
+      },
+      "BOOT_sha256": "6886da57e0adda66f481d051e0a610156a985ad4579a34d697dd359ebf27cbf9",
+      "SDK": {
+        "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+        "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+        "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+      },
+      "timings": {
+        "clear_ms": {
+          "samples": 24,
+          "mean": 0.015003333333333334,
+          "median": 0.014865,
+          "p95": 0.01612,
+          "p99": 0.01666,
+          "maximum": 0.01666,
+          "minimum": 0.01384
+        },
+        "final_wait_ms": {
+          "samples": 24,
+          "mean": 56.494325833333335,
+          "median": 56.471720000000005,
+          "p95": 56.59023,
+          "p99": 56.59692,
+          "maximum": 56.59692,
+          "minimum": 56.3412
+        },
+        "forward_ms": {
+          "samples": 24,
+          "mean": 9.480426666666666,
+          "median": 9.37372,
+          "p95": 9.88161,
+          "p99": 10.32403,
+          "maximum": 10.32403,
+          "minimum": 9.29986
+        },
+        "input_write_ms": {
+          "samples": 24,
+          "mean": 3.4184554166666667,
+          "median": 3.269525,
+          "p95": 3.87646,
+          "p99": 4.17129,
+          "maximum": 4.17129,
+          "minimum": 3.22036
+        },
+        "normalize_ms": {
+          "samples": 24,
+          "mean": 4.647354583333334,
+          "median": 4.553815,
+          "p95": 5.06006,
+          "p99": 5.19864,
+          "maximum": 5.19864,
+          "minimum": 4.51995
+        },
+        "output_read_ms": {
+          "samples": 24,
+          "mean": 3.0002283333333333,
+          "median": 2.9668900000000002,
+          "p95": 3.38638,
+          "p99": 3.39089,
+          "maximum": 3.39089,
+          "minimum": 2.90653
+        },
+        "postprocess_ms": {
+          "samples": 24,
+          "mean": 6.149952916666667,
+          "median": 6.112539999999999,
+          "p95": 6.42833,
+          "p99": 6.60152,
+          "maximum": 6.60152,
+          "minimum": 6.04586
+        },
+        "forward_wait_ms": {
+          "samples": 24,
+          "mean": 65.9747525,
+          "median": 65.90849499999999,
+          "p95": 66.3159,
+          "p99": 66.76336,
+          "maximum": 66.76336,
+          "minimum": 65.65396
+        },
+        "complete_call_ms": {
+          "samples": 24,
+          "mean": 83.21558999999999,
+          "median": 82.99494,
+          "p95": 84.14163,
+          "p99": 84.28232,
+          "maximum": 84.28232,
+          "minimum": 82.57412
+        }
+      },
+      "target_region_ms": {
+        "3404": {
+          "samples": 3,
+          "mean": 1.6610986666666667,
+          "median": 1.660928,
+          "p95": 1.6614400000000005,
+          "p99": 1.6614400000000005,
+          "maximum": 1.6614400000000005,
+          "minimum": 1.660928
+        },
+        "3405": {
+          "samples": 3,
+          "mean": 1.548117333333333,
+          "median": 1.5482879999999986,
+          "p95": 1.5482880000000006,
+          "p99": 1.5482880000000006,
+          "maximum": 1.5482880000000006,
+          "minimum": 1.5477759999999998
+        },
+        "3404+3405": {
+          "samples": 3,
+          "mean": 3.209216,
+          "median": 3.2092160000000005,
+          "p95": 3.2092160000000005,
+          "p99": 3.2092160000000005,
+          "maximum": 3.2092160000000005,
+          "minimum": 3.2092159999999987
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 36.68838400000002,
+        "Transpose": 6.622890666666657,
+        "Cast": 4.463360000000003,
+        "Matmul": 2.995541333333324,
+        "Copy": 1.9997013333333409,
+        "Add": 1.1612160000000002,
+        "Softmax": 1.082197333333336,
+        "Upsample": 0.8256853333333323,
+        "Multiply": 0.37461333333333213,
+        "MaxPool2d": 0.165887999999999,
+        "Concat": 0.11844266666666711,
+        "AlignAxis": 0.09983999999999772,
+        "PruneAxis": 0.03891199999999662,
+        "Slice": 0.01996800000000318,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "output_sha256": "1def692f6e0d7856959c72c6625ac5f7271eb552882d77ee69abe28c0121e81f",
+      "output_finite": true,
+      "output_file": ".local\\yolo26-prefetch-board-r1\\baseline\\returned\\native-first-output.f32",
+      "output_float32_values": 705600,
+      "completed": 30,
+      "ordinary_steady_samples": 24,
+      "diagnostic_samples": 3,
+      "every_frame_matches_saved_complete_output": true,
+      "shutdown": {
+        "boot_id": "fe0f19b4-db70-45e4-a29d-74e5f1f21e2e",
+        "native_exit": 0,
+        "completed": 30,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "traces": [
+        {
+          "frame": 27,
+          "bins": 165,
+          "duration_ms": 65.905775,
+          "host_alignment_uncertainty_ns": 11970,
+          "overflow": false,
+          "cycles": 13181155,
+          "totals": {
+            "ar_accepted": 4335102,
+            "ar_backpressure": 2696650,
+            "r_accepted": 4335102,
+            "r_backpressure": 11712,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 393105,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5043768
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277446528,
+          "interface_return_payload_MBps": 4209.745322014649,
+          "read_handshake_cycle_fraction": 0.32888635328239446,
+          "peak_bin_read_handshake_fraction": 0.84785,
+          "no_external_valid_cycle_fraction": 0.3826499271118502,
+          "ar_backpressure_given_valid": 0.3834961756330428,
+          "r_backpressure_given_valid": 0.0026943871994522884,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                84196407940,
+                84196672750
+              ],
+              "end_host_ns_bounds": [
+                84198236440,
+                84198500900
+              ],
+              "duration_ms_bounds": [
+                1.56369,
+                2.09296
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  78343,
+                  212176
+                ],
+                "ar_backpressure": [
+                  66180,
+                  176619
+                ],
+                "r_accepted": [
+                  78343,
+                  212153
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  74752,
+                  142252
+                ],
+                "aw_backpressure": [
+                  15777,
+                  34689
+                ],
+                "accepted_write_byte_enables": [
+                  4784128,
+                  9103756
+                ],
+                "b_accepted": [
+                  146,
+                  242
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  55658,
+                  112506
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5013952,
+                13577792
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                84198236440,
+                84198500900
+              ],
+              "end_host_ns_bounds": [
+                84199803380,
+                84200070570
+              ],
+              "duration_ms_bounds": [
+                1.30248,
+                1.83413
+              ],
+              "wholly_inside_bins": [
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  83699,
+                  200961
+                ],
+                "ar_backpressure": [
+                  13387,
+                  42424
+                ],
+                "r_accepted": [
+                  83726,
+                  200989
+                ],
+                "r_backpressure": [
+                  0,
+                  396
+                ],
+                "aw_accepted": [
+                  0,
+                  41994
+                ],
+                "aw_backpressure": [
+                  0,
+                  6054
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  2686996
+                ],
+                "b_accepted": [
+                  0,
+                  93
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  61470,
+                  196044
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5358464,
+                12863296
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                84196407940,
+                84196672750
+              ],
+              "end_host_ns_bounds": [
+                84199803380,
+                84200070570
+              ],
+              "duration_ms_bounds": [
+                3.13063,
+                3.66263
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  241392,
+                  333787
+                ],
+                "ar_backpressure": [
+                  99736,
+                  198874
+                ],
+                "r_accepted": [
+                  241420,
+                  333791
+                ],
+                "r_backpressure": [
+                  0,
+                  396
+                ],
+                "aw_accepted": [
+                  91138,
+                  167860
+                ],
+                "aw_backpressure": [
+                  19180,
+                  37340
+                ],
+                "accepted_write_byte_enables": [
+                  5832708,
+                  10742172
+                ],
+                "b_accepted": [
+                  179,
+                  302
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  165052,
+                  260626
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                15450880,
+                21362624
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        },
+        {
+          "frame": 28,
+          "bins": 166,
+          "duration_ms": 66.07412,
+          "host_alignment_uncertainty_ns": 13330,
+          "overflow": false,
+          "cycles": 13214824,
+          "totals": {
+            "ar_accepted": 4335102,
+            "ar_backpressure": 2706062,
+            "r_accepted": 4335102,
+            "r_backpressure": 11867,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 394575,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5069067
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277446528,
+          "interface_return_payload_MBps": 4199.019646421322,
+          "read_handshake_cycle_fraction": 0.3280484098766658,
+          "peak_bin_read_handshake_fraction": 0.8479875,
+          "no_external_valid_cycle_fraction": 0.3835894447024039,
+          "ar_backpressure_given_valid": 0.38432026295652255,
+          "r_backpressure_given_valid": 0.002729948154679732,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                84327767350,
+                84328035210
+              ],
+              "end_host_ns_bounds": [
+                84329609780,
+                84329876420
+              ],
+              "duration_ms_bounds": [
+                1.57457,
+                2.10907
+              ],
+              "wholly_inside_bins": [
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  52966,
+                  178057
+                ],
+                "ar_backpressure": [
+                  43480,
+                  146168
+                ],
+                "r_accepted": [
+                  52963,
+                  178089
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  49152,
+                  126896
+                ],
+                "aw_backpressure": [
+                  10457,
+                  30385
+                ],
+                "accepted_write_byte_enables": [
+                  3145728,
+                  8121096
+                ],
+                "b_accepted": [
+                  96,
+                  226
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  36933,
+                  97462
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                3389632,
+                11397696
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                84329609780,
+                84329876420
+              ],
+              "end_host_ns_bounds": [
+                84331187470,
+                84331453870
+              ],
+              "duration_ms_bounds": [
+                1.31105,
+                1.84409
+              ],
+              "wholly_inside_bins": [
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  80384,
+                  210783
+                ],
+                "ar_backpressure": [
+                  12553,
+                  51836
+                ],
+                "r_accepted": [
+                  80384,
+                  210814
+                ],
+                "r_backpressure": [
+                  0,
+                  222
+                ],
+                "aw_accepted": [
+                  0,
+                  54280
+                ],
+                "aw_backpressure": [
+                  0,
+                  8617
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  3473424
+                ],
+                "b_accepted": [
+                  0,
+                  116
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  65651,
+                  170025
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5144576,
+                13492096
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                84327767350,
+                84328035210
+              ],
+              "end_host_ns_bounds": [
+                84331187470,
+                84331453870
+              ],
+              "duration_ms_bounds": [
+                3.15226,
+                3.68652
+              ],
+              "wholly_inside_bins": [
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  204785,
+                  317405
+                ],
+                "ar_backpressure": [
+                  83443,
+                  170594
+                ],
+                "r_accepted": [
+                  204813,
+                  317437
+                ],
+                "r_backpressure": [
+                  0,
+                  222
+                ],
+                "aw_accepted": [
+                  77826,
+                  152502
+                ],
+                "aw_backpressure": [
+                  16410,
+                  33049
+                ],
+                "accepted_write_byte_enables": [
+                  4980740,
+                  9759508
+                ],
+                "b_accepted": [
+                  153,
+                  285
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  144951,
+                  225120
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                13108032,
+                20315968
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        },
+        {
+          "frame": 29,
+          "bins": 168,
+          "duration_ms": 66.843085,
+          "host_alignment_uncertainty_ns": 13380,
+          "overflow": false,
+          "cycles": 13368617,
+          "totals": {
+            "ar_accepted": 4335102,
+            "ar_backpressure": 2706126,
+            "r_accepted": 4335102,
+            "r_backpressure": 11946,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 395732,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5222402
+          },
+          "first_request_bin": 21,
+          "no_external_request_before_ms": 8.4,
+          "interface_return_payload_bytes": 277446528,
+          "interface_return_payload_MBps": 4150.713989337865,
+          "read_handshake_cycle_fraction": 0.3242745304170207,
+          "peak_bin_read_handshake_fraction": 0.8482625,
+          "no_external_valid_cycle_fraction": 0.39064639221843217,
+          "ar_backpressure_given_valid": 0.38432585906890104,
+          "r_backpressure_given_valid": 0.0027480717949284203,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                84460448990,
+                84460715480
+              ],
+              "end_host_ns_bounds": [
+                84462026370,
+                84462292480
+              ],
+              "duration_ms_bounds": [
+                1.31089,
+                1.84349
+              ],
+              "wholly_inside_bins": [
+                57,
+                58
+              ],
+              "possibly_intersecting_bins": [
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  51622,
+                  174050
+                ],
+                "ar_backpressure": [
+                  43307,
+                  151837
+                ],
+                "r_accepted": [
+                  51622,
+                  174032
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  49152,
+                  130141
+                ],
+                "aw_backpressure": [
+                  10522,
+                  31490
+                ],
+                "accepted_write_byte_enables": [
+                  3145728,
+                  8328652
+                ],
+                "b_accepted": [
+                  96,
+                  231
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  38454,
+                  95772
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                3303808,
+                11138048
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                84462026370,
+                84462292480
+              ],
+              "end_host_ns_bounds": [
+                84463603740,
+                84463870270
+              ],
+              "duration_ms_bounds": [
+                1.31126,
+                1.8439
+              ],
+              "wholly_inside_bins": [
+                61,
+                62
+              ],
+              "possibly_intersecting_bins": [
+                59,
+                60,
+                61,
+                62,
+                63,
+                64
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  84312,
+                  213140
+                ],
+                "ar_backpressure": [
+                  13297,
+                  55821
+                ],
+                "r_accepted": [
+                  84309,
+                  213140
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  0,
+                  58374
+                ],
+                "aw_backpressure": [
+                  0,
+                  9494
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  3735564
+                ],
+                "b_accepted": [
+                  0,
+                  123
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  60979,
+                  162466
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5395776,
+                13640960
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                84460448990,
+                84460715480
+              ],
+              "end_host_ns_bounds": [
+                84463603740,
+                84463870270
+              ],
+              "duration_ms_bounds": [
+                2.88826,
+                3.42128
+              ],
+              "wholly_inside_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "possibly_intersecting_bins": [
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  203488,
+                  319636
+                ],
+                "ar_backpressure": [
+                  86950,
+                  177312
+                ],
+                "r_accepted": [
+                  203457,
+                  319646
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  81922,
+                  155745
+                ],
+                "aw_backpressure": [
+                  17352,
+                  34154
+                ],
+                "accepted_write_byte_enables": [
+                  5242884,
+                  9967060
+                ],
+                "b_accepted": [
+                  161,
+                  289
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  141276,
+                  216395
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                13021248,
+                20457344
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "shift",
+      "boot_id": "255a18d9-98f0-4522-9a30-9acce9725eff",
+      "identities": {
+        "model.json": "949a2ff1b3ba7812054dd43ad3ad2553e3c016d99136f77979e9853747ccd99e",
+        "model.raw": "c135a45ededfd5b2321b1f5cc39120821c432b6c028462a85f7e582ec637de6a",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "25df914b32aaeb387b29427d657711a9f15e62bc470be547e95669e3ee090b15"
+      },
+      "BOOT_sha256": "6886da57e0adda66f481d051e0a610156a985ad4579a34d697dd359ebf27cbf9",
+      "SDK": {
+        "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+        "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+        "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+      },
+      "timings": {
+        "clear_ms": {
+          "samples": 24,
+          "mean": 0.014250416666666666,
+          "median": 0.0142,
+          "p95": 0.01496,
+          "p99": 0.01523,
+          "maximum": 0.01523,
+          "minimum": 0.01306
+        },
+        "final_wait_ms": {
+          "samples": 24,
+          "mean": 56.489765,
+          "median": 56.496695,
+          "p95": 56.57834,
+          "p99": 56.58581,
+          "maximum": 56.58581,
+          "minimum": 56.31056
+        },
+        "forward_ms": {
+          "samples": 24,
+          "mean": 9.218645416666666,
+          "median": 9.183425,
+          "p95": 9.41705,
+          "p99": 9.6736,
+          "maximum": 9.6736,
+          "minimum": 9.13509
+        },
+        "input_write_ms": {
+          "samples": 24,
+          "mean": 3.2507829166666666,
+          "median": 3.24187,
+          "p95": 3.32021,
+          "p99": 3.41918,
+          "maximum": 3.41918,
+          "minimum": 3.19644
+        },
+        "normalize_ms": {
+          "samples": 24,
+          "mean": 4.561028333333334,
+          "median": 4.54352,
+          "p95": 4.72714,
+          "p99": 4.78828,
+          "maximum": 4.78828,
+          "minimum": 4.50928
+        },
+        "output_read_ms": {
+          "samples": 24,
+          "mean": 2.8818845833333335,
+          "median": 2.868685,
+          "p95": 2.93164,
+          "p99": 2.93367,
+          "maximum": 2.93367,
+          "minimum": 2.85847
+        },
+        "postprocess_ms": {
+          "samples": 24,
+          "mean": 6.034423333333334,
+          "median": 6.02843,
+          "p95": 6.09559,
+          "p99": 6.14031,
+          "maximum": 6.14031,
+          "minimum": 5.98848
+        },
+        "forward_wait_ms": {
+          "samples": 24,
+          "mean": 65.70841041666667,
+          "median": 65.70820499999999,
+          "p95": 65.97286,
+          "p99": 66.09287,
+          "maximum": 66.09287,
+          "minimum": 65.52965
+        },
+        "complete_call_ms": {
+          "samples": 24,
+          "mean": 82.460455,
+          "median": 82.42308,
+          "p95": 82.80179,
+          "p99": 82.86705,
+          "maximum": 82.86705,
+          "minimum": 82.26979
+        }
+      },
+      "target_region_ms": {
+        "3404": {
+          "samples": 3,
+          "mean": 1.6612693333333337,
+          "median": 1.6609280000000017,
+          "p95": 1.6619519999999992,
+          "p99": 1.6619519999999992,
+          "maximum": 1.6619519999999992,
+          "minimum": 1.660928
+        },
+        "3405": {
+          "samples": 3,
+          "mean": 1.5469226666666667,
+          "median": 1.5472639999999993,
+          "p95": 1.5477759999999998,
+          "p99": 1.5477759999999998,
+          "maximum": 1.5477759999999998,
+          "minimum": 1.5457280000000009
+        },
+        "3404+3405": {
+          "samples": 3,
+          "mean": 3.2081920000000004,
+          "median": 3.2081919999999995,
+          "p95": 3.2087040000000018,
+          "p99": 3.2087040000000018,
+          "maximum": 3.2087040000000018,
+          "minimum": 3.20768
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 36.687871999999984,
+        "Transpose": 6.615210666666655,
+        "Cast": 4.515925333333348,
+        "Matmul": 2.9943466666666696,
+        "Copy": 2.0003839999999933,
+        "Add": 1.1615573333333271,
+        "Softmax": 1.0825386666666672,
+        "Upsample": 0.8256853333333359,
+        "Multiply": 0.37546666666666473,
+        "MaxPool2d": 0.16571733333333274,
+        "Concat": 0.11895466666666714,
+        "AlignAxis": 0.09984000000000015,
+        "PruneAxis": 0.03874133333333278,
+        "Slice": 0.020650666666667043,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "output_sha256": "1def692f6e0d7856959c72c6625ac5f7271eb552882d77ee69abe28c0121e81f",
+      "output_finite": true,
+      "output_file": ".local\\yolo26-prefetch-board-r1\\shift\\returned\\native-first-output.f32",
+      "output_float32_values": 705600,
+      "completed": 30,
+      "ordinary_steady_samples": 24,
+      "diagnostic_samples": 3,
+      "every_frame_matches_saved_complete_output": true,
+      "shutdown": {
+        "boot_id": "255a18d9-98f0-4522-9a30-9acce9725eff",
+        "native_exit": 0,
+        "completed": 30,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "traces": [
+        {
+          "frame": 27,
+          "bins": 165,
+          "duration_ms": 65.741005,
+          "host_alignment_uncertainty_ns": 11790,
+          "overflow": false,
+          "cycles": 13148201,
+          "totals": {
+            "ar_accepted": 4335102,
+            "ar_backpressure": 2702640,
+            "r_accepted": 4335102,
+            "r_backpressure": 11670,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 393195,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5008746
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277446528,
+          "interface_return_payload_MBps": 4220.296419259183,
+          "read_handshake_cycle_fraction": 0.3297106577546236,
+          "peak_bin_read_handshake_fraction": 0.846725,
+          "no_external_valid_cycle_fraction": 0.3809453475802507,
+          "ar_backpressure_given_valid": 0.3840208976117624,
+          "r_backpressure_given_valid": 0.0026847508910060156,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                76753930460,
+                76754196290
+              ],
+              "end_host_ns_bounds": [
+                76755768590,
+                76756036240
+              ],
+              "duration_ms_bounds": [
+                1.5723,
+                2.10578
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                52,
+                53,
+                54,
+                55,
+                56,
+                57
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  79298,
+                  167330
+                ],
+                "ar_backpressure": [
+                  65145,
+                  160707
+                ],
+                "r_accepted": [
+                  79326,
+                  167340
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  73728,
+                  134921
+                ],
+                "aw_backpressure": [
+                  15561,
+                  33508
+                ],
+                "accepted_write_byte_enables": [
+                  4718592,
+                  8634572
+                ],
+                "b_accepted": [
+                  144,
+                  235
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  56011,
+                  93953
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5076864,
+                10709760
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                76755768590,
+                76756036240
+              ],
+              "end_host_ns_bounds": [
+                76757346290,
+                76757612040
+              ],
+              "duration_ms_bounds": [
+                1.31005,
+                1.84345
+              ],
+              "wholly_inside_bins": [
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  130873,
+                  182521
+                ],
+                "ar_backpressure": [
+                  20711,
+                  36395
+                ],
+                "r_accepted": [
+                  130841,
+                  182493
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  0,
+                  37894
+                ],
+                "aw_backpressure": [
+                  0,
+                  5286
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  2424844
+                ],
+                "b_accepted": [
+                  0,
+                  83
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  86511,
+                  143653
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                8373824,
+                11679552
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                76753930460,
+                76754196290
+              ],
+              "end_host_ns_bounds": [
+                76757346290,
+                76757612040
+              ],
+              "duration_ms_bounds": [
+                3.15,
+                3.68158
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  244527,
+                  315495
+                ],
+                "ar_backpressure": [
+                  96029,
+                  186929
+                ],
+                "r_accepted": [
+                  244523,
+                  315477
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  86018,
+                  160525
+                ],
+                "aw_backpressure": [
+                  18169,
+                  36186
+                ],
+                "accepted_write_byte_enables": [
+                  5505028,
+                  10272980
+                ],
+                "b_accepted": [
+                  169,
+                  293
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  168297,
+                  211831
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                15649472,
+                20190528
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        },
+        {
+          "frame": 28,
+          "bins": 165,
+          "duration_ms": 65.686995,
+          "host_alignment_uncertainty_ns": 13320,
+          "overflow": false,
+          "cycles": 13137399,
+          "totals": {
+            "ar_accepted": 4335102,
+            "ar_backpressure": 2699152,
+            "r_accepted": 4335102,
+            "r_backpressure": 11775,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 391136,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5000171
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277446528,
+          "interface_return_payload_MBps": 4223.766485283731,
+          "read_handshake_cycle_fraction": 0.32998175666279145,
+          "peak_bin_read_handshake_fraction": 0.8484625,
+          "no_external_valid_cycle_fraction": 0.3806058566082982,
+          "ar_backpressure_given_valid": 0.3837154586683961,
+          "r_backpressure_given_valid": 0.0027088413129702084,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                76885525500,
+                76885791430
+              ],
+              "end_host_ns_bounds": [
+                76887101450,
+                76887367320
+              ],
+              "duration_ms_bounds": [
+                1.31002,
+                1.84182
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  77432,
+                  142533
+                ],
+                "ar_backpressure": [
+                  64650,
+                  104310
+                ],
+                "r_accepted": [
+                  77430,
+                  142546
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  74405,
+                  108873
+                ],
+                "aw_backpressure": [
+                  15655,
+                  23710
+                ],
+                "accepted_write_byte_enables": [
+                  4761920,
+                  6967624
+                ],
+                "b_accepted": [
+                  145,
+                  209
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  57614,
+                  95175
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                4955520,
+                9122944
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                76887101450,
+                76887367320
+              ],
+              "end_host_ns_bounds": [
+                76888677550,
+                76888943530
+              ],
+              "duration_ms_bounds": [
+                1.31023,
+                1.84208
+              ],
+              "wholly_inside_bins": [
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  131691,
+                  184824
+                ],
+                "ar_backpressure": [
+                  21310,
+                  36998
+                ],
+                "r_accepted": [
+                  131662,
+                  184798
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  0,
+                  37217
+                ],
+                "aw_backpressure": [
+                  0,
+                  4823
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  2381516
+                ],
+                "b_accepted": [
+                  0,
+                  82
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  85117,
+                  141643
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                8426368,
+                11827072
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                76885525500,
+                76885791430
+              ],
+              "end_host_ns_bounds": [
+                76888677550,
+                76888943530
+              ],
+              "duration_ms_bounds": [
+                2.88612,
+                3.41803
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  244735,
+                  291745
+                ],
+                "ar_backpressure": [
+                  96302,
+                  130966
+                ],
+                "r_accepted": [
+                  244706,
+                  291730
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  86018,
+                  134477
+                ],
+                "aw_backpressure": [
+                  18014,
+                  26174
+                ],
+                "accepted_write_byte_enables": [
+                  5505028,
+                  8606032
+                ],
+                "b_accepted": [
+                  169,
+                  267
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  167823,
+                  211726
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                15661184,
+                18670720
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        },
+        {
+          "frame": 29,
+          "bins": 166,
+          "duration_ms": 66.182,
+          "host_alignment_uncertainty_ns": 12910,
+          "overflow": false,
+          "cycles": 13236400,
+          "totals": {
+            "ar_accepted": 4335102,
+            "ar_backpressure": 2735399,
+            "r_accepted": 4335102,
+            "r_backpressure": 11906,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 396338,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5059812
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277446528,
+          "interface_return_payload_MBps": 4192.175032486174,
+          "read_handshake_cycle_fraction": 0.3275136744129824,
+          "peak_bin_read_handshake_fraction": 0.8468375,
+          "no_external_valid_cycle_fraction": 0.38226496630503765,
+          "ar_backpressure_given_valid": 0.38687484804825006,
+          "r_backpressure_given_valid": 0.0027388953505491594,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                77015746500,
+                77016014610
+              ],
+              "end_host_ns_bounds": [
+                77017324940,
+                77017590850
+              ],
+              "duration_ms_bounds": [
+                1.31033,
+                1.84435
+              ],
+              "wholly_inside_bins": [
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  51622,
+                  167734
+                ],
+                "ar_backpressure": [
+                  43327,
+                  158153
+                ],
+                "r_accepted": [
+                  51620,
+                  167762
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  49692,
+                  134086
+                ],
+                "aw_backpressure": [
+                  10617,
+                  32839
+                ],
+                "accepted_write_byte_enables": [
+                  3180288,
+                  8581132
+                ],
+                "b_accepted": [
+                  96,
+                  234
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  37767,
+                  95772
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                3303680,
+                10736768
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                77017324940,
+                77017590850
+              ],
+              "end_host_ns_bounds": [
+                77018900790,
+                77019166930
+              ],
+              "duration_ms_bounds": [
+                1.30994,
+                1.84199
+              ],
+              "wholly_inside_bins": [
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  91237,
+                  211087
+                ],
+                "ar_backpressure": [
+                  14531,
+                  58043
+                ],
+                "r_accepted": [
+                  91240,
+                  211058
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  0,
+                  61930
+                ],
+                "aw_backpressure": [
+                  0,
+                  10206
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  3963148
+                ],
+                "b_accepted": [
+                  0,
+                  131
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  52986,
+                  160474
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5839360,
+                13507712
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                77015746500,
+                77016014610
+              ],
+              "end_host_ns_bounds": [
+                77018900790,
+                77019166930
+              ],
+              "duration_ms_bounds": [
+                2.88618,
+                3.42043
+              ],
+              "wholly_inside_bins": [
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  204284,
+                  317396
+                ],
+                "ar_backpressure": [
+                  89599,
+                  184455
+                ],
+                "r_accepted": [
+                  204284,
+                  317396
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  86018,
+                  159690
+                ],
+                "aw_backpressure": [
+                  18159,
+                  35503
+                ],
+                "accepted_write_byte_enables": [
+                  5505028,
+                  10219540
+                ],
+                "b_accepted": [
+                  169,
+                  292
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  135476,
+                  211523
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                13074176,
+                20313344
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "prefetch",
+      "boot_id": "b167dcde-8a05-48c9-9b2a-62cb857d894a",
+      "identities": {
+        "model.json": "1f010665f9f1df29c0b87f9cca9539ee2a7ffc13e45c581c3eb6fd6612f248fc",
+        "model.raw": "ceacc5289c7f75d1b03dab50aa4b9b10380f38ef3df4f605782044a8a0b69b21",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "25df914b32aaeb387b29427d657711a9f15e62bc470be547e95669e3ee090b15"
+      },
+      "BOOT_sha256": "6886da57e0adda66f481d051e0a610156a985ad4579a34d697dd359ebf27cbf9",
+      "SDK": {
+        "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+        "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+        "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+      },
+      "timings": {
+        "clear_ms": {
+          "samples": 24,
+          "mean": 0.014760833333333334,
+          "median": 0.014815,
+          "p95": 0.01592,
+          "p99": 0.01616,
+          "maximum": 0.01616,
+          "minimum": 0.01342
+        },
+        "final_wait_ms": {
+          "samples": 24,
+          "mean": 56.444475,
+          "median": 56.418275,
+          "p95": 56.54107,
+          "p99": 56.54427,
+          "maximum": 56.54427,
+          "minimum": 56.32859
+        },
+        "forward_ms": {
+          "samples": 24,
+          "mean": 9.613328333333333,
+          "median": 9.376214999999998,
+          "p95": 10.76734,
+          "p99": 12.02789,
+          "maximum": 12.02789,
+          "minimum": 9.29427
+        },
+        "input_write_ms": {
+          "samples": 24,
+          "mean": 3.3827479166666667,
+          "median": 3.27381,
+          "p95": 4.2255,
+          "p99": 4.48942,
+          "maximum": 4.48942,
+          "minimum": 3.21628
+        },
+        "normalize_ms": {
+          "samples": 24,
+          "mean": 4.566665416666667,
+          "median": 4.542965000000001,
+          "p95": 4.71832,
+          "p99": 4.81433,
+          "maximum": 4.81433,
+          "minimum": 4.51155
+        },
+        "output_read_ms": {
+          "samples": 24,
+          "mean": 3.0679616666666667,
+          "median": 2.924215,
+          "p95": 3.5751,
+          "p99": 4.2458,
+          "maximum": 4.2458,
+          "minimum": 2.90477
+        },
+        "postprocess_ms": {
+          "samples": 24,
+          "mean": 6.118397083333333,
+          "median": 6.035405,
+          "p95": 6.56996,
+          "p99": 6.82572,
+          "maximum": 6.82572,
+          "minimum": 5.9845
+        },
+        "forward_wait_ms": {
+          "samples": 24,
+          "mean": 66.05780333333334,
+          "median": 65.873955,
+          "p95": 67.2971,
+          "p99": 68.56262,
+          "maximum": 68.56262,
+          "minimum": 65.67872
+        },
+        "complete_call_ms": {
+          "samples": 24,
+          "mean": 83.21889416666667,
+          "median": 82.7283,
+          "p95": 86.21508,
+          "p99": 87.04209,
+          "maximum": 87.04209,
+          "minimum": 82.38342
+        }
+      },
+      "target_region_ms": {
+        "3404": {
+          "samples": 3,
+          "mean": 1.6621226666666662,
+          "median": 1.6619519999999992,
+          "p95": 1.662464,
+          "p99": 1.662464,
+          "maximum": 1.662464,
+          "minimum": 1.6619519999999992
+        },
+        "3405": {
+          "samples": 3,
+          "mean": 1.540778666666667,
+          "median": 1.5406080000000002,
+          "p95": 1.5411200000000007,
+          "p99": 1.5411200000000007,
+          "maximum": 1.5411200000000007,
+          "minimum": 1.5406080000000002
+        },
+        "3404+3405": {
+          "samples": 3,
+          "mean": 3.202901333333333,
+          "median": 3.2030719999999997,
+          "p95": 3.203072,
+          "p99": 3.203072,
+          "maximum": 3.203072,
+          "minimum": 3.202559999999999
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 36.693504000000004,
+        "Transpose": 6.58909866666668,
+        "Cast": 4.514389333333344,
+        "Matmul": 2.9962239999999922,
+        "Copy": 1.988095999999995,
+        "Add": 1.1617280000000032,
+        "Softmax": 1.0825386666666672,
+        "Upsample": 0.8256853333333335,
+        "Multiply": 0.37410133333332973,
+        "MaxPool2d": 0.16571733333333274,
+        "Concat": 0.11861333333333217,
+        "AlignAxis": 0.09983999999999893,
+        "PruneAxis": 0.03874133333333157,
+        "Slice": 0.020309333333334508,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "output_sha256": "1def692f6e0d7856959c72c6625ac5f7271eb552882d77ee69abe28c0121e81f",
+      "output_finite": true,
+      "output_file": ".local\\yolo26-prefetch-board-r1\\prefetch\\returned\\native-first-output.f32",
+      "output_float32_values": 705600,
+      "completed": 30,
+      "ordinary_steady_samples": 24,
+      "diagnostic_samples": 3,
+      "every_frame_matches_saved_complete_output": true,
+      "shutdown": {
+        "boot_id": "b167dcde-8a05-48c9-9b2a-62cb857d894a",
+        "native_exit": 0,
+        "completed": 30,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "traces": [
+        {
+          "frame": 27,
+          "bins": 165,
+          "duration_ms": 65.997015,
+          "host_alignment_uncertainty_ns": 12840,
+          "overflow": false,
+          "cycles": 13199403,
+          "totals": {
+            "ar_accepted": 4335120,
+            "ar_backpressure": 2694315,
+            "r_accepted": 4335120,
+            "r_backpressure": 12028,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 393443,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5064670
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277447680,
+          "interface_return_payload_MBps": 4203.942860142993,
+          "read_handshake_cycle_fraction": 0.3284330359486713,
+          "peak_bin_read_handshake_fraction": 0.84985,
+          "no_external_valid_cycle_fraction": 0.3837044751190641,
+          "ar_backpressure_given_valid": 0.38329040669698206,
+          "r_backpressure_given_valid": 0.002766871521282459,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                103720711260,
+                103720977720
+              ],
+              "end_host_ns_bounds": [
+                103722550910,
+                103722816850
+              ],
+              "duration_ms_bounds": [
+                1.57319,
+                2.10559
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  79147,
+                  178824
+                ],
+                "ar_backpressure": [
+                  66665,
+                  139599
+                ],
+                "r_accepted": [
+                  79142,
+                  178853
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  75003,
+                  124269
+                ],
+                "aw_backpressure": [
+                  15872,
+                  28952
+                ],
+                "accepted_write_byte_enables": [
+                  4800192,
+                  7952968
+                ],
+                "b_accepted": [
+                  147,
+                  224
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  54403,
+                  102946
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5065088,
+                11446592
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                103722550910,
+                103722816850
+              ],
+              "end_host_ns_bounds": [
+                103724129110,
+                103724395300
+              ],
+              "duration_ms_bounds": [
+                1.31226,
+                1.84439
+              ],
+              "wholly_inside_bins": [
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  86248,
+                  207987
+                ],
+                "ar_backpressure": [
+                  13685,
+                  49986
+                ],
+                "r_accepted": [
+                  86220,
+                  207996
+                ],
+                "r_backpressure": [
+                  0,
+                  222
+                ],
+                "aw_accepted": [
+                  0,
+                  50689
+                ],
+                "aw_backpressure": [
+                  0,
+                  7967
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  3243600
+                ],
+                "b_accepted": [
+                  0,
+                  109
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  58852,
+                  177546
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5518080,
+                13311744
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                103720711260,
+                103720977720
+              ],
+              "end_host_ns_bounds": [
+                103724129110,
+                103724395300
+              ],
+              "duration_ms_bounds": [
+                3.15139,
+                3.68404
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  237416,
+                  314790
+                ],
+                "ar_backpressure": [
+                  105847,
+                  164088
+                ],
+                "r_accepted": [
+                  237392,
+                  314819
+                ],
+                "r_backpressure": [
+                  0,
+                  222
+                ],
+                "aw_accepted": [
+                  100086,
+                  149875
+                ],
+                "aw_backpressure": [
+                  21161,
+                  31630
+                ],
+                "accepted_write_byte_enables": [
+                  6405380,
+                  9591380
+                ],
+                "b_accepted": [
+                  197,
+                  283
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  159050,
+                  234697
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                15193088,
+                20148416
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        },
+        {
+          "frame": 28,
+          "bins": 166,
+          "duration_ms": 66.01173,
+          "host_alignment_uncertainty_ns": 12880,
+          "overflow": false,
+          "cycles": 13202346,
+          "totals": {
+            "ar_accepted": 4335120,
+            "ar_backpressure": 2690568,
+            "r_accepted": 4335120,
+            "r_backpressure": 11519,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 392348,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5072606
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277447680,
+          "interface_return_payload_MBps": 4203.005738525562,
+          "read_handshake_cycle_fraction": 0.3283598233223095,
+          "peak_bin_read_handshake_fraction": 0.849675,
+          "no_external_valid_cycle_fraction": 0.38422004695226136,
+          "ar_backpressure_given_valid": 0.3829614978632698,
+          "r_backpressure_given_valid": 0.0026500935550433334,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                103851639980,
+                103851906080
+              ],
+              "end_host_ns_bounds": [
+                103853480660,
+                103853746880
+              ],
+              "duration_ms_bounds": [
+                1.57458,
+                2.1069
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  80535,
+                  179313
+                ],
+                "ar_backpressure": [
+                  64497,
+                  135610
+                ],
+                "r_accepted": [
+                  80535,
+                  179319
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  73728,
+                  123575
+                ],
+                "aw_backpressure": [
+                  15568,
+                  28222
+                ],
+                "accepted_write_byte_enables": [
+                  4718592,
+                  7908552
+                ],
+                "b_accepted": [
+                  144,
+                  223
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  54860,
+                  106206
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5154240,
+                11476416
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                103853480660,
+                103853746880
+              ],
+              "end_host_ns_bounds": [
+                103855057660,
+                103855324240
+              ],
+              "duration_ms_bounds": [
+                1.31078,
+                1.84358
+              ],
+              "wholly_inside_bins": [
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  88483,
+                  205042
+                ],
+                "ar_backpressure": [
+                  14150,
+                  48724
+                ],
+                "r_accepted": [
+                  88456,
+                  205070
+                ],
+                "r_backpressure": [
+                  0,
+                  222
+                ],
+                "aw_accepted": [
+                  0,
+                  50184
+                ],
+                "aw_backpressure": [
+                  0,
+                  7539
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  3211280
+                ],
+                "b_accepted": [
+                  0,
+                  108
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  56179,
+                  182003
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5661184,
+                13124480
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                103851639980,
+                103851906080
+              ],
+              "end_host_ns_bounds": [
+                103855057660,
+                103855324240
+              ],
+              "duration_ms_bounds": [
+                3.15158,
+                3.68426
+              ],
+              "wholly_inside_bins": [
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  239254,
+                  314119
+                ],
+                "ar_backpressure": [
+                  103263,
+                  159718
+                ],
+                "r_accepted": [
+                  239255,
+                  314125
+                ],
+                "r_backpressure": [
+                  0,
+                  222
+                ],
+                "aw_accepted": [
+                  98306,
+                  149181
+                ],
+                "aw_backpressure": [
+                  20643,
+                  30686
+                ],
+                "accepted_write_byte_enables": [
+                  6291460,
+                  9546964
+                ],
+                "b_accepted": [
+                  193,
+                  282
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  159588,
+                  239660
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                15312320,
+                20104000
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        },
+        {
+          "frame": 29,
+          "bins": 165,
+          "duration_ms": 65.95652,
+          "host_alignment_uncertainty_ns": 12850,
+          "overflow": false,
+          "cycles": 13191304,
+          "totals": {
+            "ar_accepted": 4335120,
+            "ar_backpressure": 2728819,
+            "r_accepted": 4335120,
+            "r_backpressure": 11882,
+            "aw_accepted": 2338416,
+            "aw_backpressure": 396179,
+            "accepted_write_byte_enables": 145143844,
+            "b_accepted": 5410,
+            "b_backpressure": 0,
+            "no_valid_cycles": 5022423
+          },
+          "first_request_bin": 19,
+          "no_external_request_before_ms": 7.6,
+          "interface_return_payload_bytes": 277447680,
+          "interface_return_payload_MBps": 4206.523934252444,
+          "read_handshake_cycle_fraction": 0.32863468236347215,
+          "peak_bin_read_handshake_fraction": 0.8472875,
+          "no_external_valid_cycle_fraction": 0.3807374161038211,
+          "ar_backpressure_given_valid": 0.38630274128924386,
+          "r_backpressure_given_valid": 0.002733378084482133,
+          "region_bounds": {
+            "3404": {
+              "first_layer": 27,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                103982620350,
+                103982886540
+              ],
+              "end_host_ns_bounds": [
+                103984199420,
+                103984464130
+              ],
+              "duration_ms_bounds": [
+                1.31288,
+                1.84378
+              ],
+              "wholly_inside_bins": [
+                55,
+                56
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  51729,
+                  171204
+                ],
+                "ar_backpressure": [
+                  43591,
+                  156012
+                ],
+                "r_accepted": [
+                  51727,
+                  171205
+                ],
+                "r_backpressure": [
+                  0,
+                  0
+                ],
+                "aw_accepted": [
+                  49707,
+                  133611
+                ],
+                "aw_backpressure": [
+                  10603,
+                  32008
+                ],
+                "accepted_write_byte_enables": [
+                  3181248,
+                  8550732
+                ],
+                "b_accepted": [
+                  97,
+                  234
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  37572,
+                  94413
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                3310528,
+                10957120
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3405": {
+              "first_layer": 28,
+              "layer_count": 1,
+              "start_host_ns_bounds": [
+                103984199420,
+                103984464130
+              ],
+              "end_host_ns_bounds": [
+                103985766770,
+                103986031150
+              ],
+              "duration_ms_bounds": [
+                1.30264,
+                1.83173
+              ],
+              "wholly_inside_bins": [
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  88618,
+                  213953
+                ],
+                "ar_backpressure": [
+                  14155,
+                  58896
+                ],
+                "r_accepted": [
+                  88625,
+                  213926
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  0,
+                  60297
+                ],
+                "aw_backpressure": [
+                  0,
+                  10007
+                ],
+                "accepted_write_byte_enables": [
+                  0,
+                  3858636
+                ],
+                "b_accepted": [
+                  0,
+                  127
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  55928,
+                  158969
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                5672000,
+                13691264
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            },
+            "3404+3405": {
+              "first_layer": 27,
+              "layer_count": 2,
+              "start_host_ns_bounds": [
+                103982620350,
+                103982886540
+              ],
+              "end_host_ns_bounds": [
+                103985766770,
+                103986031150
+              ],
+              "duration_ms_bounds": [
+                2.88023,
+                3.4108
+              ],
+              "wholly_inside_bins": [
+                55,
+                56,
+                57,
+                58,
+                59,
+                60
+              ],
+              "possibly_intersecting_bins": [
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62
+              ],
+              "event_count_bounds": {
+                "ar_accepted": [
+                  204436,
+                  321068
+                ],
+                "ar_backpressure": [
+                  89849,
+                  182805
+                ],
+                "r_accepted": [
+                  204415,
+                  321068
+                ],
+                "r_backpressure": [
+                  0,
+                  47
+                ],
+                "aw_accepted": [
+                  84400,
+                  159215
+                ],
+                "aw_backpressure": [
+                  17932,
+                  34686
+                ],
+                "accepted_write_byte_enables": [
+                  5401476,
+                  10189140
+                ],
+                "b_accepted": [
+                  166,
+                  292
+                ],
+                "b_backpressure": [
+                  0,
+                  0
+                ],
+                "no_valid_cycles": [
+                  136832,
+                  210050
+                ]
+              },
+              "interface_return_payload_bytes_bounds": [
+                13082560,
+                20548352
+              ],
+              "ddr_bytes": null,
+              "mpe_wait_ms": null,
+              "note": "Whole-bin bounds only; no uniform-event or exclusive-compute/memory assumption"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "all_complete_outputs_bitwise_equal": true,
+  "output_storage": "One complete first tensor per case; per-frame full byte comparison; differing outputs saved on mismatch",
+  "sdk_starts": 3,
+  "NPU_calls": 90,
+  "camera_starts": 0,
+  "trace_frames": 9,
+  "ordinary_steady_frames": 72,
+  "BOOT_installations": 1,
+  "BOOT_fallbacks": 1,
+  "normal_reboots_observed": 4,
+  "final_state": {
+    "boot_id": "82876cf5-53ba-4b99-b793-1cd235c72dd4",
+    "BOOT_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+    "all_startup_and_SDK_identities_verified": true,
+    "FPGA_state": "operating",
+    "device_owners": [],
+    "startup_not_consumed": true,
+    "all_experiment_budgets_consumed": true
+  },
+  "data_scope": {
+    "interface": "NPU to AI_Mate",
+    "bin_period_ns_from_constraints": 400000,
+    "clock_period_ns_from_constraints": 5,
+    "physical_DDR_bytes_measured": false,
+    "direct_MPE_wait_measured": false,
+    "no_external_valid_is_not_MPE_idle": true,
+    "one_boot_per_policy": true,
+    "long_term_30FPS_acceptance": false
+  },
+  "full_report": {
+    "path": ".local\\yolo26-prefetch-board-r1\\comparison.json",
+    "sha256": "cb7f0920dbf72850dbe9f7e0d7975b03a3ebd4985d3f64c1bf64847a9d824dea"
+  },
+  "archives": {
+    "baseline": {
+      "path": ".local\\yolo26-prefetch-board-r1\\baseline\\evidence-r1.tar.gz",
+      "sha256": "299a8df2fe2be9ea97cd8630eb8caf0468e74a25f7097324945ce4a46d8ac3db"
+    },
+    "shift": {
+      "path": ".local\\yolo26-prefetch-board-r1\\shift\\evidence-r1.tar.gz",
+      "sha256": "53907f6ed2a21f84d7c46f57068a425377c44a53ffc4492ec26efede53348390"
+    },
+    "prefetch": {
+      "path": ".local\\yolo26-prefetch-board-r1\\prefetch\\evidence-r1.tar.gz",
+      "sha256": "4fff6dddc0545acce636a65f4d1bd119078d993b5faa884893bdb988017d450b"
+    }
+  },
+  "maintenance_archive": {
+    "path": ".local\\yolo26-prefetch-board-r1\\boot\\maintenance-evidence-r1.tar.gz",
+    "sha256": "5f893517c5c3dfb04cfc406b7a23eea97cd0704a8cd5d36d11e5a98708a436ce"
+  },
+  "decision": "Keep prefetch as a validated experiment; no demonstrated full-call acceleration; development paused"
+}

@@ -1,0 +1,117 @@
+{
+  "synthesis": {
+    "stage": "synthesis-banked",
+    "pid": 16432,
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "C:\\Icraft\\yolo26-soc-r2\\logs\\synthesis-banked.vivado.log",
+      "-source",
+      "C:\\Icraft\\yolo26-soc-r2\\synthesis-banked.tcl"
+    ],
+    "started": 1794598448.5998662,
+    "state": "completed",
+    "exit_code": 0,
+    "seconds": 209.56105184555054
+  },
+  "original_opt": {
+    "stage": "opt-banked",
+    "pid": 24416,
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "C:\\Icraft\\yolo26-soc-r2\\logs\\opt-banked.vivado.log",
+      "-source",
+      "C:\\Icraft\\yolo26-soc-r2\\opt-banked.tcl"
+    ],
+    "started": 1794598684.3392107,
+    "state": "completed",
+    "exit_code": 1,
+    "seconds": 209.22562742233276
+  },
+  "recovered_opt": {
+    "stage": "opt-resume-r1",
+    "pid": 26244,
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\ys3\\logs\\opt-resume-r1.vivado.log",
+      "-source",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\ys3\\opt-resume-r1.tcl"
+    ],
+    "started": 1794599052.2648478,
+    "state": "completed",
+    "exit_code": 0,
+    "seconds": 255.30790042877197
+  },
+  "recovery": {
+    "original_directory": "C:\\Icraft\\yolo26-soc-r2",
+    "original_native_exit": 1,
+    "original_failure_preserved": true,
+    "checkpoint_sha256": "01e8458511f01644e872d40dea0a779c000dd2cea66ae6f485f17a58c6bbe55b",
+    "checkpoint_reused": true,
+    "synthesis_repeated": false,
+    "resumed_stage": "opt-resume-r1",
+    "relocated_inputs": [
+      "bit-closure.tcl",
+      "call_procise_disable_icap.bat",
+      "candidate.bif",
+      "opt-banked.tcl",
+      "place-csi-incremental.tcl",
+      "procise.tcl",
+      "report-closure.tcl",
+      "route-csi-incremental.tcl",
+      "synthesis-banked.tcl",
+      "factory/fpai_demo_vivado.xpr",
+      "inputs/FPGA/constraints/implementation_opt_post.tcl",
+      "inputs/FPGA/constraints/implementation_opt_pre.tcl",
+      "inputs/FPGA/constraints/implementation_route_post.tcl",
+      "inputs/FPGA/constraints/write_bitstream_post.tcl",
+      "inputs/FPGA/constraints/write_bitstream_pre.tcl"
+    ],
+    "tool_guard_changed": false,
+    "device_operations": 0
+  },
+  "preopt_cdc_endpoints": 542,
+  "preopt_cdc_report_sha256": "1de67193103b9847caf76ff6ecdb8ed0166d11f0324a79ccc1fd21dcadc42af6",
+  "physical_timing_passed": false,
+  "bit_generated": false,
+  "board_tested": false,
+  "place_physopt": {
+    "stage": "place-csi-incremental",
+    "pid": 9192,
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\ys3\\logs\\place-csi-incremental.vivado.log",
+      "-source",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\ys3\\place-csi-incremental.tcl"
+    ],
+    "started": 1794599727.3110385,
+    "state": "completed",
+    "exit_code": 0,
+    "seconds": 1311.8975372314453
+  },
+  "post_physopt_timing": {
+    "wns_ns": -1.244,
+    "tns_ns": -1061.616,
+    "whs_ns": -0.25,
+    "ths_ns": -47.479,
+    "wpws_ns": -0.409,
+    "met": false,
+    "report": ".local/ys3/reports/physical/physopt-csi-incremental-timing.rpt",
+    "final_routed_report": false
+  }
+}

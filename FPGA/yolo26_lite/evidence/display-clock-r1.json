@@ -1,0 +1,64 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display_clock-20261114-032205-971149",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\..\\hdmi_candidate\\rtl\\integration\\hdmi_clock_jfm.v",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_display_clock.sv",
+        "D:\\vivado18.3\\Vivado\\2018.3\\data\\verilog\\src\\glbl.v"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display_clock-20261114-032205-971149",
+      "pid": 4492,
+      "started_utc": "2026-11-13T19:22:06.038729+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8600000000005821
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_display_clock",
+        "glbl",
+        "-L",
+        "unisims_ver",
+        "-L",
+        "secureip",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical",
+        "--timescale",
+        "1ns/1ps"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display_clock-20261114-032205-971149",
+      "pid": 16552,
+      "started_utc": "2026-11-13T19:22:06.893946+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 8.875
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-display_clock-20261114-032205-971149",
+      "pid": 23444,
+      "started_utc": "2026-11-13T19:22:15.770785+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 6.327999999994063
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 4,
+    "pixel_1080_ns": 6.734006836,
+    "serial_1080_ns": 1.346801367,
+    "pixel_720_ns": 13.468013672,
+    "serial_720_ns": 2.693602539,
+    "native_jfm_model": false
+  },
+  "board_tested": false
+}

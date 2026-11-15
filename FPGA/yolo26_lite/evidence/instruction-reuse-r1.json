@@ -1,0 +1,353 @@
+{
+  "schema": 1,
+  "operations": [
+    {
+      "memory": [
+        {
+          "direction": "RETM",
+          "buffer_slot": 0,
+          "requests": 3976,
+          "requested_bytes": 203571200,
+          "unique_address_bytes": 13107200,
+          "request_to_unique_ratio": 15.53125
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 1,
+          "requests": 1024,
+          "requested_bytes": 524288,
+          "unique_address_bytes": 524288,
+          "request_to_unique_ratio": 1.0
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 2,
+          "requests": 64,
+          "requested_bytes": 2048,
+          "unique_address_bytes": 512,
+          "request_to_unique_ratio": 4.0
+        },
+        {
+          "direction": "WETM",
+          "buffer_slot": 3,
+          "requests": 64,
+          "requested_bytes": 3276800,
+          "unique_address_bytes": 3276800,
+          "request_to_unique_ratio": 1.0
+        }
+      ],
+      "instructions": {
+        "RETM": 5066,
+        "ROUT": 6152,
+        "WXLM": 3976,
+        "WKLM": 4096,
+        "RKLM": 4096,
+        "RXLM": 4096,
+        "AYLM": 4224,
+        "WVLM": 256,
+        "RVLM": 192,
+        "WETM": 68
+      },
+      "requested_read_bytes": 204097536,
+      "requested_write_bytes": 3276800,
+      "actual_ddr_bytes_measured": false,
+      "operation": 3296,
+      "log_sha256": "d858f887e99028bb0e992e82448d7a27e2393beb327150bde48eb808ef70a742",
+      "mean_ms": 19.040426666666672,
+      "logical_flops": 3355443200,
+      "static_request_arithmetic_intensity": 16.180609735623218
+    },
+    {
+      "memory": [
+        {
+          "direction": "RETM",
+          "buffer_slot": 0,
+          "requests": 3848,
+          "requested_bytes": 197017600,
+          "unique_address_bytes": 6553600,
+          "request_to_unique_ratio": 30.0625
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 1,
+          "requests": 1024,
+          "requested_bytes": 524288,
+          "unique_address_bytes": 524288,
+          "request_to_unique_ratio": 1.0
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 2,
+          "requests": 128,
+          "requested_bytes": 4096,
+          "unique_address_bytes": 1024,
+          "request_to_unique_ratio": 4.0
+        },
+        {
+          "direction": "WETM",
+          "buffer_slot": 3,
+          "requests": 128,
+          "requested_bytes": 6553600,
+          "unique_address_bytes": 6553600,
+          "request_to_unique_ratio": 1.0
+        }
+      ],
+      "instructions": {
+        "RETM": 5002,
+        "ROUT": 6152,
+        "WXLM": 3848,
+        "WKLM": 4096,
+        "RKLM": 4096,
+        "RXLM": 4096,
+        "AYLM": 4352,
+        "WVLM": 512,
+        "RVLM": 384,
+        "WETM": 132
+      },
+      "requested_read_bytes": 197545984,
+      "requested_write_bytes": 6553600,
+      "actual_ddr_bytes_measured": false,
+      "operation": 3240,
+      "log_sha256": "641dc67b8f49ae5ad6d45cff72be814c383d0ee66bd68e09fca385c22b4160dd",
+      "mean_ms": 18.794495999999995,
+      "logical_flops": 3355443200,
+      "static_request_arithmetic_intensity": 16.440225571454373
+    },
+    {
+      "memory": [
+        {
+          "direction": "RETM",
+          "buffer_slot": 0,
+          "requests": 2744,
+          "requested_bytes": 160563200,
+          "unique_address_bytes": 13107200,
+          "request_to_unique_ratio": 12.25
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 1,
+          "requests": 256,
+          "requested_bytes": 131072,
+          "unique_address_bytes": 131072,
+          "request_to_unique_ratio": 1.0
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 2,
+          "requests": 224,
+          "requested_bytes": 7168,
+          "unique_address_bytes": 512,
+          "request_to_unique_ratio": 14.0
+        },
+        {
+          "direction": "WETM",
+          "buffer_slot": 3,
+          "requests": 224,
+          "requested_bytes": 13107200,
+          "unique_address_bytes": 13107200,
+          "request_to_unique_ratio": 1.0
+        }
+      ],
+      "instructions": {
+        "RETM": 3226,
+        "ROUT": 3704,
+        "WXLM": 2744,
+        "WKLM": 512,
+        "RKLM": 3584,
+        "RXLM": 3584,
+        "AYLM": 4480,
+        "WVLM": 896,
+        "RVLM": 672,
+        "WETM": 228
+      },
+      "requested_read_bytes": 160701440,
+      "requested_write_bytes": 13107200,
+      "actual_ddr_bytes_measured": false,
+      "operation": 3223,
+      "log_sha256": "3c75f11bbff975212190aeed71e02b8f3a0d9880a1c9e37695091c2b0c0195bb",
+      "mean_ms": 15.192234666666668,
+      "logical_flops": 3355443200,
+      "static_request_arithmetic_intensity": 19.305387810410345
+    },
+    {
+      "memory": [
+        {
+          "direction": "RETM",
+          "buffer_slot": 0,
+          "requests": 728,
+          "requested_bytes": 44472064,
+          "unique_address_bytes": 13107200,
+          "request_to_unique_ratio": 3.39294921875
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 1,
+          "requests": 400,
+          "requested_bytes": 7372800,
+          "unique_address_bytes": 1179648,
+          "request_to_unique_ratio": 6.25
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 2,
+          "requests": 56,
+          "requested_bytes": 7168,
+          "unique_address_bytes": 512,
+          "request_to_unique_ratio": 14.0
+        },
+        {
+          "direction": "WETM",
+          "buffer_slot": 3,
+          "requests": 224,
+          "requested_bytes": 3276800,
+          "unique_address_bytes": 3276800,
+          "request_to_unique_ratio": 1.0
+        }
+      ],
+      "instructions": {
+        "WXLM": 1196,
+        "RETM": 1186,
+        "ROUT": 1808,
+        "WKLM": 800,
+        "RKLM": 32256,
+        "RXLM": 32256,
+        "AYLM": 32480,
+        "WVLM": 784,
+        "RVLM": 896,
+        "WETM": 228
+      },
+      "requested_read_bytes": 51852032,
+      "requested_write_bytes": 3276800,
+      "actual_ddr_bytes_measured": false,
+      "operation": 3224,
+      "log_sha256": "bc67d6b1c0da1d39d199359c1e40a8ac51f85ec60ebe727bcca49449735e3f74",
+      "mean_ms": 5.940053333333332,
+      "logical_flops": 7549747200,
+      "static_request_arithmetic_intensity": 136.9473454471156
+    },
+    {
+      "memory": [
+        {
+          "direction": "RETM",
+          "buffer_slot": 0,
+          "requests": 848,
+          "requested_bytes": 45045760,
+          "unique_address_bytes": 6553600,
+          "request_to_unique_ratio": 6.8734375
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 1,
+          "requests": 224,
+          "requested_bytes": 4718592,
+          "unique_address_bytes": 4718592,
+          "request_to_unique_ratio": 1.0
+        },
+        {
+          "direction": "RETM",
+          "buffer_slot": 2,
+          "requests": 28,
+          "requested_bytes": 4096,
+          "unique_address_bytes": 1024,
+          "request_to_unique_ratio": 4.0
+        },
+        {
+          "direction": "WETM",
+          "buffer_slot": 3,
+          "requests": 28,
+          "requested_bytes": 1638400,
+          "unique_address_bytes": 1638400,
+          "request_to_unique_ratio": 1.0
+        }
+      ],
+      "instructions": {
+        "WXLM": 1908,
+        "RETM": 1102,
+        "ROUT": 1352,
+        "WKLM": 896,
+        "RKLM": 36864,
+        "RXLM": 36864,
+        "AYLM": 36920,
+        "WVLM": 440,
+        "RVLM": 412,
+        "WETM": 32
+      },
+      "requested_read_bytes": 49768448,
+      "requested_write_bytes": 1638400,
+      "actual_ddr_bytes_measured": false,
+      "operation": 3241,
+      "log_sha256": "48387a958f39ab87da024ce12f183693fef1eb17ac5044ed5d4d5e5e7ef0868a",
+      "mean_ms": 5.402965333333331,
+      "logical_flops": 7549747200,
+      "static_request_arithmetic_intensity": 146.86267479383292
+    }
+  ],
+  "scope": "static_final_instruction_requests",
+  "generation_identity": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "diagnostic.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-instructions-r1",
+      "pid": 23924,
+      "started_utc": "2026-11-14T03:21:27.195564+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 28.897425800008932
+    },
+    "graph": {
+      "json_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+      "raw_sha256": "b9317cc986b4779875414153d1cc1532b88f2609ca0f6608ab1e2b0041875ed6",
+      "raw_bytes": 62264272,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 399,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    },
+    "original_json_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+    "original_raw_sha256": "b9317cc986b4779875414153d1cc1532b88f2609ca0f6608ab1e2b0041875ed6",
+    "json_equal": true,
+    "raw_equal": true
+  },
+  "local_logs": ".local/yolo26-instructions-r1/logs/generate/yolo26l",
+  "unit_source": "C:/Icraft/CLI v3.39.0/include/ZgTile/zg_tile.h:604; decoded arsize/awsize",
+  "limitations": [
+    "Compiler final requests; runtime mapping and optimization may change physical transactions",
+    "No measured DDR bytes or stall counter",
+    "Buffer slot metadata is local to each generated operation"
+  ]
+}

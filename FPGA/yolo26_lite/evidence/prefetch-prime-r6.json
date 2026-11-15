@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "offline_qualified": true,
+  "board_tested": false,
+  "parameter_objects": 815,
+  "parameter_references": 816,
+  "changed_instruction_ids": [
+    8858,
+    8863
+  ],
+  "mathematical_parameter_bytes_unchanged": true,
+  "boundary_and_storage_checks": true,
+  "view_groups": 106,
+  "address_handoff": {
+    "previous_accesses": 3232,
+    "following_accesses": 16480,
+    "mpes": 8,
+    "previous_math_accesses_unchanged": true,
+    "all_following_accesses_checked": true,
+    "previous_end_bytes": 8192,
+    "prefetch_begin_bytes": 8192,
+    "prefetch_end_bytes": 26624,
+    "following_end_bytes": 63488,
+    "scratch_interval": [
+      0,
+      32
+    ],
+    "scratch_read_by_math": false,
+    "logical_prefetch_source_bytes": 73728,
+    "logical_prime_source_bytes": 128,
+    "physical_DDR_bytes": null,
+    "hardware_overlap_verified": false
+  },
+  "complete_output_cases": [
+    {
+      "case": 0,
+      "values": 705600,
+      "bitwise_equal": true,
+      "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+      "reference_sha256": "8f1eadd8dc64767d4724b852cb0b30c964fe5cd7691e09750722aed4dcd5d9ad",
+      "actual_sha256": "8f1eadd8dc64767d4724b852cb0b30c964fe5cd7691e09750722aed4dcd5d9ad"
+    },
+    {
+      "case": 1,
+      "values": 705600,
+      "bitwise_equal": true,
+      "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+      "reference_sha256": "ffd7861865daaa8e76024e2a41b20185da824036019c02157bc1ae101e7251e6",
+      "actual_sha256": "ffd7861865daaa8e76024e2a41b20185da824036019c02157bc1ae101e7251e6"
+    },
+    {
+      "case": 2,
+      "values": 705600,
+      "bitwise_equal": true,
+      "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+      "reference_sha256": "82ebfaca0150d184032d9e31760ee88b7293ec4c620f2618aac24e29c0d3805f",
+      "actual_sha256": "82ebfaca0150d184032d9e31760ee88b7293ec4c620f2618aac24e29c0d3805f"
+    }
+  ],
+  "graph_sha256": "1f010665f9f1df29c0b87f9cca9539ee2a7ffc13e45c581c3eb6fd6612f248fc",
+  "raw_sha256": "ceacc5289c7f75d1b03dab50aa4b9b10380f38ef3df4f605782044a8a0b69b21",
+  "task_log_sha256": {
+    ".local\\yolo26-klmshift-control-r1\\logs\\yolo26l\\hardOp3404_zg_insts.log": "fe408aac8340350cc77a4b691dc0aa43ace6bc52da21d8d855953f4eba492953",
+    ".local\\yolo26-klmshift-control-r1\\logs\\yolo26l\\hardOp3405_zg_insts.log": "5b3e58259505f651ea015156499448a04885c31af6acae8bcb5b533969da6d34",
+    "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-prefetch-prime-r6\\unbound\\logs\\yolo26l\\hardOp3404_zg_insts.log": "f55188cf67f31e4a58f44b76e6e3f9de54d9ada21d69eddc463522b9c0bcf2c6",
+    "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-prefetch-prime-r6\\unbound\\logs\\yolo26l\\hardOp3405_zg_insts.log": "c2440d54900bb4eb6389aa3582edd989cfeb022064ce2f9bc2d08a88bbc28871"
+  },
+  "implementation": "four next-layer broadcasts; all KLM +8KiB; four 32-byte scratch writes establish state"
+}

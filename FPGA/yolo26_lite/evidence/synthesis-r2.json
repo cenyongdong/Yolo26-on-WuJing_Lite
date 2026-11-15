@@ -1,0 +1,69 @@
+{
+  "scope": "standalone synthesis only",
+  "reports": [
+    {
+      "native": {
+        "command": [
+          "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+          "-mode",
+          "batch",
+          "-notrace",
+          "-source",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-synth-r1\\synthesize.tcl"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-synth-r1",
+        "pid": 20320,
+        "started_utc": "2026-11-13T18:26:19.802324+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 76.9563835999943
+      },
+      "proxy_part": "xc7z030ffg676-2",
+      "physical_target": "JFMQL30TAI676H",
+      "synthesis_passed": true,
+      "timing_budget_ns": 5,
+      "integrated_timing_passed": false,
+      "bit_generated": false,
+      "board_tested": false,
+      "sources": {
+        "rtl\\y26_dma_mm2s.sv": "3642199b703e5fc1d1364b01e8be13ac39c2c305324f7cea919251618255834e",
+        "rtl\\y26_pixel_unpack.sv": "0a946c1626bb457e2b94bd3512378ada7ffa1b568c84e25aa0c57852a9ae8b19",
+        "rtl\\y26_resize_letterbox.sv": "e7435a002fda0e4372babd531991ecb918bb57a0d1e23ad9f4ff752149025090",
+        "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+        "rtl\\y26_dma_s2mm.sv": "88e1acafeeef52086038c96c93eb15e1a53fad7faa4f9f13e59f50ae6ae6ad85",
+        "rtl\\y26_preprocess.sv": "730add00f405f9205ecd9978f24696d2bf14bb4877133214bb6d46c0141a3277"
+      }
+    },
+    {
+      "native": {
+        "command": [
+          "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+          "-mode",
+          "batch",
+          "-notrace",
+          "-source",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-synth-r2\\synthesize.tcl"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-synth-r2",
+        "pid": 9620,
+        "started_utc": "2026-11-13T18:29:25.035378+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 73.35794440000609
+      },
+      "proxy_part": "xc7z030ffg676-2",
+      "physical_target": "JFMQL30TAI676H",
+      "synthesis_passed": true,
+      "timing_budget_ns": 5,
+      "integrated_timing_passed": false,
+      "bit_generated": false,
+      "board_tested": false,
+      "sources": {
+        "rtl\\y26_dma_mm2s.sv": "3642199b703e5fc1d1364b01e8be13ac39c2c305324f7cea919251618255834e",
+        "rtl\\y26_pixel_unpack.sv": "0a946c1626bb457e2b94bd3512378ada7ffa1b568c84e25aa0c57852a9ae8b19",
+        "rtl\\y26_resize_letterbox.sv": "162991037fe309e94a7f86613d79c0b9d097210068d413c36dc07babfa0f0ecb",
+        "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+        "rtl\\y26_dma_s2mm.sv": "88e1acafeeef52086038c96c93eb15e1a53fad7faa4f9f13e59f50ae6ae6ad85",
+        "rtl\\y26_preprocess.sv": "730add00f405f9205ecd9978f24696d2bf14bb4877133214bb6d46c0141a3277"
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-020424-188708",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_pixel_unpack.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_color.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-020424-188708",
+      "pid": 23308,
+      "started_utc": "2026-11-13T18:04:24.402775+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8600000000005821
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_color",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-020424-188708",
+      "pid": 3712,
+      "started_utc": "2026-11-13T18:04:25.263846+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.6089999999967404
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-color-20261114-020424-188708",
+      "pid": 16348,
+      "started_utc": "2026-11-13T18:04:27.884416+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.5
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 25,
+    "cycles": 34794,
+    "seed": "26cc1234"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_pixel_unpack.sv": "0a946c1626bb457e2b94bd3512378ada7ffa1b568c84e25aa0c57852a9ae8b19",
+    "tb\\tb_color.sv": "adfd7da5d1f5b2984ca64d9f09fc4569e6605ee2c80006f4e3b4e1977d0362d6"
+  },
+  "reference": {
+    "seed": "260026",
+    "cases": [
+      {
+        "width": 2,
+        "height": 1,
+        "format": "YUYV",
+        "matrix": 0,
+        "floating_max_abs": 0,
+        "opencv_max_abs": 0
+      },
+      {
+        "width": 6,
+        "height": 3,
+        "format": "YUYV",
+        "matrix": 0,
+        "floating_max_abs": 1,
+        "opencv_max_abs": 1
+      },
+      {
+        "width": 130,
+        "height": 7,
+        "format": "YUYV",
+        "matrix": 0,
+        "floating_max_abs": 1,
+        "opencv_max_abs": 1
+      },
+      {
+        "width": 640,
+        "height": 4,
+        "format": "YUYV",
+        "matrix": 0,
+        "floating_max_abs": 1,
+        "opencv_max_abs": 1
+      },
+      {
+        "width": 2,
+        "height": 1,
+        "format": "YUYV",
+        "matrix": 1,
+        "floating_max_abs": 0,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 6,
+        "height": 3,
+        "format": "YUYV",
+        "matrix": 1,
+        "floating_max_abs": 0,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 130,
+        "height": 7,
+        "format": "YUYV",
+        "matrix": 1,
+        "floating_max_abs": 1,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 640,
+        "height": 4,
+        "format": "YUYV",
+        "matrix": 1,
+        "floating_max_abs": 1,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 2,
+        "height": 1,
+        "format": "YUYV",
+        "matrix": 2,
+        "floating_max_abs": 0,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 6,
+        "height": 3,
+        "format": "YUYV",
+        "matrix": 2,
+        "floating_max_abs": 0,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 130,
+        "height": 7,
+        "format": "YUYV",
+        "matrix": 2,
+        "floating_max_abs": 1,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 640,
+        "height": 4,
+        "format": "YUYV",
+        "matrix": 2,
+        "floating_max_abs": 1,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 2,
+        "height": 1,
+        "format": "YUYV",
+        "matrix": 3,
+        "floating_max_abs": 0,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 6,
+        "height": 3,
+        "format": "YUYV",
+        "matrix": 3,
+        "floating_max_abs": 0,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 130,
+        "height": 7,
+        "format": "YUYV",
+        "matrix": 3,
+        "floating_max_abs": 1,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 640,
+        "height": 4,
+        "format": "YUYV",
+        "matrix": 3,
+        "floating_max_abs": 1,
+        "opencv_max_abs": null
+      },
+      {
+        "width": 1,
+        "height": 1,
+        "format": "RGB",
+        "byte_exact": true
+      },
+      {
+        "width": 3,
+        "height": 2,
+        "format": "RGB",
+        "byte_exact": true
+      },
+      {
+        "width": 127,
+        "height": 5,
+        "format": "RGB",
+        "byte_exact": true
+      },
+      {
+        "width": 640,
+        "height": 4,
+        "format": "RGB",
+        "byte_exact": true
+      }
+    ]
+  }
+}

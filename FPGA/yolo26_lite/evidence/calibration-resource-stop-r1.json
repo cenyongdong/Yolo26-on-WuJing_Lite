@@ -1,0 +1,25 @@
+{
+  "resource": {
+    "Reason": "Host free memory below 1 GiB during 96-image offline calibration",
+    "Parent": 13652,
+    "Shell": 16068,
+    "Child": 17764,
+    "ChildCreated": "2026-11-14T17:24:08.218427+08:00",
+    "ChildWorkingSet": 8261042176,
+    "FreePhysicalKB": 605652,
+    "OriginalProcessRecord": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "quantize",
+        "quantize.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-r1",
+      "pid": 13652,
+      "started_utc": "2026-11-14T17:24:08.198941+08:00"
+    }
+  },
+  "native_exit": 4294967295,
+  "config_sha256": "75498696b5c2f0cd0fb1ca865c993fe1f760d9bb9148d27fb26fc010c040677c",
+  "input_identity_sha256": "8f7973916fd4fd098cc967ad4b6138dac964df73e06f6cc0e0d34dd34041f534",
+  "board_access": false
+}

@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "files": {
+    "yolo26l_quantized.json": {
+      "original": "c9b50c2cfbcb1841af9fb108e87bfac9204c37e345bee6845ebcb8dfbf607bc8",
+      "replay": "c9b50c2cfbcb1841af9fb108e87bfac9204c37e345bee6845ebcb8dfbf607bc8",
+      "bitwise_equal": true
+    },
+    "yolo26l_quantized.raw": {
+      "original": "88733c83e5b5b0807c76650a9522f2558b1594edcd273f8a2247b578115eb1ec",
+      "replay": "88733c83e5b5b0807c76650a9522f2558b1594edcd273f8a2247b578115eb1ec",
+      "bitwise_equal": true
+    }
+  },
+  "original_seconds": 338.0955779999931,
+  "replay_seconds": 3.4849497000104748,
+  "same_model_data_precision_partition": true,
+  "board_access": false,
+  "tests": {
+    "count": 6,
+    "native_exit": 0
+  }
+}

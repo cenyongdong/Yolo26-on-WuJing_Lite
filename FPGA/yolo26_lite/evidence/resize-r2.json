@@ -1,0 +1,216 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-021300-245006",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_resize_letterbox.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_resize.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-021300-245006",
+      "pid": 8308,
+      "started_utc": "2026-11-13T18:13:00.670580+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8590000000040163
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_resize",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-021300-245006",
+      "pid": 22592,
+      "started_utc": "2026-11-13T18:13:01.538324+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.7039999999979045
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-resize-20261114-021300-245006",
+      "pid": 7712,
+      "started_utc": "2026-11-13T18:13:04.233960+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 8.296000000002095
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 14,
+    "cycles": 419531,
+    "seed": "26161234"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_resize_letterbox.sv": "e7435a002fda0e4372babd531991ecb918bb57a0d1e23ad9f4ff752149025090",
+    "tb\\tb_resize.sv": "4077f2263d3b52111ed64b7667822dafc6eae3e105288e2bcf72cde37ca96288"
+  },
+  "reference": {
+    "target": [
+      16,
+      16
+    ],
+    "seed": "261600",
+    "cases": [
+      {
+        "source": [
+          4,
+          4
+        ],
+        "resized": [
+          16,
+          16
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "opencv_max_abs": 1
+      },
+      {
+        "source": [
+          32,
+          24
+        ],
+        "resized": [
+          16,
+          12
+        ],
+        "padding": [
+          0,
+          2
+        ],
+        "opencv_max_abs": 0
+      },
+      {
+        "source": [
+          17,
+          13
+        ],
+        "resized": [
+          16,
+          12
+        ],
+        "padding": [
+          0,
+          2
+        ],
+        "opencv_max_abs": 1
+      },
+      {
+        "source": [
+          1,
+          5
+        ],
+        "resized": [
+          3,
+          16
+        ],
+        "padding": [
+          6,
+          0
+        ],
+        "opencv_max_abs": 1
+      },
+      {
+        "source": [
+          47,
+          31
+        ],
+        "resized": [
+          16,
+          11
+        ],
+        "padding": [
+          0,
+          2
+        ],
+        "opencv_max_abs": 1
+      },
+      {
+        "source": [
+          1280,
+          80
+        ],
+        "resized": [
+          16,
+          1
+        ],
+        "padding": [
+          0,
+          7
+        ],
+        "opencv_max_abs": 0
+      },
+      {
+        "source": [
+          80,
+          720
+        ],
+        "resized": [
+          2,
+          16
+        ],
+        "padding": [
+          7,
+          0
+        ],
+        "opencv_max_abs": 0
+      },
+      {
+        "source": [
+          1,
+          1
+        ],
+        "resized": [
+          16,
+          16
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "opencv_max_abs": 0
+      },
+      {
+        "source": [
+          16,
+          16
+        ],
+        "resized": [
+          16,
+          16
+        ],
+        "padding": [
+          0,
+          0
+        ],
+        "opencv_max_abs": 0
+      },
+      {
+        "source": [
+          16,
+          9
+        ],
+        "resized": [
+          16,
+          9
+        ],
+        "padding": [
+          0,
+          3
+        ],
+        "opencv_max_abs": 0
+      }
+    ]
+  }
+}

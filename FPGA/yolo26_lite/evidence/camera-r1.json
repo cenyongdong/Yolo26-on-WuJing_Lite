@@ -1,0 +1,142 @@
+{
+  "scope": "one finite UVC capture, no NPU or custom PL DMA",
+  "format": {
+    "kind": "format",
+    "epoch": 6768957776830,
+    "width": 640,
+    "height": 480,
+    "stride": 1280,
+    "size_image": 614400,
+    "buffers": 4,
+    "interval_numerator": 1,
+    "interval_denominator": 30,
+    "colorspace": 0,
+    "ycbcr_encoding": 0,
+    "quantization": 0,
+    "transfer_function": 0
+  },
+  "capture": {
+    "kind": "summary",
+    "measurement_start_ns": 6771107208940,
+    "measurement_end_ns": 6781107208940,
+    "duration_seconds": 10,
+    "interrupted": false,
+    "new_frames": 81,
+    "mean_fps": 8.1,
+    "windows": [
+      8,
+      8,
+      8,
+      9,
+      8,
+      8,
+      7,
+      9,
+      8,
+      8
+    ],
+    "dequeued": 94,
+    "published": 94,
+    "driver_sequence_gaps": 1,
+    "duplicates_or_reordered": 0,
+    "flagged_error": 0,
+    "invalid_bytes": 0,
+    "invalid_timestamp": 0,
+    "latest_replaced": 0,
+    "pool_exhausted": 0,
+    "poll_timeouts": 100,
+    "driver_timestamps": 94,
+    "receive_timestamps": 0,
+    "pool_available": 6,
+    "clean_shutdown": true
+  },
+  "capture_interval_ms": {
+    "p50": 119.997,
+    "p95": 123.997,
+    "p99": 124.011,
+    "max": 243.989
+  },
+  "delivery_latency_ms": {
+    "p50": 32.57198,
+    "p95": 32.984,
+    "p99": 33.03515
+  },
+  "source_manifest": {
+    "sources": {
+      "software/src/camera_probe.cpp": "9d0bd7ff5fbc2c5e0c5935f2642bd150c057bdb54abc2210a1d7e523f8af6ec0",
+      "software/src/capture.cpp": "9e16555d3a13b28a874f7c92271e3bb7aeb2da31e5eda136f0eb1ea26997a8d9",
+      "software/src/frames.cpp": "a113a89b6980b0959508a939ed5b07aa6b2397bb383effe5b0a3fd4c82d93559",
+      "software/src/postprocess.cpp": "3d2959a7fa158ee6cd766a8e8ab02beb4732e66b6e9841ed72ba1c83b738cb45",
+      "software/src/preprocess.cpp": "5edd7720ad0cdef20b458a1c527575d9f26137513251d168543b4805fba2645d",
+      "software/tests/postprocess_fixture.cpp": "03e243cc2166b72dc5e22cf3beb18c3627d8a7d3ea3c2c23145f9a0a4778fa91",
+      "software/tests/test_frames.cpp": "ce4638aea1c6cad0f05499f2f36a15d95aac4cbb901e75f8952abb92ac3225fd",
+      "software/tests/test_postprocess.cpp": "3ff5724e5e42ad5c696a0625986013967cecb71456f97e315f2854493b56afa4",
+      "software/tests/test_preprocess.cpp": "abd87503dba0c183ba5e5b2f6fb96f019577df1e6a03224f0d0bf6cb7c52c6d4",
+      "software/include/yolo26/capture.hpp": "c57e79d2e9ddded37fd679810050696abf9721428a502cb48a2869ce65467e1c",
+      "software/include/yolo26/frames.hpp": "0aab3d38d83368b4e73c551689b4d40f73b7e56f427edff3f1dc2f8a326ee30a",
+      "software/include/yolo26/latest_slot.hpp": "64b80e0bf0b0709e8a4b44354e22236652fd9995a6dd18793031cb07f3701c90",
+      "software/include/yolo26/postprocess.hpp": "0a810cf5ba7329cc1afcdb8ef31137b0d8f860d29bb35472d31974dc0617f937",
+      "software/include/yolo26/preprocess.hpp": "e921984c2feec69ddbffc3c93358f2245693afbe44e484b3f4a4644969dffa1e",
+      "CMakeLists.txt": "74a1b37051144d43de53faaca3985f6e271d46dd33696605e79e8e33088ee13b",
+      "camera_board.py": "ccc21711a96fae637a30ebdd153713c6cc433c4ec9460932866873ad13d8c078"
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0
+  },
+  "native_software_tests": {
+    "native_exit": 0,
+    "tests": [
+      {
+        "command": [
+          "/root/yolo26-lite-camera-20261114-r1/build/test_postprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-camera-20261114-r1/build/test_frames"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-camera-20261114-r1/build/test_preprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      }
+    ]
+  },
+  "recovery": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 1,
+    "lease_held_until_children_returned": true
+  },
+  "full_trace_sha256": "4ea003647e07895729b3a0218dce5f28b629af05967a27325a84519b339f7179",
+  "frame_sha256": "5f78079dbf193f012764215d689bcab31a4726b01e5374185816f95f8806c117",
+  "limitations": [
+    "No inference performed",
+    "No custom PL DMA or HDMI tested",
+    "10 seconds is not a 10-minute acceptance",
+    "Camera behavior may depend on lighting/USB/controls; no permanent hardware maximum claimed"
+  ]
+}

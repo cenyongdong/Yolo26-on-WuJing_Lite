@@ -1,0 +1,849 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "full_evidence": ".local\\yolo26-u8-fixtures-r1",
+  "model_evidence": ".local\\yolo26-icraft-u8-r1",
+  "input_identity": {
+    "source": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-model-r2\\yolo26l_dense.onnx",
+    "onnx_sha256": "4e5d1f0bef3fbc248792da8adf40b9d162f97b8bcab98e63ba07c6f61c666d7a",
+    "config_sha256": "35d8b3ed0afb9e40efa8bde608ce2e00a3d962f3a232eff516da09f0ec664089",
+    "runtime_manifest_sha256": "830c5b572395e77d79154ebfd1ec173b3d7a9dbabbbf502875b9e397372a4c7c",
+    "input_profile": "rgb_u8",
+    "board_access": false
+  },
+  "compiler_stages": [
+    {
+      "stage": "parse",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "parse",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-u8-r1",
+        "pid": 18616,
+        "started_utc": "2026-11-13T21:54:56.496712+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 4.75249120000808
+      },
+      "host_ops": 458
+    },
+    {
+      "stage": "optimize",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "optimize",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-u8-r1",
+        "pid": 15296,
+        "started_utc": "2026-11-13T21:55:01.451841+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 3.4503039000119315
+      },
+      "host_ops": 465
+    },
+    {
+      "stage": "quantize",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "quantize",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-u8-r1",
+        "pid": 28336,
+        "started_utc": "2026-11-13T21:57:07.094337+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 1.6274209000112023
+      },
+      "host_ops": 0
+    },
+    {
+      "stage": "adapt",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "adapt",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-u8-r1",
+        "pid": 7456,
+        "started_utc": "2026-11-13T21:57:08.859125+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 5.106578799997806
+      },
+      "host_ops": 0
+    },
+    {
+      "stage": "generate",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "generate",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-u8-r1",
+        "pid": 4720,
+        "started_utc": "2026-11-13T21:57:14.103815+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 29.385621900000842
+      },
+      "host_ops": 0
+    }
+  ],
+  "generated_graph": {
+    "json_sha256": "bd95fbf90ae99e4a5ebf5537413381565ee8c3877b3ead3c7c6153612d0a5c1e",
+    "raw_sha256": "3f8fa08ba5586bc8e237db6b4359218d7ec2af4163f4e36f11d8cfa2b58f016b",
+    "raw_bytes": 62338474,
+    "operators": {
+      "icraft::xir::Input": 1,
+      "icraft::xir::HardOp": 401,
+      "icraft::xir::Output": 1
+    },
+    "ports": {
+      "Input": [
+        {
+          "_type_key": "icraft::xir::TensorType",
+          "element_dtype": "@uint(8)",
+          "layout": "@layout(NHWC)",
+          "merged_distrs": [],
+          "shape": [
+            1,
+            640,
+            640,
+            3
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "_type_key": "icraft::xir::TensorType",
+          "element_dtype": "@fp(32)",
+          "layout": "@layout(**C)",
+          "merged_distrs": [
+            "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+          ],
+          "shape": [
+            1,
+            84,
+            8400
+          ]
+        }
+      ]
+    },
+    "host_compute": []
+  },
+  "fixture_identity": {
+    "records": [
+      {
+        "case": 0,
+        "origin": "unchanged byte-representable original fixture"
+      },
+      {
+        "case": 2,
+        "origin": "unchanged byte-representable original fixture"
+      },
+      {
+        "case": 1,
+        "origin": "new uint8 random fixture; original float random fixture unchanged",
+        "random_seed": 20261114,
+        "providers": [
+          "CPUExecutionProvider"
+        ]
+      }
+    ],
+    "files": {
+      "case-0-input.npy": "9611cc6d822d1952295fff17cfb0b788792c47b8e59159c0ea95b9c21a0aeeed",
+      "case-0-ort-dense.npy": "42895324d107a6b548954ea22418e4fdd548d3cbf0495582d7b8826c16938715",
+      "case-1-input.npy": "16e27e7b4f3746c2b0f762fe2b80699e06aadf71816cb83ee0c4f30d82cac382",
+      "case-1-ort-dense.npy": "caac25ad2291b4d474009d531d61e7243e5c288750b70d59b89729ef333b8225",
+      "case-2-input.npy": "e2fedaeae6235bc04c0b962fea3120dbc3bd2bc263b181213ef98c8a8140f522",
+      "case-2-ort-dense.npy": "d389ed5f45aec3fb3380669d93d4718a95aa91bd7ebf2d491d97ed18e87a9c7d"
+    },
+    "onnx_sha256": "4e5d1f0bef3fbc248792da8adf40b9d162f97b8bcab98e63ba07c6f61c666d7a",
+    "board_access": false
+  },
+  "comparisons": {
+    "0": {
+      "reference_sha256": "42895324d107a6b548954ea22418e4fdd548d3cbf0495582d7b8826c16938715",
+      "host_sha256": "bf2e18c4796e86b5c662b8f86f84080b2f3522eb6ad3feda793484e6866809e6",
+      "generated_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+      "host": {
+        "raw_max_abs": 33.557464599609375,
+        "raw_rms": 0.7934603691101074,
+        "worst_index": [
+          0,
+          4,
+          7843
+        ],
+        "worst_reference": -23.505035400390625,
+        "worst_actual": -57.0625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 27.496089935302734,
+        "raw_rms": 0.8793378472328186,
+        "worst_index": [
+          0,
+          4,
+          7705
+        ],
+        "worst_reference": -19.191410064697266,
+        "worst_actual": -46.6875,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated_vs_host": {
+        "raw_max_abs": 30.203125,
+        "raw_rms": 0.36778125166893005,
+        "worst_index": [
+          0,
+          4,
+          7843
+        ],
+        "worst_reference": -57.0625,
+        "worst_actual": -26.859375,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "board_tested": false,
+      "map_validated": false,
+      "acceptance": "fixture only: same high-score classes/count, matched IoU>=0.98 and score delta<=0.02"
+    },
+    "1": {
+      "reference_sha256": "caac25ad2291b4d474009d531d61e7243e5c288750b70d59b89729ef333b8225",
+      "host_sha256": "1861b665aabde779c9d9061dec0ba79b4969c042e563899b6b7761d6f3b2ce02",
+      "generated_sha256": "78b60f89c0474d716d066df35fbde4ea33b2e3ef9de5a26e9f689b12fee812bf",
+      "host": {
+        "raw_max_abs": 8.259746551513672,
+        "raw_rms": 0.22967971861362457,
+        "worst_index": [
+          0,
+          4,
+          7368
+        ],
+        "worst_reference": -24.556621551513672,
+        "worst_actual": -16.296875,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 6.399814605712891,
+        "raw_rms": 0.23374444246292114,
+        "worst_index": [
+          0,
+          4,
+          6483
+        ],
+        "worst_reference": -19.03262710571289,
+        "worst_actual": -12.6328125,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated_vs_host": {
+        "raw_max_abs": 5.328125,
+        "raw_rms": 0.1720939725637436,
+        "worst_index": [
+          0,
+          4,
+          7368
+        ],
+        "worst_reference": -16.296875,
+        "worst_actual": -21.625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "board_tested": false,
+      "map_validated": false,
+      "acceptance": "fixture only: same high-score classes/count, matched IoU>=0.98 and score delta<=0.02"
+    },
+    "2": {
+      "reference_sha256": "d389ed5f45aec3fb3380669d93d4718a95aa91bd7ebf2d491d97ed18e87a9c7d",
+      "host_sha256": "0bf88d3ea42b3987bd23e318dfe71665ffbb640f25f709621b5381f810bbf5ff",
+      "generated_sha256": "252441215b68a2b11637be7fca78d8830b73e32b5abfab203321218b8f32cb1a",
+      "host": {
+        "raw_max_abs": 20.131332397460938,
+        "raw_rms": 0.40045371651649475,
+        "worst_index": [
+          0,
+          43,
+          476
+        ],
+        "worst_reference": -21.962417602539062,
+        "worst_actual": -42.09375,
+        "expected_high_detections": [
+          [
+            110.30839538574219,
+            236.1220703125,
+            226.43516540527344,
+            535.3948974609375,
+            0.9616295695304871,
+            0.0
+          ],
+          [
+            82.52940368652344,
+            136.4774169921875,
+            555.1327514648438,
+            437.003173828125,
+            0.9523299336433411,
+            5.0
+          ],
+          [
+            212.55078125,
+            241.31723022460938,
+            284.4814147949219,
+            510.1308288574219,
+            0.9427850246429443,
+            0.0
+          ],
+          [
+            476.05517578125,
+            233.93856811523438,
+            560.6151123046875,
+            521.98876953125,
+            0.9414229989051819,
+            0.0
+          ],
+          [
+            79.99784851074219,
+            326.71759033203125,
+            126.78831481933594,
+            517.3414306640625,
+            0.8881140947341919,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.3125,
+            236.25,
+            226.4375,
+            535.125,
+            0.9625324606895447,
+            0.0
+          ],
+          [
+            82.875,
+            136.75,
+            555.125,
+            437.125,
+            0.9525741338729858,
+            5.0
+          ],
+          [
+            212.484375,
+            241.1875,
+            284.5625,
+            510.125,
+            0.9458011984825134,
+            0.0
+          ],
+          [
+            475.8125,
+            234.125,
+            560.4375,
+            521.875,
+            0.9419752359390259,
+            0.0
+          ],
+          [
+            80.15625,
+            326.875,
+            126.75,
+            517.25,
+            0.8902942538261414,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.998615278668986,
+            "max_coordinate_error": 0.2698974609375,
+            "score_error": 0.0009028911590576172
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9979418419700606,
+            "max_coordinate_error": 0.3455963134765625,
+            "score_error": 0.0002442002296447754
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9974507019335351,
+            "max_coordinate_error": 0.129730224609375,
+            "score_error": 0.003016173839569092
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9940098172217875,
+            "max_coordinate_error": 0.24267578125,
+            "score_error": 0.0005522370338439941
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9944958331161827,
+            "max_coordinate_error": 0.1584014892578125,
+            "score_error": 0.002180159091949463
+          }
+        ],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 21.062633514404297,
+        "raw_rms": 0.4789265990257263,
+        "worst_index": [
+          0,
+          4,
+          6727
+        ],
+        "worst_reference": -28.656116485595703,
+        "worst_actual": -49.71875,
+        "expected_high_detections": [
+          [
+            110.30839538574219,
+            236.1220703125,
+            226.43516540527344,
+            535.3948974609375,
+            0.9616295695304871,
+            0.0
+          ],
+          [
+            82.52940368652344,
+            136.4774169921875,
+            555.1327514648438,
+            437.003173828125,
+            0.9523299336433411,
+            5.0
+          ],
+          [
+            212.55078125,
+            241.31723022460938,
+            284.4814147949219,
+            510.1308288574219,
+            0.9427850246429443,
+            0.0
+          ],
+          [
+            476.05517578125,
+            233.93856811523438,
+            560.6151123046875,
+            521.98876953125,
+            0.9414229989051819,
+            0.0
+          ],
+          [
+            79.99784851074219,
+            326.71759033203125,
+            126.78831481933594,
+            517.3414306640625,
+            0.8881140947341919,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.3125,
+            236.125,
+            226.375,
+            535.125,
+            0.9637799859046936,
+            0.0
+          ],
+          [
+            82.625,
+            136.625,
+            555.125,
+            437.0,
+            0.9539660811424255,
+            5.0
+          ],
+          [
+            212.5,
+            241.25,
+            284.5625,
+            510.25,
+            0.9469902515411377,
+            0.0
+          ],
+          [
+            475.78125,
+            233.875,
+            560.4375,
+            522.0,
+            0.944587230682373,
+            0.0
+          ],
+          [
+            80.171875,
+            326.8125,
+            126.765625,
+            517.25,
+            0.8925625681877136,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9985354478933042,
+            "max_coordinate_error": 0.2698974609375,
+            "score_error": 0.002150416374206543
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9992798589553268,
+            "max_coordinate_error": 0.1475830078125,
+            "score_error": 0.0016361474990844727
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9974784945082746,
+            "max_coordinate_error": 0.119171142578125,
+            "score_error": 0.004205226898193359
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9944198346853852,
+            "max_coordinate_error": 0.27392578125,
+            "score_error": 0.003164231777191162
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9948225433522214,
+            "max_coordinate_error": 0.1740264892578125,
+            "score_error": 0.0044484734535217285
+          }
+        ],
+        "fixture_passed": true
+      },
+      "generated_vs_host": {
+        "raw_max_abs": 20.140625,
+        "raw_rms": 0.2925463914871216,
+        "worst_index": [
+          0,
+          4,
+          6602
+        ],
+        "worst_reference": -45.6875,
+        "worst_actual": -25.546875,
+        "expected_high_detections": [
+          [
+            110.3125,
+            236.25,
+            226.4375,
+            535.125,
+            0.9625324606895447,
+            0.0
+          ],
+          [
+            82.875,
+            136.75,
+            555.125,
+            437.125,
+            0.9525741338729858,
+            5.0
+          ],
+          [
+            212.484375,
+            241.1875,
+            284.5625,
+            510.125,
+            0.9458011984825134,
+            0.0
+          ],
+          [
+            475.8125,
+            234.125,
+            560.4375,
+            521.875,
+            0.9419752359390259,
+            0.0
+          ],
+          [
+            80.15625,
+            326.875,
+            126.75,
+            517.25,
+            0.8902942538261414,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.3125,
+            236.125,
+            226.375,
+            535.125,
+            0.9637799859046936,
+            0.0
+          ],
+          [
+            82.625,
+            136.625,
+            555.125,
+            437.0,
+            0.9539660811424255,
+            5.0
+          ],
+          [
+            212.5,
+            241.25,
+            284.5625,
+            510.25,
+            0.9469902515411377,
+            0.0
+          ],
+          [
+            475.78125,
+            233.875,
+            560.4375,
+            522.0,
+            0.944587230682373,
+            0.0
+          ],
+          [
+            80.171875,
+            326.8125,
+            126.765625,
+            517.25,
+            0.8925625681877136,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9990441764628454,
+            "max_coordinate_error": 0.125,
+            "score_error": 0.0012475252151489258
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9986396126912845,
+            "max_coordinate_error": 0.25,
+            "score_error": 0.0013919472694396973
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9990865585938924,
+            "max_coordinate_error": 0.125,
+            "score_error": 0.0011890530586242676
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9983298221001898,
+            "max_coordinate_error": 0.25,
+            "score_error": 0.002611994743347168
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9990016723143951,
+            "max_coordinate_error": 0.0625,
+            "score_error": 0.0022683143615722656
+          }
+        ],
+        "fixture_passed": true
+      },
+      "board_tested": false,
+      "map_validated": false,
+      "acceptance": "fixture only: same high-score classes/count, matched IoU>=0.98 and score delta<=0.02"
+    }
+  },
+  "comparison_to_original_fp32_input_graph": {
+    "0": {
+      "raw_max_abs": 0.0,
+      "raw_rms": 0.0,
+      "worst_index": [
+        0,
+        0,
+        0
+      ],
+      "worst_reference": 0.48291015625,
+      "worst_actual": 0.48291015625,
+      "expected_high_detections": [],
+      "actual_high_detections": [],
+      "high_detection_matches": [],
+      "fixture_passed": true
+    },
+    "2": {
+      "raw_max_abs": 7.28125,
+      "raw_rms": 0.11694888770580292,
+      "worst_index": [
+        0,
+        4,
+        233
+      ],
+      "worst_reference": -18.375,
+      "worst_actual": -25.65625,
+      "expected_high_detections": [
+        [
+          110.3125,
+          236.25,
+          226.4375,
+          535.0,
+          0.9626730680465698,
+          0.0
+        ],
+        [
+          82.75,
+          136.625,
+          554.875,
+          436.625,
+          0.9536218643188477,
+          5.0
+        ],
+        [
+          212.5,
+          241.3125,
+          284.5625,
+          510.25,
+          0.9473810195922852,
+          0.0
+        ],
+        [
+          475.75,
+          233.875,
+          560.4375,
+          522.0,
+          0.944587230682373,
+          0.0
+        ],
+        [
+          80.15625,
+          326.875,
+          126.765625,
+          517.25,
+          0.8940516710281372,
+          0.0
+        ]
+      ],
+      "actual_high_detections": [
+        [
+          110.3125,
+          236.125,
+          226.375,
+          535.125,
+          0.9637799859046936,
+          0.0
+        ],
+        [
+          82.625,
+          136.625,
+          555.125,
+          437.0,
+          0.9539660811424255,
+          5.0
+        ],
+        [
+          212.5,
+          241.25,
+          284.5625,
+          510.25,
+          0.9469902515411377,
+          0.0
+        ],
+        [
+          475.78125,
+          233.875,
+          560.4375,
+          522.0,
+          0.944587230682373,
+          0.0
+        ],
+        [
+          80.171875,
+          326.8125,
+          126.765625,
+          517.25,
+          0.8925625681877136,
+          0.0
+        ]
+      ],
+      "high_detection_matches": [
+        {
+          "class_id": 0,
+          "matched": true,
+          "iou": 0.9986265658701619,
+          "max_coordinate_error": 0.125,
+          "score_error": 0.0011069178581237793
+        },
+        {
+          "class_id": 5,
+          "matched": true,
+          "iou": 0.9979589005806234,
+          "max_coordinate_error": 0.375,
+          "score_error": 0.00034421682357788086
+        },
+        {
+          "class_id": 0,
+          "matched": true,
+          "iou": 0.9997676579925651,
+          "max_coordinate_error": 0.0625,
+          "score_error": 0.00039076805114746094
+        },
+        {
+          "class_id": 0,
+          "matched": true,
+          "iou": 0.9996309963099631,
+          "max_coordinate_error": 0.03125,
+          "score_error": 0.0
+        },
+        {
+          "class_id": 0,
+          "matched": true,
+          "iou": 0.9993367953175197,
+          "max_coordinate_error": 0.0625,
+          "score_error": 0.001489102840423584
+        }
+      ],
+      "fixture_passed": true
+    }
+  },
+  "logical_input_bytes": {
+    "fp32": 4915200,
+    "rgb_u8": 1228800
+  },
+  "input_semantics": "UInt8 NHWC RGB888; compiler pre_scale=255 exactly once; math stays FP16",
+  "pure_tool_tests": 6,
+  "source_identity": {
+    "tools/compile_icraft.py": "ea09da0fadbc26594db35c23be2a46639d0d3706d824df99d4f091ea2c4d0d8c",
+    "tools/simulate_model.py": "0f15d04a670a75468841523c0a8910e3885fe2e99c811d5bbef32a518b2b281e",
+    "software/tests/test_model_tools.py": "4c631f5e6e176aae5bb5857bb0d93895d98477437a2df87b229cc81fcca54780"
+  },
+  "board_tested": false,
+  "map_validated": false,
+  "sdk_default_changed": false,
+  "runtime_performance_validated": false,
+  "evidence_scope": "Compiled and Host/ZG fixture checks only; not INT8 model quantization"
+}

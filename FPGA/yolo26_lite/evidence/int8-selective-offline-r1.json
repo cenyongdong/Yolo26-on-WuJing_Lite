@@ -1,0 +1,419 @@
+{
+  "schema": 1,
+  "compile": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "candidate.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-selective-block-r1",
+      "pid": 29264,
+      "started_utc": "2026-11-14T11:02:48.155448+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 23.010683600004995
+    },
+    "graph": {
+      "json_sha256": "42ae1374714b0dd6b4dbe27fa69d845c34fe5d216e039155ad490e005eccf2b9",
+      "raw_sha256": "c2edc20012aa196181b3962b7eea6470f3c8e35f2911b3b619b7e15ceeb054fd",
+      "raw_bytes": 39784860,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 467,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    }
+  },
+  "candidate": {
+    "schema": 1,
+    "mode": "spatial_block",
+    "operations": [
+      {
+        "generated_operation": 3505,
+        "adapted_convolution": 2126,
+        "adapted_activation": 2127,
+        "inserted_operations": [
+          2697,
+          2698,
+          2699,
+          2700
+        ],
+        "edge": 20,
+        "internal_batch": 16,
+        "input_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "tiled_shape": [
+          16,
+          16,
+          20,
+          20,
+          16
+        ],
+        "output_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "reorder_logical_read_write_bytes": 13107200,
+        "mapping": "spatial_block",
+        "direct_consumers": [
+          2128
+        ],
+        "explicit_output_copy": false
+      },
+      {
+        "generated_operation": 3507,
+        "adapted_convolution": 2130,
+        "adapted_activation": 2131,
+        "inserted_operations": [
+          2701,
+          2702,
+          2703,
+          2704
+        ],
+        "edge": 20,
+        "internal_batch": 16,
+        "input_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "tiled_shape": [
+          16,
+          16,
+          20,
+          20,
+          16
+        ],
+        "output_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "reorder_logical_read_write_bytes": 13107200,
+        "mapping": "spatial_block",
+        "direct_consumers": [
+          2132
+        ],
+        "explicit_output_copy": false
+      },
+      {
+        "generated_operation": 3443,
+        "adapted_convolution": 1832,
+        "adapted_activation": 1833,
+        "inserted_operations": [
+          2705,
+          2706,
+          2707,
+          2708,
+          2709
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          32,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          32,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 6553600,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      },
+      {
+        "generated_operation": 3476,
+        "adapted_convolution": 1917,
+        "adapted_activation": 1918,
+        "inserted_operations": [
+          2710,
+          2711,
+          2712,
+          2713,
+          2714
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          24,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          24,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 5734400,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      }
+    ],
+    "source_graph_sha256": "77dca9ac74f87b701c21a11b8e47976f533dbea148811354d5d888ab4f3ee889",
+    "source_adapted_sha256": "19148bfc8fbdc119d7b42897aa7c75c76409244f864ea2f256f648f2c87cf710",
+    "source_stage": "adapted",
+    "unchanged_raw_sha256": "07f6bca6c5a488978905910f05358ed81b1d95537a81a53d0aaaf8e3300cd732",
+    "board_access": false
+  },
+  "numeric": {
+    "cases": [
+      {
+        "case": 0,
+        "comparison": {
+          "raw_max_abs": 12.109375,
+          "raw_rms": 0.5924922823905945,
+          "worst_index": [
+            0,
+            4,
+            7316
+          ],
+          "worst_reference": -33.0625,
+          "worst_actual": -20.953125,
+          "expected_high_detections": [],
+          "actual_high_detections": [],
+          "high_detection_matches": [],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "27a0cf4d25106d596397307bfbea19c921cf66ca0d17a99f0edccd6733df3a09",
+        "output_sha256": "8f1eadd8dc64767d4724b852cb0b30c964fe5cd7691e09750722aed4dcd5d9ad",
+        "finite": true
+      },
+      {
+        "case": 1,
+        "comparison": {
+          "raw_max_abs": 7.71875,
+          "raw_rms": 0.3248325288295746,
+          "worst_index": [
+            0,
+            4,
+            7751
+          ],
+          "worst_reference": -26.453125,
+          "worst_actual": -18.734375,
+          "expected_high_detections": [],
+          "actual_high_detections": [],
+          "high_detection_matches": [],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "843cda8edf0d6da02d9968088332573115de83aaf7de741277337ab2218afb09",
+        "output_sha256": "ffd7861865daaa8e76024e2a41b20185da824036019c02157bc1ae101e7251e6",
+        "finite": true
+      },
+      {
+        "case": 2,
+        "comparison": {
+          "raw_max_abs": 17.8515625,
+          "raw_rms": 0.4264223277568817,
+          "worst_index": [
+            0,
+            4,
+            6726
+          ],
+          "worst_reference": -14.2421875,
+          "worst_actual": -32.09375,
+          "expected_high_detections": [
+            [
+              84.875,
+              137.25,
+              549.25,
+              436.0,
+              0.9556514620780945,
+              5.0
+            ],
+            [
+              110.4375,
+              237.25,
+              226.9375,
+              534.875,
+              0.9539660811424255,
+              0.0
+            ],
+            [
+              476.21875,
+              235.375,
+              560.6875,
+              523.125,
+              0.9453993439674377,
+              0.0
+            ],
+            [
+              212.125,
+              241.5,
+              284.34375,
+              510.625,
+              0.8976953029632568,
+              0.0
+            ],
+            [
+              80.109375,
+              328.0625,
+              126.609375,
+              517.25,
+              0.879974365234375,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              84.75,
+              137.0,
+              550.125,
+              436.375,
+              0.956308901309967,
+              5.0
+            ],
+            [
+              110.6875,
+              237.125,
+              226.8125,
+              535.25,
+              0.9536218643188477,
+              0.0
+            ],
+            [
+              476.375,
+              235.5,
+              560.84375,
+              522.875,
+              0.942081868648529,
+              0.0
+            ],
+            [
+              212.0625,
+              241.5625,
+              284.03125,
+              510.625,
+              0.907967209815979,
+              0.0
+            ],
+            [
+              80.15625,
+              327.5,
+              126.625,
+              517.375,
+              0.8774768114089966,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9957678869468651,
+              "max_coordinate_error": 0.875,
+              "score_error": 0.0006574392318725586
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9951147377551277,
+              "max_coordinate_error": 0.375,
+              "score_error": 0.00034421682357788086
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9950112299061199,
+              "max_coordinate_error": 0.25,
+              "score_error": 0.0033174753189086914
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9945812028886195,
+              "max_coordinate_error": 0.3125,
+              "score_error": 0.010271906852722168
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9950440580387663,
+              "max_coordinate_error": 0.5625,
+              "score_error": 0.002497553825378418
+            }
+          ],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "64c4ce5930f7ba435166c64ec8a72d70cda925db73f43fa95040271187ebd33f",
+        "output_sha256": "82ebfaca0150d184032d9e31760ee88b7293ec4c620f2618aac24e29c0d3805f",
+        "finite": true
+      }
+    ],
+    "fixture_passed": true,
+    "graph_sha256": "42ae1374714b0dd6b4dbe27fa69d845c34fe5d216e039155ad490e005eccf2b9",
+    "raw_sha256": "c2edc20012aa196181b3962b7eea6470f3c8e35f2911b3b619b7e15ceeb054fd",
+    "parameter_bytes_unchanged": true,
+    "public_input_output_unchanged": true,
+    "view_groups": 106,
+    "accuracy_sweep_performed": false
+  },
+  "board_tested": false
+}

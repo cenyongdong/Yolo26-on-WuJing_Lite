@@ -1,0 +1,137 @@
+{
+  "soc_rectangular": {
+    "directory": "build\\xsim-soc_rectangular-20261115-092206-600320",
+    "result": {
+      "passed": true,
+      "cases": 903,
+      "cycles": 2317550,
+      "frame_cycles": 2210572,
+      "output_bytes_compared": 589824
+    },
+    "native": [
+      0,
+      0,
+      0
+    ],
+    "sources": {
+      "rtl\\y26_register_bank.sv": "7ee1b8db6c9efc958b603310a7de49a69489fcb9df5684d59b2afa16623afae7",
+      "rtl\\y26_mailbox.sv": "3b456938c7f7821abb5b4f22c1cc9b5dd58d583a54f2b57230f3e52dbd017e6d",
+      "rtl\\y26_command_dispatch.sv": "29de52fe2dbeb56dcf916aff45d1cd13276901d1aafa99749ab196e3c08f3815",
+      "rtl\\y26_control.sv": "597bd9cf8fe424b88a06c1d2d757cdf75607c8775489f3ff6165cedf116a6f6e",
+      "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+      "rtl\\y26_dma_mm2s.sv": "3b60fbbe11eb1c1c529edd46b7c1eb19332b25b5c4fd1d110b04dee506d22a47",
+      "rtl\\y26_color_pipeline.sv": "0b81f5081308e4e06cf6bc954f794e96199c028d9809c39f726aab63d5d5f763",
+      "rtl\\y26_pixel_unpack.sv": "b91e54d6e89b6c1be9d9bf8d2fa6502e64e2284d34f537fb4a4a6d9578203f56",
+      "rtl\\y26_resize_letterbox.sv": "74ecffc39e5e3a39f516c23f4fab70482989122383fb56b1e3e3b15f602f1881",
+      "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+      "rtl\\y26_dma_s2mm.sv": "6280d490d2b4f5bcbab5c8a23e0abf897581a140ac5cbd5628cfcf6a0497a339",
+      "rtl\\y26_stream_register.sv": "957504575a664323408d0670ad04dc0048e2ea0decaf019f9b3acb6a9c6a3585",
+      "rtl\\y26_preprocess.sv": "b368bf8fed5850511263aeecbb69107c72a1e78d61ddfe509c53e28dbfd27d58",
+      "rtl\\y26_peripheral.sv": "0c069f44a540e95c8a7d817378070155fa913ebf5e63e141c0dec60a6a1d3dff",
+      "tb\\axi_memory_model.sv": "e3b54a8325776754b02d11f52e3f6ce8ab56f88f31c23fe260dd3827d0d41eff",
+      "tb\\tb_peripheral.sv": "d159e423c5cc0aaa14cc5f5cf288f8ad83759ca1ffa1d000419d0a167f5b8bb2",
+      "rtl\\y26_axi_read_share.sv": "5350b5e888d6289fd9f3f6b410f72c4e1d1c6526d11ff07e91998739e4646b9e",
+      "rtl\\y26_axi_write_share.sv": "1f2870a8e0489e971e4107997b1dff08095698e2ba173e0757b8d98736f824cf",
+      "rtl\\y26_soc_bridge.sv": "3f4e8bee9f686d5c5e56697421ca6c69c9e7a248fe23b50f920c26b0568ced9d",
+      "tb\\y26_soc_test_adapter.sv": "6d28fb84bef0925d2329f3f56bdb6c5c411b497056dd226916df07bd12d7c623"
+    }
+  },
+  "soc": {
+    "directory": "build\\xsim-soc-20261115-093051-439491",
+    "result": {
+      "passed": true,
+      "cases": 1127,
+      "cycles": 3517134,
+      "frame_cycles": 3389122,
+      "output_bytes_compared": 1228800
+    },
+    "native": [
+      0,
+      0,
+      0
+    ],
+    "sources": {
+      "rtl\\y26_register_bank.sv": "7ee1b8db6c9efc958b603310a7de49a69489fcb9df5684d59b2afa16623afae7",
+      "rtl\\y26_mailbox.sv": "3b456938c7f7821abb5b4f22c1cc9b5dd58d583a54f2b57230f3e52dbd017e6d",
+      "rtl\\y26_command_dispatch.sv": "29de52fe2dbeb56dcf916aff45d1cd13276901d1aafa99749ab196e3c08f3815",
+      "rtl\\y26_control.sv": "597bd9cf8fe424b88a06c1d2d757cdf75607c8775489f3ff6165cedf116a6f6e",
+      "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+      "rtl\\y26_dma_mm2s.sv": "3b60fbbe11eb1c1c529edd46b7c1eb19332b25b5c4fd1d110b04dee506d22a47",
+      "rtl\\y26_color_pipeline.sv": "0b81f5081308e4e06cf6bc954f794e96199c028d9809c39f726aab63d5d5f763",
+      "rtl\\y26_pixel_unpack.sv": "b91e54d6e89b6c1be9d9bf8d2fa6502e64e2284d34f537fb4a4a6d9578203f56",
+      "rtl\\y26_resize_letterbox.sv": "74ecffc39e5e3a39f516c23f4fab70482989122383fb56b1e3e3b15f602f1881",
+      "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+      "rtl\\y26_dma_s2mm.sv": "6280d490d2b4f5bcbab5c8a23e0abf897581a140ac5cbd5628cfcf6a0497a339",
+      "rtl\\y26_stream_register.sv": "957504575a664323408d0670ad04dc0048e2ea0decaf019f9b3acb6a9c6a3585",
+      "rtl\\y26_preprocess.sv": "b368bf8fed5850511263aeecbb69107c72a1e78d61ddfe509c53e28dbfd27d58",
+      "rtl\\y26_peripheral.sv": "0c069f44a540e95c8a7d817378070155fa913ebf5e63e141c0dec60a6a1d3dff",
+      "tb\\axi_memory_model.sv": "e3b54a8325776754b02d11f52e3f6ce8ab56f88f31c23fe260dd3827d0d41eff",
+      "tb\\tb_peripheral.sv": "d159e423c5cc0aaa14cc5f5cf288f8ad83759ca1ffa1d000419d0a167f5b8bb2",
+      "rtl\\y26_axi_read_share.sv": "5350b5e888d6289fd9f3f6b410f72c4e1d1c6526d11ff07e91998739e4646b9e",
+      "rtl\\y26_axi_write_share.sv": "1f2870a8e0489e971e4107997b1dff08095698e2ba173e0757b8d98736f824cf",
+      "rtl\\y26_soc_bridge.sv": "3f4e8bee9f686d5c5e56697421ca6c69c9e7a248fe23b50f920c26b0568ced9d",
+      "tb\\y26_soc_test_adapter.sv": "6d28fb84bef0925d2329f3f56bdb6c5c411b497056dd226916df07bd12d7c623"
+    }
+  },
+  "display": {
+    "directory": "build\\xsim-display-20261115-093051-536337",
+    "result": {
+      "passed": true,
+      "cases": 3,
+      "pixels_compared": [
+        2073600,
+        921600
+      ],
+      "rasters": [
+        [
+          2200,
+          1125
+        ],
+        [
+          1650,
+          750
+        ]
+      ],
+      "underflow_drain": true,
+      "stop_with_pixel_clock_halted": true
+    },
+    "native": [
+      0,
+      0,
+      0
+    ],
+    "sources": {
+      "..\\hdmi_candidate\\rtl\\hdmi_axi_read.v": "f4f8ca122c20a8b0fa5507463accfe6f98c19e021058c2393c92c241c7c14589",
+      "..\\hdmi_candidate\\rtl\\hdmi_scan_control.v": "78e69fdd662b20533fbfe0f60d2d3a6e805606fdbbeb86f7367632dc0382face",
+      "..\\hdmi_candidate\\rtl\\hdmi_command_mailbox.v": "8ca36c392bd867bf2f39aa4ed6651f4cff82bb044556f5e94b96733bcd6d6575",
+      "..\\hdmi_candidate\\rtl\\hdmi_candidate_core.v": "646209c67afc7936de7a7c27d02169dcc86b6c2b4e4a402d34f236be7062cc6d",
+      "..\\hdmi_candidate\\rtl\\hdmi_register_bank.v": "f632e8ff54682bccba84ae66fad2ba611afc7e3862cf9918d334f0cbc97df485",
+      "..\\hdmi_candidate\\rtl\\hdmi_candidate_register_core.v": "0f65006c4de1f6c39f32c3d374c35826d186b28f8e30ac2b58cd733a522a5d4e",
+      "..\\hdmi_candidate\\rtl\\hdmi_pixel_scan.v": "7e7134d5d39751575ee3bf9efe0d13498dd9a17856e2ead63a3a28a7883250ad",
+      "..\\hdmi_candidate\\rtl\\hdmi_stream_fifo.v": "f68b580aa54758fc53c09b20b118834c6e99773f8ca6196a52484d4708423604",
+      "..\\hdmi_candidate\\rtl\\hdmi_scanout.v": "2811fdad418a52f49c1cb7d9ea3bbc8865e24614f9fbed8005531009231ea258",
+      "..\\hdmi_candidate\\sim\\tb_stream_fifo.sv": "ba02d7e06d4306cb7a5c19b9469ee7e380d0c7c9202d4927b66977505160f95a",
+      "..\\hdmi_candidate\\sim\\tb_scanout.sv": "f564065bb13af8faeb6365a25f8a4dfd9fa39e6635c6d6b9109e994e3adccd48",
+      "tb\\tb_display.sv": "9619f074c68a599283f6ced23aca3f23b55e4a790c23ec248a75fb45b5033e70"
+    }
+  },
+  "synthesis": {
+    "stage": "synthesis-banked",
+    "pid": 3216,
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yr1\\logs\\synthesis-banked.vivado.log",
+      "-source",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yr1\\synthesis-banked.tcl"
+    ],
+    "started": 1794705783.7933733,
+    "state": "completed",
+    "exit_code": 0,
+    "seconds": 277.7191495895386
+  },
+  "board_tested": false
+}

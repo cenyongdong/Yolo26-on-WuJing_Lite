@@ -1,0 +1,19 @@
+{
+  "sources": {
+    "software/include/yolo26/control.hpp": "35e5f8b8473c21adc51de390197114a6c7695d6a685765c9381b5e8ecedd6a13",
+    "software/src/control.cpp": "dfe2dbef36c06e30ddfec7cf709ad8a7ea1fe19edeb78a6c31e37ef7f9ce81a2",
+    "software/tests/test_control.cpp": "3476a6fa85c10876fa865ca23212d5b66f9029d43fa0e2bdbf501c1821d7963a",
+    "CMakeLists.txt": "1bdf8bee364e9c8bdeaaa9e3127f46f91c3342bdc842ca314e7c78fee0476ea7"
+  },
+  "build_native_exit": 0,
+  "ctest_native_exit": 0,
+  "ctest_log": ".local/yolo26-planning/control-cpp-tests-r3.log",
+  "tests": [
+    "postprocess",
+    "frames",
+    "preprocess",
+    "control"
+  ],
+  "sdk_connected": false,
+  "board_tested": false
+}

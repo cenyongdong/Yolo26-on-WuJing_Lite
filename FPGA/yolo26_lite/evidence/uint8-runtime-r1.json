@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "full_evidence": ".local\\yolo26-cpu-r8",
+  "source_identity": {
+    "software/include/yolo26/icraft_runtime.hpp": "142fd07dcffc547c6755aa57f444eb4727909c84586e24bb28c9ccbbfbc00c06",
+    "software/include/yolo26/preprocess.hpp": "914d3e945992893cf85ca75965b24c33c471d050dd438467d3240d0567cbf585",
+    "software/src/icraft_runtime.cpp": "38e81dd3a15c5dee6010f2233b8cb513a17bbc34e6b2cf8b8a6df6215d7afe4a",
+    "software/src/preprocess.cpp": "75efb35e1167c9d51f5ea75130cbc6bfeae55d0d3d14623d5725346c9ce03560",
+    "software/src/infer_probe.cpp": "64918898eb7580ecda5b8360bf9592abcfdf112634238e83e4c1c39738891d59",
+    "software/src/cpu_benchmark.cpp": "073602224915011a7dd3ec0b11b24fdff22e7b0153186a0647c2f5fae36674cb",
+    "software/tests/test_preprocess.cpp": "a49e77c3133b8a671c73d85ecc23161496672769a700cca14c43fbf43406636c"
+  },
+  "native_compile_exit": 0,
+  "compile_warnings": 0,
+  "native_software_tests": 11,
+  "profile_contract_tests": 6,
+  "cpu_receipt_tests": 3,
+  "measurements": [
+    {
+      "kind": "cpu_module",
+      "module": "one_to_one_tail",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 5086292,
+      "p50_ns": 5083340,
+      "p95_ns": 5128960,
+      "p99_ns": 5140810,
+      "maximum_ns": 5170190,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "rgb888_to_nhwc_fp32",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 4476141,
+      "p50_ns": 4461320,
+      "p95_ns": 4576340,
+      "p99_ns": 4617690,
+      "maximum_ns": 4622420,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "rgb888_to_nhwc_u8",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 442277,
+      "p50_ns": 438220,
+      "p95_ns": 470350,
+      "p99_ns": 475600,
+      "maximum_ns": 478520,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "yuyv_vga_to_720p_with_boxes",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 9390334,
+      "p50_ns": 9389800,
+      "p95_ns": 9426540,
+      "p99_ns": 9450340,
+      "maximum_ns": 9542660,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "host_rgb565_copy",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 923980,
+      "p50_ns": 915940,
+      "p95_ns": 976830,
+      "p99_ns": 991190,
+      "maximum_ns": 1000380,
+      "npu_executed": false
+    },
+    {
+      "kind": "summary",
+      "input": "repeated_synthetic_fixture",
+      "checksum": 44312,
+      "postprocess_scan": "aarch64_neon",
+      "normalization": "fp32_division",
+      "sdk_starts": 0,
+      "camera_starts": 0,
+      "npu_executed": false
+    }
+  ],
+  "cleanup": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "receipt_wrapper_supplement": {
+    "camera_board_receipt_r8.py": "9ded51efc3239d838496425a0ea4f1a7e7c560792a86ef87b9c0f09c8027b529",
+    "benchmark_contract.py": "f0fc35193a0f67195e9d553ec48b2af96cd6f038edef4459ecd42c27b4b7684e"
+  },
+  "wrapper_reason": "Replace fixed five-line receipt assumption; original source manifest and build preserved",
+  "prepared_packages": [
+    {
+      "path": ".local\\yolo26-probe-package-r2-fp32",
+      "contract": {
+        "schema": 1,
+        "source": "file_replay",
+        "input_profile": "fp32",
+        "sdk_starts": 1,
+        "camera_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "boot_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+        "files": {
+          "yolo26_infer_probe": "bf679e4a4010c32e55351682dfed7b3621c9c5adab4fc2e863866ffa737f088f",
+          "model.json": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+          "model.raw": "b9317cc986b4779875414153d1cc1532b88f2609ca0f6608ab1e2b0041875ed6",
+          "probe_board.py": "f1a6172fcedbcc62e029c35f6d681e2834db7027880baecfc732b8a21a9282a3",
+          "probe_contract.py": "f1242d9c19ce3654e518d22a178fcec3b79f84072608b32ac29ce2ea9e2ba7bd",
+          "board_probe.py": "e5fcc3abd3434ff07f8067426c45b4efe0d68de9ac01ec52d1951b632d64373e",
+          "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6"
+        },
+        "iterations": 3
+      },
+      "uploaded": false,
+      "executed": false
+    },
+    {
+      "path": ".local\\yolo26-probe-package-r2-u8",
+      "contract": {
+        "schema": 1,
+        "source": "file_replay",
+        "input_profile": "rgb_u8",
+        "sdk_starts": 1,
+        "camera_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "boot_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+        "files": {
+          "yolo26_infer_probe": "bf679e4a4010c32e55351682dfed7b3621c9c5adab4fc2e863866ffa737f088f",
+          "model.json": "bd95fbf90ae99e4a5ebf5537413381565ee8c3877b3ead3c7c6153612d0a5c1e",
+          "model.raw": "3f8fa08ba5586bc8e237db6b4359218d7ec2af4163f4e36f11d8cfa2b58f016b",
+          "probe_board.py": "f1a6172fcedbcc62e029c35f6d681e2834db7027880baecfc732b8a21a9282a3",
+          "probe_contract.py": "f1242d9c19ce3654e518d22a178fcec3b79f84072608b32ac29ce2ea9e2ba7bd",
+          "board_probe.py": "e5fcc3abd3434ff07f8067426c45b4efe0d68de9ac01ec52d1951b632d64373e",
+          "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6"
+        },
+        "iterations": 3
+      },
+      "uploaded": false,
+      "executed": false
+    }
+  ],
+  "default_profile": "fp32",
+  "input_profiles": [
+    "fp32",
+    "rgb_u8"
+  ],
+  "npu_executed": false,
+  "real_sdk_input_transfer_tested": false,
+  "hardware_completion_tested": false
+}

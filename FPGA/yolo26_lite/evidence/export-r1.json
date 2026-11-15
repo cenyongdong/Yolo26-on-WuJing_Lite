@@ -1,0 +1,424 @@
+{
+  "status": "onnx_and_reference_passed",
+  "versions": {
+    "torch": "2.4.1",
+    "torchvision": "0.19.1",
+    "ultralytics": "8.4.0",
+    "onnx": "1.17.0",
+    "onnxruntime": "1.16.3",
+    "numpy": "1.24.4",
+    "opencv-python": "5.0.0.93"
+  },
+  "python": "3.8.0 (default, Nov  6 2019, 16:00:02) [MSC v.1916 64 bit (AMD64)]",
+  "weights": "D:\\FPGACompetitionProject\\model\\YOLO26\\yolo26l.pt",
+  "weights_sha256": "9fe3c544f2b19bebad7ea41e76d7ad3d88b7c2f10d11d24430c5311f6b32db26",
+  "shapes": {
+    "input": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "dense": [
+      1,
+      84,
+      8400
+    ],
+    "complete": [
+      1,
+      300,
+      6
+    ]
+  },
+  "branch": "one2one",
+  "nms": false,
+  "preprocessing": "RGB float32 /255 NCHW",
+  "dense_contract": "LTRB distances in stride units, then 80 class logits; P3,P4,P5 row-major",
+  "comparisons": [
+    {
+      "case": 0,
+      "dense_max_abs": 0.0027027130126953125,
+      "score_max_abs": 8.645110938232392e-08,
+      "detections_at_025": 0
+    },
+    {
+      "case": 1,
+      "dense_max_abs": 0.001007080078125,
+      "score_max_abs": 8.33679223433137e-08,
+      "detections_at_025": 0
+    },
+    {
+      "case": 2,
+      "dense_max_abs": 0.00226593017578125,
+      "score_max_abs": 1.1958181858062744e-06,
+      "detections_at_025": 5
+    }
+  ],
+  "elapsed_seconds": 16.593999999997322,
+  "board_tested": false,
+  "quantized_accuracy_validated": false,
+  "full_graph": {
+    "sha256": "5769bc3f152504cbe4ed33127b152339334c7b566bed772b03f758bd9bae6441",
+    "bytes": 99571275,
+    "operators": {
+      "Add": 50,
+      "Cast": 3,
+      "Concat": 35,
+      "Constant": 95,
+      "ConstantOfShape": 2,
+      "Conv": 166,
+      "Div": 10,
+      "Expand": 2,
+      "Flatten": 2,
+      "Gather": 12,
+      "GatherElements": 2,
+      "MatMul": 6,
+      "MaxPool": 3,
+      "Mod": 1,
+      "Mul": 170,
+      "ReduceMax": 1,
+      "Reshape": 17,
+      "Resize": 2,
+      "Shape": 11,
+      "Sigmoid": 148,
+      "Slice": 18,
+      "Softmax": 3,
+      "Split": 5,
+      "Sub": 1,
+      "Tile": 2,
+      "TopK": 2,
+      "Transpose": 7,
+      "Unsqueeze": 3
+    },
+    "outputs": {
+      "detections": [
+        1,
+        300,
+        6
+      ]
+    },
+    "attention": [
+      {
+        "name": "/network/model.10/m/m.0/attn/MatMul",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            32
+          ],
+          [
+            1,
+            4,
+            32,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.0/attn/Softmax",
+        "op": "Softmax",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.0/attn/MatMul_1",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            64,
+            400
+          ],
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.1/attn/MatMul",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            32
+          ],
+          [
+            1,
+            4,
+            32,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.1/attn/Softmax",
+        "op": "Softmax",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.1/attn/MatMul_1",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            64,
+            400
+          ],
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.22/m.0/m.0.1/attn/MatMul",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            32
+          ],
+          [
+            1,
+            4,
+            32,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.22/m.0/m.0.1/attn/Softmax",
+        "op": "Softmax",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.22/m.0/m.0.1/attn/MatMul_1",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            64,
+            400
+          ],
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      }
+    ]
+  },
+  "dense_graph": {
+    "sha256": "02f236e73656bf51a942c4fb7d8d899bf9a52dd58528ef6e03a074c2bbe208c5",
+    "bytes": 99393182,
+    "operators": {
+      "Add": 47,
+      "Concat": 31,
+      "Constant": 70,
+      "Conv": 166,
+      "Div": 8,
+      "Gather": 8,
+      "MatMul": 6,
+      "MaxPool": 3,
+      "Mul": 166,
+      "Reshape": 15,
+      "Resize": 2,
+      "Shape": 8,
+      "Sigmoid": 147,
+      "Slice": 16,
+      "Softmax": 3,
+      "Split": 4,
+      "Transpose": 6
+    },
+    "outputs": {
+      "one2one_raw": [
+        1,
+        84,
+        8400
+      ]
+    },
+    "attention": [
+      {
+        "name": "/network/model.10/m/m.0/attn/MatMul",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            32
+          ],
+          [
+            1,
+            4,
+            32,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.0/attn/Softmax",
+        "op": "Softmax",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.0/attn/MatMul_1",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            64,
+            400
+          ],
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.1/attn/MatMul",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            32
+          ],
+          [
+            1,
+            4,
+            32,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.1/attn/Softmax",
+        "op": "Softmax",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.10/m/m.1/attn/MatMul_1",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            64,
+            400
+          ],
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.22/m.0/m.0.1/attn/MatMul",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            32
+          ],
+          [
+            1,
+            4,
+            32,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.22/m.0/m.0.1/attn/Softmax",
+        "op": "Softmax",
+        "inputs": [
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      },
+      {
+        "name": "/network/model.22/m.0/m.0.1/attn/MatMul_1",
+        "op": "MatMul",
+        "inputs": [
+          [
+            1,
+            4,
+            64,
+            400
+          ],
+          [
+            1,
+            4,
+            400,
+            400
+          ]
+        ]
+      }
+    ]
+  },
+  "high_confidence_class_box_check": true
+}

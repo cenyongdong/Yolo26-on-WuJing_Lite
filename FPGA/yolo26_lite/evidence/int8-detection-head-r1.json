@@ -1,0 +1,2773 @@
+{
+  "schema": 1,
+  "calibration_count": 32,
+  "native_batch": 1,
+  "profile": "detection_attention",
+  "input_identity_sha256": "07b6b00cc044a06c591ba78b3ae6a5c9bc5e14bf39e46a1cfaf1ee36dee80104",
+  "stages": {
+    "quantize": {
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "quantize",
+          "quantize.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-r2",
+        "pid": 512,
+        "started_utc": "2026-11-14T09:29:36.307152+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 338.0955779999931
+      },
+      "graph": {
+        "json_sha256": "c9b50c2cfbcb1841af9fb108e87bfac9204c37e345bee6845ebcb8dfbf607bc8",
+        "raw_sha256": "88733c83e5b5b0807c76650a9522f2558b1594edcd273f8a2247b578115eb1ec",
+        "raw_bytes": 26363028,
+        "operators": {
+          "icraft::xir::Input": 1,
+          "icraft::xir::Cast": 20,
+          "icraft::xir::Conv2d": 166,
+          "icraft::xir::SiLU": 147,
+          "icraft::xir::Split": 12,
+          "icraft::xir::Add": 39,
+          "icraft::xir::Concat": 31,
+          "icraft::xir::MaxPool2d": 3,
+          "icraft::xir::Transpose": 30,
+          "icraft::xir::Reshape": 21,
+          "icraft::xir::Matmul": 6,
+          "icraft::xir::Multiply": 3,
+          "icraft::xir::Softmax": 3,
+          "icraft::xir::Upsample": 2,
+          "icraft::xir::Output": 1
+        },
+        "ports": {
+          "Input": [
+            {
+              "_type_key": "icraft::xir::TensorType",
+              "element_dtype": "@fp(32)",
+              "layout": "@layout(NHWC)",
+              "merged_distrs": [],
+              "shape": [
+                1,
+                640,
+                640,
+                3
+              ]
+            }
+          ],
+          "Output": [
+            {
+              "_type_key": "icraft::xir::TensorType",
+              "element_dtype": "@fp(32)",
+              "layout": "@layout(**C)",
+              "merged_distrs": [],
+              "shape": [
+                1,
+                84,
+                8400
+              ]
+            }
+          ]
+        },
+        "host_compute": []
+      },
+      "types": {
+        "operator_types": {
+          "Input": 1,
+          "Cast": 20,
+          "Conv2d": 166,
+          "SiLU": 147,
+          "Split": 12,
+          "Add": 39,
+          "Concat": 31,
+          "MaxPool2d": 3,
+          "Transpose": 30,
+          "Reshape": 21,
+          "Matmul": 6,
+          "Multiply": 3,
+          "Softmax": 3,
+          "Upsample": 2,
+          "Output": 1
+        },
+        "output_storage_types": {
+          "@fp(32)": 2,
+          "@tf(32)": 2,
+          "@fp(16)": 129,
+          "@sint(8)": 366
+        },
+        "convolutions": [
+          {
+            "operation": 1,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 3,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 5,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 9,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 11,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 13,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 16,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 18,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 21,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 24,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 26,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 28,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 30,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 33,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 35,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 38,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 41,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 44,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 46,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 48,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 52,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 54,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 56,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 59,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 61,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 64,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 67,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 69,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 71,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 73,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 76,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 78,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 81,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 84,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 87,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 89,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 91,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 95,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 97,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 99,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 102,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 104,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 107,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 110,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 112,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 114,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 116,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 119,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 121,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 124,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 127,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 130,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 132,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 134,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 138,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 140,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 142,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 145,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 147,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 150,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 153,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 155,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 157,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 159,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 162,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 164,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 167,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 170,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 173,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 175,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 180,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 183,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 186,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 199,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 202,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 204,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 206,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 208,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 221,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 224,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 226,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 228,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 231,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 235,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 239,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 241,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 243,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 246,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 248,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 251,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 254,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 256,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 258,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 260,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 263,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 265,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 268,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 271,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 274,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 278,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 282,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 284,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 286,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 289,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 291,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 294,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 297,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 299,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 301,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 303,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 306,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 308,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 311,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 314,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 317,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 319,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 322,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 326,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 328,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 330,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 333,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 335,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 338,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 341,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 343,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 345,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 347,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 350,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 352,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 355,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 358,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 361,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 363,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 366,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 370,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 372,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 375,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 388,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 391,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 393,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 395,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 398,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 400,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 402,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 404,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 407,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 409,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 411,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 414,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 416,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 418,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 422,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 424,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 426,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 428,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 430,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 433,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 435,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 437,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 439,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 441,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 444,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 446,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 448,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 450,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 452,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          }
+        ]
+      }
+    },
+    "adapt": {
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "adapt",
+          "quantize.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-r2",
+        "pid": 26528,
+        "started_utc": "2026-11-14T09:35:14.497223+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 4.7690731000038795
+      },
+      "graph": {
+        "json_sha256": "ba9b732048d3d814f1caa4412b86448d4170567ff395aeb526ad8221826d170e",
+        "raw_sha256": "9ab24065beeff99bad5a5ce17a0ce57b0d0528a7fb507d5b36d9d67d3cda5125",
+        "raw_bytes": 28726612,
+        "operators": {
+          "icraft::xir::Input": 1,
+          "icraft::xir::Cast": 20,
+          "icraft::xir::Reshape": 109,
+          "icraft::xir::Conv2d": 166,
+          "icraft::xir::SiLU": 147,
+          "icraft::xir::Matmul": 22,
+          "icraft::xir::Split": 9,
+          "icraft::xir::Add": 39,
+          "icraft::xir::Concat": 31,
+          "icraft::xir::Copy": 17,
+          "icraft::xir::MaxPool2d": 3,
+          "icraft::xir::Transpose": 61,
+          "icraft::xir::AlignAxis": 33,
+          "icraft::xir::PruneAxis": 30,
+          "icraft::xir::Slice": 9,
+          "icraft::xir::Multiply": 3,
+          "icraft::xir::Softmax": 3,
+          "icraft::xir::Upsample": 2,
+          "icraft::xir::Output": 1
+        },
+        "ports": {
+          "Input": [
+            {
+              "_type_key": "icraft::xir::TensorType",
+              "element_dtype": "@fp(32)",
+              "layout": "@layout(NHWC)",
+              "merged_distrs": [],
+              "shape": [
+                1,
+                640,
+                640,
+                3
+              ]
+            }
+          ],
+          "Output": [
+            {
+              "_type_key": "icraft::xir::TensorType",
+              "element_dtype": "@fp(32)",
+              "layout": "@layout(**C)",
+              "merged_distrs": [
+                "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+              ],
+              "shape": [
+                1,
+                84,
+                8400
+              ]
+            }
+          ]
+        },
+        "host_compute": []
+      },
+      "types": {
+        "operator_types": {
+          "Input": 1,
+          "Cast": 20,
+          "Reshape": 109,
+          "Conv2d": 166,
+          "SiLU": 147,
+          "Matmul": 22,
+          "Split": 9,
+          "Add": 39,
+          "Concat": 31,
+          "Copy": 17,
+          "MaxPool2d": 3,
+          "Transpose": 61,
+          "AlignAxis": 33,
+          "PruneAxis": 30,
+          "Slice": 9,
+          "Multiply": 3,
+          "Softmax": 3,
+          "Upsample": 2,
+          "Output": 1
+        },
+        "output_storage_types": {
+          "@fp(32)": 2,
+          "@tf(32)": 5,
+          "@fp(16)": 285,
+          "@sint(8)": 422
+        },
+        "convolutions": [
+          {
+            "operation": 1454,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 1460,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1462,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1465,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1467,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1469,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1472,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1474,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1477,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1480,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1482,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1484,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1486,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1489,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1491,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1494,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1497,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1500,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1502,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1504,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1507,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1509,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1511,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1514,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1516,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1519,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1522,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1524,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1526,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1528,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1531,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1533,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1536,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1539,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1542,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1544,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1546,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1549,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1551,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1553,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1556,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1558,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1561,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1564,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1566,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1568,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1570,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1573,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1575,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1578,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1581,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1584,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1586,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1588,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1591,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1593,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1595,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1598,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1600,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1603,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1606,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1608,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1610,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1612,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1615,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1617,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1620,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1623,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1626,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1628,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1633,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1636,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1639,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1720,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1732,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1734,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1736,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1738,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1819,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1831,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1833,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1835,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1838,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1842,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1845,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1847,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1849,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1852,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1854,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1857,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1860,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1862,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1864,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1866,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1869,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1871,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1874,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1877,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1880,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1884,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1887,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1889,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1891,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1894,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1896,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1899,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1902,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1904,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1906,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1908,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1911,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1913,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1916,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1919,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1922,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1924,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1927,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1930,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1932,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1934,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1937,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1939,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1942,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1945,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1947,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1949,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1951,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1954,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1956,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1959,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1962,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1965,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1967,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1970,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1973,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1975,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 1978,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 2059,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 2071,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 2073,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 2075,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 2078,
+            "input_storage": "@sint(8)",
+            "weight_storage": "@sint(8)",
+            "output_storage": "@sint(8)"
+          },
+          {
+            "operation": 2084,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2086,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2088,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2099,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2101,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2103,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2114,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2116,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2118,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2130,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2132,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2134,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2136,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2138,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2149,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2151,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2153,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2155,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2157,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2168,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2170,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2172,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2174,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          },
+          {
+            "operation": 2176,
+            "input_storage": "@fp(16)",
+            "weight_storage": "@fp(16)",
+            "output_storage": "@fp(16)"
+          }
+        ]
+      }
+    },
+    "generate": {
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "generate",
+          "quantize.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-r2",
+        "pid": 28128,
+        "started_utc": "2026-11-14T09:35:19.365155+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 25.80322580000211
+      },
+      "graph": {
+        "json_sha256": "c5154bc461f408d3e42c34b5ebc016d95b2f98b788318dd71e4639e4892b1f50",
+        "raw_sha256": "2e6c1c1a498da68d30a3c9c7b57696c702cc64a4d328c3b18f6c48b6f7010b9d",
+        "raw_bytes": 39835100,
+        "operators": {
+          "icraft::xir::Input": 1,
+          "icraft::xir::HardOp": 448,
+          "icraft::xir::Output": 1
+        },
+        "ports": {
+          "Input": [
+            {
+              "_type_key": "icraft::xir::TensorType",
+              "element_dtype": "@fp(32)",
+              "layout": "@layout(NHWC)",
+              "merged_distrs": [],
+              "shape": [
+                1,
+                640,
+                640,
+                3
+              ]
+            }
+          ],
+          "Output": [
+            {
+              "_type_key": "icraft::xir::TensorType",
+              "element_dtype": "@fp(32)",
+              "layout": "@layout(**C)",
+              "merged_distrs": [
+                "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+              ],
+              "shape": [
+                1,
+                84,
+                8400
+              ]
+            }
+          ]
+        },
+        "host_compute": []
+      },
+      "types": {
+        "operator_types": {
+          "Input": 1,
+          "HardOp": 448,
+          "Output": 1
+        },
+        "output_storage_types": {
+          "@fp(32)": 2,
+          "@tf(32)": 4,
+          "@fp(16)": 158,
+          "@sint(8)": 294
+        },
+        "convolutions": []
+      }
+    }
+  },
+  "fixtures": [
+    {
+      "case": 2,
+      "quantized": {
+        "raw_max_abs": 37.625640869140625,
+        "raw_rms": 1.371631383895874,
+        "worst_index": [
+          0,
+          4,
+          7929
+        ],
+        "worst_reference": -50.375640869140625,
+        "worst_actual": -12.75,
+        "expected_high_detections": [
+          [
+            110.30839538574219,
+            236.1220703125,
+            226.43516540527344,
+            535.3948974609375,
+            0.9616295695304871,
+            0.0
+          ],
+          [
+            82.52940368652344,
+            136.4774169921875,
+            555.1327514648438,
+            437.003173828125,
+            0.9523299336433411,
+            5.0
+          ],
+          [
+            212.55078125,
+            241.31723022460938,
+            284.4814147949219,
+            510.1308288574219,
+            0.9427850246429443,
+            0.0
+          ],
+          [
+            476.05517578125,
+            233.93856811523438,
+            560.6151123046875,
+            521.98876953125,
+            0.9414229989051819,
+            0.0
+          ],
+          [
+            79.99784851074219,
+            326.71759033203125,
+            126.78831481933594,
+            517.3414306640625,
+            0.8881140947341919,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.40625,
+            237.125,
+            226.6875,
+            535.125,
+            0.9543930292129517,
+            0.0
+          ],
+          [
+            85.125,
+            137.0,
+            550.875,
+            435.875,
+            0.9520419239997864,
+            5.0
+          ],
+          [
+            476.0625,
+            235.125,
+            560.90625,
+            523.0,
+            0.9389128684997559,
+            0.0
+          ],
+          [
+            212.328125,
+            240.875,
+            284.21875,
+            509.75,
+            0.9252299070358276,
+            0.0
+          ],
+          [
+            80.09375,
+            327.1875,
+            126.671875,
+            517.875,
+            0.8814108967781067,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9927598941608099,
+            "max_coordinate_error": 1.0029296875,
+            "score_error": 0.0072365403175354
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9800855588287906,
+            "max_coordinate_error": 4.25775146484375,
+            "score_error": 0.0002880096435546875
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9902477923721981,
+            "max_coordinate_error": 0.442230224609375,
+            "score_error": 0.0175551176071167
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9889209275880274,
+            "max_coordinate_error": 1.186431884765625,
+            "score_error": 0.0025101304054260254
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9902488204905134,
+            "max_coordinate_error": 0.5335693359375,
+            "score_error": 0.006703197956085205
+          }
+        ],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 38.360015869140625,
+        "raw_rms": 1.3306517601013184,
+        "worst_index": [
+          0,
+          4,
+          7929
+        ],
+        "worst_reference": -50.375640869140625,
+        "worst_actual": -12.015625,
+        "expected_high_detections": [
+          [
+            110.30839538574219,
+            236.1220703125,
+            226.43516540527344,
+            535.3948974609375,
+            0.9616295695304871,
+            0.0
+          ],
+          [
+            82.52940368652344,
+            136.4774169921875,
+            555.1327514648438,
+            437.003173828125,
+            0.9523299336433411,
+            5.0
+          ],
+          [
+            212.55078125,
+            241.31723022460938,
+            284.4814147949219,
+            510.1308288574219,
+            0.9427850246429443,
+            0.0
+          ],
+          [
+            476.05517578125,
+            233.93856811523438,
+            560.6151123046875,
+            521.98876953125,
+            0.9414229989051819,
+            0.0
+          ],
+          [
+            79.99784851074219,
+            326.71759033203125,
+            126.78831481933594,
+            517.3414306640625,
+            0.8881140947341919,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            84.75,
+            137.375,
+            549.5,
+            436.0,
+            0.957912266254425,
+            5.0
+          ],
+          [
+            110.5,
+            237.375,
+            226.6875,
+            535.125,
+            0.9536218643188477,
+            0.0
+          ],
+          [
+            476.3125,
+            235.125,
+            560.6875,
+            523.0,
+            0.9429286122322083,
+            0.0
+          ],
+          [
+            212.25,
+            241.5625,
+            284.09375,
+            510.375,
+            0.9219217896461487,
+            0.0
+          ],
+          [
+            80.15625,
+            327.875,
+            126.734375,
+            517.1875,
+            0.8774768114089966,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9911273383405756,
+            "max_coordinate_error": 1.2529296875,
+            "score_error": 0.008007705211639404
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9771631899453964,
+            "max_coordinate_error": 5.63275146484375,
+            "score_error": 0.005582332611083984
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9886757615670945,
+            "max_coordinate_error": 0.387664794921875,
+            "score_error": 0.020863234996795654
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9885450008187389,
+            "max_coordinate_error": 1.186431884765625,
+            "score_error": 0.0015056133270263672
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9886139323363599,
+            "max_coordinate_error": 1.15740966796875,
+            "score_error": 0.010637283325195312
+          }
+        ],
+        "fixture_passed": false
+      },
+      "generated_vs_quantized": {
+        "raw_max_abs": 16.9921875,
+        "raw_rms": 0.990155041217804,
+        "worst_index": [
+          0,
+          4,
+          7786
+        ],
+        "worst_reference": -32.03125,
+        "worst_actual": -15.0390625,
+        "expected_high_detections": [
+          [
+            110.40625,
+            237.125,
+            226.6875,
+            535.125,
+            0.9543930292129517,
+            0.0
+          ],
+          [
+            85.125,
+            137.0,
+            550.875,
+            435.875,
+            0.9520419239997864,
+            5.0
+          ],
+          [
+            476.0625,
+            235.125,
+            560.90625,
+            523.0,
+            0.9389128684997559,
+            0.0
+          ],
+          [
+            212.328125,
+            240.875,
+            284.21875,
+            509.75,
+            0.9252299070358276,
+            0.0
+          ],
+          [
+            80.09375,
+            327.1875,
+            126.671875,
+            517.875,
+            0.8814108967781067,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            84.75,
+            137.375,
+            549.5,
+            436.0,
+            0.957912266254425,
+            5.0
+          ],
+          [
+            110.5,
+            237.375,
+            226.6875,
+            535.125,
+            0.9536218643188477,
+            0.0
+          ],
+          [
+            476.3125,
+            235.125,
+            560.6875,
+            523.0,
+            0.9429286122322083,
+            0.0
+          ],
+          [
+            212.25,
+            241.5625,
+            284.09375,
+            510.375,
+            0.9219217896461487,
+            0.0
+          ],
+          [
+            80.15625,
+            327.875,
+            126.734375,
+            517.1875,
+            0.8774768114089966,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9983555153139536,
+            "max_coordinate_error": 0.25,
+            "score_error": 0.0007711648941040039
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9945819097131443,
+            "max_coordinate_error": 1.375,
+            "score_error": 0.005870342254638672
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.994475138121547,
+            "max_coordinate_error": 0.25,
+            "score_error": 0.004015743732452393
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.992328055435051,
+            "max_coordinate_error": 0.6875,
+            "score_error": 0.003308117389678955
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9901380750744443,
+            "max_coordinate_error": 0.6875,
+            "score_error": 0.003934085369110107
+          }
+        ],
+        "fixture_passed": true
+      }
+    },
+    {
+      "case": 0,
+      "quantized": {
+        "raw_max_abs": 44.91912078857422,
+        "raw_rms": 2.6999967098236084,
+        "worst_index": [
+          0,
+          4,
+          6598
+        ],
+        "worst_reference": -60.34099578857422,
+        "worst_actual": -15.421875,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 42.65349578857422,
+        "raw_rms": 2.719968557357788,
+        "worst_index": [
+          0,
+          4,
+          6598
+        ],
+        "worst_reference": -60.34099578857422,
+        "worst_actual": -17.6875,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated_vs_quantized": {
+        "raw_max_abs": 42.78125,
+        "raw_rms": 1.907021164894104,
+        "worst_index": [
+          0,
+          4,
+          7876
+        ],
+        "worst_reference": -17.75,
+        "worst_actual": -60.53125,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      }
+    },
+    {
+      "case": 1,
+      "quantized": {
+        "raw_max_abs": 14.817970275878906,
+        "raw_rms": 1.9909074306488037,
+        "worst_index": [
+          0,
+          54,
+          7429
+        ],
+        "worst_reference": -29.333595275878906,
+        "worst_actual": -14.515625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 13.86557674407959,
+        "raw_rms": 2.1193301677703857,
+        "worst_index": [
+          0,
+          4,
+          8149
+        ],
+        "worst_reference": -7.79067325592041,
+        "worst_actual": -21.65625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated_vs_quantized": {
+        "raw_max_abs": 13.25,
+        "raw_rms": 0.7293581962585449,
+        "worst_index": [
+          0,
+          4,
+          7809
+        ],
+        "worst_reference": -27.8125,
+        "worst_actual": -14.5625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      }
+    }
+  ],
+  "accuracy_qualified": false,
+  "board_access": false,
+  "tests": {
+    "count": 5,
+    "native_exit": 0
+  }
+}
