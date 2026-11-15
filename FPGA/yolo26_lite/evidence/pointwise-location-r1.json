@@ -1,0 +1,1887 @@
+{
+  "rows": [
+    {
+      "operation": 3296,
+      "adapted_operation": 1832,
+      "output_value": 825,
+      "module": 16,
+      "source": "/network/model.16/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        1024
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "flops": 3355443200,
+      "mean_ms": 19.040426666666672
+    },
+    {
+      "operation": 3240,
+      "adapted_operation": 1506,
+      "output_value": 262,
+      "module": 4,
+      "source": "/network/model.4/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        512
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        512
+      ],
+      "flops": 3355443200,
+      "mean_ms": 18.794495999999995
+    },
+    {
+      "operation": 3223,
+      "adapted_operation": 1464,
+      "output_value": 133,
+      "module": 2,
+      "source": "/network/model.2/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        256
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        256
+      ],
+      "flops": 3355443200,
+      "mean_ms": 15.192234666666668
+    },
+    {
+      "operation": 3311,
+      "adapted_operation": 1870,
+      "output_value": 942,
+      "module": 16,
+      "source": "/network/model.16/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        512
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "flops": 1677721600,
+      "mean_ms": 9.40458666666667
+    },
+    {
+      "operation": 3328,
+      "adapted_operation": 1913,
+      "output_value": 1074,
+      "module": 19,
+      "source": "/network/model.19/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        1024
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "flops": 1677721600,
+      "mean_ms": 8.800426666666656
+    },
+    {
+      "operation": 3257,
+      "adapted_operation": 1548,
+      "output_value": 391,
+      "module": 6,
+      "source": "/network/model.6/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        1024
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "flops": 1677721600,
+      "mean_ms": 8.798720000000001
+    },
+    {
+      "operation": 3280,
+      "adapted_operation": 1790,
+      "output_value": 697,
+      "module": 13,
+      "source": "/network/model.13/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        1024
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "flops": 1677721600,
+      "mean_ms": 8.779264000000001
+    },
+    {
+      "operation": 3295,
+      "adapted_operation": 1828,
+      "output_value": 814,
+      "module": 13,
+      "source": "/network/model.13/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        1024
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "flops": 1677721600,
+      "mean_ms": 8.774655999999997
+    },
+    {
+      "operation": 3313,
+      "adapted_operation": 1875,
+      "output_value": 957,
+      "module": 19,
+      "source": "/network/model.19/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        768
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "flops": 1258291200,
+      "mean_ms": 6.294186666666666
+    },
+    {
+      "operation": 3344,
+      "adapted_operation": 2060,
+      "output_value": 1268,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.0/one2one_cv3.0.1/one2one_cv3.0.1.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "flops": 838860800,
+      "mean_ms": 4.583082666666664
+    },
+    {
+      "operation": 3225,
+      "adapted_operation": 1468,
+      "output_value": 145,
+      "module": 4,
+      "source": "/network/model.4/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "flops": 838860800,
+      "mean_ms": 4.582229333333334
+    },
+    {
+      "operation": 3342,
+      "adapted_operation": 2056,
+      "output_value": 1256,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.0/one2one_cv3.0.0/one2one_cv3.0.0.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "flops": 838860800,
+      "mean_ms": 4.581034666666664
+    },
+    {
+      "operation": 3534,
+      "adapted_operation": 2062,
+      "output_value": 1274,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        256
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        80
+      ],
+      "flops": 262144000,
+      "mean_ms": 1.365333333333343
+    },
+    {
+      "operation": 3208,
+      "adapted_operation": 1426,
+      "output_value": 16,
+      "module": 2,
+      "source": "/network/model.2/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        128
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        128
+      ],
+      "flops": 838860800,
+      "mean_ms": 1.1921066666666666
+    },
+    {
+      "operation": 3242,
+      "adapted_operation": 1510,
+      "output_value": 274,
+      "module": 6,
+      "source": "/network/model.6/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "flops": 838860800,
+      "mean_ms": 0.7620266666666673
+    },
+    {
+      "operation": 3222,
+      "adapted_operation": 1461,
+      "output_value": 122,
+      "module": 2,
+      "source": "/network/model.2/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.6067199999999999
+    },
+    {
+      "operation": 3215,
+      "adapted_operation": 1444,
+      "output_value": 71,
+      "module": 2,
+      "source": "/network/model.2/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.6053546666666662
+    },
+    {
+      "operation": 3209,
+      "adapted_operation": 1429,
+      "output_value": 26,
+      "module": 2,
+      "source": "/network/model.2/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        32
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5343573333333334
+    },
+    {
+      "operation": 3302,
+      "adapted_operation": 1847,
+      "output_value": 871,
+      "module": 16,
+      "source": "/network/model.16/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5031253333333298
+    },
+    {
+      "operation": 3309,
+      "adapted_operation": 1864,
+      "output_value": 922,
+      "module": 16,
+      "source": "/network/model.16/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5027840000000046
+    },
+    {
+      "operation": 3231,
+      "adapted_operation": 1483,
+      "output_value": 191,
+      "module": 4,
+      "source": "/network/model.4/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5027840000000044
+    },
+    {
+      "operation": 3297,
+      "adapted_operation": 1835,
+      "output_value": 835,
+      "module": 16,
+      "source": "/network/model.16/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5027839999999997
+    },
+    {
+      "operation": 3226,
+      "adapted_operation": 1471,
+      "output_value": 155,
+      "module": 4,
+      "source": "/network/model.4/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5026133333333346
+    },
+    {
+      "operation": 3238,
+      "adapted_operation": 1500,
+      "output_value": 242,
+      "module": 4,
+      "source": "/network/model.4/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5026133333333321
+    },
+    {
+      "operation": 3233,
+      "adapted_operation": 1488,
+      "output_value": 206,
+      "module": 4,
+      "source": "/network/model.4/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.502272000000002
+    },
+    {
+      "operation": 3304,
+      "adapted_operation": 1852,
+      "output_value": 886,
+      "module": 16,
+      "source": "/network/model.16/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.5022719999999972
+    },
+    {
+      "operation": 3216,
+      "adapted_operation": 1446,
+      "output_value": 77,
+      "module": 2,
+      "source": "/network/model.2/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        32
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.4829866666666664
+    },
+    {
+      "operation": 3221,
+      "adapted_operation": 1458,
+      "output_value": 113,
+      "module": 2,
+      "source": "/network/model.2/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        32
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.42820266666666734
+    },
+    {
+      "operation": 3214,
+      "adapted_operation": 1441,
+      "output_value": 62,
+      "module": 2,
+      "source": "/network/model.2/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        160,
+        160,
+        64
+      ],
+      "output_shape": [
+        1,
+        160,
+        160,
+        32
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.42820266666666673
+    },
+    {
+      "operation": 3346,
+      "adapted_operation": 2071,
+      "output_value": 1288,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.1/one2one_cv3.1.0/one2one_cv3.1.0.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        512
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 419430400,
+      "mean_ms": 0.39731199999999567
+    },
+    {
+      "operation": 3330,
+      "adapted_operation": 1918,
+      "output_value": 1089,
+      "module": 22,
+      "source": "/network/model.22/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        1024
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 419430400,
+      "mean_ms": 0.30685866666667666
+    },
+    {
+      "operation": 3275,
+      "adapted_operation": 1597,
+      "output_value": 541,
+      "module": 9,
+      "source": "/network/model.9/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        1024
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 419430400,
+      "mean_ms": 0.2783573333333334
+    },
+    {
+      "operation": 3310,
+      "adapted_operation": 1867,
+      "output_value": 931,
+      "module": 16,
+      "source": "/network/model.16/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.271872000000003
+    },
+    {
+      "operation": 3303,
+      "adapted_operation": 1850,
+      "output_value": 880,
+      "module": 16,
+      "source": "/network/model.16/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.27135999999999577
+    },
+    {
+      "operation": 3232,
+      "adapted_operation": 1486,
+      "output_value": 200,
+      "module": 4,
+      "source": "/network/model.4/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.2710186666666632
+    },
+    {
+      "operation": 3239,
+      "adapted_operation": 1503,
+      "output_value": 251,
+      "module": 4,
+      "source": "/network/model.4/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        128
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.26726400000000283
+    },
+    {
+      "operation": 3274,
+      "adapted_operation": 1590,
+      "output_value": 520,
+      "module": 8,
+      "source": "/network/model.8/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        1024
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 419430400,
+      "mean_ms": 0.2512213333333348
+    },
+    {
+      "operation": 3256,
+      "adapted_operation": 1545,
+      "output_value": 380,
+      "module": 6,
+      "source": "/network/model.6/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16827733333333647
+    },
+    {
+      "operation": 3294,
+      "adapted_operation": 1825,
+      "output_value": 803,
+      "module": 13,
+      "source": "/network/model.13/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16827733333333647
+    },
+    {
+      "operation": 3320,
+      "adapted_operation": 1893,
+      "output_value": 1012,
+      "module": 19,
+      "source": "/network/model.19/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16793599999999667
+    },
+    {
+      "operation": 3249,
+      "adapted_operation": 1528,
+      "output_value": 329,
+      "module": 6,
+      "source": "/network/model.6/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16793599999999664
+    },
+    {
+      "operation": 3327,
+      "adapted_operation": 1910,
+      "output_value": 1063,
+      "module": 19,
+      "source": "/network/model.19/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16776533333332433
+    },
+    {
+      "operation": 3287,
+      "adapted_operation": 1808,
+      "output_value": 752,
+      "module": 13,
+      "source": "/network/model.13/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16759466666666656
+    },
+    {
+      "operation": 3279,
+      "adapted_operation": 1786,
+      "output_value": 686,
+      "module": 10,
+      "source": "/network/model.10/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.16076799999999639
+    },
+    {
+      "operation": 3334,
+      "adapted_operation": 2018,
+      "output_value": 1180,
+      "module": 22,
+      "source": "/network/model.22/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        768
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 314572800,
+      "mean_ms": 0.16042666666666627
+    },
+    {
+      "operation": 3276,
+      "adapted_operation": 1600,
+      "output_value": 550,
+      "module": 10,
+      "source": "/network/model.10/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.15974399999999636
+    },
+    {
+      "operation": 3243,
+      "adapted_operation": 1513,
+      "output_value": 284,
+      "module": 6,
+      "source": "/network/model.6/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.14131200000000535
+    },
+    {
+      "operation": 3259,
+      "adapted_operation": 1552,
+      "output_value": 403,
+      "module": 8,
+      "source": "/network/model.8/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.14114133333333304
+    },
+    {
+      "operation": 3321,
+      "adapted_operation": 1895,
+      "output_value": 1018,
+      "module": 19,
+      "source": "/network/model.19/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.14080000000000775
+    },
+    {
+      "operation": 3250,
+      "adapted_operation": 1530,
+      "output_value": 335,
+      "module": 6,
+      "source": "/network/model.6/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.14080000000000292
+    },
+    {
+      "operation": 3348,
+      "adapted_operation": 2075,
+      "output_value": 1300,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.1/one2one_cv3.1.1/one2one_cv3.1.1.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "flops": 209715200,
+      "mean_ms": 0.14079999999999807
+    },
+    {
+      "operation": 3288,
+      "adapted_operation": 1810,
+      "output_value": 758,
+      "module": 13,
+      "source": "/network/model.13/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.14062933333333544
+    },
+    {
+      "operation": 3319,
+      "adapted_operation": 1890,
+      "output_value": 1003,
+      "module": 19,
+      "source": "/network/model.19/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.13789866666667513
+    },
+    {
+      "operation": 3326,
+      "adapted_operation": 1907,
+      "output_value": 1054,
+      "module": 19,
+      "source": "/network/model.19/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.13789866666667513
+    },
+    {
+      "operation": 3286,
+      "adapted_operation": 1805,
+      "output_value": 743,
+      "module": 13,
+      "source": "/network/model.13/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.13789866666666542
+    },
+    {
+      "operation": 3248,
+      "adapted_operation": 1525,
+      "output_value": 320,
+      "module": 6,
+      "source": "/network/model.6/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.1377280000000028
+    },
+    {
+      "operation": 3255,
+      "adapted_operation": 1542,
+      "output_value": 371,
+      "module": 6,
+      "source": "/network/model.6/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.1377280000000028
+    },
+    {
+      "operation": 3314,
+      "adapted_operation": 1878,
+      "output_value": 967,
+      "module": 19,
+      "source": "/network/model.19/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.1377280000000028
+    },
+    {
+      "operation": 3293,
+      "adapted_operation": 1822,
+      "output_value": 794,
+      "module": 13,
+      "source": "/network/model.13/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.13772799999999794
+    },
+    {
+      "operation": 3281,
+      "adapted_operation": 1793,
+      "output_value": 707,
+      "module": 13,
+      "source": "/network/model.13/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        128
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.13755733333333045
+    },
+    {
+      "operation": 3350,
+      "adapted_operation": 2086,
+      "output_value": 1320,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.2/one2one_cv3.2.0/one2one_cv3.2.0.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.09301333333334574
+    },
+    {
+      "operation": 3530,
+      "adapted_operation": 2015,
+      "output_value": 1169,
+      "module": 22,
+      "source": "/network/model.22/m.0/m.0.1/ffn/ffn.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.0846506666666537
+    },
+    {
+      "operation": 3522,
+      "adapted_operation": 1692,
+      "output_value": 614,
+      "module": 10,
+      "source": "/network/model.10/m/m.0/ffn/ffn.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.08413866666667066
+    },
+    {
+      "operation": 3526,
+      "adapted_operation": 1783,
+      "output_value": 676,
+      "module": 10,
+      "source": "/network/model.10/m/m.1/ffn/ffn.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.0841386666666658
+    },
+    {
+      "operation": 3518,
+      "adapted_operation": 1592,
+      "output_value": 526,
+      "module": 9,
+      "source": "/network/model.9/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.08345600000000074
+    },
+    {
+      "operation": 3519,
+      "adapted_operation": 1603,
+      "output_value": 559,
+      "module": 10,
+      "source": "/network/model.10/m/m.0/attn/qkv/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.062464000000002365
+    },
+    {
+      "operation": 3277,
+      "adapted_operation": 1690,
+      "output_value": 608,
+      "module": 10,
+      "source": "/network/model.10/m/m.0/ffn/ffn.0/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.06126933333333485
+    },
+    {
+      "operation": 3333,
+      "adapted_operation": 2013,
+      "output_value": 1163,
+      "module": 22,
+      "source": "/network/model.22/m.0/m.0.1/ffn/ffn.0/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.05973333333333721
+    },
+    {
+      "operation": 3278,
+      "adapted_operation": 1781,
+      "output_value": 670,
+      "module": 10,
+      "source": "/network/model.10/m/m.1/ffn/ffn.0/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.0593919999999974
+    },
+    {
+      "operation": 3527,
+      "adapted_operation": 1926,
+      "output_value": 1114,
+      "module": 22,
+      "source": "/network/model.22/m.0/m.0.1/attn/qkv/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.055125333333339466
+    },
+    {
+      "operation": 3523,
+      "adapted_operation": 1694,
+      "output_value": 621,
+      "module": 10,
+      "source": "/network/model.10/m/m.1/attn/qkv/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        512
+      ],
+      "flops": 104857600,
+      "mean_ms": 0.0534186666666695
+    },
+    {
+      "operation": 3535,
+      "adapted_operation": 2077,
+      "output_value": 1306,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        256
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        80
+      ],
+      "flops": 65536000,
+      "mean_ms": 0.04710400000000178
+    },
+    {
+      "operation": 3529,
+      "adapted_operation": 2011,
+      "output_value": 1156,
+      "module": 22,
+      "source": "/network/model.22/m.0/m.0.1/attn/proj/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 52428800,
+      "mean_ms": 0.038741333333338845
+    },
+    {
+      "operation": 3521,
+      "adapted_operation": 1688,
+      "output_value": 601,
+      "module": 10,
+      "source": "/network/model.10/m/m.0/attn/proj/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 52428800,
+      "mean_ms": 0.0382293333333364
+    },
+    {
+      "operation": 3525,
+      "adapted_operation": 1779,
+      "output_value": 663,
+      "module": 10,
+      "source": "/network/model.10/m/m.1/attn/proj/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 52428800,
+      "mean_ms": 0.03652266666666643
+    },
+    {
+      "operation": 3266,
+      "adapted_operation": 1570,
+      "output_value": 458,
+      "module": 8,
+      "source": "/network/model.8/m.0/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 52428800,
+      "mean_ms": 0.03430399999999888
+    },
+    {
+      "operation": 3273,
+      "adapted_operation": 1587,
+      "output_value": 509,
+      "module": 8,
+      "source": "/network/model.8/m.1/cv3/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 52428800,
+      "mean_ms": 0.03430399999999888
+    },
+    {
+      "operation": 3352,
+      "adapted_operation": 2090,
+      "output_value": 1332,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.2/one2one_cv3.2.1/one2one_cv3.2.1.1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "flops": 52428800,
+      "mean_ms": 0.03413333333333139
+    },
+    {
+      "operation": 3265,
+      "adapted_operation": 1567,
+      "output_value": 449,
+      "module": 8,
+      "source": "/network/model.8/m.0/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        128
+      ],
+      "flops": 26214400,
+      "mean_ms": 0.029696000000001124
+    },
+    {
+      "operation": 3272,
+      "adapted_operation": 1584,
+      "output_value": 500,
+      "module": 8,
+      "source": "/network/model.8/m.1/cv2/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        128
+      ],
+      "flops": 26214400,
+      "mean_ms": 0.02935466666666616
+    },
+    {
+      "operation": 3260,
+      "adapted_operation": 1555,
+      "output_value": 413,
+      "module": 8,
+      "source": "/network/model.8/m.0/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        128
+      ],
+      "flops": 26214400,
+      "mean_ms": 0.026282666666661195
+    },
+    {
+      "operation": 3267,
+      "adapted_operation": 1572,
+      "output_value": 464,
+      "module": 8,
+      "source": "/network/model.8/m.1/cv1/conv/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        128
+      ],
+      "flops": 26214400,
+      "mean_ms": 0.026112000000003414
+    },
+    {
+      "operation": 3536,
+      "adapted_operation": 2092,
+      "output_value": 1338,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        256
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        80
+      ],
+      "flops": 16384000,
+      "mean_ms": 0.022698666666663484
+    },
+    {
+      "operation": 3531,
+      "adapted_operation": 2024,
+      "output_value": 1198,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv_output_0",
+      "input_shape": [
+        1,
+        80,
+        80,
+        64
+      ],
+      "output_shape": [
+        1,
+        80,
+        80,
+        4
+      ],
+      "flops": 3276800,
+      "mean_ms": 0.021845333333330927
+    },
+    {
+      "operation": 3532,
+      "adapted_operation": 2035,
+      "output_value": 1218,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv_output_0",
+      "input_shape": [
+        1,
+        40,
+        40,
+        64
+      ],
+      "output_shape": [
+        1,
+        40,
+        40,
+        4
+      ],
+      "flops": 819200,
+      "mean_ms": 0.011946666666665502
+    },
+    {
+      "operation": 3533,
+      "adapted_operation": 2046,
+      "output_value": 1238,
+      "module": 23,
+      "source": "/network/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv_output_0",
+      "input_shape": [
+        1,
+        20,
+        20,
+        64
+      ],
+      "output_shape": [
+        1,
+        20,
+        20,
+        4
+      ],
+      "flops": 204800,
+      "mean_ms": 0.006314666666662864
+    }
+  ],
+  "modules": [
+    {
+      "module": 2,
+      "count": 8,
+      "mean_ms": 19.470165333333334,
+      "flops": 5033164800
+    },
+    {
+      "module": 4,
+      "count": 8,
+      "mean_ms": 25.925290666666672,
+      "flops": 5033164800
+    },
+    {
+      "module": 6,
+      "count": 8,
+      "mean_ms": 10.454528000000014,
+      "flops": 3355443200
+    },
+    {
+      "module": 8,
+      "count": 8,
+      "mean_ms": 0.5724159999999976,
+      "flops": 838860800
+    },
+    {
+      "module": 9,
+      "count": 2,
+      "mean_ms": 0.36181333333333415,
+      "flops": 524288000
+    },
+    {
+      "module": 10,
+      "count": 10,
+      "mean_ms": 0.8000853333333363,
+      "flops": 1153433600
+    },
+    {
+      "module": 13,
+      "count": 8,
+      "mean_ms": 18.44360533333333,
+      "flops": 4194304000
+    },
+    {
+      "module": 16,
+      "count": 8,
+      "mean_ms": 30.99921066666667,
+      "flops": 5872025600
+    },
+    {
+      "module": 19,
+      "count": 8,
+      "mean_ms": 15.984640000000004,
+      "flops": 3774873600
+    },
+    {
+      "module": 22,
+      "count": 6,
+      "mean_ms": 0.7055360000000122,
+      "flops": 1101004800
+    },
+    {
+      "module": 23,
+      "count": 12,
+      "mean_ms": 11.304618666666666,
+      "flops": 2812518400
+    }
+  ],
+  "schema": 1,
+  "graph_identities": {
+    "ZG": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+    "adapted": "f5ecacccf83a3659fa9561d2157ca1c0668859f67f36eff83fa0915e39f366f8",
+    "quantized": "7407f1a91ba6b8a154626337fc21c22a1e79ad382b5b2ac96eb6499bcfd8636f"
+  },
+  "parser_mapping_sha256": "6ef3a84217d21af12871d9e960cb40b873c81da1d6929d584c98860ffba4d475",
+  "layout_report_sha256": "7bb8c4784c4b0bcbd70bea51d5ed500f8becd58ab212504bad06cc996d1bd13d",
+  "board_access": false
+}

@@ -1,0 +1,57 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-pack-20261114-021806-855426",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_pixel_pack.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_pack.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-pack-20261114-021806-855426",
+      "pid": 18404,
+      "started_utc": "2026-11-13T18:18:06.867168+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8899999999994179
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_pack",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-pack-20261114-021806-855426",
+      "pid": 18304,
+      "started_utc": "2026-11-13T18:18:07.755685+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.7189999999973224
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-pack-20261114-021806-855426",
+      "pid": 21184,
+      "started_utc": "2026-11-13T18:18:10.477760+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.5310000000026776
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 18,
+    "cycles": 62290,
+    "seed": "26ba1234"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+    "tb\\tb_pack.sv": "898728ff606aa629be01f423b462f59b293f10cd7191b1e0424c66ded4d4eed5"
+  }
+}

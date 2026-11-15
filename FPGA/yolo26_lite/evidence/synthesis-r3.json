@@ -1,0 +1,35 @@
+{
+  "native": {
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-notrace",
+      "-source",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-synth-r3\\synthesize.tcl"
+    ],
+    "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-synth-r3",
+    "pid": 17280,
+    "started_utc": "2026-11-13T18:35:16.652711+00:00",
+    "native_exit": 0,
+    "elapsed_seconds": 67.52180699999735
+  },
+  "proxy_part": "xc7z030ffg676-2",
+  "physical_target": "JFMQL30TAI676H",
+  "synthesis_passed": true,
+  "timing_budget_ns": 5,
+  "integrated_timing_passed": false,
+  "bit_generated": false,
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+    "rtl\\y26_dma_mm2s.sv": "3b60fbbe11eb1c1c529edd46b7c1eb19332b25b5c4fd1d110b04dee506d22a47",
+    "rtl\\y26_pixel_unpack.sv": "0a946c1626bb457e2b94bd3512378ada7ffa1b568c84e25aa0c57852a9ae8b19",
+    "rtl\\y26_resize_letterbox.sv": "162991037fe309e94a7f86613d79c0b9d097210068d413c36dc07babfa0f0ecb",
+    "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+    "rtl\\y26_dma_s2mm.sv": "6280d490d2b4f5bcbab5c8a23e0abf897581a140ac5cbd5628cfcf6a0497a339",
+    "rtl\\y26_preprocess.sv": "a1a44c5a54d826f9018e57f4c81d644186031060a08f40d6b5529c6adb47d9b2"
+  },
+  "estimated_setup_wns_ns": -4.747,
+  "estimated_setup_passed": false
+}

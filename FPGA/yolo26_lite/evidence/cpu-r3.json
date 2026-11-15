@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "kind": "arm64_neon_compose",
+  "full_evidence": ".local\\yolo26-cpu-r3",
+  "pixel_comparison": {
+    "equal": true,
+    "bytes": 11059200,
+    "cases": 6,
+    "sha256": "1d8f27b136e5ad07939ad41ba203b3415cf9c2f468d69309c3ec45f4c70f7efe",
+    "scalar_baseline": ".local/yolo26-planning/compose-scalar-before-r1.rgb565"
+  },
+  "measurements": [
+    {
+      "kind": "cpu_module",
+      "module": "one_to_one_tail",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 5107408,
+      "p50_ns": 5105650,
+      "p95_ns": 5152040,
+      "p99_ns": 5170930,
+      "maximum_ns": 5190050,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "rgb888_to_nhwc_fp32",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 4479862,
+      "p50_ns": 4462050,
+      "p95_ns": 4598780,
+      "p99_ns": 4647600,
+      "maximum_ns": 4648130,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "yuyv_vga_to_720p_with_boxes",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 9412318,
+      "p50_ns": 9408320,
+      "p95_ns": 9451570,
+      "p99_ns": 9477940,
+      "maximum_ns": 9566480,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "host_rgb565_copy",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 943190,
+      "p50_ns": 937790,
+      "p95_ns": 979280,
+      "p99_ns": 1047870,
+      "maximum_ns": 1055280,
+      "npu_executed": false
+    },
+    {
+      "kind": "summary",
+      "input": "repeated_synthetic_fixture",
+      "checksum": 31088,
+      "postprocess_scan": "aarch64_neon",
+      "sdk_starts": 0,
+      "camera_starts": 0,
+      "npu_executed": false
+    }
+  ],
+  "tests": {
+    "native_exit": 0,
+    "tests": [
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_postprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_frames"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_preprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_compose"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_metrics"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_display_buffers"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r3/build/test_display_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      }
+    ]
+  },
+  "cleanup": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "sources": {
+    "CMakeLists.txt": "ad86a5354d1a0e96bc43444e4ee93c2bd5ca1de9372680b221faacbbfcd2fb02",
+    "camera_board.py": "41c5fc4fbb28791dcf755ba74841007c0e3683ca0cf25ccb3567568989e9b64b",
+    "software/src/camera_probe.cpp": "9d0bd7ff5fbc2c5e0c5935f2642bd150c057bdb54abc2210a1d7e523f8af6ec0",
+    "software/src/capture.cpp": "9e16555d3a13b28a874f7c92271e3bb7aeb2da31e5eda136f0eb1ea26997a8d9",
+    "software/src/compose.cpp": "65c6398025aec8cb3d5469d8404a5a0f48eb09d4b621a383297893de927cff3c",
+    "software/src/control.cpp": "dfe2dbef36c06e30ddfec7cf709ad8a7ea1fe19edeb78a6c31e37ef7f9ce81a2",
+    "software/src/cpu_benchmark.cpp": "ca60779a5ffd7ed494573b79c83835db18f6b94a887fda7a811d9e6f1bc27baf",
+    "software/src/display_buffers.cpp": "5681249a8f27ba7877ff62e6ed858d61bfcfb4d7dd196865a442460d750a2ab3",
+    "software/src/display_control.cpp": "024e36f607cf47c8ae49bf4e47f1a2408fc94a51b068c950384b0758c8f6d16a",
+    "software/src/frames.cpp": "facae8d166218005f3fc91945df6b469f9004446d4038d7ea764ee36f4101d24",
+    "software/src/metrics.cpp": "05ccce231c47808e2ae0824d2f077f866c6a6872f31780148bf4db8f532aa964",
+    "software/src/postprocess.cpp": "6e848b6c1f977ecac58b913bb6d4ae41e801134923c007bdb57f370d6684ea5e",
+    "software/src/preprocess.cpp": "5edd7720ad0cdef20b458a1c527575d9f26137513251d168543b4805fba2645d",
+    "software/tests/compose_fixture.cpp": "01010346762d1e00c8ed18a1f5d8ef2e060102c0f824a97a7a1f82824a3000c5",
+    "software/tests/postprocess_fixture.cpp": "6054704234d4ee4aec72edae9b23c78e2a3d02c30efd3aa3e5769365aa566652",
+    "software/tests/test_compose.cpp": "5199be41ee416d2965b0b18549f6a6f323796271e1f0f41a9b4be5d636d2ad44",
+    "software/tests/test_control.cpp": "3476a6fa85c10876fa865ca23212d5b66f9029d43fa0e2bdbf501c1821d7963a",
+    "software/tests/test_display_buffers.cpp": "56f436ac85f70e5759d46d7bcd23d8bb4eba057fd1b4a6b7e87de9974b2f8f4e",
+    "software/tests/test_display_control.cpp": "8c91fbdb27474240e952914da43f6fae65ffd85d1eeaeeecd5a36ac8224da31d",
+    "software/tests/test_frames.cpp": "ce4638aea1c6cad0f05499f2f36a15d95aac4cbb901e75f8952abb92ac3225fd",
+    "software/tests/test_metrics.cpp": "dcb1ca49dfe6b4ce8629ba652d4c6ae55a46d53704e51a1f19ae6fb9ef513d7a",
+    "software/tests/test_postprocess.cpp": "e901f08a0032514f8d40f044cf0d280456a90bd9f0207eeadd98de10cd64af42",
+    "software/tests/test_preprocess.cpp": "abd87503dba0c183ba5e5b2f6fb96f019577df1e6a03224f0d0bf6cb7c52c6d4",
+    "software/include/yolo26/capture.hpp": "c57e79d2e9ddded37fd679810050696abf9721428a502cb48a2869ce65467e1c",
+    "software/include/yolo26/compose.hpp": "1575097e429523fe282696843e100c9a7739ea31744714d9da8bcc41288178aa",
+    "software/include/yolo26/control.hpp": "35e5f8b8473c21adc51de390197114a6c7695d6a685765c9381b5e8ecedd6a13",
+    "software/include/yolo26/display_buffers.hpp": "7dd84b8b28f5b3ee6d015dac949f8fe3eb3a0cdda6db10b2434d6e5cf45382d8",
+    "software/include/yolo26/display_control.hpp": "64c318f35144445788432d4e24476a318719d9710dceda37f54306b530fcc0fc",
+    "software/include/yolo26/frames.hpp": "3e881ff74a809a8837fe354d9ffd6a67aaf1ddc154153fd2f7fd217567b880fe",
+    "software/include/yolo26/latest_slot.hpp": "64b80e0bf0b0709e8a4b44354e22236652fd9995a6dd18793031cb07f3701c90",
+    "software/include/yolo26/metrics.hpp": "f8d287a2310e8d5db81a45cfa4853383b02b3175106e0587fc1fd07060aa0a1d",
+    "software/include/yolo26/postprocess.hpp": "74e10214b5cc52a4470981e6fa7e5eed122d94d1a0602693c48cec668093a2bd",
+    "software/include/yolo26/preprocess.hpp": "e921984c2feec69ddbffc3c93358f2245693afbe44e484b3f4a4644969dffa1e"
+  }
+}

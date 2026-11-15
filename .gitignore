@@ -1,0 +1,14 @@
+/.local/
+/build/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+*.private.json
+*.private.md
+.env
+.env.*
+artifacts
+
+Studying_plan

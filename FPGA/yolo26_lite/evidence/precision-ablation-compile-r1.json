@@ -1,0 +1,3524 @@
+{
+  "schema": 1,
+  "models": {
+    "psa": {
+      "identity_sha256": "39ee1f0ccaf99ec1aad892ca6472d75eeaa332a86e4492339f95c2bf26f71d86",
+      "quantize": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "quantize",
+            "quantize.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-psa-r1",
+          "pid": 17908,
+          "started_utc": "2026-11-14T09:59:21.863573+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 75.34725780000736
+        },
+        "graph": {
+          "json_sha256": "6eea70ae21aa3142d716a871ff7e8574296b5db2860b41eedf2e7b5824c7ba04",
+          "raw_sha256": "3ce1d41167016e5c1f1dff625c19f3fefec6e1a3edb770c392782645f61bab45",
+          "raw_bytes": 27746196,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::Cast": 17,
+            "icraft::xir::Conv2d": 166,
+            "icraft::xir::SiLU": 147,
+            "icraft::xir::Split": 12,
+            "icraft::xir::Add": 39,
+            "icraft::xir::Concat": 31,
+            "icraft::xir::MaxPool2d": 3,
+            "icraft::xir::Transpose": 30,
+            "icraft::xir::Reshape": 21,
+            "icraft::xir::Matmul": 6,
+            "icraft::xir::Multiply": 3,
+            "icraft::xir::Softmax": 3,
+            "icraft::xir::Upsample": 2,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        },
+        "types": {
+          "operator_types": {
+            "Input": 1,
+            "Cast": 17,
+            "Conv2d": 166,
+            "SiLU": 147,
+            "Split": 12,
+            "Add": 39,
+            "Concat": 31,
+            "MaxPool2d": 3,
+            "Transpose": 30,
+            "Reshape": 21,
+            "Matmul": 6,
+            "Multiply": 3,
+            "Softmax": 3,
+            "Upsample": 2,
+            "Output": 1
+          },
+          "output_storage_types": {
+            "@fp(32)": 2,
+            "@tf(32)": 2,
+            "@fp(16)": 157,
+            "@sint(8)": 335
+          },
+          "convolutions": [
+            {
+              "operation": 1,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 3,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 5,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 9,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 11,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 13,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 16,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 18,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 21,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 24,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 26,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 28,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 30,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 33,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 35,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 38,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 41,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 44,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 46,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 48,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 52,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 54,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 56,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 59,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 61,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 64,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 67,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 69,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 71,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 73,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 76,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 78,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 81,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 84,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 87,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 89,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 91,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 95,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 97,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 99,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 102,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 104,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 107,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 110,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 112,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 114,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 116,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 119,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 121,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 124,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 127,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 130,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 132,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 134,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 138,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 140,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 142,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 145,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 147,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 150,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 153,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 155,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 157,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 159,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 162,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 164,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 167,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 170,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 173,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 175,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 180,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 183,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 186,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 199,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 202,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 204,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 206,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 208,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 221,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 224,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 226,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 228,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 231,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 235,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 239,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 241,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 243,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 246,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 248,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 251,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 254,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 256,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 258,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 260,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 263,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 265,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 268,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 271,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 274,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 278,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 282,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 284,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 286,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 289,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 291,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 294,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 297,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 299,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 301,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 303,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 306,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 308,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 311,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 314,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 317,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 319,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 322,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 326,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 328,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 330,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 333,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 335,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 338,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 341,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 343,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 345,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 347,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 350,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 352,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 355,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 358,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 361,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 363,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 366,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 370,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 372,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 375,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 388,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 391,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 393,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 395,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 398,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 400,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 402,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 404,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 407,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 409,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 411,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 414,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 416,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 418,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 422,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 424,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 426,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 428,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 430,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 433,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 435,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 437,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 439,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 441,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 444,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 446,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 448,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 450,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 452,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            }
+          ]
+        }
+      },
+      "generate": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "generate",
+            "quantize.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-psa-r1",
+          "pid": 27976,
+          "started_utc": "2026-11-14T10:00:42.641950+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 26.837416599999415
+        },
+        "graph": {
+          "json_sha256": "77dca9ac74f87b701c21a11b8e47976f533dbea148811354d5d888ab4f3ee889",
+          "raw_sha256": "bf07b99d042046a240aad6485038555e11b53a07bc3245d2c3f0cac7e6a406c3",
+          "raw_bytes": 39599812,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::HardOp": 449,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [
+                  "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+                ],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        },
+        "types": {
+          "operator_types": {
+            "Input": 1,
+            "HardOp": 449,
+            "Output": 1
+          },
+          "output_storage_types": {
+            "@fp(32)": 2,
+            "@tf(32)": 4,
+            "@fp(16)": 189,
+            "@sint(8)": 264
+          },
+          "convolutions": []
+        }
+      },
+      "compiled_view_groups": 98,
+      "actual_runtime_placement_checked": false
+    },
+    "stem2": {
+      "identity_sha256": "d23f8e9f3d6e013b3c8dc363a57c92816f42ff6e5955af771c73aecfbea28f50",
+      "quantize": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "quantize",
+            "quantize.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-stem2-r1",
+          "pid": 29224,
+          "started_utc": "2026-11-14T10:03:27.460762+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 78.88497389999975
+        },
+        "graph": {
+          "json_sha256": "d9426e0514ca12a88963b0b02b898d5c52fc734ba76b6fd07000d2d51a66b873",
+          "raw_sha256": "27431d2232fff494d4bb3fc83581efc01ef8b98068b468d40aa5c01b43eb5503",
+          "raw_bytes": 26436756,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::Cast": 20,
+            "icraft::xir::Conv2d": 166,
+            "icraft::xir::SiLU": 147,
+            "icraft::xir::Split": 12,
+            "icraft::xir::Add": 39,
+            "icraft::xir::Concat": 31,
+            "icraft::xir::MaxPool2d": 3,
+            "icraft::xir::Transpose": 30,
+            "icraft::xir::Reshape": 21,
+            "icraft::xir::Matmul": 6,
+            "icraft::xir::Multiply": 3,
+            "icraft::xir::Softmax": 3,
+            "icraft::xir::Upsample": 2,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        },
+        "types": {
+          "operator_types": {
+            "Input": 1,
+            "Cast": 20,
+            "Conv2d": 166,
+            "SiLU": 147,
+            "Split": 12,
+            "Add": 39,
+            "Concat": 31,
+            "MaxPool2d": 3,
+            "Transpose": 30,
+            "Reshape": 21,
+            "Matmul": 6,
+            "Multiply": 3,
+            "Softmax": 3,
+            "Upsample": 2,
+            "Output": 1
+          },
+          "output_storage_types": {
+            "@fp(32)": 2,
+            "@tf(32)": 2,
+            "@fp(16)": 131,
+            "@sint(8)": 364
+          },
+          "convolutions": [
+            {
+              "operation": 1,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 3,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 5,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 9,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 11,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 13,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 16,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 18,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 21,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 24,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 26,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 28,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 30,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 33,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 35,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 38,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 41,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 44,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 46,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 48,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 52,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 54,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 56,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 59,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 61,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 64,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 67,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 69,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 71,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 73,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 76,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 78,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 81,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 84,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 87,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 89,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 91,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 95,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 97,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 99,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 102,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 104,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 107,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 110,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 112,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 114,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 116,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 119,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 121,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 124,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 127,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 130,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 132,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 134,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 138,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 140,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 142,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 145,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 147,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 150,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 153,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 155,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 157,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 159,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 162,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 164,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 167,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 170,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 173,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 175,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 180,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 183,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 186,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 199,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 202,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 204,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 206,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 208,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 221,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 224,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 226,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 228,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 231,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 235,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 239,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 241,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 243,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 246,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 248,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 251,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 254,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 256,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 258,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 260,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 263,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 265,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 268,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 271,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 274,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 278,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 282,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 284,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 286,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 289,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 291,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 294,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 297,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 299,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 301,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 303,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 306,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 308,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 311,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 314,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 317,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 319,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 322,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 326,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 328,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 330,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 333,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 335,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 338,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 341,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 343,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 345,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 347,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 350,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 352,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 355,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 358,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 361,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 363,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 366,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 370,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 372,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 375,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 388,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 391,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 393,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 395,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 398,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 400,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 402,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 404,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 407,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 409,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 411,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 414,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 416,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 418,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 422,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 424,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 426,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 428,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 430,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 433,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 435,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 437,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 439,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 441,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 444,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 446,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 448,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 450,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 452,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            }
+          ]
+        }
+      },
+      "generate": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "generate",
+            "quantize.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-stem2-r1",
+          "pid": 11344,
+          "started_utc": "2026-11-14T10:04:52.190542+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 32.91563319999841
+        },
+        "graph": {
+          "json_sha256": "cbd8ff21093e6e96a9f77ffa630a2a7906f536418aefa4904cb30dd7c3603546",
+          "raw_sha256": "770ba53423acca3142ea21fbb28ebb533dbf0ed1d439f6e014b64357a4d2cece",
+          "raw_bytes": 40061788,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::HardOp": 448,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [
+                  "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+                ],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        },
+        "types": {
+          "operator_types": {
+            "Input": 1,
+            "HardOp": 448,
+            "Output": 1
+          },
+          "output_storage_types": {
+            "@fp(32)": 2,
+            "@tf(32)": 4,
+            "@fp(16)": 159,
+            "@sint(8)": 293
+          },
+          "convolutions": []
+        }
+      },
+      "compiled_view_groups": 94,
+      "actual_runtime_placement_checked": false
+    },
+    "cal96": {
+      "identity_sha256": "917ffde876af5c5e0777d49519759b190a1b5c2dc3ad8c8092ae702c7e49511b",
+      "quantize": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "quantize",
+            "quantize.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-r3",
+          "pid": 4988,
+          "started_utc": "2026-11-14T09:38:49.460192+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 1484.5333516999963
+        },
+        "graph": {
+          "json_sha256": "013252d801ce1bc88f175967cd3b8b9ac0f282f027e13fcef12f87d820ee383a",
+          "raw_sha256": "88733c83e5b5b0807c76650a9522f2558b1594edcd273f8a2247b578115eb1ec",
+          "raw_bytes": 26363028,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::Cast": 20,
+            "icraft::xir::Conv2d": 166,
+            "icraft::xir::SiLU": 147,
+            "icraft::xir::Split": 12,
+            "icraft::xir::Add": 39,
+            "icraft::xir::Concat": 31,
+            "icraft::xir::MaxPool2d": 3,
+            "icraft::xir::Transpose": 30,
+            "icraft::xir::Reshape": 21,
+            "icraft::xir::Matmul": 6,
+            "icraft::xir::Multiply": 3,
+            "icraft::xir::Softmax": 3,
+            "icraft::xir::Upsample": 2,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        },
+        "types": {
+          "operator_types": {
+            "Input": 1,
+            "Cast": 20,
+            "Conv2d": 166,
+            "SiLU": 147,
+            "Split": 12,
+            "Add": 39,
+            "Concat": 31,
+            "MaxPool2d": 3,
+            "Transpose": 30,
+            "Reshape": 21,
+            "Matmul": 6,
+            "Multiply": 3,
+            "Softmax": 3,
+            "Upsample": 2,
+            "Output": 1
+          },
+          "output_storage_types": {
+            "@fp(32)": 2,
+            "@tf(32)": 2,
+            "@fp(16)": 129,
+            "@sint(8)": 366
+          },
+          "convolutions": [
+            {
+              "operation": 1,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 3,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 5,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 9,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 11,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 13,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 16,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 18,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 21,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 24,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 26,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 28,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 30,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 33,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 35,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 38,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 41,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 44,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 46,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 48,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 52,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 54,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 56,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 59,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 61,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 64,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 67,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 69,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 71,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 73,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 76,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 78,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 81,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 84,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 87,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 89,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 91,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 95,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 97,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 99,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 102,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 104,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 107,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 110,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 112,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 114,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 116,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 119,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 121,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 124,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 127,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 130,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 132,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 134,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 138,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 140,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 142,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 145,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 147,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 150,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 153,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 155,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 157,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 159,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 162,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 164,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 167,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 170,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 173,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 175,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 180,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 183,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 186,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 199,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 202,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 204,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 206,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 208,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 221,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 224,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 226,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 228,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 231,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 235,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 239,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 241,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 243,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 246,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 248,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 251,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 254,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 256,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 258,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 260,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 263,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 265,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 268,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 271,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 274,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 278,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 282,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 284,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 286,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 289,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 291,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 294,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 297,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 299,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 301,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 303,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 306,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 308,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 311,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 314,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 317,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 319,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 322,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 326,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 328,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 330,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 333,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 335,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 338,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 341,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 343,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 345,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 347,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 350,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 352,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 355,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 358,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 361,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 363,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 366,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 370,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 372,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 375,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 388,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 391,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 393,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 395,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 398,
+              "input_storage": "@sint(8)",
+              "weight_storage": "@sint(8)",
+              "output_storage": "@sint(8)"
+            },
+            {
+              "operation": 400,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 402,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 404,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 407,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 409,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 411,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 414,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 416,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 418,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 422,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 424,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 426,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 428,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 430,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 433,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 435,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 437,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 439,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 441,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 444,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 446,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 448,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 450,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            },
+            {
+              "operation": 452,
+              "input_storage": "@fp(16)",
+              "weight_storage": "@fp(16)",
+              "output_storage": "@fp(16)"
+            }
+          ]
+        }
+      },
+      "generate": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "generate",
+            "quantize.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-r3",
+          "pid": 28620,
+          "started_utc": "2026-11-14T10:03:39.380206+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 29.990520699997433
+        },
+        "graph": {
+          "json_sha256": "2c4b8275c8a62d1aabd62f1a2e5ac3e2fea3462ba8f6cef8204098ffa295dab0",
+          "raw_sha256": "64b5813683c0828a45c04181cc19873c7070f70ff01c714be2b18a2059a03e68",
+          "raw_bytes": 39834716,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::HardOp": 448,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [
+                  "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+                ],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        },
+        "types": {
+          "operator_types": {
+            "Input": 1,
+            "HardOp": 448,
+            "Output": 1
+          },
+          "output_storage_types": {
+            "@fp(32)": 2,
+            "@tf(32)": 4,
+            "@fp(16)": 158,
+            "@sint(8)": 294
+          },
+          "convolutions": []
+        }
+      },
+      "compiled_view_groups": 94,
+      "actual_runtime_placement_checked": false
+    }
+  },
+  "cross_precision_feature_statistics_control": {
+    "schema": 1,
+    "files": {
+      "yolo26l_quantized.json": {
+        "original": "3b00dbbdd4fa3aa227552500d2665fc950b9ddd3b34bfb3996b39aeaf783cf82",
+        "replay": "3b00dbbdd4fa3aa227552500d2665fc950b9ddd3b34bfb3996b39aeaf783cf82",
+        "bitwise_equal": true
+      },
+      "yolo26l_quantized.raw": {
+        "original": "3ce1d41167016e5c1f1dff625c19f3fefec6e1a3edb770c392782645f61bab45",
+        "replay": "3ce1d41167016e5c1f1dff625c19f3fefec6e1a3edb770c392782645f61bab45",
+        "bitwise_equal": true
+      }
+    },
+    "original_seconds": 104.50659559998894,
+    "replay_seconds": 77.97320469999977,
+    "same_source_data_partition": true,
+    "changed_precision": true,
+    "reused_normalized_weight_statistics": false,
+    "board_access": false
+  },
+  "tests": {
+    "policy_count": 8,
+    "native_exit": 0
+  },
+  "accuracy_comparisons_pending": true,
+  "board_access": false
+}

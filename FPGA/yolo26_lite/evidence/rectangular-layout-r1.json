@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "date": "2026-11-15",
+  "size": [
+    512,
+    384
+  ],
+  "memory": "static generated instructions",
+  "actual_ddr_bytes_measured": false,
+  "throughput_board_tested": false,
+  "comparisons": [
+    {
+      "model": "yolo26-rect-psa-r1",
+      "static_view_groups": 89,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 3342336,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 3736576,
+          "region_requested_write_bytes": 393216
+        }
+      ],
+      "json_sha256": "ae1e6ec0422d527546a2a7dbf100f79fffcc19e1ad85e4300a66729277bffd4e",
+      "raw_sha256": "7921e992eb49edb91b6c620061330b63143b9ad1efaed009c0af765ae7b318ec",
+      "hardops": 428
+    },
+    {
+      "model": "yolo26-rect-aspect-w16-r1",
+      "static_view_groups": 95,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 3342336,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 3736576,
+          "region_requested_write_bytes": 393216
+        }
+      ],
+      "json_sha256": "ce1b90372f0625eabee0f115a95bf0aa733448c8c49be2d11f49b62d39f6758a",
+      "raw_sha256": "13e3e85b666c9e69b05e5166c061f7348a8ad3acef2a2d54b0c3f05d846e4a28",
+      "hardops": 434
+    },
+    {
+      "model": "yolo26-rect-aspect-w24-r1",
+      "static_view_groups": 95,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 3342336,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 3736576,
+          "region_requested_write_bytes": 393216
+        }
+      ],
+      "json_sha256": "f7ce168ea5f3073a0458f933bae2cadb4e158a727689ac9e588401c67dc6f41a",
+      "raw_sha256": "38ca1991dc623bfe944d7b1fc5f5c833160a30fef4ca39ac6f66ea8ba1b01761",
+      "hardops": 434
+    },
+    {
+      "model": "yolo26-rect-aspect-w48-r1",
+      "static_view_groups": 95,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 3342336,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 3736576,
+          "region_requested_write_bytes": 393216
+        }
+      ],
+      "json_sha256": "f49ed96e49a90fd266f164bce9caf69208feffb3d29514a4a9f900ab9dfaccd2",
+      "raw_sha256": "d857c6d3cfec1024f2a4f752bb4eec04de356159937d1b5c50e82a84c03ecb69",
+      "hardops": 434
+    },
+    {
+      "model": "yolo26-rect-aspect-w96-r1",
+      "static_view_groups": 95,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 19267584,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 19399680,
+          "region_requested_write_bytes": 1572864
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Conv2d"
+          ],
+          "input_requested_bytes": 3342336,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 3736576,
+          "region_requested_write_bytes": 393216
+        }
+      ],
+      "json_sha256": "dd380418e9be325a673cd1e9be7fabc06f1414b0c4f29132a960d4dc8a93888a",
+      "raw_sha256": "b23cec4275fb0078a8c15b60e1e86e01bd8dd5de7e314c97201ac981ddba0c11",
+      "hardops": 434
+    },
+    {
+      "model": "yolo26-rect-block8-r1",
+      "static_view_groups": 95,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Transpose",
+            "Conv2d",
+            "Transpose"
+          ],
+          "input_requested_bytes": 1572864,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 4861952,
+          "region_requested_write_bytes": 4718592
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Transpose",
+            "Conv2d",
+            "Transpose"
+          ],
+          "input_requested_bytes": 1572864,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 4861952,
+          "region_requested_write_bytes": 4718592
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Transpose",
+            "Conv2d",
+            "Transpose"
+          ],
+          "input_requested_bytes": 589824,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 2365440,
+          "region_requested_write_bytes": 1376256
+        }
+      ],
+      "json_sha256": "9c88fdaa22fb84c1ebfb346d761dcdd3bddfd2becf937862456b28650266809b",
+      "raw_sha256": "7d7664203e42d0858c523d1576808b94c3e84e36cd4615765942e88e0fb2fe41",
+      "hardops": 440
+    },
+    {
+      "model": "yolo26-rect-block16-r1",
+      "static_view_groups": 95,
+      "regions": [
+        {
+          "operation": 3441,
+          "real_nodes": [
+            "Transpose",
+            "Conv2d",
+            "Transpose"
+          ],
+          "input_requested_bytes": 1572864,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 4855808,
+          "region_requested_write_bytes": 4718592
+        },
+        {
+          "operation": 3443,
+          "real_nodes": [
+            "Transpose",
+            "Conv2d",
+            "Transpose"
+          ],
+          "input_requested_bytes": 1572864,
+          "input_unique_bytes": 1572864,
+          "region_requested_read_bytes": 4855808,
+          "region_requested_write_bytes": 4718592
+        },
+        {
+          "operation": 3412,
+          "real_nodes": [
+            "Transpose",
+            "Conv2d",
+            "Transpose"
+          ],
+          "input_requested_bytes": 589824,
+          "input_unique_bytes": 589824,
+          "region_requested_read_bytes": 2365440,
+          "region_requested_write_bytes": 1376256
+        }
+      ],
+      "json_sha256": "6569d7baca83b398913f5ab6956d7f6824b431ae46c6f481ad308c321907fc2f",
+      "raw_sha256": "22cc82ee275402e30c2773134b2856f07421e3b272b64c45a92b129c5c5effca",
+      "hardops": 440
+    }
+  ],
+  "complete_candidate_simulation": [
+    {
+      "case": 0,
+      "input_sha256": "c45c2e9617c6cd532ad58a37b68bc2e79c1265524af31110bab807edba416f66",
+      "reference_sha256": "c9787025ca9c4516905031001ffe91e077cbde3e442b9ff65429c6c2998dce11",
+      "candidate_sha256": "50cc82b89173eead88d2f254c7e9f0a5706b4e88a0e64abeca8e772bde191d35",
+      "byte_identical": false,
+      "elements": 338688,
+      "raw_max_abs": 55.40625,
+      "raw_rms": 2.913292407989502,
+      "worst_index": [
+        0,
+        4,
+        3755
+      ],
+      "worst_reference": -16.34375,
+      "worst_actual": -71.75,
+      "high_detection_matches": [],
+      "fixture_passed": true
+    },
+    {
+      "case": 1,
+      "input_sha256": "3d9de7b1203de4de3fafa731a2942f5ffb01b62db1d58cbc0cb5c8d3a370b207",
+      "reference_sha256": "eb0ea1267a02060edd73596692ffef4c6f846bf57456cfce8ef3154280f66bd1",
+      "candidate_sha256": "2d4d470b1df2a7d96faa56487e77fd1d43ff17b0ba53097c36fd5e0e763090a0",
+      "byte_identical": false,
+      "elements": 338688,
+      "raw_max_abs": 55.5703125,
+      "raw_rms": 2.772578477859497,
+      "worst_index": [
+        0,
+        4,
+        3763
+      ],
+      "worst_reference": -12.9921875,
+      "worst_actual": -68.5625,
+      "high_detection_matches": [],
+      "fixture_passed": true
+    },
+    {
+      "case": 2,
+      "input_sha256": "609207bdbeae5c6282f35459988c5f0396ec1f605d5f9500711f3ee44cf98351",
+      "reference_sha256": "341ce3b04ddba315a54d178874d62ad50eaa4ec5ddebf4120b288afe6d8347a7",
+      "candidate_sha256": "92fc21fba6203a3bc01c5fc378e6930fdc68518fd0cf315660abc8673f2e27df",
+      "byte_identical": false,
+      "elements": 338688,
+      "raw_max_abs": 46.7734375,
+      "raw_rms": 2.758002519607544,
+      "worst_index": [
+        0,
+        4,
+        3465
+      ],
+      "worst_reference": -8.8828125,
+      "worst_actual": -55.65625,
+      "high_detection_matches": [
+        {
+          "class_id": 5,
+          "matched": false
+        },
+        {
+          "class_id": 0,
+          "matched": false
+        },
+        {
+          "class_id": 0,
+          "matched": false
+        },
+        {
+          "class_id": 0,
+          "matched": false
+        },
+        {
+          "class_id": 0,
+          "matched": false
+        },
+        {
+          "class_id": 27,
+          "matched": true,
+          "iou": 1.0,
+          "max_coordinate_error": 0.0,
+          "score_error": 0.0015607774257659912
+        }
+      ],
+      "fixture_passed": false
+    }
+  ]
+}

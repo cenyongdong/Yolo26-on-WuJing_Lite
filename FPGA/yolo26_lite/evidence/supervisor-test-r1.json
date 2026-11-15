@@ -1,0 +1,138 @@
+{
+  "scope": "Linux supervisor fork/flock/signals with synthetic workers only",
+  "tests": 4,
+  "native": {
+    "command": [
+      "/usr/bin/python3",
+      "-u",
+      "/root/yolo26-supervisor-test-20261114-r1/software/tests/test_probe_supervisor.py",
+      "--evidence-dir",
+      "/root/yolo26-supervisor-test-20261114-r1/synthetic-evidence"
+    ],
+    "native_exit": 0,
+    "child_returned": true
+  },
+  "cases": {
+    "test_exit_without_shutdown_retains_supervisor_and_lock": {
+      "native-exit": {
+        "boot_id": "synthetic-boot",
+        "native_exit": 7,
+        "pid": 8358,
+        "start_ticks": "1722203",
+        "automatic_retry": false
+      },
+      "supervisor-retained": {
+        "reason": "[Errno 2] No such file or directory: '/root/yolo26-supervisor-test-20261114-r1/synthetic-evidence/test_exit_without_shutdown_retains_supervisor_and_lock/native-complete.json'",
+        "boot_id": "synthetic-boot",
+        "pid": 8357,
+        "lease_retained": true,
+        "automatic_retry": false
+      }
+    },
+    "test_failure_with_shutdown_keeps_original_exit": {
+      "native-exit": {
+        "boot_id": "synthetic-boot",
+        "native_exit": 3,
+        "pid": 8360,
+        "start_ticks": "1722434",
+        "automatic_retry": false
+      },
+      "outcome": {
+        "boot_id": "synthetic-boot",
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "original_failure_preserved": true,
+        "automatic_retry": false,
+        "native_exit": 3,
+        "device_owners": [],
+        "numerical_pass": false
+      }
+    },
+    "test_inherited_lock_outlives_launch_parent": {
+      "native-exit": {
+        "boot_id": "synthetic-boot",
+        "native_exit": 0,
+        "pid": 8362,
+        "start_ticks": "1722460",
+        "automatic_retry": false
+      },
+      "outcome": {
+        "boot_id": "synthetic-boot",
+        "native_exit": 0,
+        "completed": 3,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      }
+    },
+    "test_term_requests_native_stop_before_releasing_lock": {
+      "native-exit": {
+        "boot_id": "synthetic-boot",
+        "native_exit": 0,
+        "pid": 8364,
+        "start_ticks": "1722490",
+        "automatic_retry": false
+      },
+      "outcome": {
+        "boot_id": "synthetic-boot",
+        "native_exit": 0,
+        "completed": 0,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      }
+    }
+  },
+  "source_manifest": {
+    "purpose": "synthetic_linux_supervisor_tests",
+    "sdk_starts": 0,
+    "camera_starts": 0,
+    "sources": {
+      "tools/probe_board.py": "f1a6172fcedbcc62e029c35f6d681e2834db7027880baecfc732b8a21a9282a3",
+      "tools/probe_contract.py": "b5a13aa72ac68aea0cdb0c82420c0337bc4a6148917793d10aff7fc74e5955c1",
+      "software/tests/test_probe_supervisor.py": "4538a10c57402560ddf5983d720066dcdfb2e060e541f38bd97689b69ed12207",
+      "software/tests/probe_fake_worker.py": "7bbebf6548a02e078dc77374270021dafe6b30ca7ef46325f69626e57523ea87",
+      "camera_board.py": "cdd3e64a3d07f77b871900d05fcd497b26d37a3eb2436dc7c2674a7e52f2fc9d",
+      "run.py": "948f0225b3b58bcaeae0bf31f53f99d6b30e402e6f869a1533e3b43dd0dd2382"
+    }
+  },
+  "recovery": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "capture_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "only_synthetic_workers": true,
+    "lease_held_until_children_returned": true
+  },
+  "full_evidence": ".local\\yolo26-supervisor-test-r1",
+  "sdk_starts": 0,
+  "camera_starts": 0,
+  "hardware_preflight_exercised": false,
+  "real_worker_exercised": false
+}

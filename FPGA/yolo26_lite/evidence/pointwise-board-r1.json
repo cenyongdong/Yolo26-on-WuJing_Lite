@@ -1,0 +1,4614 @@
+{
+  "schema": 1,
+  "date": "2026-11-14",
+  "scope": "three_pointwise_spatial20_and_logical_matmul",
+  "actual_new_batch": {
+    "sdk_starts": 3,
+    "npu_calls": 54,
+    "normal_reboots": 3,
+    "boot_writes": 0,
+    "camera_starts": 0
+  },
+  "runs": [
+    {
+      "label": "baseline",
+      "boot_id": "06b8d1a8-8446-43fd-9800-01a06525ccad",
+      "identities": {
+        "model.json": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+        "model.raw": "b9317cc986b4779875414153d1cc1532b88f2609ca0f6608ab1e2b0041875ed6",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "6989474809ddc8594ce5f3e73cd2105f66267b86013e6d7e1926f8f7b78c0760"
+      },
+      "boot_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+      "sdk_libraries": {
+        "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+        "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+        "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+      },
+      "sdk_clock_hz": {
+        "icore": 1000000000,
+        "ddr": 333000000
+      },
+      "measured_clock": false,
+      "requested_ocm_strategy": -1,
+      "placement": [
+        {
+          "backend_id": 0,
+          "selected": 1,
+          "merge_hardops": true,
+          "etm_reuse": true,
+          "values": 409,
+          "ocm_values": 279,
+          "ocm_real_values": 207,
+          "ocm_alias_values": 72,
+          "ocm_value_ids": [
+            34,
+            43,
+            85,
+            94,
+            157,
+            169,
+            178,
+            187,
+            193,
+            196,
+            208,
+            220,
+            229,
+            238,
+            244,
+            247,
+            270,
+            286,
+            292,
+            298,
+            301,
+            307,
+            313,
+            316,
+            322,
+            325,
+            337,
+            343,
+            349,
+            352,
+            358,
+            364,
+            367,
+            373,
+            376,
+            399,
+            405,
+            407,
+            409,
+            415,
+            421,
+            427,
+            430,
+            436,
+            442,
+            445,
+            451,
+            454,
+            460,
+            466,
+            472,
+            478,
+            481,
+            487,
+            493,
+            496,
+            502,
+            505,
+            511,
+            516,
+            522,
+            526,
+            528,
+            530,
+            532,
+            537,
+            543,
+            546,
+            559,
+            563,
+            569,
+            572,
+            579,
+            582,
+            584,
+            586,
+            592,
+            597,
+            601,
+            604,
+            610,
+            614,
+            617,
+            621,
+            625,
+            631,
+            634,
+            641,
+            644,
+            646,
+            648,
+            654,
+            659,
+            663,
+            666,
+            672,
+            676,
+            679,
+            682,
+            709,
+            715,
+            721,
+            724,
+            730,
+            736,
+            739,
+            745,
+            748,
+            760,
+            766,
+            772,
+            775,
+            781,
+            787,
+            790,
+            796,
+            799,
+            837,
+            849,
+            858,
+            867,
+            873,
+            876,
+            888,
+            900,
+            909,
+            918,
+            924,
+            927,
+            969,
+            975,
+            981,
+            984,
+            990,
+            996,
+            999,
+            1005,
+            1008,
+            1020,
+            1026,
+            1032,
+            1035,
+            1041,
+            1047,
+            1050,
+            1056,
+            1059,
+            1101,
+            1107,
+            1110,
+            1114,
+            1118,
+            1124,
+            1127,
+            1134,
+            1137,
+            1139,
+            1141,
+            1147,
+            1152,
+            1156,
+            1159,
+            1165,
+            1169,
+            1172,
+            1176,
+            1182,
+            1188,
+            1194,
+            1198,
+            1208,
+            1214,
+            1218,
+            1228,
+            1234,
+            1238,
+            1274,
+            1284,
+            1296,
+            1302,
+            1306,
+            1316,
+            1322,
+            1328,
+            1334,
+            1338,
+            1349,
+            1364,
+            1368,
+            1372,
+            1376,
+            1380,
+            1384,
+            1448,
+            1454,
+            1458,
+            1460,
+            1466,
+            1470,
+            1472,
+            1478,
+            1482,
+            3649,
+            3653,
+            3657,
+            3663,
+            3667,
+            3671,
+            4240,
+            4254,
+            4256,
+            4258,
+            4268,
+            4280,
+            4292,
+            4304,
+            4352,
+            4359,
+            4363,
+            4365,
+            4371,
+            4373,
+            4379,
+            4391,
+            4399,
+            4411,
+            4440,
+            4454,
+            4456,
+            4458,
+            4468,
+            4480,
+            4492,
+            4504,
+            4552,
+            4559,
+            4563,
+            4565,
+            4571,
+            4573,
+            4579,
+            4591,
+            4599,
+            4611,
+            5067,
+            5081,
+            5083,
+            5085,
+            5095,
+            5107,
+            5119,
+            5131,
+            5179,
+            5186,
+            5190,
+            5192,
+            5198,
+            5200,
+            5206,
+            5218,
+            5226,
+            5238,
+            5497,
+            5501,
+            5505,
+            5517,
+            5519,
+            5521,
+            5523,
+            5525,
+            5527,
+            5529,
+            5531,
+            5533,
+            6664,
+            6666,
+            6668,
+            6682,
+            6684
+          ],
+          "segments": [
+            {
+              "bytes": 50216960,
+              "physical_address": 4096,
+              "segment": 0
+            },
+            {
+              "bytes": 12638208,
+              "physical_address": 50221056,
+              "segment": 1
+            },
+            {
+              "bytes": 4915200,
+              "physical_address": 340088832,
+              "segment": 3
+            },
+            {
+              "bytes": 2826240,
+              "physical_address": 345004032,
+              "segment": 4
+            },
+            {
+              "bytes": 26214400,
+              "physical_address": 62861312,
+              "segment": 2
+            }
+          ]
+        }
+      ],
+      "ordinary_frame_range": [
+        3,
+        15
+      ],
+      "timings": {
+        "clear_ms": {
+          "samples": 12,
+          "mean": 0.014663333333333334,
+          "median": 0.01456,
+          "p95": 0.01588,
+          "p99": 0.01588,
+          "maximum": 0.01588,
+          "minimum": 0.01353
+        },
+        "final_wait_ms": {
+          "samples": 12,
+          "mean": 186.427455,
+          "median": 186.430395,
+          "p95": 186.49284,
+          "p99": 186.49284,
+          "maximum": 186.49284,
+          "minimum": 186.36187
+        },
+        "forward_ms": {
+          "samples": 12,
+          "mean": 9.404285833333333,
+          "median": 9.234355,
+          "p95": 10.74727,
+          "p99": 10.74727,
+          "maximum": 10.74727,
+          "minimum": 9.15128
+        },
+        "input_write_ms": {
+          "samples": 12,
+          "mean": 3.298461666666667,
+          "median": 3.249225,
+          "p95": 3.82011,
+          "p99": 3.82011,
+          "maximum": 3.82011,
+          "minimum": 3.24027
+        },
+        "normalize_ms": {
+          "samples": 12,
+          "mean": 4.5586866666666666,
+          "median": 4.549415,
+          "p95": 4.64561,
+          "p99": 4.64561,
+          "maximum": 4.64561,
+          "minimum": 4.52369
+        },
+        "output_read_ms": {
+          "samples": 12,
+          "mean": 12.510909166666668,
+          "median": 12.238725,
+          "p95": 14.11617,
+          "p99": 14.11617,
+          "maximum": 14.11617,
+          "minimum": 11.89396
+        },
+        "postprocess_ms": {
+          "samples": 12,
+          "mean": 6.458624166666667,
+          "median": 6.420154999999999,
+          "p95": 7.07324,
+          "p99": 7.07324,
+          "maximum": 7.07324,
+          "minimum": 6.33661
+        },
+        "forward_wait_ms": {
+          "samples": 12,
+          "mean": 195.83174083333333,
+          "median": 195.70031999999998,
+          "p95": 197.17934,
+          "p99": 197.17934,
+          "maximum": 197.17934,
+          "minimum": 195.55814
+        },
+        "complete_call_ms": {
+          "samples": 12,
+          "mean": 222.68341583333333,
+          "median": 222.300345,
+          "p95": 225.5248,
+          "p99": 225.5248,
+          "maximum": 225.5248,
+          "minimum": 221.74001
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 169.95037866666667,
+        "Copy": 4.482559999999988,
+        "Transpose": 3.4068479999999832,
+        "Add": 2.7089919999999488,
+        "Cast": 1.7936213333333322,
+        "Upsample": 1.6447146666666668,
+        "Softmax": 1.0827093333333226,
+        "Matmul": 0.5585920000000187,
+        "Multiply": 0.3742719999999924,
+        "MaxPool2d": 0.3512319999999939,
+        "Concat": 0.11861333333333217,
+        "AlignAxis": 0.10001066666666397,
+        "PruneAxis": 0.038399999999994175,
+        "Slice": 0.020138666666680363,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "regions": [
+        {
+          "original_operation": 3296,
+          "input_value": 821,
+          "output_value": 827,
+          "operations": [
+            {
+              "operation": 3296,
+              "kind": "Conv2d",
+              "layer_count": 1,
+              "log_sha256": "d858f887e99028bb0e992e82448d7a27e2393beb327150bde48eb808ef70a742",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 3976,
+                    "requested_bytes": 203571200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 15.53125
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 1024,
+                    "requested_bytes": 524288,
+                    "unique_address_bytes": 524288,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 64,
+                    "requested_bytes": 2048,
+                    "unique_address_bytes": 512,
+                    "request_to_unique_ratio": 4.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 64,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 5066,
+                  "ROUT": 6152,
+                  "WXLM": 3976,
+                  "WKLM": 4096,
+                  "RKLM": 4096,
+                  "RXLM": 4096,
+                  "AYLM": 4224,
+                  "WVLM": 256,
+                  "RVLM": 192,
+                  "WETM": 68
+                },
+                "requested_read_bytes": 204097536,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 19.040426666666665
+            }
+          ],
+          "requested_read_bytes": 204097536,
+          "requested_write_bytes": 3276800,
+          "mean_ms": 19.040426666666665,
+          "core_ms": 19.040426666666665,
+          "other_operations_ms": 0.0
+        },
+        {
+          "original_operation": 3240,
+          "input_value": 258,
+          "output_value": 264,
+          "operations": [
+            {
+              "operation": 3240,
+              "kind": "Conv2d",
+              "layer_count": 1,
+              "log_sha256": "641dc67b8f49ae5ad6d45cff72be814c383d0ee66bd68e09fca385c22b4160dd",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 3848,
+                    "requested_bytes": 197017600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 30.0625
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 1024,
+                    "requested_bytes": 524288,
+                    "unique_address_bytes": 524288,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 128,
+                    "requested_bytes": 4096,
+                    "unique_address_bytes": 1024,
+                    "request_to_unique_ratio": 4.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 128,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 5002,
+                  "ROUT": 6152,
+                  "WXLM": 3848,
+                  "WKLM": 4096,
+                  "RKLM": 4096,
+                  "RXLM": 4096,
+                  "AYLM": 4352,
+                  "WVLM": 512,
+                  "RVLM": 384,
+                  "WETM": 132
+                },
+                "requested_read_bytes": 197545984,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 18.794666666666668
+            }
+          ],
+          "requested_read_bytes": 197545984,
+          "requested_write_bytes": 6553600,
+          "mean_ms": 18.794666666666668,
+          "core_ms": 18.794666666666668,
+          "other_operations_ms": 0.0
+        },
+        {
+          "original_operation": 3223,
+          "input_value": 129,
+          "output_value": 135,
+          "operations": [
+            {
+              "operation": 3223,
+              "kind": "Conv2d",
+              "layer_count": 1,
+              "log_sha256": "3c75f11bbff975212190aeed71e02b8f3a0d9880a1c9e37695091c2b0c0195bb",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 2744,
+                    "requested_bytes": 160563200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 12.25
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 256,
+                    "requested_bytes": 131072,
+                    "unique_address_bytes": 131072,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 224,
+                    "requested_bytes": 7168,
+                    "unique_address_bytes": 512,
+                    "request_to_unique_ratio": 14.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 224,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 3226,
+                  "ROUT": 3704,
+                  "WXLM": 2744,
+                  "WKLM": 512,
+                  "RKLM": 3584,
+                  "RXLM": 3584,
+                  "AYLM": 4480,
+                  "WVLM": 896,
+                  "RVLM": 672,
+                  "WETM": 228
+                },
+                "requested_read_bytes": 160701440,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 15.186773333333335
+            }
+          ],
+          "requested_read_bytes": 160701440,
+          "requested_write_bytes": 13107200,
+          "mean_ms": 15.186773333333335,
+          "core_ms": 15.186773333333335,
+          "other_operations_ms": 0.0
+        }
+      ],
+      "numerical": {
+        "board_vs_baseline": {
+          "raw_max_abs": 0.0,
+          "raw_rms": 0.0,
+          "worst_index": [
+            0,
+            0,
+            0
+          ],
+          "worst_reference": 0.476806640625,
+          "worst_actual": 0.476806640625,
+          "expected_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.0,
+              0.961533784866333,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.765625,
+              517.25,
+              0.8955226540565491,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.0,
+              0.961533784866333,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.765625,
+              517.25,
+              0.8955226540565491,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_simulation": {
+          "raw_max_abs": 10.703125,
+          "raw_rms": 0.13856662809848785,
+          "worst_index": [
+            0,
+            76,
+            1940
+          ],
+          "worst_reference": -20.59375,
+          "worst_actual": -31.296875,
+          "expected_high_detections": [
+            [
+              110.3125,
+              236.25,
+              226.4375,
+              535.0,
+              0.9626730680465698,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.3125,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              233.875,
+              560.4375,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.25,
+              0.8940516710281372,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.0,
+              0.961533784866333,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.765625,
+              517.25,
+              0.8955226540565491,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9990440018034984,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0011392831802368164
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9997353096876654,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9997676579925651,
+              "max_coordinate_error": 0.0625,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9991973169189392,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9983520096039958,
+              "max_coordinate_error": 0.25,
+              "score_error": 0.0014709830284118652
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_onnx": {
+          "raw_max_abs": 21.750133514404297,
+          "raw_rms": 0.48405709862709045,
+          "worst_index": [
+            0,
+            4,
+            6727
+          ],
+          "worst_reference": -28.656116485595703,
+          "worst_actual": -50.40625,
+          "expected_high_detections": [
+            [
+              110.30839538574219,
+              236.1220703125,
+              226.43516540527344,
+              535.3948974609375,
+              0.9616295695304871,
+              0.0
+            ],
+            [
+              82.52940368652344,
+              136.4774169921875,
+              555.1327514648438,
+              437.003173828125,
+              0.9523299336433411,
+              5.0
+            ],
+            [
+              212.55078125,
+              241.31723022460938,
+              284.4814147949219,
+              510.1308288574219,
+              0.9427850246429443,
+              0.0
+            ],
+            [
+              476.05517578125,
+              233.93856811523438,
+              560.6151123046875,
+              521.98876953125,
+              0.9414229989051819,
+              0.0
+            ],
+            [
+              79.99784851074219,
+              326.71759033203125,
+              126.78831481933594,
+              517.3414306640625,
+              0.8881140947341919,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.0,
+              0.961533784866333,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.765625,
+              517.25,
+              0.8955226540565491,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9981179999635829,
+              "max_coordinate_error": 0.3948974609375,
+              "score_error": 9.578466415405273e-05
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9975042591293224,
+              "max_coordinate_error": 0.378173828125,
+              "score_error": 0.0012919306755065918
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9974784945082746,
+              "max_coordinate_error": 0.119171142578125,
+              "score_error": 0.00459599494934082
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9936929798988202,
+              "max_coordinate_error": 0.30517578125,
+              "score_error": 0.003164231777191162
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9931898635388797,
+              "max_coordinate_error": 0.40740966796875,
+              "score_error": 0.007408559322357178
+            }
+          ],
+          "fixture_passed": true
+        },
+        "output_sha256": "bb8354a17de7906b3c3a0325010eb38dd7d1dd00f9317aabf52c06d4698a4813",
+        "simulation_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+        "bitwise_simulation": false,
+        "map_validated": false,
+        "previous_baseline_bitwise_equal": true
+      },
+      "closure": {
+        "boot_id": "06b8d1a8-8446-43fd-9800-01a06525ccad",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "views": {
+        "view_groups": 77,
+        "consistent": true,
+        "errors": []
+      },
+      "timer_checks": [
+        {
+          "frame": 15,
+          "validation_error": null,
+          "returned_layer_count": 322,
+          "api_sum_ms": 186.60889600000024,
+          "api_last_ms": 1.737216000000015,
+          "api_calc_time_ms": 208.36582946777344,
+          "collection_ns": 612540,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3407,
+            "counter_last": 728941,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 186.60889600000024,
+            "aggregate_minus_layers_ms": 21.756933467773194,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 16,
+          "validation_error": null,
+          "returned_layer_count": 322,
+          "api_sum_ms": 186.60121600000028,
+          "api_last_ms": 1.7377280000000028,
+          "api_calc_time_ms": 208.56396484375,
+          "collection_ns": 589600,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3409,
+            "counter_last": 728911,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 186.60121600000028,
+            "aggregate_minus_layers_ms": 21.962748843749722,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 17,
+          "validation_error": null,
+          "returned_layer_count": 322,
+          "api_sum_ms": 186.68313600000027,
+          "api_last_ms": 1.7346559999999882,
+          "api_calc_time_ms": 208.47438049316406,
+          "collection_ns": 585370,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3409,
+            "counter_last": 729231,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 186.68313600000027,
+            "aggregate_minus_layers_ms": 21.791244493163788,
+            "independently_measured_clock": false
+          }
+        }
+      ],
+      "complete_outputs_bitwise_stable_within_batch": true,
+      "local_directory": ".local\\yolo26-tile-board-r1\\baseline",
+      "evidence_hashes": {
+        "timings.json": "66db87f1d2ea942ded5d4894c1b5cb63f9156b5c1e18f019793a3db7dd90c4f8",
+        "regions.json": "a32b2fa3350ffd00beff42e6e03e492287f3002c30a69fc55392f335cbed5d32",
+        "numerical.json": "409aba92f1bebe9dfea842f8182e0133d8b63b75edeccfc01b46f2323dc7d31b",
+        "board-evidence.tar.gz": "7a3ed23fea7c5da7abc32b669d9aea090bc89ee953b0e596e59dda193e944fd2"
+      },
+      "regions_total_ms": 53.02186666666667,
+      "regions_requested_bytes": 585282560,
+      "reductions": {
+        "forward_wait_ms": {
+          "milliseconds": 0.0,
+          "percent": 0.0
+        },
+        "complete_call_ms": {
+          "milliseconds": 0.0,
+          "percent": 0.0
+        }
+      }
+    },
+    {
+      "label": "tile20",
+      "boot_id": "8f25b882-f77f-4d55-ad84-1e57ea6abf67",
+      "identities": {
+        "model.json": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+        "model.raw": "c260f8311a4ebf18d76c7b8839848883ac304d2ea2461a97ca3dfbe63718b0f5",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "6989474809ddc8594ce5f3e73cd2105f66267b86013e6d7e1926f8f7b78c0760"
+      },
+      "boot_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+      "sdk_libraries": {
+        "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+        "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+        "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+      },
+      "sdk_clock_hz": {
+        "icore": 1000000000,
+        "ddr": 333000000
+      },
+      "measured_clock": false,
+      "requested_ocm_strategy": -1,
+      "placement": [
+        {
+          "backend_id": 0,
+          "selected": 1,
+          "merge_hardops": true,
+          "etm_reuse": true,
+          "values": 424,
+          "ocm_values": 280,
+          "ocm_real_values": 206,
+          "ocm_alias_values": 74,
+          "ocm_value_ids": [
+            28,
+            49,
+            85,
+            94,
+            157,
+            169,
+            178,
+            187,
+            193,
+            196,
+            208,
+            220,
+            229,
+            238,
+            244,
+            247,
+            270,
+            286,
+            292,
+            298,
+            301,
+            307,
+            313,
+            316,
+            322,
+            325,
+            337,
+            343,
+            349,
+            352,
+            358,
+            364,
+            367,
+            373,
+            376,
+            399,
+            405,
+            407,
+            409,
+            415,
+            421,
+            427,
+            430,
+            436,
+            442,
+            445,
+            451,
+            454,
+            460,
+            466,
+            472,
+            478,
+            481,
+            487,
+            493,
+            496,
+            502,
+            505,
+            511,
+            516,
+            522,
+            526,
+            528,
+            530,
+            532,
+            537,
+            543,
+            546,
+            559,
+            563,
+            569,
+            572,
+            579,
+            582,
+            584,
+            586,
+            592,
+            597,
+            601,
+            604,
+            610,
+            614,
+            617,
+            621,
+            625,
+            631,
+            634,
+            641,
+            644,
+            646,
+            648,
+            654,
+            659,
+            663,
+            666,
+            672,
+            676,
+            679,
+            682,
+            709,
+            715,
+            721,
+            724,
+            730,
+            736,
+            739,
+            745,
+            748,
+            760,
+            766,
+            772,
+            775,
+            781,
+            787,
+            790,
+            796,
+            799,
+            837,
+            843,
+            858,
+            867,
+            873,
+            876,
+            888,
+            894,
+            909,
+            918,
+            924,
+            927,
+            969,
+            975,
+            981,
+            984,
+            990,
+            996,
+            999,
+            1005,
+            1008,
+            1020,
+            1026,
+            1032,
+            1035,
+            1041,
+            1047,
+            1050,
+            1056,
+            1059,
+            1091,
+            1093,
+            1095,
+            1101,
+            1107,
+            1114,
+            1118,
+            1127,
+            1134,
+            1137,
+            1139,
+            1141,
+            1147,
+            1152,
+            1156,
+            1159,
+            1165,
+            1169,
+            1172,
+            1176,
+            1182,
+            1188,
+            1194,
+            1198,
+            1208,
+            1214,
+            1218,
+            1228,
+            1234,
+            1238,
+            1274,
+            1284,
+            1296,
+            1302,
+            1306,
+            1316,
+            1322,
+            1328,
+            1334,
+            1338,
+            1349,
+            1364,
+            1368,
+            1372,
+            1376,
+            1380,
+            1384,
+            1448,
+            1454,
+            1458,
+            1460,
+            1466,
+            1470,
+            1472,
+            1478,
+            1482,
+            3649,
+            3653,
+            3657,
+            3663,
+            3667,
+            3671,
+            4240,
+            4254,
+            4256,
+            4258,
+            4268,
+            4280,
+            4292,
+            4304,
+            4352,
+            4359,
+            4363,
+            4365,
+            4371,
+            4373,
+            4379,
+            4391,
+            4399,
+            4411,
+            4440,
+            4454,
+            4456,
+            4458,
+            4468,
+            4480,
+            4492,
+            4504,
+            4552,
+            4559,
+            4563,
+            4565,
+            4571,
+            4573,
+            4579,
+            4591,
+            4599,
+            4611,
+            5067,
+            5081,
+            5083,
+            5085,
+            5095,
+            5107,
+            5119,
+            5131,
+            5179,
+            5186,
+            5190,
+            5192,
+            5198,
+            5200,
+            5206,
+            5218,
+            5226,
+            5238,
+            5497,
+            5501,
+            5505,
+            5517,
+            5519,
+            5521,
+            5523,
+            5525,
+            5527,
+            5529,
+            5531,
+            5533,
+            6664,
+            6666,
+            6668,
+            6682,
+            6684
+          ],
+          "segments": [
+            {
+              "bytes": 50216960,
+              "physical_address": 4096,
+              "segment": 0
+            },
+            {
+              "bytes": 13420288,
+              "physical_address": 50221056,
+              "segment": 1
+            },
+            {
+              "bytes": 4915200,
+              "physical_address": 419514112,
+              "segment": 3
+            },
+            {
+              "bytes": 2826240,
+              "physical_address": 424429312,
+              "segment": 4
+            },
+            {
+              "bytes": 39321600,
+              "physical_address": 63643648,
+              "segment": 2
+            }
+          ]
+        }
+      ],
+      "ordinary_frame_range": [
+        3,
+        15
+      ],
+      "timings": {
+        "clear_ms": {
+          "samples": 12,
+          "mean": 0.015287499999999999,
+          "median": 0.01529,
+          "p95": 0.01644,
+          "p99": 0.01644,
+          "maximum": 0.01644,
+          "minimum": 0.0144
+        },
+        "final_wait_ms": {
+          "samples": 12,
+          "mean": 159.61284916666665,
+          "median": 159.61430000000001,
+          "p95": 159.65908,
+          "p99": 159.65908,
+          "maximum": 159.65908,
+          "minimum": 159.56389
+        },
+        "forward_ms": {
+          "samples": 12,
+          "mean": 9.267705,
+          "median": 9.247205000000001,
+          "p95": 9.48992,
+          "p99": 9.48992,
+          "maximum": 9.48992,
+          "minimum": 9.22357
+        },
+        "input_write_ms": {
+          "samples": 12,
+          "mean": 3.2528008333333336,
+          "median": 3.260365,
+          "p95": 3.2787,
+          "p99": 3.2787,
+          "maximum": 3.2787,
+          "minimum": 3.22229
+        },
+        "normalize_ms": {
+          "samples": 12,
+          "mean": 4.614421666666667,
+          "median": 4.553625,
+          "p95": 4.82232,
+          "p99": 4.82232,
+          "maximum": 4.82232,
+          "minimum": 4.52271
+        },
+        "output_read_ms": {
+          "samples": 12,
+          "mean": 12.4395875,
+          "median": 12.264015,
+          "p95": 13.38066,
+          "p99": 13.38066,
+          "maximum": 13.38066,
+          "minimum": 12.09489
+        },
+        "postprocess_ms": {
+          "samples": 12,
+          "mean": 6.873141666666666,
+          "median": 6.8537,
+          "p95": 6.99315,
+          "p99": 6.99315,
+          "maximum": 6.99315,
+          "minimum": 6.81469
+        },
+        "forward_wait_ms": {
+          "samples": 12,
+          "mean": 168.88055416666666,
+          "median": 168.857025,
+          "p95": 169.11065,
+          "p99": 169.11065,
+          "maximum": 169.11065,
+          "minimum": 168.81362
+        },
+        "complete_call_ms": {
+          "samples": 12,
+          "mean": 196.08568083333333,
+          "median": 195.892855,
+          "p95": 197.146,
+          "p99": 197.146,
+          "maximum": 197.146,
+          "minimum": 195.7313
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 125.18348800000014,
+        "Transpose": 15.378943999999986,
+        "Copy": 10.263551999999974,
+        "Add": 2.9527039999999825,
+        "Cast": 1.78116266666666,
+        "Upsample": 1.6481279999999923,
+        "Softmax": 1.0828799999999852,
+        "Matmul": 0.5599573333333199,
+        "Multiply": 0.3744426666666647,
+        "MaxPool2d": 0.3507200000000012,
+        "Concat": 0.1187840000000045,
+        "AlignAxis": 0.10001066666666397,
+        "PruneAxis": 0.03891200000000147,
+        "Slice": 0.020138666666670663,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "regions": [
+        {
+          "original_operation": 3296,
+          "input_value": 821,
+          "output_value": 827,
+          "operations": [
+            {
+              "operation": 3505,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3611,
+              "kind": "Transpose",
+              "layer_count": 1,
+              "log_sha256": "3138e30da644d00915472fb85663d0e3d82772b878d14b734c4c3437f527679b",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 16,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 16,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 17,
+                  "ROUT": 16,
+                  "WETM": 19
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 2.83033600000001
+            },
+            {
+              "operation": 3335,
+              "kind": "Conv2d",
+              "layer_count": 1,
+              "log_sha256": "3ce09d2d5a5f3cac1367c56449cd37cf117a08f969488dcfc6c48c3e7e61b3e7",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 208,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 276,
+                    "requested_bytes": 2760704,
+                    "unique_address_bytes": 524288,
+                    "request_to_unique_ratio": 5.265625
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 64,
+                    "requested_bytes": 8192,
+                    "unique_address_bytes": 512,
+                    "request_to_unique_ratio": 16.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 64,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 550,
+                  "ROUT": 820,
+                  "WXLM": 832,
+                  "WKLM": 552,
+                  "RKLM": 16384,
+                  "RXLM": 16384,
+                  "AYLM": 16448,
+                  "WVLM": 896,
+                  "RVLM": 832,
+                  "WETM": 68
+                },
+                "requested_read_bytes": 15876096,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.7312426666666676
+            },
+            {
+              "operation": 3612,
+              "kind": "Transpose",
+              "layer_count": 1,
+              "log_sha256": "46d3e58cb192ce08d0c7b2fc4c775d32c27e8146c6af8ff2a43ec0efacdda339",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 16,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 16,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 17,
+                  "ROUT": 16,
+                  "WETM": 19
+                },
+                "requested_read_bytes": 3276800,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 0.7331839999999938
+            },
+            {
+              "operation": 3506,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3416,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "8f8d6c35d59513952de41a0ff109995daae4a62d24678e1fc879a0a29061d33c",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 50,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 50,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 51,
+                  "ROUT": 50,
+                  "WETM": 53
+                },
+                "requested_read_bytes": 3276800,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 0.7944533333333287
+            }
+          ],
+          "requested_read_bytes": 35536896,
+          "requested_write_bytes": 22937600,
+          "mean_ms": 6.089216000000001,
+          "core_ms": 1.7312426666666676,
+          "other_operations_ms": 4.357973333333334
+        },
+        {
+          "original_operation": 3240,
+          "input_value": 258,
+          "output_value": 264,
+          "operations": [
+            {
+              "operation": 3483,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3587,
+              "kind": "Transpose",
+              "layer_count": 1,
+              "log_sha256": "9da3dc84e5d05dbde3daa2c86942016a31793853b74c09b5acf4cebdf604a123",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 16,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 16,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 17,
+                  "ROUT": 16,
+                  "WETM": 19
+                },
+                "requested_read_bytes": 6553600,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.4185813333333306
+            },
+            {
+              "operation": 3279,
+              "kind": "Conv2d",
+              "layer_count": 1,
+              "log_sha256": "b8282211f2f0763c127d63ed1f7a931e2c4dbf79645f4c09a5d21adb7c827e38",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 688,
+                    "requested_bytes": 39731200,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 6.0625
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 94,
+                    "requested_bytes": 997376,
+                    "unique_address_bytes": 524288,
+                    "request_to_unique_ratio": 1.90234375
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 112,
+                    "requested_bytes": 16384,
+                    "unique_address_bytes": 1024,
+                    "request_to_unique_ratio": 16.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 112,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 896,
+                  "ROUT": 1100,
+                  "WXLM": 688,
+                  "WKLM": 752,
+                  "RKLM": 16384,
+                  "RXLM": 16384,
+                  "AYLM": 16496,
+                  "WVLM": 1760,
+                  "RVLM": 1648,
+                  "WETM": 116
+                },
+                "requested_read_bytes": 40744960,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 4.462591999999999
+            },
+            {
+              "operation": 3588,
+              "kind": "Transpose",
+              "layer_count": 1,
+              "log_sha256": "8db0c90b36134b1c2300c21ed9294ad9f95e7e7c3226a7a7c138ba1ac8c1a746",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 32,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 32,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 33,
+                  "ROUT": 32,
+                  "WETM": 35
+                },
+                "requested_read_bytes": 6553600,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.412608
+            },
+            {
+              "operation": 3484,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3408,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "48f0b674cc2c89041bd202b3fbf3b62f8a22e91307b9144026872777b82af263",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 101,
+                  "ROUT": 100,
+                  "WETM": 103
+                },
+                "requested_read_bytes": 6553600,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.6414720000000016
+            }
+          ],
+          "requested_read_bytes": 60405760,
+          "requested_write_bytes": 26214400,
+          "mean_ms": 8.935253333333332,
+          "core_ms": 4.462591999999999,
+          "other_operations_ms": 4.472661333333333
+        },
+        {
+          "original_operation": 3223,
+          "input_value": 129,
+          "output_value": 135,
+          "operations": [
+            {
+              "operation": 3481,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3585,
+              "kind": "Transpose",
+              "layer_count": 1,
+              "log_sha256": "0b676ce84ac6eef3b843ebba183bab8f179a16972bbc594396a84f02d9d3b4a9",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 64,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 64,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 65,
+                  "ROUT": 64,
+                  "WETM": 67
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 2.7231573333333325
+            },
+            {
+              "operation": 3262,
+              "kind": "Conv2d",
+              "layer_count": 1,
+              "log_sha256": "531e61d00aaabe0b5b83b7347efbfe3f3243808d43f72e1b4eaa8a314b179696",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 256,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 16,
+                    "requested_bytes": 131072,
+                    "unique_address_bytes": 131072,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 256,
+                    "requested_bytes": 32768,
+                    "unique_address_bytes": 512,
+                    "request_to_unique_ratio": 64.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 256,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 530,
+                  "ROUT": 1040,
+                  "WXLM": 512,
+                  "WKLM": 16,
+                  "RKLM": 16384,
+                  "RXLM": 16384,
+                  "AYLM": 17408,
+                  "WVLM": 3584,
+                  "RVLM": 3328,
+                  "WETM": 260
+                },
+                "requested_read_bytes": 13271040,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 2.9992960000000006
+            },
+            {
+              "operation": 3586,
+              "kind": "Transpose",
+              "layer_count": 1,
+              "log_sha256": "46b7842832fea86e831ef41864479b6809e8ed697a1d27714a33d02a6d746032",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 16,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 16,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 17,
+                  "ROUT": 16,
+                  "WETM": 19
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 2.8503039999999986
+            },
+            {
+              "operation": 3482,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3405,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "a3ad60c6c1b6d1eb57f3872ea73f09fe1b02c531d8820f0d9cf8d4be18808526",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 201,
+                  "ROUT": 200,
+                  "WETM": 203
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 3.258368000000001
+            }
+          ],
+          "requested_read_bytes": 52592640,
+          "requested_write_bytes": 52428800,
+          "mean_ms": 11.831125333333333,
+          "core_ms": 2.9992960000000006,
+          "other_operations_ms": 8.831829333333332
+        }
+      ],
+      "numerical": {
+        "board_vs_baseline": {
+          "raw_max_abs": 8.46875,
+          "raw_rms": 0.11537059396505356,
+          "worst_index": [
+            0,
+            4,
+            233
+          ],
+          "worst_reference": -18.8125,
+          "worst_actual": -27.28125,
+          "expected_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.0,
+              0.961533784866333,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.765625,
+              517.25,
+              0.8955226540565491,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.4375,
+              535.125,
+              0.9640516638755798,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              555.0,
+              437.125,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.125,
+              0.9469902515411377,
+              0.0
+            ],
+            [
+              475.78125,
+              234.0,
+              560.4375,
+              522.0,
+              0.9441768527030945,
+              0.0
+            ],
+            [
+              80.15625,
+              326.8125,
+              126.765625,
+              517.25,
+              0.894789457321167,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9990439516724208,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.002517879009246826
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9980719265192219,
+              "max_coordinate_error": 0.5,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9995353159851301,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.00039076805114746094
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9992619926199262,
+              "max_coordinate_error": 0.03125,
+              "score_error": 0.00041037797927856445
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9980244686000969,
+              "max_coordinate_error": 0.3125,
+              "score_error": 0.0007331967353820801
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_simulation": {
+          "raw_max_abs": 11.0,
+          "raw_rms": 0.1314689964056015,
+          "worst_index": [
+            0,
+            4,
+            6601
+          ],
+          "worst_reference": -52.9375,
+          "worst_actual": -41.9375,
+          "expected_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.125,
+              0.9629528522491455,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.59375,
+              510.25,
+              0.9469902515411377,
+              0.0
+            ],
+            [
+              475.75,
+              233.875,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.15625,
+              326.8125,
+              126.765625,
+              517.25,
+              0.8933094143867493,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.4375,
+              535.125,
+              0.9640516638755798,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              555.0,
+              437.125,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.125,
+              0.9469902515411377,
+              0.0
+            ],
+            [
+              475.78125,
+              234.0,
+              560.4375,
+              522.0,
+              0.9441768527030945,
+              0.0
+            ],
+            [
+              80.15625,
+              326.8125,
+              126.765625,
+              517.25,
+              0.894789457321167,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9994617868675996,
+              "max_coordinate_error": 0.0625,
+              "score_error": 0.0010988116264343262
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9984877898219383,
+              "max_coordinate_error": 0.375,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9991020540362853,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9988286332181178,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.00041037797927856445
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0014800429344177246
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_onnx": {
+          "raw_max_abs": 21.625133514404297,
+          "raw_rms": 0.47872981429100037,
+          "worst_index": [
+            0,
+            4,
+            6727
+          ],
+          "worst_reference": -28.656116485595703,
+          "worst_actual": -50.28125,
+          "expected_high_detections": [
+            [
+              110.30839538574219,
+              236.1220703125,
+              226.43516540527344,
+              535.3948974609375,
+              0.9616295695304871,
+              0.0
+            ],
+            [
+              82.52940368652344,
+              136.4774169921875,
+              555.1327514648438,
+              437.003173828125,
+              0.9523299336433411,
+              5.0
+            ],
+            [
+              212.55078125,
+              241.31723022460938,
+              284.4814147949219,
+              510.1308288574219,
+              0.9427850246429443,
+              0.0
+            ],
+            [
+              476.05517578125,
+              233.93856811523438,
+              560.6151123046875,
+              521.98876953125,
+              0.9414229989051819,
+              0.0
+            ],
+            [
+              79.99784851074219,
+              326.71759033203125,
+              126.78831481933594,
+              517.3414306640625,
+              0.8881140947341919,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.4375,
+              535.125,
+              0.9640516638755798,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              555.0,
+              437.125,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.125,
+              0.9469902515411377,
+              0.0
+            ],
+            [
+              475.78125,
+              234.0,
+              560.4375,
+              522.0,
+              0.9441768527030945,
+              0.0
+            ],
+            [
+              80.15625,
+              326.8125,
+              126.765625,
+              517.25,
+              0.894789457321167,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9990329429925289,
+              "max_coordinate_error": 0.2698974609375,
+              "score_error": 0.0024220943450927734
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9986214433518896,
+              "max_coordinate_error": 0.1475830078125,
+              "score_error": 0.0012919306755065918
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9978991242991243,
+              "max_coordinate_error": 0.081085205078125,
+              "score_error": 0.004205226898193359
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9944272346348734,
+              "max_coordinate_error": 0.27392578125,
+              "score_error": 0.0027538537979125977
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9951560435642944,
+              "max_coordinate_error": 0.1584014892578125,
+              "score_error": 0.006675362586975098
+            }
+          ],
+          "fixture_passed": true
+        },
+        "output_sha256": "b0a7436f5ea722669f0d8e482868da72caa56ee8be9364de285e75483ce2eaf8",
+        "simulation_sha256": "10d7d68cc4902b5e1aa03c867c73238f11b78f049606ea522201daae0c8ae01e",
+        "bitwise_simulation": false,
+        "map_validated": false
+      },
+      "closure": {
+        "boot_id": "8f25b882-f77f-4d55-ad84-1e57ea6abf67",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "views": {
+        "view_groups": 83,
+        "consistent": true,
+        "errors": []
+      },
+      "timer_checks": [
+        {
+          "frame": 15,
+          "validation_error": null,
+          "returned_layer_count": 331,
+          "api_sum_ms": 159.85024000000013,
+          "api_last_ms": 1.7320959999999905,
+          "api_calc_time_ms": 182.82318115234375,
+          "collection_ns": 616590,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3383,
+            "counter_last": 624415,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 159.85024000000013,
+            "aggregate_minus_layers_ms": 22.972941152343623,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 16,
+          "validation_error": null,
+          "returned_layer_count": 331,
+          "api_sum_ms": 159.8579200000002,
+          "api_last_ms": 1.7336320000000123,
+          "api_calc_time_ms": 182.4575958251953,
+          "collection_ns": 590330,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3383,
+            "counter_last": 624445,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 159.8579200000002,
+            "aggregate_minus_layers_ms": 22.599675825195106,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 17,
+          "validation_error": null,
+          "returned_layer_count": 331,
+          "api_sum_ms": 159.85331200000013,
+          "api_last_ms": 1.7310720000000146,
+          "api_calc_time_ms": 183.4949188232422,
+          "collection_ns": 593850,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3385,
+            "counter_last": 624427,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 159.85331200000013,
+            "aggregate_minus_layers_ms": 23.641606823242057,
+            "independently_measured_clock": false
+          }
+        }
+      ],
+      "complete_outputs_bitwise_stable_within_batch": true,
+      "local_directory": ".local\\yolo26-tile-board-r1\\tile20",
+      "evidence_hashes": {
+        "timings.json": "e69214352dea872b4467e9625958eb17ef9de7d3214c136ce7b4d75857cd6a0b",
+        "regions.json": "2a177558e3ffc8e37aee737ffd0adbfd80393445145fd253f196ab71072ee8b2",
+        "numerical.json": "e32044b2750094aceeb62df30035cb26c37ced4f68a037377643c4c0cdcd0e5c",
+        "board-evidence.tar.gz": "a74cb5ff7ef0a40f77c860d1522f19c6b625bbcd14e79d019f43cbe1519ec489"
+      },
+      "regions_total_ms": 26.855594666666665,
+      "regions_requested_bytes": 250116096,
+      "reductions": {
+        "forward_wait_ms": {
+          "milliseconds": 26.951186666666672,
+          "percent": 13.762419999934561
+        },
+        "complete_call_ms": {
+          "milliseconds": 26.597735,
+          "percent": 11.944192117075747
+        }
+      }
+    },
+    {
+      "label": "matmul",
+      "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+      "identities": {
+        "model.json": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+        "model.raw": "a346abc84c4a0edb5361b5ec1829ea994b1d45eeda815c212407efc5366503a5",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "6989474809ddc8594ce5f3e73cd2105f66267b86013e6d7e1926f8f7b78c0760"
+      },
+      "boot_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+      "sdk_libraries": {
+        "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+        "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+        "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+      },
+      "sdk_clock_hz": {
+        "icore": 1000000000,
+        "ddr": 333000000
+      },
+      "measured_clock": false,
+      "requested_ocm_strategy": -1,
+      "placement": [
+        {
+          "backend_id": 0,
+          "selected": 1,
+          "merge_hardops": true,
+          "etm_reuse": true,
+          "values": 427,
+          "ocm_values": 279,
+          "ocm_real_values": 207,
+          "ocm_alias_values": 72,
+          "ocm_value_ids": [
+            28,
+            55,
+            85,
+            94,
+            157,
+            163,
+            178,
+            187,
+            193,
+            196,
+            208,
+            214,
+            229,
+            238,
+            244,
+            247,
+            270,
+            286,
+            292,
+            298,
+            301,
+            307,
+            313,
+            316,
+            322,
+            325,
+            337,
+            343,
+            349,
+            352,
+            358,
+            364,
+            367,
+            373,
+            376,
+            399,
+            405,
+            407,
+            409,
+            415,
+            421,
+            427,
+            430,
+            436,
+            442,
+            445,
+            451,
+            454,
+            460,
+            466,
+            472,
+            478,
+            481,
+            487,
+            493,
+            496,
+            502,
+            505,
+            511,
+            516,
+            522,
+            526,
+            528,
+            530,
+            532,
+            537,
+            543,
+            546,
+            559,
+            563,
+            569,
+            572,
+            579,
+            582,
+            584,
+            586,
+            592,
+            597,
+            601,
+            604,
+            610,
+            614,
+            617,
+            621,
+            625,
+            631,
+            634,
+            641,
+            644,
+            646,
+            648,
+            654,
+            659,
+            663,
+            666,
+            672,
+            676,
+            679,
+            682,
+            709,
+            715,
+            721,
+            724,
+            730,
+            736,
+            739,
+            745,
+            748,
+            760,
+            766,
+            772,
+            775,
+            781,
+            787,
+            790,
+            796,
+            799,
+            837,
+            843,
+            858,
+            867,
+            873,
+            876,
+            888,
+            894,
+            909,
+            918,
+            924,
+            927,
+            969,
+            975,
+            981,
+            984,
+            990,
+            996,
+            999,
+            1005,
+            1008,
+            1020,
+            1026,
+            1032,
+            1035,
+            1041,
+            1047,
+            1050,
+            1056,
+            1059,
+            1101,
+            1107,
+            1110,
+            1114,
+            1118,
+            1124,
+            1127,
+            1134,
+            1137,
+            1139,
+            1141,
+            1147,
+            1152,
+            1156,
+            1159,
+            1165,
+            1169,
+            1172,
+            1176,
+            1182,
+            1188,
+            1194,
+            1198,
+            1208,
+            1214,
+            1218,
+            1228,
+            1234,
+            1238,
+            1274,
+            1284,
+            1296,
+            1302,
+            1306,
+            1316,
+            1322,
+            1328,
+            1334,
+            1338,
+            1349,
+            1364,
+            1368,
+            1372,
+            1376,
+            1380,
+            1384,
+            1448,
+            1454,
+            1458,
+            1460,
+            1466,
+            1470,
+            1472,
+            1478,
+            1482,
+            3675,
+            3679,
+            3687,
+            3693,
+            3697,
+            3701,
+            4290,
+            4304,
+            4306,
+            4308,
+            4318,
+            4330,
+            4342,
+            4354,
+            4402,
+            4409,
+            4413,
+            4415,
+            4421,
+            4423,
+            4429,
+            4441,
+            4449,
+            4461,
+            4490,
+            4504,
+            4506,
+            4508,
+            4518,
+            4530,
+            4542,
+            4554,
+            4602,
+            4609,
+            4613,
+            4615,
+            4621,
+            4623,
+            4629,
+            4641,
+            4649,
+            4661,
+            5127,
+            5141,
+            5143,
+            5145,
+            5155,
+            5167,
+            5179,
+            5191,
+            5239,
+            5246,
+            5250,
+            5252,
+            5258,
+            5260,
+            5266,
+            5278,
+            5286,
+            5298,
+            5557,
+            5561,
+            5565,
+            5577,
+            5579,
+            5581,
+            5583,
+            5585,
+            5587,
+            5589,
+            5591,
+            5593,
+            6736,
+            6738,
+            6740,
+            6756,
+            6758
+          ],
+          "segments": [
+            {
+              "bytes": 50216960,
+              "physical_address": 4096,
+              "segment": 0
+            },
+            {
+              "bytes": 12534016,
+              "physical_address": 50221056,
+              "segment": 1
+            },
+            {
+              "bytes": 4915200,
+              "physical_address": 418627840,
+              "segment": 3
+            },
+            {
+              "bytes": 2826240,
+              "physical_address": 423543040,
+              "segment": 4
+            },
+            {
+              "bytes": 29491200,
+              "physical_address": 62758912,
+              "segment": 2
+            }
+          ]
+        }
+      ],
+      "ordinary_frame_range": [
+        3,
+        15
+      ],
+      "timings": {
+        "clear_ms": {
+          "samples": 12,
+          "mean": 0.0151575,
+          "median": 0.015015,
+          "p95": 0.01646,
+          "p99": 0.01646,
+          "maximum": 0.01646,
+          "minimum": 0.01422
+        },
+        "final_wait_ms": {
+          "samples": 12,
+          "mean": 191.43017833333334,
+          "median": 191.458195,
+          "p95": 191.48638,
+          "p99": 191.48638,
+          "maximum": 191.48638,
+          "minimum": 191.30754
+        },
+        "forward_ms": {
+          "samples": 12,
+          "mean": 9.229675,
+          "median": 9.190005,
+          "p95": 9.50001,
+          "p99": 9.50001,
+          "maximum": 9.50001,
+          "minimum": 9.17485
+        },
+        "input_write_ms": {
+          "samples": 12,
+          "mean": 3.2389966666666665,
+          "median": 3.2458400000000003,
+          "p95": 3.26173,
+          "p99": 3.26173,
+          "maximum": 3.26173,
+          "minimum": 3.20998
+        },
+        "normalize_ms": {
+          "samples": 12,
+          "mean": 4.589584166666667,
+          "median": 4.56846,
+          "p95": 4.81544,
+          "p99": 4.81544,
+          "maximum": 4.81544,
+          "minimum": 4.55022
+        },
+        "output_read_ms": {
+          "samples": 12,
+          "mean": 12.437376666666667,
+          "median": 12.36828,
+          "p95": 12.9547,
+          "p99": 12.9547,
+          "maximum": 12.9547,
+          "minimum": 12.14306
+        },
+        "postprocess_ms": {
+          "samples": 12,
+          "mean": 6.241328333333334,
+          "median": 6.23371,
+          "p95": 6.36477,
+          "p99": 6.36477,
+          "maximum": 6.36477,
+          "minimum": 6.17773
+        },
+        "forward_wait_ms": {
+          "samples": 12,
+          "mean": 200.65985333333333,
+          "median": 200.65532000000002,
+          "p95": 200.96726,
+          "p99": 200.96726,
+          "maximum": 200.96726,
+          "minimum": 200.48731
+        },
+        "complete_call_ms": {
+          "samples": 12,
+          "mean": 227.1918725,
+          "median": 227.10667999999998,
+          "p95": 227.76319,
+          "p99": 227.76319,
+          "maximum": 227.76319,
+          "minimum": 226.884
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 116.01578666666668,
+        "Matmul": 41.230335999999994,
+        "Copy": 18.422272000000003,
+        "SiLU": 4.118186666666675,
+        "Transpose": 3.4049706666666606,
+        "Add": 2.9479253333333073,
+        "Cast": 1.782015999999995,
+        "Upsample": 1.6430080000000016,
+        "Softmax": 1.0820266666666623,
+        "Multiply": 0.373589333333337,
+        "MaxPool2d": 0.3514026666666711,
+        "Concat": 0.1187840000000045,
+        "AlignAxis": 0.09984000000000134,
+        "PruneAxis": 0.038741333333338845,
+        "Slice": 0.020650666666677957,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "regions": [
+        {
+          "original_operation": 3296,
+          "input_value": 821,
+          "output_value": 827,
+          "operations": [
+            {
+              "operation": 3425,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "6b282c592d06893218172167b07a04b4b456204c771f64a791785a2b08b23ecd",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 201,
+                  "ROUT": 200,
+                  "WETM": 203
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 3.2365226666666667
+            },
+            {
+              "operation": 3523,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3481,
+              "kind": "Matmul",
+              "layer_count": 1,
+              "log_sha256": "758e517f259956b5105e8dfb8a149abe45a88dd951513340382e5916f491ee20",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 3976,
+                    "requested_bytes": 203571200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 15.53125
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 1024,
+                    "requested_bytes": 524288,
+                    "unique_address_bytes": 524288,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 64,
+                    "requested_bytes": 2048,
+                    "unique_address_bytes": 512,
+                    "request_to_unique_ratio": 4.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 64,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 5066,
+                  "ROUT": 6152,
+                  "WXLM": 3976,
+                  "WKLM": 4096,
+                  "RKLM": 4096,
+                  "RXLM": 4096,
+                  "AYLM": 4224,
+                  "WVLM": 128,
+                  "RVLM": 64,
+                  "WETM": 68
+                },
+                "requested_read_bytes": 204097536,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 19.071829333333334
+            },
+            {
+              "operation": 3524,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3486,
+              "kind": "SiLU",
+              "layer_count": 1,
+              "log_sha256": "b9ae26ef0fb0922f9f4340e6320da3388383d56cb390d9f1b7941e08c0a8e597",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 50,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 50,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 52,
+                  "ROUT": 100,
+                  "WVLM": 100,
+                  "RVLM": 100,
+                  "WETM": 54
+                },
+                "requested_read_bytes": 3276800,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 0.5913600000000054
+            },
+            {
+              "operation": 3525,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3426,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "235bb7b07ecd5fa03ad346c5c1055d57d2323df20ca5b83f6ebf7662d8899288",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 50,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 50,
+                    "requested_bytes": 3276800,
+                    "unique_address_bytes": 3276800,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 51,
+                  "ROUT": 50,
+                  "WETM": 53
+                },
+                "requested_read_bytes": 3276800,
+                "requested_write_bytes": 3276800,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 0.8386559999999881
+            }
+          ],
+          "requested_read_bytes": 223758336,
+          "requested_write_bytes": 22937600,
+          "mean_ms": 23.738367999999994,
+          "core_ms": 19.071829333333334,
+          "other_operations_ms": 4.666538666666661
+        },
+        {
+          "original_operation": 3240,
+          "input_value": 258,
+          "output_value": 264,
+          "operations": [
+            {
+              "operation": 3416,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "6cc379d0a34a05e38243d98c7a612a7392c27615296851a5217097e467eed55b",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 101,
+                  "ROUT": 100,
+                  "WETM": 103
+                },
+                "requested_read_bytes": 6553600,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.6153600000000006
+            },
+            {
+              "operation": 3500,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3476,
+              "kind": "Matmul",
+              "layer_count": 1,
+              "log_sha256": "9bc00eb3398574f1c31b347b98c2495ff362aa52266bc26845b74dc4ae5f01ee",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 3848,
+                    "requested_bytes": 197017600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 30.0625
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 1024,
+                    "requested_bytes": 524288,
+                    "unique_address_bytes": 524288,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 128,
+                    "requested_bytes": 4096,
+                    "unique_address_bytes": 1024,
+                    "request_to_unique_ratio": 4.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 128,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 5002,
+                  "ROUT": 6152,
+                  "WXLM": 3848,
+                  "WKLM": 4096,
+                  "RKLM": 4096,
+                  "RXLM": 4096,
+                  "AYLM": 4352,
+                  "WVLM": 256,
+                  "RVLM": 128,
+                  "WETM": 132
+                },
+                "requested_read_bytes": 197545984,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 18.800469333333332
+            },
+            {
+              "operation": 3501,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3485,
+              "kind": "SiLU",
+              "layer_count": 1,
+              "log_sha256": "529de15254bbe8e65ac42e656d240b31645cb447894fde1708025d61f51afca8",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 102,
+                  "ROUT": 200,
+                  "WVLM": 200,
+                  "RVLM": 200,
+                  "WETM": 104
+                },
+                "requested_read_bytes": 6553600,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.1740160000000008
+            },
+            {
+              "operation": 3502,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3417,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "62e4c645f09eda8b88fe8b858c41512f9c28687339c535ad6f032d1a598d47bf",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 100,
+                    "requested_bytes": 6553600,
+                    "unique_address_bytes": 6553600,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 101,
+                  "ROUT": 100,
+                  "WETM": 103
+                },
+                "requested_read_bytes": 6553600,
+                "requested_write_bytes": 6553600,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 1.640618666666664
+            }
+          ],
+          "requested_read_bytes": 217206784,
+          "requested_write_bytes": 26214400,
+          "mean_ms": 23.230463999999998,
+          "core_ms": 18.800469333333332,
+          "other_operations_ms": 4.429994666666666
+        },
+        {
+          "original_operation": 3223,
+          "input_value": 129,
+          "output_value": 135,
+          "operations": [
+            {
+              "operation": 3412,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "857c3eff2d5e9b1584ef5f17ba92aab7357ba4064d5b5a663bcde32f494fc635",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 201,
+                  "ROUT": 200,
+                  "WETM": 203
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 3.265536
+            },
+            {
+              "operation": 3497,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3475,
+              "kind": "Matmul",
+              "layer_count": 1,
+              "log_sha256": "f8352aaf3d0a5429e6748c85b78d61fbec647d8dd68f124302d8d1187a1876a5",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 208,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 1,
+                    "requests": 256,
+                    "requested_bytes": 131072,
+                    "unique_address_bytes": 131072,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 2,
+                    "requests": 208,
+                    "requested_bytes": 6656,
+                    "unique_address_bytes": 512,
+                    "request_to_unique_ratio": 13.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 3,
+                    "requests": 208,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 674,
+                  "ROUT": 880,
+                  "WXLM": 208,
+                  "WKLM": 256,
+                  "RKLM": 3328,
+                  "RXLM": 3328,
+                  "AYLM": 5408,
+                  "WVLM": 416,
+                  "RVLM": 208,
+                  "WETM": 211
+                },
+                "requested_read_bytes": 13244928,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 2.800469333333332
+            },
+            {
+              "operation": 3498,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3484,
+              "kind": "SiLU",
+              "layer_count": 1,
+              "log_sha256": "154b4c2a1835850aa7938661214edbc568d982d665aa0b0067c5d34fb08d7e3c",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 202,
+                  "ROUT": 400,
+                  "WVLM": 400,
+                  "RVLM": 400,
+                  "WETM": 204
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 2.3528106666666693
+            },
+            {
+              "operation": 3499,
+              "kind": "Reshape",
+              "layer_count": 0,
+              "mean_ms": 0
+            },
+            {
+              "operation": 3413,
+              "kind": "Copy",
+              "layer_count": 1,
+              "log_sha256": "7074b34ad37fbdbedbd59aa05f8c3e73b015bb8b1e01ad5e3443cf7e0c2f4efa",
+              "requests": {
+                "memory": [
+                  {
+                    "direction": "RETM",
+                    "buffer_slot": 0,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  },
+                  {
+                    "direction": "WETM",
+                    "buffer_slot": 1,
+                    "requests": 200,
+                    "requested_bytes": 13107200,
+                    "unique_address_bytes": 13107200,
+                    "request_to_unique_ratio": 1.0
+                  }
+                ],
+                "instructions": {
+                  "RETM": 201,
+                  "ROUT": 200,
+                  "WETM": 203
+                },
+                "requested_read_bytes": 13107200,
+                "requested_write_bytes": 13107200,
+                "actual_ddr_bytes_measured": false
+              },
+              "mean_ms": 3.284650666666666
+            }
+          ],
+          "requested_read_bytes": 52566528,
+          "requested_write_bytes": 52428800,
+          "mean_ms": 11.703466666666667,
+          "core_ms": 2.800469333333332,
+          "other_operations_ms": 8.902997333333335
+        }
+      ],
+      "numerical": {
+        "board_vs_baseline": {
+          "raw_max_abs": 5.46875,
+          "raw_rms": 0.09629742056131363,
+          "worst_index": [
+            0,
+            4,
+            233
+          ],
+          "worst_reference": -18.8125,
+          "worst_actual": -24.28125,
+          "expected_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.0,
+              0.961533784866333,
+              0.0
+            ],
+            [
+              82.625,
+              136.625,
+              554.875,
+              436.625,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              327.125,
+              126.765625,
+              517.25,
+              0.8955226540565491,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.125,
+              0.9635062217712402,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.3125,
+              284.5625,
+              510.125,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              233.875,
+              560.40625,
+              522.0,
+              0.9441768527030945,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.3125,
+              0.894789457321167,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9995819397993311,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0019724369049072266
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9990545968656878,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9993029739776952,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9995661605206074,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.00041037797927856445
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9980244686000969,
+              "max_coordinate_error": 0.25,
+              "score_error": 0.0007331967353820801
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_simulation": {
+          "raw_max_abs": 10.765625,
+          "raw_rms": 0.13309495151042938,
+          "worst_index": [
+            0,
+            76,
+            1940
+          ],
+          "worst_reference": -20.578125,
+          "worst_actual": -31.34375,
+          "expected_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.125,
+              0.9623913168907166,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.625,
+              0.9539660811424255,
+              5.0
+            ],
+            [
+              212.484375,
+              241.25,
+              284.5625,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.78125,
+              234.0,
+              560.40625,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.171875,
+              326.875,
+              126.765625,
+              517.25,
+              0.8933094143867493,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.125,
+              0.9635062217712402,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.3125,
+              284.5625,
+              510.125,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              233.875,
+              560.40625,
+              522.0,
+              0.9441768527030945,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.3125,
+              0.894789457321167,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0011149048805236816
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9995835068721366,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.00034421682357788086
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9990863464090896,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9991971807640475,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.00041037797927856445
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9993367953175197,
+              "max_coordinate_error": 0.0625,
+              "score_error": 0.0014800429344177246
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_onnx": {
+          "raw_max_abs": 21.500133514404297,
+          "raw_rms": 0.4836471974849701,
+          "worst_index": [
+            0,
+            4,
+            6727
+          ],
+          "worst_reference": -28.656116485595703,
+          "worst_actual": -50.15625,
+          "expected_high_detections": [
+            [
+              110.30839538574219,
+              236.1220703125,
+              226.43516540527344,
+              535.3948974609375,
+              0.9616295695304871,
+              0.0
+            ],
+            [
+              82.52940368652344,
+              136.4774169921875,
+              555.1327514648438,
+              437.003173828125,
+              0.9523299336433411,
+              5.0
+            ],
+            [
+              212.55078125,
+              241.31723022460938,
+              284.4814147949219,
+              510.1308288574219,
+              0.9427850246429443,
+              0.0
+            ],
+            [
+              476.05517578125,
+              233.93856811523438,
+              560.6151123046875,
+              521.98876953125,
+              0.9414229989051819,
+              0.0
+            ],
+            [
+              79.99784851074219,
+              326.71759033203125,
+              126.78831481933594,
+              517.3414306640625,
+              0.8881140947341919,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.125,
+              226.375,
+              535.125,
+              0.9635062217712402,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.3125,
+              284.5625,
+              510.125,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.75,
+              233.875,
+              560.40625,
+              522.0,
+              0.9441768527030945,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.3125,
+              0.894789457321167,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9985354478933042,
+              "max_coordinate_error": 0.2698974609375,
+              "score_error": 0.0018766522407531738
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9979198859039596,
+              "max_coordinate_error": 0.253173828125,
+              "score_error": 0.0012919306755065918
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9981309336529842,
+              "max_coordinate_error": 0.081085205078125,
+              "score_error": 0.00459599494934082
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.993685585414894,
+              "max_coordinate_error": 0.30517578125,
+              "score_error": 0.0027538537979125977
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9951560435642944,
+              "max_coordinate_error": 0.1584014892578125,
+              "score_error": 0.006675362586975098
+            }
+          ],
+          "fixture_passed": true
+        },
+        "output_sha256": "1cc235adf32e9f995ef0dcc1a6b5bd2ac2ad439006155aed263d4b2c676e66cb",
+        "simulation_sha256": "e95369c3fcd9c8f6ab93ac8873c5eae887f49efce0e256c7f06460b599693b6f",
+        "bitwise_simulation": false,
+        "map_validated": false
+      },
+      "closure": {
+        "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "views": {
+        "view_groups": 86,
+        "consistent": true,
+        "errors": []
+      },
+      "timer_checks": [
+        {
+          "frame": 15,
+          "validation_error": null,
+          "returned_layer_count": 331,
+          "api_sum_ms": 191.6741120000002,
+          "api_last_ms": 1.7315840000000025,
+          "api_calc_time_ms": 214.02239990234375,
+          "collection_ns": 649350,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3385,
+            "counter_last": 748727,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 191.6741120000002,
+            "aggregate_minus_layers_ms": 22.348287902343543,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 16,
+          "validation_error": null,
+          "returned_layer_count": 331,
+          "api_sum_ms": 191.64953600000035,
+          "api_last_ms": 1.735167999999976,
+          "api_calc_time_ms": 213.5001678466797,
+          "collection_ns": 664650,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3383,
+            "counter_last": 748631,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 191.64953600000035,
+            "aggregate_minus_layers_ms": 21.850631846679335,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 17,
+          "validation_error": null,
+          "returned_layer_count": 331,
+          "api_sum_ms": 191.6249600000002,
+          "api_last_ms": 1.7326079999999784,
+          "api_calc_time_ms": 213.5165557861328,
+          "collection_ns": 620790,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3385,
+            "counter_last": 748535,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 191.6249600000002,
+            "aggregate_minus_layers_ms": 21.891595786132626,
+            "independently_measured_clock": false
+          }
+        }
+      ],
+      "complete_outputs_bitwise_stable_within_batch": true,
+      "local_directory": ".local\\yolo26-tile-board-r1\\matmul",
+      "evidence_hashes": {
+        "timings.json": "46b4c2d25b9e23a247ffcb42198718088f2441db4432d8166de5af28ea295fb6",
+        "regions.json": "4dd43ff6d5927bc1d6272e5d2a131bb78dbf198e5075bed82d784bbcb1f59a99",
+        "numerical.json": "a8cc1ed16a06fe309e6fc24b49050deb1df452a50ecef8f984ab374aafaca9b7",
+        "board-evidence.tar.gz": "dba1a18204fc809897cce6896ada3142f876fbd8a8b5038dfae67ebaadc08da3"
+      },
+      "regions_total_ms": 58.67229866666666,
+      "regions_requested_bytes": 595112448,
+      "reductions": {
+        "forward_wait_ms": {
+          "milliseconds": -4.828112500000003,
+          "percent": -2.465439197677899
+        },
+        "complete_call_ms": {
+          "milliseconds": -4.50845666666666,
+          "percent": -2.0246036956973024
+        }
+      }
+    }
+  ],
+  "recovery": {
+    "current": {
+      "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+      "owners": [],
+      "active": {
+        "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+        "run": "/root/yolo26-tile-matmul-20261114-r1",
+        "sdk_start_budget": 1
+      },
+      "records": {
+        "preflight": {
+          "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+          "boot_file": {
+            "name": "BOOT.BIN",
+            "size": 7023552,
+            "sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+            "head_hex": "feffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffea"
+          },
+          "libraries": {
+            "libicraft_hostbackend.so": "d0fbf6c81e5b57b4a908f11aad27571b8f2e68a3ede7ba33c9a4f783ba266130",
+            "libicraft_zg330backend.so": "592ad913737a6d661ab9d913ff16617c8fb6bf65cc0dc8929c6886303c498a57",
+            "libicraft_xrt.so": "a29e4eee6106afae0b6aada4a07e85416ac6dfc3e74083033ae5d1411749dc96"
+          },
+          "device_owners": [],
+          "contract_sha256": "e340864860f335d8a6ae60ecdfdb600fcfc2a1dee52a0bb282c47ce9d0b10490",
+          "sdk_starts": 0
+        },
+        "supervisor-process": {
+          "pid": 251,
+          "start_ticks": "5314",
+          "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149"
+        },
+        "worker-process": {
+          "pid": 252,
+          "start_ticks": "5442",
+          "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+          "supervisor_pid": 251,
+          "command": [
+            "/root/yolo26-tile-matmul-20261114-r1/yolo26_infer_probe",
+            "3",
+            "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+            "/root/yolo26-tile-matmul-20261114-r1/model.json",
+            "/root/yolo26-tile-matmul-20261114-r1/model.raw",
+            "/root/yolo26-tile-matmul-20261114-r1/input.rgb",
+            "/root/yolo26-tile-matmul-20261114-r1",
+            "18"
+          ]
+        },
+        "native-exit": {
+          "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+          "native_exit": 0,
+          "pid": 252,
+          "start_ticks": "5442",
+          "automatic_retry": false
+        },
+        "native-complete": {
+          "allocation_count_after": 0,
+          "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+          "boot_writes": 0,
+          "camera_30fps_claim": false,
+          "capture_starts": 0,
+          "completed": 18,
+          "interrupted": false,
+          "native_shutdown_complete": true,
+          "reboots": 0,
+          "sdk_starts": 1
+        },
+        "outcome": {
+          "boot_id": "1ea885ed-9e1a-4259-b67e-b813e0a54149",
+          "native_exit": 0,
+          "completed": 18,
+          "native_shutdown_complete": true,
+          "allocation_count_after": 0,
+          "sdk_starts": 1,
+          "capture_starts": 0,
+          "boot_writes": 0,
+          "reboots": 0,
+          "device_owners": [],
+          "source": "file_replay",
+          "camera_30fps_claim": false
+        }
+      }
+    },
+    "maintenance": [
+      {
+        "boot_id": "79c06c5c-3606-492a-80b2-96501e4deb8a",
+        "prior_run": "/root/yolo26-copy-slice-candidate-20261114-r3",
+        "prior_shutdown": {
+          "boot_id": "79c06c5c-3606-492a-80b2-96501e4deb8a",
+          "native_exit": 0,
+          "completed": 18,
+          "native_shutdown_complete": true,
+          "allocation_count_after": 0,
+          "sdk_starts": 1,
+          "capture_starts": 0,
+          "boot_writes": 0,
+          "reboots": 0,
+          "device_owners": [],
+          "source": "file_replay",
+          "camera_30fps_claim": false
+        },
+        "boot_file": {
+          "name": "BOOT.BIN",
+          "size": 7023552,
+          "sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+          "head_hex": "feffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffea"
+        },
+        "normal_reboot_requested": true,
+        "boot_writes": 0,
+        "sdk_starts": 0
+      },
+      {
+        "boot_id": "06b8d1a8-8446-43fd-9800-01a06525ccad",
+        "prior_run": "/root/yolo26-tile-baseline-20261114-r1",
+        "prior_shutdown": {
+          "boot_id": "06b8d1a8-8446-43fd-9800-01a06525ccad",
+          "native_exit": 0,
+          "completed": 18,
+          "native_shutdown_complete": true,
+          "allocation_count_after": 0,
+          "sdk_starts": 1,
+          "capture_starts": 0,
+          "boot_writes": 0,
+          "reboots": 0,
+          "device_owners": [],
+          "source": "file_replay",
+          "camera_30fps_claim": false
+        },
+        "boot_file": {
+          "name": "BOOT.BIN",
+          "size": 7023552,
+          "sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+          "head_hex": "feffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffea"
+        },
+        "normal_reboot_requested": true,
+        "boot_writes": 0,
+        "sdk_starts": 0
+      },
+      {
+        "boot_id": "8f25b882-f77f-4d55-ad84-1e57ea6abf67",
+        "prior_run": "/root/yolo26-tile-tile20-20261114-r1",
+        "prior_shutdown": {
+          "boot_id": "8f25b882-f77f-4d55-ad84-1e57ea6abf67",
+          "native_exit": 0,
+          "completed": 18,
+          "native_shutdown_complete": true,
+          "allocation_count_after": 0,
+          "sdk_starts": 1,
+          "capture_starts": 0,
+          "boot_writes": 0,
+          "reboots": 0,
+          "device_owners": [],
+          "source": "file_replay",
+          "camera_30fps_claim": false
+        },
+        "boot_file": {
+          "name": "BOOT.BIN",
+          "size": 7023552,
+          "sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+          "head_hex": "feffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffeafeffffea"
+        },
+        "normal_reboot_requested": true,
+        "boot_writes": 0,
+        "sdk_starts": 0
+      }
+    ],
+    "lease_acquired": true,
+    "sdk_starts": 0
+  },
+  "build": {
+    "directory": ".local\\yolo26-tile-build-r2\\returned",
+    "compile": {
+      "command": [
+        "cmake",
+        "--build",
+        "/root/yolo26-tile-build-20261114-r2/build",
+        "--parallel",
+        "1"
+      ],
+      "native_exit": 0,
+      "child_returned": true
+    },
+    "tests": {
+      "native_exit": 0,
+      "tests": [
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_postprocess"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_frames"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_preprocess"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_control"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_compose"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_metrics"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_display_buffers"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_display_control"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_inference_completion"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_video_engine"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        },
+        {
+          "command": [
+            "/root/yolo26-tile-build-20261114-r2/build/test_capture_color"
+          ],
+          "native_exit": 0,
+          "child_returned": true
+        }
+      ]
+    },
+    "closure": {
+      "before": {
+        "boot_id": "79c06c5c-3606-492a-80b2-96501e4deb8a",
+        "startup_consumed": true,
+        "prior_outcome": "/root/yolo26-copy-slice-candidate-20261114-r3/outcome.json",
+        "prior_shutdown_proven": true,
+        "device_owners": []
+      },
+      "after": {
+        "boot_id": "79c06c5c-3606-492a-80b2-96501e4deb8a",
+        "startup_consumed": true,
+        "prior_outcome": "/root/yolo26-copy-slice-candidate-20261114-r3/outcome.json",
+        "prior_shutdown_proven": true,
+        "device_owners": []
+      },
+      "sdk_starts": 0,
+      "boot_writes": 0,
+      "reboots": 0,
+      "capture_starts": 0,
+      "lease_held_until_children_returned": true
+    },
+    "manifest_sha256": "53e1a4b97714dcf22cec032f4ac84a5f885bca2eecee9829eed4d3ba30d897cc",
+    "probe_contract_tests": 9
+  },
+  "numerical_scope": "Three offline fixtures; board replays one real-image fixture 18 times per graph. Full outputs stable within each batch, not bitwise equivalent across graphs or to the simulator. Detection gate: threshold 0.25, same count/classes, IoU>=0.98 and score error<=0.02. No mAP validation.",
+  "actual_ddr_bytes_measured": false,
+  "new_default_model_selected": false,
+  "limits": [
+    "12 ordinary wall-clock samples and 3 native timing samples per graph; not a sustained camera test",
+    "Static instruction requests are not measured DDR transactions or measured stall cycles",
+    "OCM policy matches; actual placement may change with the graph",
+    "FP16 accumulation differences remain; no labelled validation set"
+  ],
+  "transport_observations": [
+    "Three normal shutdown requests closed SSH; each recovered to a distinct new boot",
+    "One read-only preflight timed out during reboot recovery; next preflight succeeded; no workload retry"
+  ],
+  "offline_evidence": "FPGA/yolo26_lite/evidence/pointwise-offline-r1.json",
+  "local_evidence": ".local\\yolo26-tile-board-r1",
+  "reproduction": "Retained setup.py/host.py/analyze.py/receipt.py and full source-build/board archives. Maintained analyzers: analyze_npu.py, analyze_pointwise.py, compare_simulation.py, check_view_aliases.py."
+}

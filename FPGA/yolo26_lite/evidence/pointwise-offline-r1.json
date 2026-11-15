@@ -1,0 +1,2404 @@
+{
+  "schema": 1,
+  "scope": "pointwise_offline_fixture_and_static_requests",
+  "candidates": [
+    {
+      "model": "yolo26-tile20-three-r2",
+      "numerical": {
+        "schema": 1,
+        "candidate": {
+          "schema": 1,
+          "mode": "spatial_block",
+          "operations": [
+            {
+              "generated_operation": 3296,
+              "adapted_convolution": 1832,
+              "adapted_activation": 1833,
+              "inserted_operations": [
+                2577,
+                2578,
+                2579,
+                2580,
+                2581
+              ],
+              "edge": 20,
+              "internal_batch": 16,
+              "input_shape": [
+                1,
+                64,
+                80,
+                80,
+                16
+              ],
+              "tiled_shape": [
+                16,
+                64,
+                20,
+                20,
+                16
+              ],
+              "output_shape": [
+                1,
+                16,
+                80,
+                80,
+                16
+              ],
+              "reorder_logical_read_write_bytes": 39321600,
+              "explicit_output_copy": true
+            },
+            {
+              "generated_operation": 3240,
+              "adapted_convolution": 1506,
+              "adapted_activation": 1507,
+              "inserted_operations": [
+                2582,
+                2583,
+                2584,
+                2585,
+                2586
+              ],
+              "edge": 20,
+              "internal_batch": 16,
+              "input_shape": [
+                1,
+                32,
+                80,
+                80,
+                16
+              ],
+              "tiled_shape": [
+                16,
+                32,
+                20,
+                20,
+                16
+              ],
+              "output_shape": [
+                1,
+                32,
+                80,
+                80,
+                16
+              ],
+              "reorder_logical_read_write_bytes": 39321600,
+              "explicit_output_copy": true
+            },
+            {
+              "generated_operation": 3223,
+              "adapted_convolution": 1464,
+              "adapted_activation": 1465,
+              "inserted_operations": [
+                2587,
+                2588,
+                2589,
+                2590,
+                2591
+              ],
+              "edge": 20,
+              "internal_batch": 64,
+              "input_shape": [
+                1,
+                16,
+                160,
+                160,
+                16
+              ],
+              "tiled_shape": [
+                64,
+                16,
+                20,
+                20,
+                16
+              ],
+              "output_shape": [
+                1,
+                16,
+                160,
+                160,
+                16
+              ],
+              "reorder_logical_read_write_bytes": 78643200,
+              "explicit_output_copy": true
+            }
+          ],
+          "source_graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+          "source_adapted_sha256": "f5ecacccf83a3659fa9561d2157ca1c0668859f67f36eff83fa0915e39f366f8",
+          "unchanged_raw_sha256": "00c78f114b8a2f8424502bd991f0dd8712aaaca93324c99c6fe02023fe096ef9",
+          "board_access": false
+        },
+        "graph_sha256": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+        "raw_sha256": "c260f8311a4ebf18d76c7b8839848883ac304d2ea2461a97ca3dfbe63718b0f5",
+        "view_groups": 83,
+        "simulations": [
+          {
+            "case": 0,
+            "comparison": {
+              "raw_max_abs": 7.40625,
+              "raw_rms": 0.160879984498024,
+              "worst_index": [
+                0,
+                4,
+                7294
+              ],
+              "worst_reference": -44.65625,
+              "worst_actual": -37.25,
+              "expected_high_detections": [],
+              "actual_high_detections": [],
+              "high_detection_matches": [],
+              "fixture_passed": true
+            },
+            "bitwise_equal": false,
+            "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+            "reference_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+            "output_sha256": "0db4ef547804d687d5bfd17e9be539bf9faf1624db2270a94a9be3cba86ad3ef",
+            "metadata": {
+              "run": {
+                "command": [
+                  "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+                  "run",
+                  "run.toml"
+                ],
+                "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-tile20-three-sim0-r2",
+                "pid": 14412,
+                "started_utc": "2026-11-14T04:26:19.457077+00:00",
+                "native_exit": 0,
+                "elapsed_seconds": 69.0630000000092
+              },
+              "stage": "ZG",
+              "case": 0,
+              "input_sha256": "9611cc6d822d1952295fff17cfb0b788792c47b8e59159c0ea95b9c21a0aeeed",
+              "graph_sha256": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+              "encoded_input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+              "encoded_input_bytes": 4915200,
+              "input_element_type": "@fp(32)",
+              "output_value_ids": [
+                2275
+              ],
+              "board_tested": false,
+              "files": [
+                "input.ftmp",
+                "run.toml",
+                "simulate.exit.json",
+                "simulate.log",
+                "simulate.process.json",
+                "hardopLog\\yolo26l\\access_byte.log",
+                "native\\yolo26l\\ftmpSFB\\2275.ftmp"
+              ]
+            }
+          },
+          {
+            "case": 1,
+            "comparison": {
+              "raw_max_abs": 1.71875,
+              "raw_rms": 0.061238132417201996,
+              "worst_index": [
+                0,
+                4,
+                7065
+              ],
+              "worst_reference": -16.28125,
+              "worst_actual": -18.0,
+              "expected_high_detections": [],
+              "actual_high_detections": [],
+              "high_detection_matches": [],
+              "fixture_passed": true
+            },
+            "bitwise_equal": false,
+            "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+            "reference_sha256": "c088c552a104c845ec13c78e8ec2b189309cfc4062c75198b10cc7277d63a577",
+            "output_sha256": "71e10c17587a8cc2dcd10722f859e03f2db2eaea04fe636be00e0de3ddf0c535",
+            "metadata": {
+              "run": {
+                "command": [
+                  "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+                  "run",
+                  "run.toml"
+                ],
+                "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-tile20-three-sim1-r2",
+                "pid": 28976,
+                "started_utc": "2026-11-14T04:26:19.588756+00:00",
+                "native_exit": 0,
+                "elapsed_seconds": 69.90600000000268
+              },
+              "stage": "ZG",
+              "case": 1,
+              "input_sha256": "b0c6dd469b1805159c2988828f228f2041f76267623deb9826df49d082b05241",
+              "graph_sha256": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+              "encoded_input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+              "encoded_input_bytes": 4915200,
+              "input_element_type": "@fp(32)",
+              "output_value_ids": [
+                2275
+              ],
+              "board_tested": false,
+              "files": [
+                "input.ftmp",
+                "run.toml",
+                "simulate.exit.json",
+                "simulate.log",
+                "simulate.process.json",
+                "hardopLog\\yolo26l\\access_byte.log",
+                "native\\yolo26l\\ftmpSFB\\2275.ftmp"
+              ]
+            }
+          },
+          {
+            "case": 2,
+            "comparison": {
+              "raw_max_abs": 12.84375,
+              "raw_rms": 0.1028916984796524,
+              "worst_index": [
+                0,
+                4,
+                6601
+              ],
+              "worst_reference": -40.09375,
+              "worst_actual": -52.9375,
+              "expected_high_detections": [
+                [
+                  110.3125,
+                  236.25,
+                  226.4375,
+                  535.0,
+                  0.9626730680465698,
+                  0.0
+                ],
+                [
+                  82.75,
+                  136.625,
+                  554.875,
+                  436.625,
+                  0.9536218643188477,
+                  5.0
+                ],
+                [
+                  212.5,
+                  241.3125,
+                  284.5625,
+                  510.25,
+                  0.9473810195922852,
+                  0.0
+                ],
+                [
+                  475.75,
+                  233.875,
+                  560.4375,
+                  522.0,
+                  0.944587230682373,
+                  0.0
+                ],
+                [
+                  80.15625,
+                  326.875,
+                  126.765625,
+                  517.25,
+                  0.8940516710281372,
+                  0.0
+                ]
+              ],
+              "actual_high_detections": [
+                [
+                  110.3125,
+                  236.125,
+                  226.375,
+                  535.125,
+                  0.9629528522491455,
+                  0.0
+                ],
+                [
+                  82.75,
+                  136.625,
+                  555.0,
+                  436.75,
+                  0.9536218643188477,
+                  5.0
+                ],
+                [
+                  212.5,
+                  241.25,
+                  284.59375,
+                  510.25,
+                  0.9469902515411377,
+                  0.0
+                ],
+                [
+                  475.75,
+                  233.875,
+                  560.40625,
+                  522.0,
+                  0.944587230682373,
+                  0.0
+                ],
+                [
+                  80.15625,
+                  326.8125,
+                  126.765625,
+                  517.25,
+                  0.8933094143867493,
+                  0.0
+                ]
+              ],
+              "high_detection_matches": [
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.9986265658701619,
+                  "max_coordinate_error": 0.125,
+                  "score_error": 0.0002797842025756836
+                },
+                {
+                  "class_id": 5,
+                  "matched": true,
+                  "iou": 0.9993189268014981,
+                  "max_coordinate_error": 0.125,
+                  "score_error": 0.0
+                },
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.99933429533197,
+                  "max_coordinate_error": 0.0625,
+                  "score_error": 0.00039076805114746094
+                },
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.9996309963099631,
+                  "max_coordinate_error": 0.03125,
+                  "score_error": 0.0
+                },
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.9996716983515165,
+                  "max_coordinate_error": 0.0625,
+                  "score_error": 0.0007422566413879395
+                }
+              ],
+              "fixture_passed": true
+            },
+            "bitwise_equal": false,
+            "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+            "reference_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+            "output_sha256": "10d7d68cc4902b5e1aa03c867c73238f11b78f049606ea522201daae0c8ae01e",
+            "metadata": {
+              "run": {
+                "command": [
+                  "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+                  "run",
+                  "run.toml"
+                ],
+                "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-tile20-three-sim2-r2",
+                "pid": 21424,
+                "started_utc": "2026-11-14T04:24:11.205980+00:00",
+                "native_exit": 0,
+                "elapsed_seconds": 67.375
+              },
+              "stage": "ZG",
+              "case": 2,
+              "input_sha256": "e2fedaeae6235bc04c0b962fea3120dbc3bd2bc263b181213ef98c8a8140f522",
+              "graph_sha256": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+              "encoded_input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+              "encoded_input_bytes": 4915200,
+              "input_element_type": "@fp(32)",
+              "output_value_ids": [
+                2275
+              ],
+              "board_tested": false,
+              "files": [
+                "input.ftmp",
+                "run.toml",
+                "simulate.exit.json",
+                "simulate.log",
+                "simulate.process.json",
+                "hardopLog\\yolo26l\\access_byte.log",
+                "native\\yolo26l\\ftmpSFB\\2275.ftmp"
+              ]
+            }
+          }
+        ],
+        "fixture_passed": true,
+        "map_validated": false,
+        "acceptance": "Existing fixture gate: same classes/count above 0.25, IoU >= 0.98, score delta <= 0.02"
+      },
+      "float_reference": [
+        {
+          "case": 0,
+          "reference_sha256": "42895324d107a6b548954ea22418e4fdd548d3cbf0495582d7b8826c16938715",
+          "comparison": {
+            "raw_max_abs": 26.808589935302734,
+            "raw_rms": 0.8517265319824219,
+            "worst_index": [
+              0,
+              4,
+              7705
+            ],
+            "worst_reference": -19.191410064697266,
+            "worst_actual": -46.0,
+            "expected_high_detections": [],
+            "actual_high_detections": [],
+            "high_detection_matches": [],
+            "fixture_passed": true
+          }
+        },
+        {
+          "case": 1,
+          "reference_sha256": "241a85285c6b3264c075cd67a228ddd14f0f23678370125db75febe8753cd68f",
+          "comparison": {
+            "raw_max_abs": 4.825412750244141,
+            "raw_rms": 0.2333984076976776,
+            "worst_index": [
+              0,
+              76,
+              7865
+            ],
+            "worst_reference": -16.56521224975586,
+            "worst_actual": -21.390625,
+            "expected_high_detections": [],
+            "actual_high_detections": [],
+            "high_detection_matches": [],
+            "fixture_passed": true
+          }
+        },
+        {
+          "case": 2,
+          "reference_sha256": "d389ed5f45aec3fb3380669d93d4718a95aa91bd7ebf2d491d97ed18e87a9c7d",
+          "comparison": {
+            "raw_max_abs": 20.343883514404297,
+            "raw_rms": 0.4680408537387848,
+            "worst_index": [
+              0,
+              4,
+              6727
+            ],
+            "worst_reference": -28.656116485595703,
+            "worst_actual": -49.0,
+            "expected_high_detections": [
+              [
+                110.30839538574219,
+                236.1220703125,
+                226.43516540527344,
+                535.3948974609375,
+                0.9616295695304871,
+                0.0
+              ],
+              [
+                82.52940368652344,
+                136.4774169921875,
+                555.1327514648438,
+                437.003173828125,
+                0.9523299336433411,
+                5.0
+              ],
+              [
+                212.55078125,
+                241.31723022460938,
+                284.4814147949219,
+                510.1308288574219,
+                0.9427850246429443,
+                0.0
+              ],
+              [
+                476.05517578125,
+                233.93856811523438,
+                560.6151123046875,
+                521.98876953125,
+                0.9414229989051819,
+                0.0
+              ],
+              [
+                79.99784851074219,
+                326.71759033203125,
+                126.78831481933594,
+                517.3414306640625,
+                0.8881140947341919,
+                0.0
+              ]
+            ],
+            "actual_high_detections": [
+              [
+                110.3125,
+                236.125,
+                226.375,
+                535.125,
+                0.9629528522491455,
+                0.0
+              ],
+              [
+                82.75,
+                136.625,
+                555.0,
+                436.75,
+                0.9536218643188477,
+                5.0
+              ],
+              [
+                212.5,
+                241.25,
+                284.59375,
+                510.25,
+                0.9469902515411377,
+                0.0
+              ],
+              [
+                475.75,
+                233.875,
+                560.40625,
+                522.0,
+                0.944587230682373,
+                0.0
+              ],
+              [
+                80.15625,
+                326.8125,
+                126.765625,
+                517.25,
+                0.8933094143867493,
+                0.0
+              ]
+            ],
+            "high_detection_matches": [
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9985354478933042,
+                "max_coordinate_error": 0.2698974609375,
+                "score_error": 0.0013232827186584473
+              },
+              {
+                "class_id": 5,
+                "matched": true,
+                "iou": 0.9979198859039596,
+                "max_coordinate_error": 0.253173828125,
+                "score_error": 0.0012919306755065918
+              },
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9970461240726587,
+                "max_coordinate_error": 0.119171142578125,
+                "score_error": 0.004205226898193359
+              },
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.993685585414894,
+                "max_coordinate_error": 0.30517578125,
+                "score_error": 0.003164231777191162
+              },
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9951560435642944,
+                "max_coordinate_error": 0.1584014892578125,
+                "score_error": 0.005195319652557373
+              }
+            ],
+            "fixture_passed": true
+          }
+        }
+      ],
+      "regions": {
+        "schema": 1,
+        "baseline_graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+        "candidate_graph_sha256": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+        "regions": [
+          {
+            "original_operation": 3296,
+            "input_value": 821,
+            "output_value": 827,
+            "operations": [
+              {
+                "operation": 3505,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3611,
+                "kind": "Transpose",
+                "layer_count": 1,
+                "log_sha256": "3138e30da644d00915472fb85663d0e3d82772b878d14b734c4c3437f527679b",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 16,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 16,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 17,
+                    "ROUT": 16,
+                    "WETM": 19
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3335,
+                "kind": "Conv2d",
+                "layer_count": 1,
+                "log_sha256": "3ce09d2d5a5f3cac1367c56449cd37cf117a08f969488dcfc6c48c3e7e61b3e7",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 208,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 1,
+                      "requests": 276,
+                      "requested_bytes": 2760704,
+                      "unique_address_bytes": 524288,
+                      "request_to_unique_ratio": 5.265625
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 2,
+                      "requests": 64,
+                      "requested_bytes": 8192,
+                      "unique_address_bytes": 512,
+                      "request_to_unique_ratio": 16.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 3,
+                      "requests": 64,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 550,
+                    "ROUT": 820,
+                    "WXLM": 832,
+                    "WKLM": 552,
+                    "RKLM": 16384,
+                    "RXLM": 16384,
+                    "AYLM": 16448,
+                    "WVLM": 896,
+                    "RVLM": 832,
+                    "WETM": 68
+                  },
+                  "requested_read_bytes": 15876096,
+                  "requested_write_bytes": 3276800,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3612,
+                "kind": "Transpose",
+                "layer_count": 1,
+                "log_sha256": "46d3e58cb192ce08d0c7b2fc4c775d32c27e8146c6af8ff2a43ec0efacdda339",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 16,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 16,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 17,
+                    "ROUT": 16,
+                    "WETM": 19
+                  },
+                  "requested_read_bytes": 3276800,
+                  "requested_write_bytes": 3276800,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3506,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3416,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "8f8d6c35d59513952de41a0ff109995daae4a62d24678e1fc879a0a29061d33c",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 50,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 50,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 51,
+                    "ROUT": 50,
+                    "WETM": 53
+                  },
+                  "requested_read_bytes": 3276800,
+                  "requested_write_bytes": 3276800,
+                  "actual_ddr_bytes_measured": false
+                }
+              }
+            ],
+            "requested_read_bytes": 35536896,
+            "requested_write_bytes": 22937600,
+            "mean_ms": null
+          },
+          {
+            "original_operation": 3240,
+            "input_value": 258,
+            "output_value": 264,
+            "operations": [
+              {
+                "operation": 3483,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3587,
+                "kind": "Transpose",
+                "layer_count": 1,
+                "log_sha256": "9da3dc84e5d05dbde3daa2c86942016a31793853b74c09b5acf4cebdf604a123",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 16,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 16,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 17,
+                    "ROUT": 16,
+                    "WETM": 19
+                  },
+                  "requested_read_bytes": 6553600,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3279,
+                "kind": "Conv2d",
+                "layer_count": 1,
+                "log_sha256": "b8282211f2f0763c127d63ed1f7a931e2c4dbf79645f4c09a5d21adb7c827e38",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 688,
+                      "requested_bytes": 39731200,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 6.0625
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 1,
+                      "requests": 94,
+                      "requested_bytes": 997376,
+                      "unique_address_bytes": 524288,
+                      "request_to_unique_ratio": 1.90234375
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 2,
+                      "requests": 112,
+                      "requested_bytes": 16384,
+                      "unique_address_bytes": 1024,
+                      "request_to_unique_ratio": 16.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 3,
+                      "requests": 112,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 896,
+                    "ROUT": 1100,
+                    "WXLM": 688,
+                    "WKLM": 752,
+                    "RKLM": 16384,
+                    "RXLM": 16384,
+                    "AYLM": 16496,
+                    "WVLM": 1760,
+                    "RVLM": 1648,
+                    "WETM": 116
+                  },
+                  "requested_read_bytes": 40744960,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3588,
+                "kind": "Transpose",
+                "layer_count": 1,
+                "log_sha256": "8db0c90b36134b1c2300c21ed9294ad9f95e7e7c3226a7a7c138ba1ac8c1a746",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 32,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 32,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 33,
+                    "ROUT": 32,
+                    "WETM": 35
+                  },
+                  "requested_read_bytes": 6553600,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3484,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3408,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "48f0b674cc2c89041bd202b3fbf3b62f8a22e91307b9144026872777b82af263",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 101,
+                    "ROUT": 100,
+                    "WETM": 103
+                  },
+                  "requested_read_bytes": 6553600,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              }
+            ],
+            "requested_read_bytes": 60405760,
+            "requested_write_bytes": 26214400,
+            "mean_ms": null
+          },
+          {
+            "original_operation": 3223,
+            "input_value": 129,
+            "output_value": 135,
+            "operations": [
+              {
+                "operation": 3481,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3585,
+                "kind": "Transpose",
+                "layer_count": 1,
+                "log_sha256": "0b676ce84ac6eef3b843ebba183bab8f179a16972bbc594396a84f02d9d3b4a9",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 64,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 64,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 65,
+                    "ROUT": 64,
+                    "WETM": 67
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3262,
+                "kind": "Conv2d",
+                "layer_count": 1,
+                "log_sha256": "531e61d00aaabe0b5b83b7347efbfe3f3243808d43f72e1b4eaa8a314b179696",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 256,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 1,
+                      "requests": 16,
+                      "requested_bytes": 131072,
+                      "unique_address_bytes": 131072,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 2,
+                      "requests": 256,
+                      "requested_bytes": 32768,
+                      "unique_address_bytes": 512,
+                      "request_to_unique_ratio": 64.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 3,
+                      "requests": 256,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 530,
+                    "ROUT": 1040,
+                    "WXLM": 512,
+                    "WKLM": 16,
+                    "RKLM": 16384,
+                    "RXLM": 16384,
+                    "AYLM": 17408,
+                    "WVLM": 3584,
+                    "RVLM": 3328,
+                    "WETM": 260
+                  },
+                  "requested_read_bytes": 13271040,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3586,
+                "kind": "Transpose",
+                "layer_count": 1,
+                "log_sha256": "46b7842832fea86e831ef41864479b6809e8ed697a1d27714a33d02a6d746032",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 16,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 16,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 17,
+                    "ROUT": 16,
+                    "WETM": 19
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3482,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3405,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "a3ad60c6c1b6d1eb57f3872ea73f09fe1b02c531d8820f0d9cf8d4be18808526",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 201,
+                    "ROUT": 200,
+                    "WETM": 203
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              }
+            ],
+            "requested_read_bytes": 52592640,
+            "requested_write_bytes": 52428800,
+            "mean_ms": null
+          }
+        ],
+        "actual_ddr_bytes_measured": false
+      },
+      "generate": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "generate",
+            "candidate.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-tile20-three-r2",
+          "pid": 3732,
+          "started_utc": "2026-11-14T04:23:25.933925+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 32.5307971000002
+        },
+        "graph": {
+          "json_sha256": "28e163bde26ff955bcd494fde8e4d3e0dcba260bd99e9754ee25acd4bb3fc661",
+          "raw_sha256": "c260f8311a4ebf18d76c7b8839848883ac304d2ea2461a97ca3dfbe63718b0f5",
+          "raw_bytes": 63046532,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::HardOp": 414,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [
+                  "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+                ],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        }
+      },
+      "board_tested": false
+    },
+    {
+      "model": "yolo26-matmul-three-r3",
+      "numerical": {
+        "schema": 1,
+        "candidate": {
+          "schema": 1,
+          "mode": "matmul",
+          "operations": [
+            {
+              "generated_operation": 3296,
+              "quantized_convolution": 278,
+              "input_shape": [
+                1,
+                80,
+                80,
+                1024
+              ],
+              "matrix_shape": [
+                1,
+                6400,
+                1024
+              ],
+              "output_shape": [
+                1,
+                80,
+                80,
+                256
+              ],
+              "explicit_output_copy": true
+            },
+            {
+              "generated_operation": 3240,
+              "quantized_convolution": 87,
+              "input_shape": [
+                1,
+                80,
+                80,
+                512
+              ],
+              "matrix_shape": [
+                1,
+                6400,
+                512
+              ],
+              "output_shape": [
+                1,
+                80,
+                80,
+                512
+              ],
+              "explicit_output_copy": true
+            },
+            {
+              "generated_operation": 3223,
+              "quantized_convolution": 44,
+              "input_shape": [
+                1,
+                160,
+                160,
+                256
+              ],
+              "matrix_shape": [
+                1,
+                25600,
+                256
+              ],
+              "output_shape": [
+                1,
+                160,
+                160,
+                256
+              ],
+              "explicit_output_copy": true
+            }
+          ],
+          "source_graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+          "source_adapted_sha256": "f5ecacccf83a3659fa9561d2157ca1c0668859f67f36eff83fa0915e39f366f8",
+          "source_stage": "quantized",
+          "unchanged_raw_sha256": "c312f482b71c32bbad972672ab374cf4b8c2f34ea9a357734d20ca82fe0b54ab",
+          "board_access": false
+        },
+        "graph_sha256": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+        "raw_sha256": "a346abc84c4a0edb5361b5ec1829ea994b1d45eeda815c212407efc5366503a5",
+        "view_groups": 86,
+        "simulations": [
+          {
+            "case": 0,
+            "comparison": {
+              "raw_max_abs": 6.28125,
+              "raw_rms": 0.16393350064754486,
+              "worst_index": [
+                0,
+                4,
+                7294
+              ],
+              "worst_reference": -44.65625,
+              "worst_actual": -38.375,
+              "expected_high_detections": [],
+              "actual_high_detections": [],
+              "high_detection_matches": [],
+              "fixture_passed": true
+            },
+            "bitwise_equal": false,
+            "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+            "reference_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+            "output_sha256": "0f5c12f79165e348bba5832420ade66c6fc5f092457389408eaa7adc5b2c3405",
+            "metadata": {
+              "run": {
+                "command": [
+                  "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+                  "run",
+                  "run.toml"
+                ],
+                "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-matmul-three-sim0-r3",
+                "pid": 18864,
+                "started_utc": "2026-11-14T04:27:19.654313+00:00",
+                "native_exit": 0,
+                "elapsed_seconds": 68.17199999999139
+              },
+              "stage": "ZG",
+              "case": 0,
+              "input_sha256": "9611cc6d822d1952295fff17cfb0b788792c47b8e59159c0ea95b9c21a0aeeed",
+              "graph_sha256": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+              "encoded_input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+              "encoded_input_bytes": 4915200,
+              "input_element_type": "@fp(32)",
+              "output_value_ids": [
+                2275
+              ],
+              "board_tested": false,
+              "files": [
+                "input.ftmp",
+                "run.toml",
+                "simulate.exit.json",
+                "simulate.log",
+                "simulate.process.json",
+                "hardopLog\\yolo26l\\access_byte.log",
+                "native\\yolo26l\\ftmpSFB\\2275.ftmp"
+              ]
+            }
+          },
+          {
+            "case": 1,
+            "comparison": {
+              "raw_max_abs": 2.46875,
+              "raw_rms": 0.0615767166018486,
+              "worst_index": [
+                0,
+                4,
+                7842
+              ],
+              "worst_reference": -17.90625,
+              "worst_actual": -15.4375,
+              "expected_high_detections": [],
+              "actual_high_detections": [],
+              "high_detection_matches": [],
+              "fixture_passed": true
+            },
+            "bitwise_equal": false,
+            "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+            "reference_sha256": "c088c552a104c845ec13c78e8ec2b189309cfc4062c75198b10cc7277d63a577",
+            "output_sha256": "b225f0415e88c17e63087c14423b7c859d41e322d519b03192ef3963aa2f85d6",
+            "metadata": {
+              "run": {
+                "command": [
+                  "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+                  "run",
+                  "run.toml"
+                ],
+                "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-matmul-three-sim1-r3",
+                "pid": 15488,
+                "started_utc": "2026-11-14T04:31:11.488463+00:00",
+                "native_exit": 0,
+                "elapsed_seconds": 65.09299999999348
+              },
+              "stage": "ZG",
+              "case": 1,
+              "input_sha256": "b0c6dd469b1805159c2988828f228f2041f76267623deb9826df49d082b05241",
+              "graph_sha256": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+              "encoded_input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+              "encoded_input_bytes": 4915200,
+              "input_element_type": "@fp(32)",
+              "output_value_ids": [
+                2275
+              ],
+              "board_tested": false,
+              "files": [
+                "input.ftmp",
+                "run.toml",
+                "simulate.exit.json",
+                "simulate.log",
+                "simulate.process.json",
+                "hardopLog\\yolo26l\\access_byte.log",
+                "native\\yolo26l\\ftmpSFB\\2275.ftmp"
+              ]
+            }
+          },
+          {
+            "case": 2,
+            "comparison": {
+              "raw_max_abs": 5.90625,
+              "raw_rms": 0.0891873687505722,
+              "worst_index": [
+                0,
+                4,
+                233
+              ],
+              "worst_reference": -18.375,
+              "worst_actual": -24.28125,
+              "expected_high_detections": [
+                [
+                  110.3125,
+                  236.25,
+                  226.4375,
+                  535.0,
+                  0.9626730680465698,
+                  0.0
+                ],
+                [
+                  82.75,
+                  136.625,
+                  554.875,
+                  436.625,
+                  0.9536218643188477,
+                  5.0
+                ],
+                [
+                  212.5,
+                  241.3125,
+                  284.5625,
+                  510.25,
+                  0.9473810195922852,
+                  0.0
+                ],
+                [
+                  475.75,
+                  233.875,
+                  560.4375,
+                  522.0,
+                  0.944587230682373,
+                  0.0
+                ],
+                [
+                  80.15625,
+                  326.875,
+                  126.765625,
+                  517.25,
+                  0.8940516710281372,
+                  0.0
+                ]
+              ],
+              "actual_high_detections": [
+                [
+                  110.3125,
+                  236.125,
+                  226.375,
+                  535.125,
+                  0.9623913168907166,
+                  0.0
+                ],
+                [
+                  82.75,
+                  136.625,
+                  555.0,
+                  436.625,
+                  0.9539660811424255,
+                  5.0
+                ],
+                [
+                  212.484375,
+                  241.25,
+                  284.5625,
+                  510.25,
+                  0.9473810195922852,
+                  0.0
+                ],
+                [
+                  475.78125,
+                  234.0,
+                  560.40625,
+                  522.0,
+                  0.944587230682373,
+                  0.0
+                ],
+                [
+                  80.171875,
+                  326.875,
+                  126.765625,
+                  517.25,
+                  0.8933094143867493,
+                  0.0
+                ]
+              ],
+              "high_detection_matches": [
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.9986265658701619,
+                  "max_coordinate_error": 0.125,
+                  "score_error": 0.0002817511558532715
+                },
+                {
+                  "class_id": 5,
+                  "matched": true,
+                  "iou": 0.9997353096876654,
+                  "max_coordinate_error": 0.125,
+                  "score_error": 0.00034421682357788086
+                },
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.9995509296903772,
+                  "max_coordinate_error": 0.0625,
+                  "score_error": 0.0
+                },
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.9988284733172711,
+                  "max_coordinate_error": 0.125,
+                  "score_error": 0.0
+                },
+                {
+                  "class_id": 0,
+                  "matched": true,
+                  "iou": 0.999664767013074,
+                  "max_coordinate_error": 0.015625,
+                  "score_error": 0.0007422566413879395
+                }
+              ],
+              "fixture_passed": true
+            },
+            "bitwise_equal": false,
+            "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+            "reference_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+            "output_sha256": "e95369c3fcd9c8f6ab93ac8873c5eae887f49efce0e256c7f06460b599693b6f",
+            "metadata": {
+              "run": {
+                "command": [
+                  "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+                  "run",
+                  "run.toml"
+                ],
+                "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-matmul-three-sim2-r3",
+                "pid": 12908,
+                "started_utc": "2026-11-14T04:27:19.639383+00:00",
+                "native_exit": 0,
+                "elapsed_seconds": 68.98399999999674
+              },
+              "stage": "ZG",
+              "case": 2,
+              "input_sha256": "e2fedaeae6235bc04c0b962fea3120dbc3bd2bc263b181213ef98c8a8140f522",
+              "graph_sha256": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+              "encoded_input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+              "encoded_input_bytes": 4915200,
+              "input_element_type": "@fp(32)",
+              "output_value_ids": [
+                2275
+              ],
+              "board_tested": false,
+              "files": [
+                "input.ftmp",
+                "run.toml",
+                "simulate.exit.json",
+                "simulate.log",
+                "simulate.process.json",
+                "hardopLog\\yolo26l\\access_byte.log",
+                "native\\yolo26l\\ftmpSFB\\2275.ftmp"
+              ]
+            }
+          }
+        ],
+        "fixture_passed": true,
+        "map_validated": false,
+        "acceptance": "Existing fixture gate: same classes/count above 0.25, IoU >= 0.98, score delta <= 0.02"
+      },
+      "float_reference": [
+        {
+          "case": 0,
+          "reference_sha256": "42895324d107a6b548954ea22418e4fdd548d3cbf0495582d7b8826c16938715",
+          "comparison": {
+            "raw_max_abs": 26.996089935302734,
+            "raw_rms": 0.8638129234313965,
+            "worst_index": [
+              0,
+              4,
+              7705
+            ],
+            "worst_reference": -19.191410064697266,
+            "worst_actual": -46.1875,
+            "expected_high_detections": [],
+            "actual_high_detections": [],
+            "high_detection_matches": [],
+            "fixture_passed": true
+          }
+        },
+        {
+          "case": 1,
+          "reference_sha256": "241a85285c6b3264c075cd67a228ddd14f0f23678370125db75febe8753cd68f",
+          "comparison": {
+            "raw_max_abs": 5.697994232177734,
+            "raw_rms": 0.23495812714099884,
+            "worst_index": [
+              0,
+              4,
+              7842
+            ],
+            "worst_reference": -21.135494232177734,
+            "worst_actual": -15.4375,
+            "expected_high_detections": [],
+            "actual_high_detections": [],
+            "high_detection_matches": [],
+            "fixture_passed": true
+          }
+        },
+        {
+          "case": 2,
+          "reference_sha256": "d389ed5f45aec3fb3380669d93d4718a95aa91bd7ebf2d491d97ed18e87a9c7d",
+          "comparison": {
+            "raw_max_abs": 21.218883514404297,
+            "raw_rms": 0.472619891166687,
+            "worst_index": [
+              0,
+              4,
+              6727
+            ],
+            "worst_reference": -28.656116485595703,
+            "worst_actual": -49.875,
+            "expected_high_detections": [
+              [
+                110.30839538574219,
+                236.1220703125,
+                226.43516540527344,
+                535.3948974609375,
+                0.9616295695304871,
+                0.0
+              ],
+              [
+                82.52940368652344,
+                136.4774169921875,
+                555.1327514648438,
+                437.003173828125,
+                0.9523299336433411,
+                5.0
+              ],
+              [
+                212.55078125,
+                241.31723022460938,
+                284.4814147949219,
+                510.1308288574219,
+                0.9427850246429443,
+                0.0
+              ],
+              [
+                476.05517578125,
+                233.93856811523438,
+                560.6151123046875,
+                521.98876953125,
+                0.9414229989051819,
+                0.0
+              ],
+              [
+                79.99784851074219,
+                326.71759033203125,
+                126.78831481933594,
+                517.3414306640625,
+                0.8881140947341919,
+                0.0
+              ]
+            ],
+            "actual_high_detections": [
+              [
+                110.3125,
+                236.125,
+                226.375,
+                535.125,
+                0.9623913168907166,
+                0.0
+              ],
+              [
+                82.75,
+                136.625,
+                555.0,
+                436.625,
+                0.9539660811424255,
+                5.0
+              ],
+              [
+                212.484375,
+                241.25,
+                284.5625,
+                510.25,
+                0.9473810195922852,
+                0.0
+              ],
+              [
+                475.78125,
+                234.0,
+                560.40625,
+                522.0,
+                0.944587230682373,
+                0.0
+              ],
+              [
+                80.171875,
+                326.875,
+                126.765625,
+                517.25,
+                0.8933094143867493,
+                0.0
+              ]
+            ],
+            "high_detection_matches": [
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9985354478933042,
+                "max_coordinate_error": 0.2698974609375,
+                "score_error": 0.0007617473602294922
+              },
+              {
+                "class_id": 5,
+                "matched": true,
+                "iou": 0.9975042591293224,
+                "max_coordinate_error": 0.378173828125,
+                "score_error": 0.0016361474990844727
+              },
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9972622624261182,
+                "max_coordinate_error": 0.119171142578125,
+                "score_error": 0.00459599494934082
+              },
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9940589458645079,
+                "max_coordinate_error": 0.27392578125,
+                "score_error": 0.003164231777191162
+              },
+              {
+                "class_id": 0,
+                "matched": true,
+                "iou": 0.9944958331161827,
+                "max_coordinate_error": 0.1740264892578125,
+                "score_error": 0.005195319652557373
+              }
+            ],
+            "fixture_passed": true
+          }
+        }
+      ],
+      "regions": {
+        "schema": 1,
+        "baseline_graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+        "candidate_graph_sha256": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+        "regions": [
+          {
+            "original_operation": 3296,
+            "input_value": 821,
+            "output_value": 827,
+            "operations": [
+              {
+                "operation": 3425,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "6b282c592d06893218172167b07a04b4b456204c771f64a791785a2b08b23ecd",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 201,
+                    "ROUT": 200,
+                    "WETM": 203
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3523,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3481,
+                "kind": "Matmul",
+                "layer_count": 1,
+                "log_sha256": "758e517f259956b5105e8dfb8a149abe45a88dd951513340382e5916f491ee20",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 3976,
+                      "requested_bytes": 203571200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 15.53125
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 1,
+                      "requests": 1024,
+                      "requested_bytes": 524288,
+                      "unique_address_bytes": 524288,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 2,
+                      "requests": 64,
+                      "requested_bytes": 2048,
+                      "unique_address_bytes": 512,
+                      "request_to_unique_ratio": 4.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 3,
+                      "requests": 64,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 5066,
+                    "ROUT": 6152,
+                    "WXLM": 3976,
+                    "WKLM": 4096,
+                    "RKLM": 4096,
+                    "RXLM": 4096,
+                    "AYLM": 4224,
+                    "WVLM": 128,
+                    "RVLM": 64,
+                    "WETM": 68
+                  },
+                  "requested_read_bytes": 204097536,
+                  "requested_write_bytes": 3276800,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3524,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3486,
+                "kind": "SiLU",
+                "layer_count": 1,
+                "log_sha256": "b9ae26ef0fb0922f9f4340e6320da3388383d56cb390d9f1b7941e08c0a8e597",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 50,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 50,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 52,
+                    "ROUT": 100,
+                    "WVLM": 100,
+                    "RVLM": 100,
+                    "WETM": 54
+                  },
+                  "requested_read_bytes": 3276800,
+                  "requested_write_bytes": 3276800,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3525,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3426,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "235bb7b07ecd5fa03ad346c5c1055d57d2323df20ca5b83f6ebf7662d8899288",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 50,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 50,
+                      "requested_bytes": 3276800,
+                      "unique_address_bytes": 3276800,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 51,
+                    "ROUT": 50,
+                    "WETM": 53
+                  },
+                  "requested_read_bytes": 3276800,
+                  "requested_write_bytes": 3276800,
+                  "actual_ddr_bytes_measured": false
+                }
+              }
+            ],
+            "requested_read_bytes": 223758336,
+            "requested_write_bytes": 22937600,
+            "mean_ms": null
+          },
+          {
+            "original_operation": 3240,
+            "input_value": 258,
+            "output_value": 264,
+            "operations": [
+              {
+                "operation": 3416,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "6cc379d0a34a05e38243d98c7a612a7392c27615296851a5217097e467eed55b",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 101,
+                    "ROUT": 100,
+                    "WETM": 103
+                  },
+                  "requested_read_bytes": 6553600,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3500,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3476,
+                "kind": "Matmul",
+                "layer_count": 1,
+                "log_sha256": "9bc00eb3398574f1c31b347b98c2495ff362aa52266bc26845b74dc4ae5f01ee",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 3848,
+                      "requested_bytes": 197017600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 30.0625
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 1,
+                      "requests": 1024,
+                      "requested_bytes": 524288,
+                      "unique_address_bytes": 524288,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 2,
+                      "requests": 128,
+                      "requested_bytes": 4096,
+                      "unique_address_bytes": 1024,
+                      "request_to_unique_ratio": 4.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 3,
+                      "requests": 128,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 5002,
+                    "ROUT": 6152,
+                    "WXLM": 3848,
+                    "WKLM": 4096,
+                    "RKLM": 4096,
+                    "RXLM": 4096,
+                    "AYLM": 4352,
+                    "WVLM": 256,
+                    "RVLM": 128,
+                    "WETM": 132
+                  },
+                  "requested_read_bytes": 197545984,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3501,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3485,
+                "kind": "SiLU",
+                "layer_count": 1,
+                "log_sha256": "529de15254bbe8e65ac42e656d240b31645cb447894fde1708025d61f51afca8",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 102,
+                    "ROUT": 200,
+                    "WVLM": 200,
+                    "RVLM": 200,
+                    "WETM": 104
+                  },
+                  "requested_read_bytes": 6553600,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3502,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3417,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "62e4c645f09eda8b88fe8b858c41512f9c28687339c535ad6f032d1a598d47bf",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 100,
+                      "requested_bytes": 6553600,
+                      "unique_address_bytes": 6553600,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 101,
+                    "ROUT": 100,
+                    "WETM": 103
+                  },
+                  "requested_read_bytes": 6553600,
+                  "requested_write_bytes": 6553600,
+                  "actual_ddr_bytes_measured": false
+                }
+              }
+            ],
+            "requested_read_bytes": 217206784,
+            "requested_write_bytes": 26214400,
+            "mean_ms": null
+          },
+          {
+            "original_operation": 3223,
+            "input_value": 129,
+            "output_value": 135,
+            "operations": [
+              {
+                "operation": 3412,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "857c3eff2d5e9b1584ef5f17ba92aab7357ba4064d5b5a663bcde32f494fc635",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 201,
+                    "ROUT": 200,
+                    "WETM": 203
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3497,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3475,
+                "kind": "Matmul",
+                "layer_count": 1,
+                "log_sha256": "f8352aaf3d0a5429e6748c85b78d61fbec647d8dd68f124302d8d1187a1876a5",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 208,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 1,
+                      "requests": 256,
+                      "requested_bytes": 131072,
+                      "unique_address_bytes": 131072,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 2,
+                      "requests": 208,
+                      "requested_bytes": 6656,
+                      "unique_address_bytes": 512,
+                      "request_to_unique_ratio": 13.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 3,
+                      "requests": 208,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 674,
+                    "ROUT": 880,
+                    "WXLM": 208,
+                    "WKLM": 256,
+                    "RKLM": 3328,
+                    "RXLM": 3328,
+                    "AYLM": 5408,
+                    "WVLM": 416,
+                    "RVLM": 208,
+                    "WETM": 211
+                  },
+                  "requested_read_bytes": 13244928,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3498,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3484,
+                "kind": "SiLU",
+                "layer_count": 1,
+                "log_sha256": "154b4c2a1835850aa7938661214edbc568d982d665aa0b0067c5d34fb08d7e3c",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 202,
+                    "ROUT": 400,
+                    "WVLM": 400,
+                    "RVLM": 400,
+                    "WETM": 204
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              },
+              {
+                "operation": 3499,
+                "kind": "Reshape",
+                "layer_count": 0
+              },
+              {
+                "operation": 3413,
+                "kind": "Copy",
+                "layer_count": 1,
+                "log_sha256": "7074b34ad37fbdbedbd59aa05f8c3e73b015bb8b1e01ad5e3443cf7e0c2f4efa",
+                "requests": {
+                  "memory": [
+                    {
+                      "direction": "RETM",
+                      "buffer_slot": 0,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    },
+                    {
+                      "direction": "WETM",
+                      "buffer_slot": 1,
+                      "requests": 200,
+                      "requested_bytes": 13107200,
+                      "unique_address_bytes": 13107200,
+                      "request_to_unique_ratio": 1.0
+                    }
+                  ],
+                  "instructions": {
+                    "RETM": 201,
+                    "ROUT": 200,
+                    "WETM": 203
+                  },
+                  "requested_read_bytes": 13107200,
+                  "requested_write_bytes": 13107200,
+                  "actual_ddr_bytes_measured": false
+                }
+              }
+            ],
+            "requested_read_bytes": 52566528,
+            "requested_write_bytes": 52428800,
+            "mean_ms": null
+          }
+        ],
+        "actual_ddr_bytes_measured": false
+      },
+      "generate": {
+        "run": {
+          "command": [
+            "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+            "generate",
+            "candidate.toml"
+          ],
+          "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-matmul-three-r3",
+          "pid": 3920,
+          "started_utc": "2026-11-14T04:26:02.259496+00:00",
+          "native_exit": 0,
+          "elapsed_seconds": 26.025467400002526
+        },
+        "graph": {
+          "json_sha256": "7bd014d0bf41570f26471229d72991817673f05b2700f45dea64bfe4e2945296",
+          "raw_sha256": "a346abc84c4a0edb5361b5ec1829ea994b1d45eeda815c212407efc5366503a5",
+          "raw_bytes": 62160296,
+          "operators": {
+            "icraft::xir::Input": 1,
+            "icraft::xir::HardOp": 417,
+            "icraft::xir::Output": 1
+          },
+          "ports": {
+            "Input": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(NHWC)",
+                "merged_distrs": [],
+                "shape": [
+                  1,
+                  640,
+                  640,
+                  3
+                ]
+              }
+            ],
+            "Output": [
+              {
+                "_type_key": "icraft::xir::TensorType",
+                "element_dtype": "@fp(32)",
+                "layout": "@layout(**C)",
+                "merged_distrs": [
+                  "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+                ],
+                "shape": [
+                  1,
+                  84,
+                  8400
+                ]
+              }
+            ]
+          },
+          "host_compute": []
+        }
+      },
+      "board_tested": false
+    }
+  ],
+  "tests": {
+    "mapping_tests": 6,
+    "region_tests": 3,
+    "instruction_tests": 4
+  },
+  "map_validated": false,
+  "failed_candidates": [
+    {
+      "path": ".local/yolo26-tile20-three-r1",
+      "failure": "disconnected zero-layer Concat 3533; not deployed"
+    },
+    {
+      "path": ".local/yolo26-matmul-three-r1",
+      "failure": "disconnected zero-layer Concat 3523; not deployed"
+    },
+    {
+      "path": ".local/yolo26-matmul-one-r1",
+      "failure": "wrong direct packed OI weight interpretation; max abs 48.996094; not deployed"
+    }
+  ],
+  "local_complete_evidence": ".local/yolo26-tile-study-r1 and candidate directories"
+}

@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-14",
+  "scope": "finite_file_replay",
+  "ordinary_frames_per_run": 12,
+  "diagnostic_frames_per_run": 3,
+  "runs": [
+    {
+      "policy": "trace",
+      "model": "yolo26-int8-selective-block-r1",
+      "boot_id": "56206fd1-120a-4b64-b1d0-2abb6b860856",
+      "complete_call_ms": {
+        "samples": 12,
+        "mean": 82.59613083333333,
+        "median": 82.62089,
+        "p95": 82.85585,
+        "p99": 82.85585,
+        "maximum": 82.85585,
+        "minimum": 82.38759
+      },
+      "forward_wait_ms": {
+        "samples": 12,
+        "mean": 65.73352249999999,
+        "median": 65.72345999999999,
+        "p95": 65.91795,
+        "p99": 65.91795,
+        "maximum": 65.91795,
+        "minimum": 65.55193
+      },
+      "target_operations": [
+        3405
+      ],
+      "target_native_ms": 1.547264000000001,
+      "logical_input_request_bytes": 6841856,
+      "logical_kernel_request_bytes": 3244032,
+      "actual_ddr_bytes_measured": false,
+      "identities": {
+        "model.json": "42ae1374714b0dd6b4dbe27fa69d845c34fe5d216e039155ad490e005eccf2b9",
+        "model.raw": "c2edc20012aa196181b3962b7eea6470f3c8e35f2911b3b619b7e15ceeb054fd",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "04602eef50d04e1c176fffd2eca0f72443344c2f2c2a5ab602f46d441e84dfe1"
+      },
+      "numerical": {
+        "full_output_bytes": 2822400,
+        "bitwise_previous": true,
+        "sha256": "1def692f6e0d7856959c72c6625ac5f7271eb552882d77ee69abe28c0121e81f"
+      },
+      "view_consistent": true,
+      "evidence_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-memory-board-r1\\trace",
+      "outcome": {
+        "boot_id": "56206fd1-120a-4b64-b1d0-2abb6b860856",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      }
+    },
+    {
+      "policy": "o128",
+      "model": "yolo26-conv3405-o128-r3",
+      "boot_id": "ec3d2616-02e3-4d6f-8094-da27635e1994",
+      "complete_call_ms": {
+        "samples": 12,
+        "mean": 82.76723583333333,
+        "median": 82.782475,
+        "p95": 83.10993,
+        "p99": 83.10993,
+        "maximum": 83.10993,
+        "minimum": 82.55652
+      },
+      "forward_wait_ms": {
+        "samples": 12,
+        "mean": 66.07234666666668,
+        "median": 66.12123,
+        "p95": 66.1971,
+        "p99": 66.1971,
+        "maximum": 66.1971,
+        "minimum": 65.92073
+      },
+      "target_operations": [
+        3441,
+        3442
+      ],
+      "target_native_ms": 2.004309333333333,
+      "logical_input_request_bytes": 13683712,
+      "logical_kernel_request_bytes": 2359296,
+      "actual_ddr_bytes_measured": false,
+      "identities": {
+        "model.json": "6b8fea32dd97bb0f2f744cbfaaed481112096d1b6c8b8e2885e0fae9f71d0d27",
+        "model.raw": "d6b38cc291f7653d2d22bd24777b6ab2b845469e76b478db121ec2c8be9e068a",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "04602eef50d04e1c176fffd2eca0f72443344c2f2c2a5ab602f46d441e84dfe1"
+      },
+      "numerical": {
+        "bitwise_previous": true,
+        "full_output_bytes": 2822400,
+        "sha256": "1def692f6e0d7856959c72c6625ac5f7271eb552882d77ee69abe28c0121e81f"
+      },
+      "view_consistent": true,
+      "evidence_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-memory-board-r1\\o128",
+      "outcome": {
+        "boot_id": "ec3d2616-02e3-4d6f-8094-da27635e1994",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      }
+    },
+    {
+      "policy": "o64",
+      "model": "yolo26-conv3405-o64-r1",
+      "boot_id": "d4fae701-c0e2-4113-9df5-609b7fb8f157",
+      "complete_call_ms": {
+        "samples": 12,
+        "mean": 83.49633166666666,
+        "median": 83.474685,
+        "p95": 83.85677,
+        "p99": 83.85677,
+        "maximum": 83.85677,
+        "minimum": 83.24577
+      },
+      "forward_wait_ms": {
+        "samples": 12,
+        "mean": 66.8125725,
+        "median": 66.83632499999999,
+        "p95": 66.94853,
+        "p99": 66.94853,
+        "maximum": 66.94853,
+        "minimum": 66.68306
+      },
+      "target_operations": [
+        3445,
+        3446,
+        3447,
+        3448
+      ],
+      "target_native_ms": 2.793984,
+      "logical_input_request_bytes": 27367424,
+      "logical_kernel_request_bytes": 589824,
+      "actual_ddr_bytes_measured": false,
+      "identities": {
+        "model.json": "7ede7467b38f440576c6ab8924d12fc877c05bf119dc5bf050f4d9fc9ccac8ef",
+        "model.raw": "c863be83015fb2e0fd00537f25d7d99ad1be106a494acc9b3c56202a50020866",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "04602eef50d04e1c176fffd2eca0f72443344c2f2c2a5ab602f46d441e84dfe1"
+      },
+      "numerical": {
+        "bitwise_previous": true,
+        "full_output_bytes": 2822400,
+        "sha256": "1def692f6e0d7856959c72c6625ac5f7271eb552882d77ee69abe28c0121e81f"
+      },
+      "view_consistent": true,
+      "evidence_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-memory-board-r1\\o64",
+      "outcome": {
+        "boot_id": "d4fae701-c0e2-4113-9df5-609b7fb8f157",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      }
+    }
+  ],
+  "sdk_starts": 3,
+  "npu_calls": 54,
+  "normal_reboots": 3,
+  "boot_writes": 0,
+  "capture_starts": 0,
+  "true_ddr_timeline_available": false,
+  "mpe_wait_measured": false,
+  "default_candidate_changed": false
+}

@@ -1,0 +1,155 @@
+e60badd9 2026-11-15 test(yolo26): archive the second 600-second live camera run
+33b121e5 2026-11-15 test(yolo26): record rectangular live board acceptance evidence
+8bbb38a1 2026-11-15 feat(yolo26): seal the live overlay diagnostic threshold
+52ade8a5 2026-11-15 fix(yolo26): scope the final reboot to the restored BOOT
+3496e546 2026-11-15 fix(yolo26): release only owned video UDMA allocations
+58fd7f40 2026-11-15 fix(yolo26): discover streaming UVC node before SDK startup
+7becd94b 2026-11-15 build(yolo26): qualify routed CDC and preserve 720p release evidence
+c8065d6e 2026-11-15 build(yolo26): reproduce scoped legacy placement reuse
+f3a8fa86 2026-11-15 perf(yolo26): register resize RAM write ports
+edcc7033 2026-11-15 perf(yolo26): pipeline preprocessing paths identified by placement
+f9cf9854 2026-11-15 feat(yolo26): qualify 720p timing and bind temporary video BOOT
+c1ed3038 2026-11-15 feat(yolo26): connect rectangular live runtime and audit same-frame HDMI
+48e0d5a7 2026-11-15 feat(yolo26): drive rectangular PL preprocessing through HP2
+da3f7bbd 2026-11-15 docs(yolo26): add development report and hands-on learning guide
+b8a42f39 2026-11-15 test(yolo26): verify strict 30 fps over 600 board replay windows
+8a771ca8 2026-11-15 feat(yolo26): diagnose replay tails and defer reference writes
+7c43da53 2026-11-15 test(yolo26): record NEON replay gain and long-tail stall
+26d1d43d 2026-11-15 perf(yolo26): vectorize RGB normalization with bit-exact ARM64 FMA
+3e009f14 2026-11-15 test(yolo26): compare rectangular board outputs on the labeled proxy subset
+71e5fa52 2026-11-15 test(yolo26): preserve 600-second replay and slower windows
+b097319f 2026-11-15 feat(yolo26): reuse Host input storage and measure bounded file sequences
+8b16a55e 2026-11-15 perf(yolo26): prune low-confidence anchors before sorting
+f5526e13 2026-11-15 test(yolo26): qualify rectangular pointwise request and output comparisons
+773a3cf0 2026-11-15 feat(yolo26): run and measure static rectangular inference on ARM64
+62a5d59e 2026-11-15 feat(yolo26): compile and verify static rectangular ONNX graphs
+ea7e8420 2026-11-15 docs(yolo26): record VGA camera frame-rate diagnosis
+5c754ccd 2026-11-14 test(yolo26): record real bus timelines and bounded prefetch comparison
+e24a911c 2026-11-14 feat(yolo26): qualify routed trace BOOT with identical non-PL partitions
+5ac22bdf 2026-11-14 fix(yolo26): allow BOOT recovery after a proven closed native failure
+945ef160 2026-11-14 feat(yolo26): compare prefetch timing with bounded layer-to-bus alignment
+fa63f582 2026-11-14 perf(yolo26): prefetch next convolution weights with explicit KLM completion writes
+66221eae 2026-11-14 perf(yolo26): pipeline passive event sampling before accumulation
+f1c7691f 2026-11-14 feat(yolo26): guard temporary trace BOOT maintenance with prior drain proof
+2bc8efd4 2026-11-14 feat(yolo26): qualify trace hardware and preserve BOOT partitions
+7d0d4715 2026-11-14 Serialize trace records into four BRAMs and prove complete frozen reads
+119f917a 2026-11-14 Validate live-task KLM relocation with exact parameters and full numerical outputs
+1763052d 2026-11-14 Add bounded NPU trace control and host-aligned bus timeline diagnostics
+8f0f9889 2026-11-14 Fit NPU observation storage within the linked device BRAM budget
+45bddf14 2026-11-14 Add bounded on-chip NPU trace capture and independent SoC integration
+2273d562 2026-11-14 Add passive bounded NPU bus observation bins with backpressure tests
+c2eee730 2026-11-14 Prove KLM address capacity for the 3404 to 3405 prefetch candidate
+9606211f 2026-11-14 Validate output-channel tiling tradeoffs for YOLO convolution 3405
+06600d3e 2026-11-14 Add bounded NPU progress sampling and record board observability limits
+e0e57084 2026-11-14 Reject slower CPU anchor blocking and pause with complete recovery evidence
+37e97c5d 2026-11-14 Measure exact public output reads and full mixed-layout invocation costs
+5d37ee19 2026-11-14 Qualify grouped PTQ layout for the controlled performance comparison
+7c96151c 2026-11-14 Add guarded public FP32 output reads with HostTensor identity tests
+b3e70946 2026-11-14 Audit mixed precision arithmetic budget from the deployed logical graph
+d6dc15a5 2026-11-14 Refresh mixed precision performance and recovery checkpoint
+c867deb3 2026-11-14 Record selective INT8 tile benefits and conversion regressions
+c43ef98e 2026-11-14 Measure head tiling savings including full conversion costs
+eef8c4e6 2026-11-14 Preserve INT8 quantization while tiling pointwise convolutions
+caefe489 2026-11-14 Bind finite NPU candidates to fixed graph identities and counts
+d46ac3bc 2026-11-14 perf(yolo26): establish measured INT8 PSA runtime baseline
+a17cf63a 2026-11-14 test(yolo26): verify ARM runtime build for INT8 profiling
+c56443bd 2026-11-14 docs(yolo26): record completed precision ablations and performance baseline
+9c5c2be9 2026-11-14 feat(yolo26): enable bounded profiling of accepted INT8 PSA baseline
+799f4f71 2026-11-14 feat(yolo26): report precision by detection overlap threshold
+6019e7b7 2026-11-14 feat(yolo26): compare controlled calibration and precision ablations
+a8c77334 2026-11-14 feat(yolo26): isolate PSA and early convolution precision ablations
+d4e770a8 2026-11-14 feat(yolo26): replay identical calibration statistics with provenance
+8df33a5d 2026-11-14 fix(yolo26): validate signed INT8 physical storage spans
+0f8a2869 2026-11-14 feat(yolo26): trace complete intermediate quantization errors
+b444088a 2026-11-14 feat(yolo26): preserve detection branches in mixed precision policy
+d8432f16 2026-11-14 feat(yolo26): evaluate mixed precision on isolated labelled inputs
+eeaa2b6f 2026-11-14 feat(yolo26): compile audited INT8 mixed precision candidates
+663c6375 2026-11-14 feat(yolo26): prepare isolated INT8 calibration and held-out inputs
+790872d2 2026-11-14 docs(yolo26): record patch-flow board regressions and retain shared baseline
+84b3cb3e 2026-11-14 feat(yolo26): trace shared layout regions across multiple boundaries
+dae8636a 2026-11-14 feat(yolo26): prepare bounded patch-layout probes and pause checkpoint
+8ca1126f 2026-11-14 feat(yolo26): propagate image patches through upsample and concat
+1b1477fd 2026-11-14 feat(yolo26): account for shared layout regions across branch boundaries
+8ee154fd 2026-11-14 docs(yolo26): record mixed-tile reuse and shared-output board gains
+602681e0 2026-11-14 feat(yolo26): qualify mixed tiles and shared-output board experiments
+6646e5ac 2026-11-14 feat(yolo26): tune per-layer tiles and validate shared output views
+84de1903 2026-11-14 docs(yolo26): record direct-view and twelve-layer board performance
+57cf4c8b 2026-11-14 feat(yolo26): qualify bounded direct-view and twelve-layer board probes
+8d84a0e1 2026-11-14 docs(yolo26): qualify direct-view and expanded pointwise layouts offline
+b6b9183b 2026-11-14 feat(yolo26): preserve pointwise storage with aspect views and direct handoff
+74f45ba9 2026-11-14 docs(yolo26): record measured pointwise Tile gains and Matmul tradeoffs
+01865266 2026-11-14 feat(yolo26): qualify bounded pointwise layout board experiments
+0e69b6f2 2026-11-14 feat(yolo26): validate pointwise Tile and logical Matmul remapping offline
+9ecb41e8 2026-11-14 docs(yolo26): render the annotated pointwise architecture
+16847281 2026-11-14 docs(yolo26): locate pointwise bottlenecks in the algorithm architecture
+1b0d1223 2026-11-14 feat(yolo26): account for strided Tile transfer requests
+1b5e71d2 2026-11-14 docs(yolo26): record validated Slice copy reduction and board recovery
+ea602ae7 2026-11-14 feat(yolo26): qualify copy reduction with an explicit computation branch Slice
+9c072187 2026-11-14 fix(yolo26): reject disconnected concat storage and quarantine failed copy variant
+9dce9b35 2026-11-14 feat(yolo26): qualify the sixteen-copy elision variant for bounded probes
+e46c2062 2026-11-14 feat(yolo26): measure static Tile reuse from native instruction logs
+6de9b513 2026-11-14 feat(yolo26): elide qualified Split Concat prefix copies offline
+0978bf4a 2026-11-14 docs(yolo26): record OCM strategy trials and verified layer bottlenecks
+76b32f40 2026-11-14 feat(yolo26): verify native layer times against raw timer counters
+86b00e5a 2026-11-14 fix(yolo26): isolate invalid native timers from wall clock results
+a3930416 2026-11-14 feat(yolo26): preserve raw SDK timer storage for diagnosis
+fc7661b2 2026-11-14 feat(yolo26): trace copy elision candidates and convolution tiling
+05148044 2026-11-14 feat(yolo26): analyze native layer timing and OCM comparisons
+40bd4f02 2026-11-14 feat(yolo26): record OCM allocation and native layer diagnostics
+77284fa1 2026-11-14 docs(yolo26): map system probes and NPU computation boundaries
+8356348a 2026-11-14 test(yolo26): validate first bounded NPU inference on board
+95ff9ac8 2026-11-14 docs(yolo26): record quota stop and prepared next build
+372f655b 2026-11-14 perf(yolo26): remove coordinate comparison from DSP enables
+a6d8d87f 2026-11-14 docs(yolo26): save physical-build evidence and recovery entry
+4a21b6bc 2026-11-14 fix(yolo26): verify simulation input pairing and complete dumps
+dd0ae2dc 2026-11-14 feat(yolo26): measure bounded camera modes with verified shutdown
+458aad77 2026-11-14 fix(yolo26): require bit-exact byte fixture reconstruction
+83ca6a9f 2026-11-14 feat(yolo26): add identity-bound UInt8 input runtime and measured CPU packing
+6fbee532 2026-11-14 feat(yolo26): register write stream and include pending beats in drain proof
+c6d58bdb 2026-11-14 feat(yolo26): validate byte-input FP16 compiler profile and safe stage resume
+a15fd83f 2026-11-14 test(yolo26): retain measured normalization baseline with bit-exact coverage
+fafd3744 2026-11-14 fix(yolo26): finish cleanup after a proven preprocessing failure
+3ade09c9 2026-11-14 docs(yolo26): record revised peripheral synthesis and timing estimates
+1aca5a70 2026-11-14 test(yolo26): verify Linux supervisor lease and failure lifecycles
+8e9ec5c6 2026-11-14 perf(yolo26): register resize map fault on the existing RAM wait cycle
+962a5cfe 2026-11-14 feat(yolo26): connect finite live probe with drained shutdown and frame evidence
+300312b3 2026-11-14 feat(yolo26): gate finite camera runs and verify per-second completion
+2af0630b 2026-11-14 feat(yolo26): wire bounded live pipeline across CPU and SDK owners
+d8261e43 2026-11-14 fix(yolo26): validate V4L2 color metadata before PL conversion
+9cec80f1 2026-11-14 feat(yolo26): adapt video DMA to public Icraft UDMA and registers
+15207bfb 2026-11-14 feat(yolo26): compose nonblocking video DMA and display scheduling
+54c1097f 2026-11-14 feat(yolo26): package single-use NPU probe with inherited board lease
+2234d1c2 2026-11-14 feat(yolo26): add guarded Icraft runtime and finite ARM probe
+e7fbb18d 2026-11-14 feat(yolo26): validate fused inference completion contracts
+b359cf52 2026-11-14 perf(yolo26): vectorize exact display color conversion
+0de04c50 2026-11-14 feat(yolo26): add nonblocking tagged HDMI control
+e23898bb 2026-11-14 perf(yolo26): accelerate checked ARM postprocessing with NEON
+ffc345f8 2026-11-14 perf(yolo26): record bounded ARM CPU module baseline
+1cceaf81 2026-11-14 build(yolo26): resume qualified SoC optimization from preserved checkpoint
+23886141 2026-11-14 feat(yolo26): track triple-buffer scanout adoption and safe release
+6cf79eb1 2026-11-14 feat(yolo26): measure distinct-frame throughput with bounded latency statistics
+68284392 2026-11-14 feat(yolo26): compose validated same-frame detections into 720p RGB565
+ee6f8d17 2026-11-14 feat(yolo26): integrate shared HP2 preprocess and 720p SoC candidate
+e0d9be87 2026-11-14 feat(yolo26): add verified 720p60 scanout mode and FIFO urgency
+85f6ae7e 2026-11-14 feat(yolo26): arbitrate HP2 reads and writes without replacing legacy owners
+5f75ecd4 2026-11-14 feat(yolo26): add nonblocking preprocessing controller with ownership checks
+d7d84559 2026-11-14 build(yolo26): constrain and audit control CDC paths
+ddf2955b 2026-11-14 feat(yolo26): connect dual-clock CSR control to preprocessing peripheral
+03bf70fa 2026-11-14 feat(yolo26): protect command and response ownership in CSR ABI
+8fdd34cd 2026-11-14 feat(yolo26): add acknowledged dual-clock command mailbox
+43de8072 2026-11-14 perf(yolo26): pipeline color conversion to meet standalone timing budget
+77548445 2026-11-14 feat(yolo26): add bounded UVC capture and record first camera benchmark
+5de78f13 2026-11-14 perf(yolo26): pipeline descriptor checks before launching DMA tasks
+7494c160 2026-11-14 feat(yolo26): validate DMA descriptors with bounded arithmetic stages
+34dfb85d 2026-11-14 perf(yolo26): pipeline bilinear arithmetic and record synthesis limits
+de4084a6 2026-11-14 feat(yolo26): validate DMA image plans and prepare NHWC inputs
+5f745d54 2026-11-14 feat(yolo26): integrate DMA preprocessing with joint completion and drain
+e5ab3a81 2026-11-14 feat(yolo26): add backpressure-safe RGB888 stream packer
+fae711d8 2026-11-14 feat(yolo26): add verified line-buffered bilinear resize and letterbox
+05a906b3 2026-11-14 feat(yolo26): add verified streaming pixel unpack and YUV color conversion
+bdc2028c 2026-11-14 test(yolo26): verify FP16 Host and generated-code model outputs
+e8e34b0c 2026-11-14 feat(yolo26): add bounded frame ownership and latest-frame handoff
+07aff282 2026-11-14 feat(yolo26): add validated C++ one-to-one postprocessor and geometry
+e80bdfe3 2026-11-14 feat(yolo26): add verified burst MM2S and S2MM DMA cores
+dd2e15dc 2026-11-14 feat(yolo26): compile fixed-shape FP16 model for Zhuge NPU
+2799631a 2026-11-14 feat(yolo26): export and verify NMS-free one-to-one reference graphs

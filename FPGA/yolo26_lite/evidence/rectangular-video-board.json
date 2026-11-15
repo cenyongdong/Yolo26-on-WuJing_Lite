@@ -1,0 +1,383 @@
+{
+  "date": "2026-11-15",
+  "qualification": "rectangular-video-physical.json",
+  "primary_live": {
+    "boot_id": "435e3dd5-1b87-4b47-9eac-121d233697fe",
+    "BOOT_sha256": "c1064d6622fd7f6a4d3a44c4633b48c8a1a9e9b83263b5a42d973ec4a50b174e",
+    "camera": {
+      "device": "/dev/video0",
+      "usb_id": "1908:2311",
+      "bus_info": "usb-e0045000.usb-1.1"
+    },
+    "score_threshold": 0.25,
+    "seconds": 600,
+    "stages": {
+      "capture": {
+        "new_frames": 4938,
+        "mean_fps": 8.23,
+        "per_second_min": 7,
+        "per_second_max": 9,
+        "windows_below_30": 600
+      },
+      "preprocess": {
+        "new_frames": 4938,
+        "mean_fps": 8.23,
+        "per_second_min": 7,
+        "per_second_max": 9,
+        "windows_below_30": 600
+      },
+      "inference": {
+        "new_frames": 4939,
+        "mean_fps": 8.23166666667,
+        "per_second_min": 7,
+        "per_second_max": 9,
+        "windows_below_30": 600
+      },
+      "display": {
+        "new_frames": 4939,
+        "mean_fps": 8.23166666667,
+        "per_second_min": 7,
+        "per_second_max": 9,
+        "windows_below_30": 600
+      }
+    },
+    "sample": {
+      "epoch": 571022810300,
+      "frame": 1,
+      "boxes": 0,
+      "adopted_address": 829095936,
+      "adopted_tag": 1,
+      "sensor_to_adoption_ns": 292060120,
+      "model_rgb_bytes": 589824,
+      "tensor_shape": [
+        1,
+        84,
+        4032
+      ],
+      "tensor_bytes": 1354752,
+      "display_rgb565_bytes": 1843200,
+      "sha256": {
+        "native-reference-source.yuyv": "842013321e5e84518b61130e3a228a2873a22701380da93b139246ec66c31e6d",
+        "native-reference-rgb.bin": "36fac85bbdf16a9ab5d7e4e35a47cd8f546d3a9bd38a6c6d0922071564451303",
+        "native-reference-output.f32": "44538c75ff72358826461c97200769b9007280bb5ece9ac5249fc20c55f8f14f",
+        "native-reference-composed.rgb565": "4335859cad70d83a00fde353ffffbfa6a7b62496997703e2dee84432bb3f0153",
+        "native-reference-scan-buffer.rgb565": "4335859cad70d83a00fde353ffffbfa6a7b62496997703e2dee84432bb3f0153"
+      }
+    },
+    "complete_chain_30fps_10min_passed": false,
+    "display_endpoint": "adopted RGB565 DDR buffer",
+    "physical_screen_observed": false,
+    "negotiation": {
+      "fourcc": "YUYV",
+      "buffers": 4,
+      "colorspace": 0,
+      "extended_fields_valid": true,
+      "height": 480,
+      "quantization": 0,
+      "size_image": 614400,
+      "stride": 1280,
+      "transfer_function": 0,
+      "width": 640,
+      "ycbcr_encoding": 0,
+      "fps_interval": [
+        1,
+        30
+      ]
+    },
+    "color_conversion": {
+      "assumed_missing_metadata": true,
+      "matrix": 0
+    },
+    "ELF_sha256": "59f1d335025ea12e2a199925027de901500de76db57c4c300df67c7e465ba8b1",
+    "model_files_sha256": {
+      "model.json": "ae1e6ec0422d527546a2a7dbf100f79fffcc19e1ad85e4300a66729277bffd4e",
+      "model.raw": "7921e992eb49edb91b6c620061330b63143b9ad1efaed009c0af765ae7b318ec"
+    },
+    "native_summary_sha256": "c43213c8af054c191d3048147a33270421450f244a5b3852fa95084ae9904bf1",
+    "native_shutdown": {
+      "native_exit": 0,
+      "completed": 4939,
+      "native_shutdown_complete": true,
+      "allocation_count_after": 0,
+      "device_owners": [],
+      "sdk_starts": 1,
+      "capture_starts": 1
+    },
+    "archives": {
+      "raw": ".local/yr1/live-r3/returned",
+      "audit": ".local/yr1/live-r3/audit-verified"
+    },
+    "application_drops": {
+      "capture_pool_full": 0,
+      "device_error": 0,
+      "display_pool_full": 0,
+      "input_pool_full": 0,
+      "invalid_result": 0,
+      "latest_replaced": 0,
+      "log_queue_full": 0
+    },
+    "capture_driver_sequence_gaps_including_warmup": 2,
+    "pool_high_water": {
+      "display": 2,
+      "input": 1,
+      "raw": 2
+    },
+    "stage_p95_ns": {
+      "preprocess": 16595680,
+      "inference": 33497710,
+      "postprocess": 1594650,
+      "compose": 10386940
+    },
+    "sensor_timestamp_to_display_adoption_ns": {
+      "maximum_ns": 151711880,
+      "p50_ns": 100925840,
+      "p95_ns": 109038460,
+      "p99_ns": 110411430
+    },
+    "display_longest_gap_ns": 250024340,
+    "inference_key_audit": {
+      "count": 4939,
+      "captured_before_measurement": 1
+    }
+  },
+  "positive_overlay": {
+    "boot_id": "d198720e-fe73-43d3-820e-06c14196cd2e",
+    "BOOT_sha256": "c1064d6622fd7f6a4d3a44c4633b48c8a1a9e9b83263b5a42d973ec4a50b174e",
+    "camera": {
+      "device": "/dev/video0",
+      "usb_id": "1908:2311",
+      "bus_info": "usb-e0045000.usb-1.1"
+    },
+    "score_threshold": 0.009999999776482582,
+    "seconds": 12,
+    "stages": {
+      "capture": {
+        "new_frames": 99,
+        "mean_fps": 8.25,
+        "per_second_min": 8,
+        "per_second_max": 9,
+        "windows_below_30": 12
+      },
+      "preprocess": {
+        "new_frames": 98,
+        "mean_fps": 8.16666666667,
+        "per_second_min": 8,
+        "per_second_max": 9,
+        "windows_below_30": 12
+      },
+      "inference": {
+        "new_frames": 99,
+        "mean_fps": 8.25,
+        "per_second_min": 8,
+        "per_second_max": 9,
+        "windows_below_30": 12
+      },
+      "display": {
+        "new_frames": 99,
+        "mean_fps": 8.25,
+        "per_second_min": 8,
+        "per_second_max": 9,
+        "windows_below_30": 12
+      }
+    },
+    "sample": {
+      "epoch": 49080156790,
+      "frame": 1,
+      "boxes": 1,
+      "adopted_address": 829095936,
+      "adopted_tag": 1,
+      "sensor_to_adoption_ns": 299707130,
+      "model_rgb_bytes": 589824,
+      "tensor_shape": [
+        1,
+        84,
+        4032
+      ],
+      "tensor_bytes": 1354752,
+      "display_rgb565_bytes": 1843200,
+      "sha256": {
+        "native-reference-source.yuyv": "bf5e76407b66ce853b16a7c37445f784b051fb843ddd085e1179d3774fdb10ac",
+        "native-reference-rgb.bin": "048d44e7bd2ed7884fdfeea9236cd798044dd249bf06e7fb4b670fd24f881288",
+        "native-reference-output.f32": "741e5e9f0c8ebf111c3f9f75db593178c16859c7834fbef4b35405fbae7a66fc",
+        "native-reference-composed.rgb565": "8ef9c9cf1571ee0d914d624e1d16af8be053ff240fcec8fcb106828a08f43fe7",
+        "native-reference-scan-buffer.rgb565": "8ef9c9cf1571ee0d914d624e1d16af8be053ff240fcec8fcb106828a08f43fe7"
+      }
+    },
+    "complete_chain_30fps_10min_passed": false,
+    "display_endpoint": "adopted RGB565 DDR buffer",
+    "physical_screen_observed": false,
+    "negotiation": {
+      "fourcc": "YUYV",
+      "buffers": 4,
+      "colorspace": 0,
+      "extended_fields_valid": true,
+      "height": 480,
+      "quantization": 0,
+      "size_image": 614400,
+      "stride": 1280,
+      "transfer_function": 0,
+      "width": 640,
+      "ycbcr_encoding": 0,
+      "fps_interval": [
+        1,
+        30
+      ]
+    },
+    "color_conversion": {
+      "assumed_missing_metadata": true,
+      "matrix": 0
+    },
+    "ELF_sha256": "17e8e0e1385182a362874cb32e527cbfa685c1ddc354688516ac2b650db5489a",
+    "model_files_sha256": {
+      "model.json": "ae1e6ec0422d527546a2a7dbf100f79fffcc19e1ad85e4300a66729277bffd4e",
+      "model.raw": "7921e992eb49edb91b6c620061330b63143b9ad1efaed009c0af765ae7b318ec"
+    },
+    "native_summary_sha256": "de64875aa43baf53e15db8dbab25421f1b06165ce4812bb13297d76439431f51",
+    "native_shutdown": {
+      "native_exit": 0,
+      "completed": 99,
+      "native_shutdown_complete": true,
+      "allocation_count_after": 0,
+      "device_owners": [],
+      "sdk_starts": 1,
+      "capture_starts": 1
+    },
+    "archives": {
+      "raw": ".local/yr1/live-overlay/returned",
+      "audit": ".local/yr1/live-overlay/audit"
+    },
+    "application_drops": {
+      "capture_pool_full": 0,
+      "device_error": 0,
+      "display_pool_full": 0,
+      "input_pool_full": 0,
+      "invalid_result": 0,
+      "latest_replaced": 0,
+      "log_queue_full": 0
+    },
+    "capture_driver_sequence_gaps_including_warmup": 1,
+    "pool_high_water": {
+      "display": 2,
+      "input": 1,
+      "raw": 2
+    },
+    "stage_p95_ns": {
+      "preprocess": 16592650,
+      "inference": 33268210,
+      "postprocess": 1511880,
+      "compose": 10532030
+    },
+    "sensor_timestamp_to_display_adoption_ns": {
+      "maximum_ns": 111352000,
+      "p50_ns": 101698560,
+      "p95_ns": 109608230,
+      "p99_ns": 111352000
+    },
+    "display_longest_gap_ns": 133488580
+  },
+  "before_stream_failures": [
+    {
+      "boot_id": "965dc7fc-5ab4-4370-ad17-64958a38e65e",
+      "native_exit": 1,
+      "failure": "fixed path selected the UVC metadata node",
+      "native_shutdown_complete": true,
+      "raw": ".local/yr1/smoke/returned"
+    },
+    {
+      "boot_id": "6c574b4a-d9e0-41b9-b6b9-9910c87788dc",
+      "native_failure": "PS UDMA region already has allocated consumers",
+      "pending_stage": "idle",
+      "retained_stage": "udma_allocations_remain_after_release",
+      "raw": ".local/yr1/live-r2/retained-evidence.tar.gz"
+    }
+  ],
+  "maintenance_counts": {
+    "boot_installs": 1,
+    "boot_fallbacks": 1,
+    "planned_candidate_reboots": 3,
+    "pre_submit_recovery_reboots": 1,
+    "restored_reboots": 1
+  },
+  "restored": {
+    "BOOT_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+    "boot_id": "70b00d13-cbd0-4b00-9c56-adf3727b504f",
+    "start_consumed": false,
+    "fpga_manager": "operating",
+    "device_owners": [],
+    "boot_partition_unmounted": true,
+    "maintenance_archives": [
+      ".local/yr1/boot/returned",
+      ".local/yr1/restore/returned"
+    ]
+  },
+  "primary_one_second_windows": {
+    "capture": [
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 7, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8
+    ],
+    "preprocess": [
+      8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 7, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 7, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8
+    ],
+    "inference": [
+      9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 7, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 7, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8
+    ],
+    "display": [
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 7, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8,
+      8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9,
+      8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8,
+      8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8,
+      9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 7, 8, 8, 8, 9, 8, 8, 8, 9, 8, 8, 8, 9, 8
+    ]
+  }
+}

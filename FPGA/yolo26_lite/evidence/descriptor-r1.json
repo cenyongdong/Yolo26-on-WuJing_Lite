@@ -1,0 +1,56 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-descriptor-20261114-023219-024146",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_dma_descriptor.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_descriptor.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-descriptor-20261114-023219-024146",
+      "pid": 22556,
+      "started_utc": "2026-11-13T18:32:19.034620+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.9219999999986612
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_descriptor",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-descriptor-20261114-023219-024146",
+      "pid": 28204,
+      "started_utc": "2026-11-13T18:32:19.961021+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 7.0
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-descriptor-20261114-023219-024146",
+      "pid": 11740,
+      "started_utc": "2026-11-13T18:32:26.955345+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.171999999998661
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 130,
+    "seed": "26de1234"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+    "tb\\tb_descriptor.sv": "68ee6049c471b06eb18cdad24fb4953ee6d2defd3775ab5b6705617b8ee7ba9c"
+  }
+}

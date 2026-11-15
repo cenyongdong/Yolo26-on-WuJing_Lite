@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "candidate": {
+    "schema": 1,
+    "transformation": "complete_split_concat_prefix_copy_elision",
+    "groups": [
+      {
+        "split": 3355,
+        "concat": 3477,
+        "copies": [
+          3364,
+          3365
+        ],
+        "source_chunk": 1,
+        "destination_chunk": 4,
+        "prefix_bytes": 6553600,
+        "concat_bytes": 13107200,
+        "logical_copy_io_bytes": 13107200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3364,
+          3365
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1428,
+        "adapted_concat": 1463,
+        "adapted_copies": [
+          2560,
+          2561
+        ],
+        "parent_value": 18,
+        "source_values": [
+          20,
+          22
+        ],
+        "removed_values": [
+          6652,
+          6654
+        ],
+        "concat_output": 129
+      }
+    ],
+    "source": {
+      "ZG": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+      "adapted": "f5ecacccf83a3659fa9561d2157ca1c0668859f67f36eff83fa0915e39f366f8"
+    },
+    "source_raw_sha256": "00c78f114b8a2f8424502bd991f0dd8712aaaca93324c99c6fe02023fe096ef9",
+    "candidate_adapted_sha256": "b54cd51966637ac4474f075e4c5efb1d9ae2a30f3d0d0f7cec5d8a3a2b7c1d96",
+    "board_access": false
+  },
+  "generate": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "candidate.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-prefix-r1",
+      "pid": 9128,
+      "started_utc": "2026-11-14T03:15:13.443556+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 23.314704699994763
+    },
+    "graph": {
+      "json_sha256": "f2eec8b9806429024f98a7aab98513f82acaf3d5096613986dfa7a93b733ac4b",
+      "raw_sha256": "3289cc2d733b68f1fc28f0c90288a4d8fce2d408f33fac11379bbf6bc85f4c2e",
+      "raw_bytes": 62261176,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 397,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    }
+  },
+  "static_storage": [
+    {
+      "parent_value": 18,
+      "concat_output": 129,
+      "destination_chunk": 1,
+      "base_offset": 0,
+      "prefix_bytes": 6553600,
+      "producer": 3166,
+      "prefix_writers": [
+        3166
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    }
+  ],
+  "simulations": [
+    {
+      "case": 0,
+      "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+      "elements": 705600,
+      "finite": true,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "output_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+      "native_run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-prefix-sim-case0-r1",
+        "pid": 24204,
+        "started_utc": "2026-11-14T03:17:51.857873+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 67.38999999999942
+      }
+    },
+    {
+      "case": 1,
+      "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+      "elements": 705600,
+      "finite": true,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "output_sha256": "c088c552a104c845ec13c78e8ec2b189309cfc4062c75198b10cc7277d63a577",
+      "native_run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-prefix-sim-case1-r1",
+        "pid": 15768,
+        "started_utc": "2026-11-14T03:18:02.221814+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 68.42200000000594
+      }
+    },
+    {
+      "case": 2,
+      "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+      "elements": 705600,
+      "finite": true,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "output_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+      "native_run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-prefix-sim-case2-r1",
+        "pid": 28488,
+        "started_utc": "2026-11-14T03:16:27.260809+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 66.0
+      }
+    }
+  ],
+  "numerical_pass": true,
+  "board_pass": false,
+  "failures": [
+    "first comparison expected a newer baseline metadata field; actual input bytes then verified"
+  ]
+}

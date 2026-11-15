@@ -1,0 +1,39 @@
+{
+  "scope": "release Host frame references only after proven preprocessing completion",
+  "cases": [
+    "DMA error with valid tag, ACK, counts and drain proof",
+    "Host model pool too small after successful hardware completion",
+    "unknown partial SDK read still retains its Host destination"
+  ],
+  "native_software_tests": 11,
+  "native_exit": 0,
+  "source_identity": {
+    "software/src/video_engine.cpp": "55052eed0d07b6ba12a501f2cae0796a92d72dfd35388e9ec313e5335cefb602",
+    "software/tests/test_video_engine.cpp": "80d35e1512c2330ddb3c3a448bcad841c34ec418aed0aff80ddff9052a66ebc3"
+  },
+  "recovery": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "full_evidence": ".local\\yolo26-cpu-r6",
+  "sdk_starts": 0,
+  "capture_starts": 0,
+  "real_dma_executed": false
+}

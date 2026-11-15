@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "full_evidence": ".local\\yolo26-simulation-pair-r1",
+  "tool_tests": 10,
+  "reused_simulation_pairs": [
+    {
+      "profile": "fp32",
+      "case": 0,
+      "run": {
+        "command": [
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-env\\Scripts\\python.exe",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tools\\compare_simulation.py",
+          "--reference",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-model-r1\\case-0-torch-dense.npy",
+          "--host",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-sim-quantized-case0",
+          "--generated",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-sim-ZG-case0",
+          "--output",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1\\fp32-case0.json"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1",
+        "pid": 27664,
+        "started_utc": "2026-11-13T22:39:09.934387+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 0.3899999999994179
+      },
+      "pairing": {
+        "case": 0,
+        "reference_input_sha256": "9611cc6d822d1952295fff17cfb0b788792c47b8e59159c0ea95b9c21a0aeeed",
+        "host": {
+          "graph_sha256": "7407f1a91ba6b8a154626337fc21c22a1e79ad382b5b2ac96eb6499bcfd8636f",
+          "input_element_type": "@fp(32)",
+          "encoded_input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+          "encoded_input_bytes": 4915200
+        },
+        "generated": {
+          "graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+          "input_element_type": "@fp(32)",
+          "encoded_input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+          "encoded_input_bytes": 4915200
+        }
+      },
+      "comparison_sha256": "57e423a0a0c96d8828df8d4a5050164f58c1fdfae668b2d20598bc249b9501ff",
+      "original_numeric_results_unchanged": true
+    },
+    {
+      "profile": "fp32",
+      "case": 1,
+      "run": {
+        "command": [
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-env\\Scripts\\python.exe",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tools\\compare_simulation.py",
+          "--reference",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-model-r1\\case-1-torch-dense.npy",
+          "--host",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-sim-quantized-case1",
+          "--generated",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-sim-ZG-case1",
+          "--output",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1\\fp32-case1.json"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1",
+        "pid": 22432,
+        "started_utc": "2026-11-13T22:39:10.352581+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 0.375
+      },
+      "pairing": {
+        "case": 1,
+        "reference_input_sha256": "b0c6dd469b1805159c2988828f228f2041f76267623deb9826df49d082b05241",
+        "host": {
+          "graph_sha256": "7407f1a91ba6b8a154626337fc21c22a1e79ad382b5b2ac96eb6499bcfd8636f",
+          "input_element_type": "@fp(32)",
+          "encoded_input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+          "encoded_input_bytes": 4915200
+        },
+        "generated": {
+          "graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+          "input_element_type": "@fp(32)",
+          "encoded_input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+          "encoded_input_bytes": 4915200
+        }
+      },
+      "comparison_sha256": "965bb8e944fe82d612a655bd45de0030cc1956c1d850eac00f7ba473349bda8f",
+      "original_numeric_results_unchanged": true
+    },
+    {
+      "profile": "fp32",
+      "case": 2,
+      "run": {
+        "command": [
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-env\\Scripts\\python.exe",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tools\\compare_simulation.py",
+          "--reference",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-model-r1\\case-2-torch-dense.npy",
+          "--host",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-sim-quantized-r1",
+          "--generated",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-sim-generated-r1",
+          "--output",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1\\fp32-case2.json"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1",
+        "pid": 17068,
+        "started_utc": "2026-11-13T22:39:10.749676+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 0.40600000000267755
+      },
+      "pairing": {
+        "case": 2,
+        "reference_input_sha256": "e2fedaeae6235bc04c0b962fea3120dbc3bd2bc263b181213ef98c8a8140f522",
+        "host": {
+          "graph_sha256": "7407f1a91ba6b8a154626337fc21c22a1e79ad382b5b2ac96eb6499bcfd8636f",
+          "input_element_type": "@fp(32)",
+          "encoded_input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+          "encoded_input_bytes": 4915200
+        },
+        "generated": {
+          "graph_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+          "input_element_type": "@fp(32)",
+          "encoded_input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+          "encoded_input_bytes": 4915200
+        }
+      },
+      "comparison_sha256": "79fde1b7cc6a8cdeaac270bb45911bd7a3e786b39c8f2466fcfc65ffd4591849",
+      "original_numeric_results_unchanged": true
+    },
+    {
+      "profile": "rgb_u8",
+      "case": 0,
+      "run": {
+        "command": [
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-env\\Scripts\\python.exe",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tools\\compare_simulation.py",
+          "--reference",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-fixtures-r1\\case-0-ort-dense.npy",
+          "--host",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-sim-quantized-case0-r1",
+          "--generated",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-sim-ZG-case0-r1",
+          "--output",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1\\rgb_u8-case0.json"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1",
+        "pid": 26244,
+        "started_utc": "2026-11-13T22:39:11.166065+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 0.35899999999674037
+      },
+      "pairing": {
+        "case": 0,
+        "reference_input_sha256": "9611cc6d822d1952295fff17cfb0b788792c47b8e59159c0ea95b9c21a0aeeed",
+        "host": {
+          "graph_sha256": "e13a257ad8271828f71a3aea3b80b092b2de806f4745290363230e1c4169471a",
+          "input_element_type": "@uint(8)",
+          "encoded_input_sha256": "bae875806132f594ec536b979ab2bfd4198775eb679c4f32cbcda417c97925ca",
+          "encoded_input_bytes": 1228800
+        },
+        "generated": {
+          "graph_sha256": "bd95fbf90ae99e4a5ebf5537413381565ee8c3877b3ead3c7c6153612d0a5c1e",
+          "input_element_type": "@uint(8)",
+          "encoded_input_sha256": "bae875806132f594ec536b979ab2bfd4198775eb679c4f32cbcda417c97925ca",
+          "encoded_input_bytes": 1228800
+        }
+      },
+      "comparison_sha256": "245d73d03d5830d0af362de57051c64f51e5c95f7334288f6aa280a90eb4208e",
+      "original_numeric_results_unchanged": true
+    },
+    {
+      "profile": "rgb_u8",
+      "case": 1,
+      "run": {
+        "command": [
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-env\\Scripts\\python.exe",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tools\\compare_simulation.py",
+          "--reference",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-fixtures-r1\\case-1-ort-dense.npy",
+          "--host",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-sim-quantized-case1-r1",
+          "--generated",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-sim-ZG-case1-r1",
+          "--output",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1\\rgb_u8-case1.json"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1",
+        "pid": 15392,
+        "started_utc": "2026-11-13T22:39:11.533985+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 0.34399999999732245
+      },
+      "pairing": {
+        "case": 1,
+        "reference_input_sha256": "16e27e7b4f3746c2b0f762fe2b80699e06aadf71816cb83ee0c4f30d82cac382",
+        "host": {
+          "graph_sha256": "e13a257ad8271828f71a3aea3b80b092b2de806f4745290363230e1c4169471a",
+          "input_element_type": "@uint(8)",
+          "encoded_input_sha256": "e9e8750c97863d28c8977ce0b030b09b6c873509452d3b737d4cdd96a4928c0f",
+          "encoded_input_bytes": 1228800
+        },
+        "generated": {
+          "graph_sha256": "bd95fbf90ae99e4a5ebf5537413381565ee8c3877b3ead3c7c6153612d0a5c1e",
+          "input_element_type": "@uint(8)",
+          "encoded_input_sha256": "e9e8750c97863d28c8977ce0b030b09b6c873509452d3b737d4cdd96a4928c0f",
+          "encoded_input_bytes": 1228800
+        }
+      },
+      "comparison_sha256": "e78a4b05ea973c0c0df5b7ae105a58b8ba656d16f842e8c5b0f6235447b19553",
+      "original_numeric_results_unchanged": true
+    },
+    {
+      "profile": "rgb_u8",
+      "case": 2,
+      "run": {
+        "command": [
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-env\\Scripts\\python.exe",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tools\\compare_simulation.py",
+          "--reference",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-fixtures-r1\\case-2-ort-dense.npy",
+          "--host",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-sim-quantized-case2-r1",
+          "--generated",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-u8-sim-ZG-case2-r1",
+          "--output",
+          "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1\\rgb_u8-case2.json"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-simulation-pair-r1",
+        "pid": 17348,
+        "started_utc": "2026-11-13T22:39:11.874027+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 0.39100000000325963
+      },
+      "pairing": {
+        "case": 2,
+        "reference_input_sha256": "e2fedaeae6235bc04c0b962fea3120dbc3bd2bc263b181213ef98c8a8140f522",
+        "host": {
+          "graph_sha256": "e13a257ad8271828f71a3aea3b80b092b2de806f4745290363230e1c4169471a",
+          "input_element_type": "@uint(8)",
+          "encoded_input_sha256": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+          "encoded_input_bytes": 1228800
+        },
+        "generated": {
+          "graph_sha256": "bd95fbf90ae99e4a5ebf5537413381565ee8c3877b3ead3c7c6153612d0a5c1e",
+          "input_element_type": "@uint(8)",
+          "encoded_input_sha256": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+          "encoded_input_bytes": 1228800
+        }
+      },
+      "comparison_sha256": "87ae10e66634f1134aef4754994298e0284739da7d96dfc8b8e904d7488094d0",
+      "original_numeric_results_unchanged": true
+    }
+  ],
+  "compiler_runs": 0,
+  "simulation_runs": 0,
+  "board_access": false,
+  "source_identity": {
+    "tools/compare_simulation.py": "d6a07208be8fb80c63bffa96e268f77accbee39b0fa46800d65528b040aca5f6",
+    "software/tests/test_model_tools.py": "8239e2378c1d7063315728a7576789fc7f31d299e32c86a824ba725eb0d834c7"
+  }
+}

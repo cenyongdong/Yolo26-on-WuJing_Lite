@@ -1,0 +1,519 @@
+{
+  "cases": [
+    {
+      "reference_sha256": "6a57d1bee6116889514e8b0a14cdf10f4a2f378a48118a217b33625ce14a25bf",
+      "host_sha256": "bf2e18c4796e86b5c662b8f86f84080b2f3522eb6ad3feda793484e6866809e6",
+      "generated_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+      "host": {
+        "raw_max_abs": 33.557228088378906,
+        "raw_rms": 0.7934664487838745,
+        "worst_index": [
+          0,
+          4,
+          7843
+        ],
+        "worst_reference": -23.505271911621094,
+        "worst_actual": -57.0625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 27.49565315246582,
+        "raw_rms": 0.8793421983718872,
+        "worst_index": [
+          0,
+          4,
+          7705
+        ],
+        "worst_reference": -19.19184684753418,
+        "worst_actual": -46.6875,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated_vs_host": {
+        "raw_max_abs": 30.203125,
+        "raw_rms": 0.36778125166893005,
+        "worst_index": [
+          0,
+          4,
+          7843
+        ],
+        "worst_reference": -57.0625,
+        "worst_actual": -26.859375,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "board_tested": false,
+      "map_validated": false,
+      "acceptance": "fixture only: same high-score classes/count, matched IoU>=0.98 and score delta<=0.02"
+    },
+    {
+      "reference_sha256": "b6d4a4f134e8d1eed739699045d9f1e09f959e28d1363b208063795e302c6233",
+      "host_sha256": "0d45e5f6d051f5335533aa1f64419d7cc3f100ae922502d4d6bd6c3833feaadd",
+      "generated_sha256": "c088c552a104c845ec13c78e8ec2b189309cfc4062c75198b10cc7277d63a577",
+      "host": {
+        "raw_max_abs": 8.412893295288086,
+        "raw_rms": 0.23489969968795776,
+        "worst_index": [
+          0,
+          4,
+          6487
+        ],
+        "worst_reference": -23.186330795288086,
+        "worst_actual": -14.7734375,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 4.851564407348633,
+        "raw_rms": 0.23512005805969238,
+        "worst_index": [
+          0,
+          57,
+          7865
+        ],
+        "worst_reference": -17.539060592651367,
+        "worst_actual": -22.390625,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "generated_vs_host": {
+        "raw_max_abs": 4.4453125,
+        "raw_rms": 0.15835022926330566,
+        "worst_index": [
+          0,
+          4,
+          6487
+        ],
+        "worst_reference": -14.7734375,
+        "worst_actual": -19.21875,
+        "expected_high_detections": [],
+        "actual_high_detections": [],
+        "high_detection_matches": [],
+        "fixture_passed": true
+      },
+      "board_tested": false,
+      "map_validated": false,
+      "acceptance": "fixture only: same high-score classes/count, matched IoU>=0.98 and score delta<=0.02"
+    },
+    {
+      "reference_sha256": "0c2ff339ff1f1619d9b78e325fcf0a295953ca61840d87e398c589ef6ec88363",
+      "host_sha256": "38c890a13703ea6e5ac2b2676dcac2ac717ed8e986a2f30120566b837ee7a4c6",
+      "generated_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+      "host": {
+        "raw_max_abs": 20.818798065185547,
+        "raw_rms": 0.3995746970176697,
+        "worst_index": [
+          0,
+          43,
+          476
+        ],
+        "worst_reference": -21.962451934814453,
+        "worst_actual": -42.78125,
+        "expected_high_detections": [
+          [
+            110.30840301513672,
+            236.12208557128906,
+            226.43516540527344,
+            535.3948974609375,
+            0.9616295695304871,
+            0.0
+          ],
+          [
+            82.52940368652344,
+            136.47740173339844,
+            555.1328125,
+            437.0032043457031,
+            0.9523299336433411,
+            5.0
+          ],
+          [
+            212.55079650878906,
+            241.31719970703125,
+            284.4814147949219,
+            510.1308288574219,
+            0.9427856802940369,
+            0.0
+          ],
+          [
+            476.05517578125,
+            233.93861389160156,
+            560.6151123046875,
+            521.98876953125,
+            0.9414229989051819,
+            0.0
+          ],
+          [
+            79.99784851074219,
+            326.717529296875,
+            126.78832244873047,
+            517.3414306640625,
+            0.8881142735481262,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.3125,
+            236.25,
+            226.4375,
+            535.125,
+            0.9626027941703796,
+            0.0
+          ],
+          [
+            82.875,
+            136.625,
+            555.125,
+            437.125,
+            0.9526622891426086,
+            5.0
+          ],
+          [
+            212.484375,
+            241.1875,
+            284.5,
+            510.125,
+            0.9459012746810913,
+            0.0
+          ],
+          [
+            475.8125,
+            234.125,
+            560.4375,
+            521.875,
+            0.9419752359390259,
+            0.0
+          ],
+          [
+            80.15625,
+            326.875,
+            126.75,
+            517.3125,
+            0.8906751871109009,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.998615278668986,
+            "max_coordinate_error": 0.2698974609375,
+            "score_error": 0.0009732246398925781
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9983573006374065,
+            "max_coordinate_error": 0.3455963134765625,
+            "score_error": 0.0003323554992675781
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9983163377158705,
+            "max_coordinate_error": 0.12969970703125,
+            "score_error": 0.0031155943870544434
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9940099761769502,
+            "max_coordinate_error": 0.24267578125,
+            "score_error": 0.0005522370338439941
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9948218898273686,
+            "max_coordinate_error": 0.1584014892578125,
+            "score_error": 0.002560913562774658
+          }
+        ],
+        "fixture_passed": true
+      },
+      "generated": {
+        "raw_max_abs": 20.90642738342285,
+        "raw_rms": 0.4773128628730774,
+        "worst_index": [
+          0,
+          4,
+          6727
+        ],
+        "worst_reference": -28.65607261657715,
+        "worst_actual": -49.5625,
+        "expected_high_detections": [
+          [
+            110.30840301513672,
+            236.12208557128906,
+            226.43516540527344,
+            535.3948974609375,
+            0.9616295695304871,
+            0.0
+          ],
+          [
+            82.52940368652344,
+            136.47740173339844,
+            555.1328125,
+            437.0032043457031,
+            0.9523299336433411,
+            5.0
+          ],
+          [
+            212.55079650878906,
+            241.31719970703125,
+            284.4814147949219,
+            510.1308288574219,
+            0.9427856802940369,
+            0.0
+          ],
+          [
+            476.05517578125,
+            233.93861389160156,
+            560.6151123046875,
+            521.98876953125,
+            0.9414229989051819,
+            0.0
+          ],
+          [
+            79.99784851074219,
+            326.717529296875,
+            126.78832244873047,
+            517.3414306640625,
+            0.8881142735481262,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.3125,
+            236.25,
+            226.4375,
+            535.0,
+            0.9626730680465698,
+            0.0
+          ],
+          [
+            82.75,
+            136.625,
+            554.875,
+            436.625,
+            0.9536218643188477,
+            5.0
+          ],
+          [
+            212.5,
+            241.3125,
+            284.5625,
+            510.25,
+            0.9473810195922852,
+            0.0
+          ],
+          [
+            475.75,
+            233.875,
+            560.4375,
+            522.0,
+            0.944587230682373,
+            0.0
+          ],
+          [
+            80.15625,
+            326.875,
+            126.765625,
+            517.25,
+            0.8940516710281372,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9981976143454432,
+            "max_coordinate_error": 0.3948974609375,
+            "score_error": 0.0010434985160827637
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.997240009997923,
+            "max_coordinate_error": 0.378204345703125,
+            "score_error": 0.0012919306755065918
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9977101032197025,
+            "max_coordinate_error": 0.119171142578125,
+            "score_error": 0.004595339298248291
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9940534985439274,
+            "max_coordinate_error": 0.30517578125,
+            "score_error": 0.003164231777191162
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.994828897038665,
+            "max_coordinate_error": 0.1584014892578125,
+            "score_error": 0.005937397480010986
+          }
+        ],
+        "fixture_passed": true
+      },
+      "generated_vs_host": {
+        "raw_max_abs": 20.109375,
+        "raw_rms": 0.2812309265136719,
+        "worst_index": [
+          0,
+          4,
+          6602
+        ],
+        "worst_reference": -45.65625,
+        "worst_actual": -25.546875,
+        "expected_high_detections": [
+          [
+            110.3125,
+            236.25,
+            226.4375,
+            535.125,
+            0.9626027941703796,
+            0.0
+          ],
+          [
+            82.875,
+            136.625,
+            555.125,
+            437.125,
+            0.9526622891426086,
+            5.0
+          ],
+          [
+            212.484375,
+            241.1875,
+            284.5,
+            510.125,
+            0.9459012746810913,
+            0.0
+          ],
+          [
+            475.8125,
+            234.125,
+            560.4375,
+            521.875,
+            0.9419752359390259,
+            0.0
+          ],
+          [
+            80.15625,
+            326.875,
+            126.75,
+            517.3125,
+            0.8906751871109009,
+            0.0
+          ]
+        ],
+        "actual_high_detections": [
+          [
+            110.3125,
+            236.25,
+            226.4375,
+            535.0,
+            0.9626730680465698,
+            0.0
+          ],
+          [
+            82.75,
+            136.625,
+            554.875,
+            436.625,
+            0.9536218643188477,
+            5.0
+          ],
+          [
+            212.5,
+            241.3125,
+            284.5625,
+            510.25,
+            0.9473810195922852,
+            0.0
+          ],
+          [
+            475.75,
+            233.875,
+            560.4375,
+            522.0,
+            0.944587230682373,
+            0.0
+          ],
+          [
+            80.15625,
+            326.875,
+            126.765625,
+            517.25,
+            0.8940516710281372,
+            0.0
+          ]
+        ],
+        "high_detection_matches": [
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.999581764951903,
+            "max_coordinate_error": 0.125,
+            "score_error": 7.027387619018555e-05
+          },
+          {
+            "class_id": 5,
+            "matched": true,
+            "iou": 0.9975440057978723,
+            "max_coordinate_error": 0.5,
+            "score_error": 0.0009595751762390137
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9979884138924523,
+            "max_coordinate_error": 0.125,
+            "score_error": 0.0014797449111938477
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.997961434711961,
+            "max_coordinate_error": 0.25,
+            "score_error": 0.002611994743347168
+          },
+          {
+            "class_id": 0,
+            "matched": true,
+            "iou": 0.9993367953175197,
+            "max_coordinate_error": 0.0625,
+            "score_error": 0.003376483917236328
+          }
+        ],
+        "fixture_passed": true
+      },
+      "board_tested": false,
+      "map_validated": false,
+      "acceptance": "fixture only: same high-score classes/count, matched IoU>=0.98 and score delta<=0.02"
+    }
+  ],
+  "board_tested": false,
+  "map_validated": false
+}

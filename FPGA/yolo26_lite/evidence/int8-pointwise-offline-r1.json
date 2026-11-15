@@ -1,0 +1,2381 @@
+{
+  "schema": 1,
+  "candidate": {
+    "schema": 1,
+    "mode": "spatial_block",
+    "operations": [
+      {
+        "generated_operation": 3505,
+        "adapted_convolution": 2126,
+        "adapted_activation": 2127,
+        "inserted_operations": [
+          2697,
+          2698,
+          2699,
+          2700
+        ],
+        "edge": 20,
+        "internal_batch": 16,
+        "input_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "tiled_shape": [
+          16,
+          16,
+          20,
+          20,
+          16
+        ],
+        "output_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "reorder_logical_read_write_bytes": 13107200,
+        "mapping": "spatial_block",
+        "direct_consumers": [
+          2128
+        ],
+        "explicit_output_copy": false
+      },
+      {
+        "generated_operation": 3507,
+        "adapted_convolution": 2130,
+        "adapted_activation": 2131,
+        "inserted_operations": [
+          2701,
+          2702,
+          2703,
+          2704
+        ],
+        "edge": 20,
+        "internal_batch": 16,
+        "input_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "tiled_shape": [
+          16,
+          16,
+          20,
+          20,
+          16
+        ],
+        "output_shape": [
+          1,
+          16,
+          80,
+          80,
+          16
+        ],
+        "reorder_logical_read_write_bytes": 13107200,
+        "mapping": "spatial_block",
+        "direct_consumers": [
+          2132
+        ],
+        "explicit_output_copy": false
+      },
+      {
+        "generated_operation": 3443,
+        "adapted_convolution": 1832,
+        "adapted_activation": 1833,
+        "inserted_operations": [
+          2705,
+          2706,
+          2707,
+          2708,
+          2709
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          32,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          32,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 6553600,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      },
+      {
+        "generated_operation": 3476,
+        "adapted_convolution": 1917,
+        "adapted_activation": 1918,
+        "inserted_operations": [
+          2710,
+          2711,
+          2712,
+          2713,
+          2714
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          24,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          24,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 5734400,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      },
+      {
+        "generated_operation": 3420,
+        "adapted_convolution": 1578,
+        "adapted_activation": 1579,
+        "inserted_operations": [
+          2715,
+          2716,
+          2717,
+          2718,
+          2719
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          32,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          32,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 6553600,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      },
+      {
+        "generated_operation": 3458,
+        "adapted_convolution": 1870,
+        "adapted_activation": 1871,
+        "inserted_operations": [
+          2720,
+          2721,
+          2722,
+          2723,
+          2724
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          32,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          32,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 6553600,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      },
+      {
+        "generated_operation": 3491,
+        "adapted_convolution": 1955,
+        "adapted_activation": 1956,
+        "inserted_operations": [
+          2725,
+          2726,
+          2727,
+          2728,
+          2729
+        ],
+        "edge": 20,
+        "internal_batch": 4,
+        "input_shape": [
+          1,
+          32,
+          40,
+          40,
+          32
+        ],
+        "tiled_shape": [
+          4,
+          32,
+          20,
+          20,
+          32
+        ],
+        "output_shape": [
+          1,
+          16,
+          40,
+          40,
+          32
+        ],
+        "reorder_logical_read_write_bytes": 6553600,
+        "mapping": "spatial_block",
+        "explicit_output_copy": true
+      }
+    ],
+    "source_graph_sha256": "77dca9ac74f87b701c21a11b8e47976f533dbea148811354d5d888ab4f3ee889",
+    "source_adapted_sha256": "19148bfc8fbdc119d7b42897aa7c75c76409244f864ea2f256f648f2c87cf710",
+    "source_stage": "adapted",
+    "unchanged_raw_sha256": "07f6bca6c5a488978905910f05358ed81b1d95537a81a53d0aaaf8e3300cd732",
+    "board_access": false
+  },
+  "compile": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "candidate.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-block-r1",
+      "pid": 25092,
+      "started_utc": "2026-11-14T10:48:04.414872+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 23.250631099988823
+    },
+    "graph": {
+      "json_sha256": "b8cfaa08e39b47c4cec4f6ebc49f8d916ada4231b48503af39c127fcae5e519b",
+      "raw_sha256": "18a92a2ef6b827f73d90307d0cb73797ccbdeac6d32ad3ff3228ab124124879c",
+      "raw_bytes": 39846096,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 482,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    }
+  },
+  "numeric": {
+    "cases": [
+      {
+        "case": 0,
+        "comparison": {
+          "raw_max_abs": 26.828125,
+          "raw_rms": 0.9188875555992126,
+          "worst_index": [
+            0,
+            4,
+            7875
+          ],
+          "worst_reference": -28.453125,
+          "worst_actual": -55.28125,
+          "expected_high_detections": [],
+          "actual_high_detections": [],
+          "high_detection_matches": [],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "27a0cf4d25106d596397307bfbea19c921cf66ca0d17a99f0edccd6733df3a09",
+        "output_sha256": "c6c0276509affffaf18e39642537e485e83e14bcf8fef1d224430a7cc0fc7ddc",
+        "finite": true
+      },
+      {
+        "case": 1,
+        "comparison": {
+          "raw_max_abs": 11.0390625,
+          "raw_rms": 0.42462432384490967,
+          "worst_index": [
+            0,
+            6,
+            7508
+          ],
+          "worst_reference": -15.7421875,
+          "worst_actual": -26.78125,
+          "expected_high_detections": [],
+          "actual_high_detections": [],
+          "high_detection_matches": [],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "843cda8edf0d6da02d9968088332573115de83aaf7de741277337ab2218afb09",
+        "output_sha256": "9b03bb5dc910a1730da204a2397db10ff9891b499511bf90f1642e996f703617",
+        "finite": true
+      },
+      {
+        "case": 2,
+        "comparison": {
+          "raw_max_abs": 12.734375,
+          "raw_rms": 0.542932391166687,
+          "worst_index": [
+            0,
+            43,
+            6637
+          ],
+          "worst_reference": -19.796875,
+          "worst_actual": -32.53125,
+          "expected_high_detections": [
+            [
+              84.875,
+              137.25,
+              549.25,
+              436.0,
+              0.9556514620780945,
+              5.0
+            ],
+            [
+              110.4375,
+              237.25,
+              226.9375,
+              534.875,
+              0.9539660811424255,
+              0.0
+            ],
+            [
+              476.21875,
+              235.375,
+              560.6875,
+              523.125,
+              0.9453993439674377,
+              0.0
+            ],
+            [
+              212.125,
+              241.5,
+              284.34375,
+              510.625,
+              0.8976953029632568,
+              0.0
+            ],
+            [
+              80.109375,
+              328.0625,
+              126.609375,
+              517.25,
+              0.879974365234375,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              84.875,
+              137.0,
+              549.75,
+              436.25,
+              0.9569571614265442,
+              5.0
+            ],
+            [
+              110.53125,
+              237.25,
+              226.5625,
+              535.0,
+              0.9549844264984131,
+              0.0
+            ],
+            [
+              476.15625,
+              235.375,
+              560.84375,
+              522.875,
+              0.9437636137008667,
+              0.0
+            ],
+            [
+              212.109375,
+              241.75,
+              284.21875,
+              510.375,
+              0.9130584001541138,
+              0.0
+            ],
+            [
+              80.15625,
+              327.9375,
+              126.625,
+              517.3125,
+              0.8783142566680908,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9972553953675082,
+              "max_coordinate_error": 0.5,
+              "score_error": 0.001305699348449707
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9955599504103623,
+              "max_coordinate_error": 0.375,
+              "score_error": 0.0010183453559875488
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9965526450186153,
+              "max_coordinate_error": 0.25,
+              "score_error": 0.001635730266571045
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9961994567839415,
+              "max_coordinate_error": 0.25,
+              "score_error": 0.015363097190856934
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9976685922121667,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0016601085662841797
+            }
+          ],
+          "fixture_passed": true
+        },
+        "reference_output_sha256": "64c4ce5930f7ba435166c64ec8a72d70cda925db73f43fa95040271187ebd33f",
+        "output_sha256": "ba6e1f2f6d8d56c6d72aaa84b1a48addea91963bf8400f6e011f2e0c758c1fad",
+        "finite": true
+      }
+    ],
+    "fixture_passed": true,
+    "graph_sha256": "b8cfaa08e39b47c4cec4f6ebc49f8d916ada4231b48503af39c127fcae5e519b",
+    "raw_sha256": "18a92a2ef6b827f73d90307d0cb73797ccbdeac6d32ad3ff3228ab124124879c",
+    "parameter_bytes_unchanged": true,
+    "public_input_output_unchanged": true,
+    "view_groups": 112,
+    "accuracy_sweep_performed": false
+  },
+  "requests": [
+    {
+      "operation": 3505,
+      "baseline": {
+        "original_operation": 3505,
+        "input_value": 1252,
+        "output_value": 1258,
+        "operations": [
+          {
+            "operation": 3505,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "0e5cc10cfda4d9ebe15d8ebcb716da859af6951ebcd76357aed06e63a78dfa4d",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 904,
+                  "requested_bytes": 46284800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 14.125
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 256,
+                  "requested_bytes": 131072,
+                  "unique_address_bytes": 131072,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 64,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 512,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 64,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 1226,
+                "ROUT": 1544,
+                "WXLM": 904,
+                "WKLM": 1024,
+                "RKLM": 1024,
+                "RXLM": 1024,
+                "AYLM": 1152,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 68
+              },
+              "requested_read_bytes": 46417920,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 1252,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              },
+              "output": {
+                "value_id": 1258,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 46417920,
+        "requested_write_bytes": 3276800,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3505,
+        "input_value": 1252,
+        "output_value": 1258,
+        "operations": [
+          {
+            "operation": 3731,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3845,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "1d0c686fb293ba975a88132deb2047d8b392238d81f1d89447a1f0d41bb274a6",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 3276800,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3538,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "fbf2a6817f37f0d1ebb505106f1af3d1606e9b3c57f22b3030a04f0eafd78896",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 64,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 131072,
+                  "unique_address_bytes": 131072,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 64,
+                  "requested_bytes": 8192,
+                  "unique_address_bytes": 512,
+                  "request_to_unique_ratio": 16.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 64,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 146,
+                "ROUT": 272,
+                "WXLM": 128,
+                "WKLM": 16,
+                "RKLM": 4096,
+                "RXLM": 4096,
+                "AYLM": 4352,
+                "WVLM": 896,
+                "RVLM": 832,
+                "WETM": 68
+              },
+              "requested_read_bytes": 3416064,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6950,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              },
+              "output": {
+                "value_id": 6952,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              }
+            }
+          },
+          {
+            "operation": 3846,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "1bfb91cf8b3c48c502eb645e43a30aa3935b2a28e04727846731dfe9b631e686",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 3276800,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3732,
+            "kind": "Reshape",
+            "layer_count": 0
+          }
+        ],
+        "requested_read_bytes": 9969664,
+        "requested_write_bytes": 9830400,
+        "mean_ms": null
+      }
+    },
+    {
+      "operation": 3507,
+      "baseline": {
+        "original_operation": 3507,
+        "input_value": 1264,
+        "output_value": 1270,
+        "operations": [
+          {
+            "operation": 3507,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "4c75b81ecc1db47f36af928e97716544b8b9469561ebeede2aa46ac187e820fc",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 904,
+                  "requested_bytes": 46284800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 14.125
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 256,
+                  "requested_bytes": 131072,
+                  "unique_address_bytes": 131072,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 64,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 512,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 64,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 1226,
+                "ROUT": 1544,
+                "WXLM": 904,
+                "WKLM": 1024,
+                "RKLM": 1024,
+                "RXLM": 1024,
+                "AYLM": 1152,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 68
+              },
+              "requested_read_bytes": 46417920,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 1264,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              },
+              "output": {
+                "value_id": 1270,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 46417920,
+        "requested_write_bytes": 3276800,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3507,
+        "input_value": 1264,
+        "output_value": 1270,
+        "operations": [
+          {
+            "operation": 3733,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3847,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "cb64a22f57d96ff8741bb8c40ba739fd1cd370ec14b1f2d8ed9707a605032105",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 3276800,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3540,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "93ab94eb1979df3ca34485a3d46730f1179500612f2fec91f65c6dd055fe9cab",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 64,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 131072,
+                  "unique_address_bytes": 131072,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 64,
+                  "requested_bytes": 8192,
+                  "unique_address_bytes": 512,
+                  "request_to_unique_ratio": 16.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 64,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 146,
+                "ROUT": 272,
+                "WXLM": 128,
+                "WKLM": 16,
+                "RKLM": 4096,
+                "RXLM": 4096,
+                "AYLM": 4352,
+                "WVLM": 896,
+                "RVLM": 832,
+                "WETM": 68
+              },
+              "requested_read_bytes": 3416064,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6955,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              },
+              "output": {
+                "value_id": 6957,
+                "expected_bytes": 3276800,
+                "unique_address_bytes": 3276800
+              }
+            }
+          },
+          {
+            "operation": 3848,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "fb33a8599568d5d6ccaef9977c56077fac46c19e11321413beb9fb5cd13565b9",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 3276800,
+                  "unique_address_bytes": 3276800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 3276800,
+              "requested_write_bytes": 3276800,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3734,
+            "kind": "Reshape",
+            "layer_count": 0
+          }
+        ],
+        "requested_read_bytes": 9969664,
+        "requested_write_bytes": 9830400,
+        "mean_ms": null
+      }
+    },
+    {
+      "operation": 3443,
+      "baseline": {
+        "original_operation": 3443,
+        "input_value": 693,
+        "output_value": 699,
+        "operations": [
+          {
+            "operation": 3443,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "997ae7d449ace3be54202fc4e115d7b61d634ebb85f18f9191b2224e80d950ff",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 392,
+                  "requested_bytes": 20070400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 12.25
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 256,
+                  "requested_bytes": 524288,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 2.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 682,
+                "ROUT": 968,
+                "WXLM": 392,
+                "WKLM": 512,
+                "RKLM": 2048,
+                "RXLM": 2048,
+                "AYLM": 2208,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 36
+              },
+              "requested_read_bytes": 20596736,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 693,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 699,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 20596736,
+        "requested_write_bytes": 819200,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3443,
+        "input_value": 693,
+        "output_value": 699,
+        "operations": [
+          {
+            "operation": 3698,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3826,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "12555a87f852191166d0335305594a5d3cdd863b6c048a53c951ce2608e0dcf3",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 5,
+                "ROUT": 4,
+                "WETM": 7
+              },
+              "requested_read_bytes": 1638400,
+              "requested_write_bytes": 1638400,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3476,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "05e4d9f94d07e8baa237863bcbcef1a7f13bc9768e087fb1d9b205ec95a1316f",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 28,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 104,
+                  "requested_bytes": 868352,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.65625
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 4096,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 166,
+                "ROUT": 224,
+                "WXLM": 224,
+                "WKLM": 104,
+                "RKLM": 4096,
+                "RXLM": 4096,
+                "AYLM": 4224,
+                "WVLM": 544,
+                "RVLM": 416,
+                "WETM": 36
+              },
+              "requested_read_bytes": 2510848,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6960,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 6962,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          },
+          {
+            "operation": 3827,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "c8168ddcb64cd3521a9c33319278f008f28e84420d339dd346298016fb508d26",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3699,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3585,
+            "kind": "Copy",
+            "layer_count": 1,
+            "log_sha256": "ae3ca724a809973ceb3ac7e19f09c6fd1bf725b1f7e55015746fca76cab34596",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 14,
+                "ROUT": 13,
+                "WETM": 16
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          }
+        ],
+        "requested_read_bytes": 5787648,
+        "requested_write_bytes": 4096000,
+        "mean_ms": null
+      }
+    },
+    {
+      "operation": 3476,
+      "baseline": {
+        "original_operation": 3476,
+        "input_value": 953,
+        "output_value": 959,
+        "operations": [
+          {
+            "operation": 3476,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "789725856419add9e618d4c1addbbce9346b501a5eac3738952be45e9bf354e2",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 264,
+                  "requested_bytes": 13516800,
+                  "unique_address_bytes": 1228800,
+                  "request_to_unique_ratio": 11.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 192,
+                  "requested_bytes": 393216,
+                  "unique_address_bytes": 393216,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 2.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 490,
+                "ROUT": 712,
+                "WXLM": 264,
+                "WKLM": 384,
+                "RKLM": 1536,
+                "RXLM": 1536,
+                "AYLM": 1696,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 36
+              },
+              "requested_read_bytes": 13912064,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 953,
+                "expected_bytes": 1228800,
+                "unique_address_bytes": 1228800
+              },
+              "output": {
+                "value_id": 959,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 13912064,
+        "requested_write_bytes": 819200,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3476,
+        "input_value": 953,
+        "output_value": 959,
+        "operations": [
+          {
+            "operation": 3702,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3830,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "ff48c7bb453b7c3ed2e4a1dcd5526bf0e20dcb790d3c2fae5fc8d5a7cc62e5c9",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 4,
+                  "requested_bytes": 1228800,
+                  "unique_address_bytes": 1228800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 4,
+                  "requested_bytes": 1228800,
+                  "unique_address_bytes": 1228800,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 5,
+                "ROUT": 4,
+                "WETM": 7
+              },
+              "requested_read_bytes": 1228800,
+              "requested_write_bytes": 1228800,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3509,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "c2c52b6bc011fd700806341b1bde51b83e69f75ef10ba99b1b8b21b615b855cc",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 20,
+                  "requested_bytes": 1228800,
+                  "unique_address_bytes": 1228800,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 40,
+                  "requested_bytes": 393216,
+                  "unique_address_bytes": 393216,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 4096,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 94,
+                "ROUT": 144,
+                "WXLM": 160,
+                "WKLM": 40,
+                "RKLM": 3072,
+                "RXLM": 3072,
+                "AYLM": 3200,
+                "WVLM": 544,
+                "RVLM": 416,
+                "WETM": 36
+              },
+              "requested_read_bytes": 1626112,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6966,
+                "expected_bytes": 1228800,
+                "unique_address_bytes": 1228800
+              },
+              "output": {
+                "value_id": 6968,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          },
+          {
+            "operation": 3831,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "101a86f244e8b2ff7caae784ffc4562ea9d505239773688bedc8e6b83fe231ea",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3703,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3591,
+            "kind": "Copy",
+            "layer_count": 1,
+            "log_sha256": "252df5336b97d5aee05f5fa01892b91103daa86f8f68d6849a7a83aedb799509",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 14,
+                "ROUT": 13,
+                "WETM": 16
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          }
+        ],
+        "requested_read_bytes": 4493312,
+        "requested_write_bytes": 3686400,
+        "mean_ms": null
+      }
+    },
+    {
+      "operation": 3420,
+      "baseline": {
+        "original_operation": 3420,
+        "input_value": 387,
+        "output_value": 393,
+        "operations": [
+          {
+            "operation": 3420,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "569f2db758a2ae61daa77c596a608d3e877e72a341f81f4631c1efb9b1597942",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 392,
+                  "requested_bytes": 20070400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 12.25
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 256,
+                  "requested_bytes": 524288,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 2.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 682,
+                "ROUT": 968,
+                "WXLM": 392,
+                "WKLM": 512,
+                "RKLM": 2048,
+                "RXLM": 2048,
+                "AYLM": 2208,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 36
+              },
+              "requested_read_bytes": 20596736,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 387,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 393,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 20596736,
+        "requested_write_bytes": 819200,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3420,
+        "input_value": 387,
+        "output_value": 393,
+        "operations": [
+          {
+            "operation": 3671,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3802,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "83a7f7597be08b360c3d7e32bcc781af5b000500a31ffa18d900339014cf0d5b",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 5,
+                "ROUT": 4,
+                "WETM": 7
+              },
+              "requested_read_bytes": 1638400,
+              "requested_write_bytes": 1638400,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3453,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "7a57c4732ca2cff4c507fa8090cd6f2010748d3fe62d98b08485f34aecb68607",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 28,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 104,
+                  "requested_bytes": 868352,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.65625
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 4096,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 166,
+                "ROUT": 224,
+                "WXLM": 224,
+                "WKLM": 104,
+                "RKLM": 4096,
+                "RXLM": 4096,
+                "AYLM": 4224,
+                "WVLM": 544,
+                "RVLM": 416,
+                "WETM": 36
+              },
+              "requested_read_bytes": 2510848,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6972,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 6974,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          },
+          {
+            "operation": 3803,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "5d27e8b33ba122850eae30002f6d50e7be847892753f0166bb682af248949938",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3672,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3579,
+            "kind": "Copy",
+            "layer_count": 1,
+            "log_sha256": "9227ec0afba135bbefeed1b761f1197b5d201eaa035e863acc5f70179073ef0f",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 14,
+                "ROUT": 13,
+                "WETM": 16
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          }
+        ],
+        "requested_read_bytes": 5787648,
+        "requested_write_bytes": 4096000,
+        "mean_ms": null
+      }
+    },
+    {
+      "operation": 3458,
+      "baseline": {
+        "original_operation": 3458,
+        "input_value": 810,
+        "output_value": 816,
+        "operations": [
+          {
+            "operation": 3458,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "62b298d5dbc78c19df64238b71930dbe5fa2271145c6879cdff026ea7e3e9d91",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 392,
+                  "requested_bytes": 20070400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 12.25
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 256,
+                  "requested_bytes": 524288,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 2.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 682,
+                "ROUT": 968,
+                "WXLM": 392,
+                "WKLM": 512,
+                "RKLM": 2048,
+                "RXLM": 2048,
+                "AYLM": 2208,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 36
+              },
+              "requested_read_bytes": 20596736,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 810,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 816,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 20596736,
+        "requested_write_bytes": 819200,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3458,
+        "input_value": 810,
+        "output_value": 816,
+        "operations": [
+          {
+            "operation": 3700,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3828,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "570bda581e9aeda6bd665635138ba64e16e2155b11fba5a4da03d072efa31be8",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 5,
+                "ROUT": 4,
+                "WETM": 7
+              },
+              "requested_read_bytes": 1638400,
+              "requested_write_bytes": 1638400,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3491,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "2f435e80a8dd5841bb03102acb0446519930fc79b48c7650a5f0161a6f3d668a",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 28,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 104,
+                  "requested_bytes": 868352,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.65625
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 4096,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 166,
+                "ROUT": 224,
+                "WXLM": 224,
+                "WKLM": 104,
+                "RKLM": 4096,
+                "RXLM": 4096,
+                "AYLM": 4224,
+                "WVLM": 544,
+                "RVLM": 416,
+                "WETM": 36
+              },
+              "requested_read_bytes": 2510848,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6978,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 6980,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          },
+          {
+            "operation": 3829,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "8f1c233f9c2eed167947bc62855c86de31f03d77f53798c9bbe170912b709ff7",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3701,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3588,
+            "kind": "Copy",
+            "layer_count": 1,
+            "log_sha256": "17e5b7672266ffad29d14e903e4ee41a7021c80943d17ed709fc75934e9df868",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 14,
+                "ROUT": 13,
+                "WETM": 16
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          }
+        ],
+        "requested_read_bytes": 5787648,
+        "requested_write_bytes": 4096000,
+        "mean_ms": null
+      }
+    },
+    {
+      "operation": 3491,
+      "baseline": {
+        "original_operation": 3491,
+        "input_value": 1070,
+        "output_value": 1076,
+        "operations": [
+          {
+            "operation": 3491,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "54e90270afe6468ecba4445feacc9925aedeea76353a173a101ff73779a4892f",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 392,
+                  "requested_bytes": 20070400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 12.25
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 256,
+                  "requested_bytes": 524288,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 2048,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 2.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 682,
+                "ROUT": 968,
+                "WXLM": 392,
+                "WKLM": 512,
+                "RKLM": 2048,
+                "RXLM": 2048,
+                "AYLM": 2208,
+                "WVLM": 256,
+                "RVLM": 192,
+                "WETM": 36
+              },
+              "requested_read_bytes": 20596736,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 1070,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 1076,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          }
+        ],
+        "requested_read_bytes": 20596736,
+        "requested_write_bytes": 819200,
+        "mean_ms": null
+      },
+      "candidate": {
+        "original_operation": 3491,
+        "input_value": 1070,
+        "output_value": 1076,
+        "operations": [
+          {
+            "operation": 3704,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3832,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "2733d6073fd4454401ae7f6e901c80a531bd19bea4df72200291f1d77fa87ad8",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 4,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 5,
+                "ROUT": 4,
+                "WETM": 7
+              },
+              "requested_read_bytes": 1638400,
+              "requested_write_bytes": 1638400,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3524,
+            "kind": "Conv2d",
+            "layer_count": 1,
+            "log_sha256": "e939c098c977ca28582af71bb2023044184363ec9dad105833208196ce3a66ef",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 28,
+                  "requested_bytes": 1638400,
+                  "unique_address_bytes": 1638400,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 1,
+                  "requests": 104,
+                  "requested_bytes": 868352,
+                  "unique_address_bytes": 524288,
+                  "request_to_unique_ratio": 1.65625
+                },
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 2,
+                  "requests": 32,
+                  "requested_bytes": 4096,
+                  "unique_address_bytes": 1024,
+                  "request_to_unique_ratio": 4.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 3,
+                  "requests": 32,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 166,
+                "ROUT": 224,
+                "WXLM": 224,
+                "WKLM": 104,
+                "RKLM": 4096,
+                "RXLM": 4096,
+                "AYLM": 4224,
+                "WVLM": 544,
+                "RVLM": 416,
+                "WETM": 36
+              },
+              "requested_read_bytes": 2510848,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            },
+            "core_memory_coverage": {
+              "input": {
+                "value_id": 6984,
+                "expected_bytes": 1638400,
+                "unique_address_bytes": 1638400
+              },
+              "output": {
+                "value_id": 6986,
+                "expected_bytes": 819200,
+                "unique_address_bytes": 819200
+              }
+            }
+          },
+          {
+            "operation": 3833,
+            "kind": "Transpose",
+            "layer_count": 1,
+            "log_sha256": "ba1913d9941d62b2442540bb3d536ce2de22bf29cf4fea885f4f047932c2ae3d",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 16,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 17,
+                "ROUT": 16,
+                "WETM": 19
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          },
+          {
+            "operation": 3705,
+            "kind": "Reshape",
+            "layer_count": 0
+          },
+          {
+            "operation": 3594,
+            "kind": "Copy",
+            "layer_count": 1,
+            "log_sha256": "7a44c8aaad6df4c9e140c692790ae9272bbff0d7a66d693cbdcaa79978aaa923",
+            "requests": {
+              "memory": [
+                {
+                  "direction": "RETM",
+                  "buffer_slot": 0,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                },
+                {
+                  "direction": "WETM",
+                  "buffer_slot": 1,
+                  "requests": 13,
+                  "requested_bytes": 819200,
+                  "unique_address_bytes": 819200,
+                  "request_to_unique_ratio": 1.0
+                }
+              ],
+              "instructions": {
+                "RETM": 14,
+                "ROUT": 13,
+                "WETM": 16
+              },
+              "requested_read_bytes": 819200,
+              "requested_write_bytes": 819200,
+              "actual_ddr_bytes_measured": false
+            }
+          }
+        ],
+        "requested_read_bytes": 5787648,
+        "requested_write_bytes": 4096000,
+        "mean_ms": null
+      }
+    }
+  ],
+  "tests_passed": 19,
+  "board_tested": false,
+  "physical_ddr_bytes_measured": false,
+  "source_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-mixed-block-r1"
+}

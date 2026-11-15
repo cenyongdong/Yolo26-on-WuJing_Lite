@@ -1,0 +1,231 @@
+{
+  "schema": 1,
+  "manifest": {
+    "purpose": "cpu_only_postprocess_scan_comparison",
+    "npu_calls": 0,
+    "repetitions_per_fixture": 50,
+    "fixture_count": 6,
+    "variants": [
+      "before",
+      "after"
+    ],
+    "sources": {
+      "after.cpp": "20041f6abada379ab89ac443f2a57002676b6675b1e547cd3e592afeb6d2d9ef",
+      "before.cpp": "6e848b6c1f977ecac58b913bb6d4ae41e801134923c007bdb57f370d6684ea5e",
+      "benchmark_contract.py": "f0fc35193a0f67195e9d553ec48b2af96cd6f038edef4459ecd42c27b4b7684e",
+      "camera_board.py": "2b75627a877a7e2313206041b9ae1c83f9903de5c00a68eef253031cc76f5a34",
+      "fixture-0.f32": "fe4ece558b2ccaf51121dff5a47da2a0c8021882cc166bbd10cb1f435208450a",
+      "fixture-1.f32": "64dfcee1d044ff32cc2bcf85597711ec672fdbe73f3e2fe7d71bdef731b18452",
+      "fixture-2.f32": "1df92405232eba0f07016453725bee5cbff711647b7d50f977ba2b35428848aa",
+      "fixture-3.f32": "c2ec2fbab277ab10917c5e3b9c07b4c17809a420b7d31162f4db67071a91471a",
+      "fixture-4.f32": "ae87de276315378c087c25f6182dab7306290a45a12ea61b4207cc8c5bced9b4",
+      "fixture-5.f32": "3723684cbfda088b367c30e126bab6d4973d3a089140720e0a5d21273974c0dd",
+      "include/yolo26/postprocess.hpp": "74e10214b5cc52a4470981e6fa7e5eed122d94d1a0602693c48cec668093a2bd",
+      "postprocess_fixture.cpp": "6054704234d4ee4aec72edae9b23c78e2a3d02c30efd3aa3e5769365aa566652",
+      "run_board.py": "3b8dcff069b61be41eb4a068cae914d17335beaa64c5d75150c8c136e8d41b04",
+      "test_postprocess.cpp": "74930f989668487d81006d41cfeed3bdd69605b3d7d2d3467c0bd7f1882a2e96"
+    }
+  },
+  "closed": {
+    "before": {
+      "boot_id": "a81baed9-4517-4efd-b5bc-b7aebedd57e9",
+      "startup_consumed": true,
+      "prior_outcome": "/root/yolo26-io-groups_read-20261114-r1/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "a81baed9-4517-4efd-b5bc-b7aebedd57e9",
+      "startup_consumed": true,
+      "prior_outcome": "/root/yolo26-io-groups_read-20261114-r1/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "measurements": [
+      {
+        "variant": "before",
+        "fixture": 0,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 5.97977,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "variant": "before",
+        "fixture": 1,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 6.12787,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "variant": "before",
+        "fixture": 2,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 6.05418,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "variant": "before",
+        "fixture": 3,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 8.23234,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "variant": "before",
+        "fixture": 4,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 8.10331,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "variant": "before",
+        "fixture": 5,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 5.1903,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "variant": "after",
+        "fixture": 0,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 10.7658,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon_anchor16"
+        }
+      },
+      {
+        "variant": "after",
+        "fixture": 1,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 10.9032,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon_anchor16"
+        }
+      },
+      {
+        "variant": "after",
+        "fixture": 2,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 10.855,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon_anchor16"
+        }
+      },
+      {
+        "variant": "after",
+        "fixture": 3,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 13.1068,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon_anchor16"
+        }
+      },
+      {
+        "variant": "after",
+        "fixture": 4,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 13.0214,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon_anchor16"
+        }
+      },
+      {
+        "variant": "after",
+        "fixture": 5,
+        "metric": {
+          "repetitions": 50,
+          "mean_ms": 10.1332,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon_anchor16"
+        }
+      }
+    ],
+    "comparisons": [
+      {
+        "fixture": 0,
+        "bytes": 7200,
+        "bitwise_identical": true,
+        "output_sha256": "504f3e9375d7163b7e3c00977fb552f62ad791d425312ea827b4147fc94f9ce3"
+      },
+      {
+        "fixture": 1,
+        "bytes": 7200,
+        "bitwise_identical": true,
+        "output_sha256": "be7264d41af3ccec105aa9a54a339976db5ef00ceab6fbc4cabffeeac8b19231"
+      },
+      {
+        "fixture": 2,
+        "bytes": 7200,
+        "bitwise_identical": true,
+        "output_sha256": "ceed5ebe3a36763382c524afcb413de20e058ff92cb1c5db0df8598541aafb2c"
+      },
+      {
+        "fixture": 3,
+        "bytes": 7200,
+        "bitwise_identical": true,
+        "output_sha256": "447de619a5e71bc9c9368aee2ccc3dee3381dcead83348aa95c370061f1cd0b3"
+      },
+      {
+        "fixture": 4,
+        "bytes": 7200,
+        "bitwise_identical": true,
+        "output_sha256": "58399fd1672b0a2d2dfb03bc0adf471ffce86aaaf948fd18cd38ed3bf09b1369"
+      },
+      {
+        "fixture": 5,
+        "bytes": 7200,
+        "bitwise_identical": true,
+        "output_sha256": "b024f77a393335a7a1b766ae3c270d1fe7d6c16bed33e07862dfe9df8dea3e31"
+      }
+    ],
+    "npu_calls": 0,
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "artifact_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-tail-block-r1",
+  "full_inference_measured": false,
+  "host_scalar_test_passed": true,
+  "adopted": false,
+  "default_implementation_restored": true,
+  "reconstruction_patch": "FPGA\\yolo26_lite\\evidence\\cpu-anchor16-rejected.patch",
+  "patch_base_commit": "5d37ee19",
+  "reason": "Exact full detections, but all six CPU fixtures regress; no further NPU test needed"
+}

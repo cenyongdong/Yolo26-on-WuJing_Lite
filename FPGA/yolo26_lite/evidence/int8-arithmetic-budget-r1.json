@@ -1,0 +1,1067 @@
+{
+  "schema": 1,
+  "operations_per_mac": 2,
+  "logical_operations": 86795673600,
+  "operations_by_precision": {
+    "@fp(16)": 8414617600,
+    "@sint(8)": 78381056000
+  },
+  "operations": [
+    {
+      "operation": 1,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 353894400
+    },
+    {
+      "operation": 3,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 3774873600
+    },
+    {
+      "operation": 5,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 838860800
+    },
+    {
+      "operation": 9,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 11,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 13,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 16,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 18,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 21,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 24,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 26,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 28,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 30,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 33,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 35,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 38,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 41,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 44,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 3355443200
+    },
+    {
+      "operation": 46,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 7549747200
+    },
+    {
+      "operation": 48,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 838860800
+    },
+    {
+      "operation": 52,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 54,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 56,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 59,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 61,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 64,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 67,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 69,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 71,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 73,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 76,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 78,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 81,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 84,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 87,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 3355443200
+    },
+    {
+      "operation": 89,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 7549747200
+    },
+    {
+      "operation": 91,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 838860800
+    },
+    {
+      "operation": 95,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 97,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 99,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 102,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 104,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 107,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 110,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 112,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 114,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 116,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 119,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 121,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 124,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 127,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 130,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1677721600
+    },
+    {
+      "operation": 132,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1887436800
+    },
+    {
+      "operation": 134,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 138,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 26214400
+    },
+    {
+      "operation": 140,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 142,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 145,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 147,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 150,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 26214400
+    },
+    {
+      "operation": 153,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 52428800
+    },
+    {
+      "operation": 155,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 26214400
+    },
+    {
+      "operation": 157,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 159,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 162,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 164,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 117964800
+    },
+    {
+      "operation": 167,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 26214400
+    },
+    {
+      "operation": 170,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 52428800
+    },
+    {
+      "operation": 173,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 419430400
+    },
+    {
+      "operation": 175,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 180,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 419430400
+    },
+    {
+      "operation": 183,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 186,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 191,
+      "kind": "Matmul",
+      "precision": "@fp(16)",
+      "operations": 40960000
+    },
+    {
+      "operation": 195,
+      "kind": "Matmul",
+      "precision": "@fp(16)",
+      "operations": 81920000
+    },
+    {
+      "operation": 199,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 1843200
+    },
+    {
+      "operation": 202,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 52428800
+    },
+    {
+      "operation": 204,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 206,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 208,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 213,
+      "kind": "Matmul",
+      "precision": "@fp(16)",
+      "operations": 40960000
+    },
+    {
+      "operation": 217,
+      "kind": "Matmul",
+      "precision": "@fp(16)",
+      "operations": 81920000
+    },
+    {
+      "operation": 221,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 1843200
+    },
+    {
+      "operation": 224,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 52428800
+    },
+    {
+      "operation": 226,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 228,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 231,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 235,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1677721600
+    },
+    {
+      "operation": 239,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 241,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 243,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 246,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 248,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 251,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 254,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 256,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 258,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 260,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 263,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 265,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 268,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 271,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 274,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1677721600
+    },
+    {
+      "operation": 278,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 3355443200
+    },
+    {
+      "operation": 282,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 284,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 286,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 289,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 291,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 294,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 297,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 299,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 301,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 303,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 306,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 308,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 311,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 314,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 317,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1677721600
+    },
+    {
+      "operation": 319,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1887436800
+    },
+    {
+      "operation": 322,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1258291200
+    },
+    {
+      "operation": 326,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 328,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 330,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 333,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 335,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 338,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 341,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 343,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 345,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 347,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 350,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 352,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 471859200
+    },
+    {
+      "operation": 355,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 104857600
+    },
+    {
+      "operation": 358,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 209715200
+    },
+    {
+      "operation": 361,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1677721600
+    },
+    {
+      "operation": 363,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 1887436800
+    },
+    {
+      "operation": 366,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 419430400
+    },
+    {
+      "operation": 370,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 235929600
+    },
+    {
+      "operation": 372,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 235929600
+    },
+    {
+      "operation": 375,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 380,
+      "kind": "Matmul",
+      "precision": "@fp(16)",
+      "operations": 40960000
+    },
+    {
+      "operation": 384,
+      "kind": "Matmul",
+      "precision": "@fp(16)",
+      "operations": 81920000
+    },
+    {
+      "operation": 388,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 1843200
+    },
+    {
+      "operation": 391,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 52428800
+    },
+    {
+      "operation": 393,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 395,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 398,
+      "kind": "Conv2d",
+      "precision": "@sint(8)",
+      "operations": 314572800
+    },
+    {
+      "operation": 400,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 1887436800
+    },
+    {
+      "operation": 402,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 471859200
+    },
+    {
+      "operation": 404,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 3276800
+    },
+    {
+      "operation": 407,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 943718400
+    },
+    {
+      "operation": 409,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 117964800
+    },
+    {
+      "operation": 411,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 819200
+    },
+    {
+      "operation": 414,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 235929600
+    },
+    {
+      "operation": 416,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 29491200
+    },
+    {
+      "operation": 418,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 204800
+    },
+    {
+      "operation": 422,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 29491200
+    },
+    {
+      "operation": 424,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 838860800
+    },
+    {
+      "operation": 426,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 29491200
+    },
+    {
+      "operation": 428,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 838860800
+    },
+    {
+      "operation": 430,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 262144000
+    },
+    {
+      "operation": 433,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 14745600
+    },
+    {
+      "operation": 435,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 419430400
+    },
+    {
+      "operation": 437,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 7372800
+    },
+    {
+      "operation": 439,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 209715200
+    },
+    {
+      "operation": 441,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 65536000
+    },
+    {
+      "operation": 444,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 3686400
+    },
+    {
+      "operation": 446,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 104857600
+    },
+    {
+      "operation": 448,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 1843200
+    },
+    {
+      "operation": 450,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 52428800
+    },
+    {
+      "operation": 452,
+      "kind": "Conv2d",
+      "precision": "@fp(16)",
+      "operations": 16384000
+    }
+  ],
+  "excluded_operator_counts": {
+    "Input": 1,
+    "Cast": 17,
+    "SiLU": 147,
+    "Split": 12,
+    "Add": 39,
+    "Concat": 31,
+    "MaxPool2d": 3,
+    "Transpose": 30,
+    "Reshape": 21,
+    "Multiply": 3,
+    "Softmax": 3,
+    "Upsample": 2,
+    "Output": 1
+  },
+  "assumed_int8_tops": 8.0,
+  "assumed_fp16_tflops": 4.0,
+  "ideal_conv_matmul_ms": 11.9012864,
+  "ideal_conv_matmul_fps": 84.02453032304138,
+  "includes_padding_or_recomputation": false,
+  "includes_other_ops_or_transfer": false,
+  "peak_is_measured": false,
+  "board_tested": false,
+  "logical_graph_sha256": "6eea70ae21aa3142d716a871ff7e8574296b5db2860b41eedf2e7b5824c7ba04"
+}

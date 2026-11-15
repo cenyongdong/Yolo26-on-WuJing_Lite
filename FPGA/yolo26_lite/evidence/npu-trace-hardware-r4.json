@@ -1,0 +1,244 @@
+{
+  "schema": 1,
+  "physical": {
+    "schema": 1,
+    "bit_generation_prerequisite_pass": true,
+    "WNS_ns": 0.03,
+    "WHS_ns": 0.022,
+    "TNS_ns": 0.0,
+    "THS_ns": 0.0,
+    "raw_timing_pass": false,
+    "approved_AI_period_exceptions": [
+      "Min Period        n/a     BUFG/I             n/a            1.409         1.000       -0.409     BUFGCTRL_X0Y20  U0_ps_ai_peripheral/ZGolo/u_AI_Mate_top/clkrst_wrapper_u0/AI_CORE_CLK/inst/clkout1_buf/I",
+      "Min Period        n/a     PLLE2_ADV/CLKOUT0  n/a            1.071         1.000       -0.071     PLLE2_ADV_X1Y3  U0_ps_ai_peripheral/ZGolo/u_AI_Mate_top/clkrst_wrapper_u0/AI_CORE_CLK/inst/plle2_adv_inst/CLKOUT0"
+    ],
+    "stages": {
+      "synthesis-banked": {
+        "exit_code": 0,
+        "seconds": 147.60979437828064
+      },
+      "opt-banked": {
+        "exit_code": 0,
+        "seconds": 343.77737045288086
+      },
+      "place-csi-incremental": {
+        "exit_code": 0,
+        "seconds": 664.2263300418854
+      },
+      "route-csi-incremental": {
+        "exit_code": 0,
+        "seconds": 247.11117362976074
+      },
+      "report-closure": {
+        "exit_code": 0,
+        "seconds": 188.0207314491272
+      }
+    },
+    "routable_nets": 100462,
+    "fully_routed_nets": 100462,
+    "unconstrained_internal_endpoints": 0,
+    "existing_GT_DRC_errors": [
+      "REQP-52#1",
+      "REQP-56#1"
+    ],
+    "new_timing_waivers": false,
+    "new_DRC_waivers": false,
+    "new_false_paths": false,
+    "trace_mailbox_endpoints": 106,
+    "trace_resources": {
+      "LUT": 696.0,
+      "FF": 2359.0,
+      "Slice": 715.0,
+      "BRAM36": 4.0,
+      "DSP": 0.0
+    },
+    "total_resources": {
+      "LUT": 43881.0,
+      "FF": 58401.0,
+      "Slice": 17829.0,
+      "BRAM36": 262.0,
+      "DSP": 34.0
+    },
+    "checkpoint": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\pipeline-routed-csi-incremental.dcp",
+    "source_manifest_sha256": "228b98523c99e19552847d3bc4d948d0cf641ff65547fcee30b5103cf9096cde",
+    "hardware_profile": "probe-free-drain-overlay-csi-v3-npu-trace",
+    "csr_base": "0x400b6000",
+    "capture_bytes": 16384,
+    "board_tested": false,
+    "CDC_report": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\reports\\physical-final-closure\\npu-trace-cdc.rpt",
+    "CDC_scope": "held-payload mailbox bounded in both directions; inspect reset synchronizers in native report"
+  },
+  "CDC_review": {
+    "schema": 1,
+    "clock_domains": [
+      "clk_out1_clk_wiz_0",
+      "clk_pll_i"
+    ],
+    "notification_synchronizers": 2,
+    "notification_depth": 3,
+    "reset_synchronizers": 1,
+    "reset_depth": 3,
+    "held_payload_warning_endpoints": 104,
+    "bounded_mailbox_endpoints": 106,
+    "unknown_CDC_rows": 0,
+    "waivers_added": false,
+    "review": "104 clock-enable CDC rows are held mailbox payload, constrained before synchronized notification capture",
+    "report_sha256": "b51d2a031741f13ba49c77f8a0747c93ccc7108ea221e48b9d0d5a29afc03ea4"
+  },
+  "BOOT": {
+    "PL_offset": 186816,
+    "PL_bytes": 5980464,
+    "all_bytes_outside_PL_identical": true,
+    "PL_payload_matches_candidate_after_word_swap": true,
+    "padding_identical": true,
+    "schema": 1,
+    "baseline_BOOT_sha256": "23922f488d9d4842f217f1b318624c82607e35c6dc0c0b2ea3c803ca4023aa35",
+    "BOOT_sha256": "6886da57e0adda66f481d051e0a610156a985ad4579a34d697dd359ebf27cbf9",
+    "BOOT_path": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\boot-package-r2\\BOOT.BIN",
+    "bytes": 7023552,
+    "raw_bit": {
+      "path": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\fpai_demo_vivado.runs\\impl_pose_filter\\ai7030_edif_top.bit",
+      "sha256": "7e9e9bd3181e8ee0139332284066642114ea083efb164c5db07894a742cf25b7"
+    },
+    "ICAP_bit": {
+      "path": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\fpai_demo_vivado.runs\\impl_pose_filter\\ai7030_edif_top_disable_icap.bit",
+      "sha256": "34c1bbc3cef902414c7d7321e6903dc40cf4958f7c360daa0430f6e3fa61bc5e",
+      "header": {
+        "a": "ai7030_edif_top;UserID=53180205;Version=2018.3;Patched=DISABLE_ICAP,VCCM;PatchID=32494",
+        "b": "7z030ffg676",
+        "c": "2026/11/14",
+        "d": "22:53:54"
+      }
+    },
+    "staged_bit": {
+      "path": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\boot-package-r2\\ai7030_top_disable_icap.bit",
+      "sha256": "34c1bbc3cef902414c7d7321e6903dc40cf4958f7c360daa0430f6e3fa61bc5e"
+    },
+    "package_bif": {
+      "path": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\boot-package-r2\\candidate.bif",
+      "sha256": "8c7e7461a6b0e5c446eab56a6e63087a5a892734b0bae57f4bb669208f1a1e5e"
+    },
+    "firmware_inputs": {
+      "FSBL251210_ddr400_demo.out": "5501c470e07537a8fb369ae40641c20c16ab403fad558e65e0a4bbf380f2396f",
+      "bl31.elf": "fdcf0af48a7f9716f73a477c3cc1b4cd90c914fe0e5ad7acc5ab282660802303",
+      "u-boot": "c4570e3e51128211905bdf20c7b7e0ea9cb7ca1492652a070ebdd985bc213e97"
+    },
+    "deployed": false,
+    "rebooted": false
+  },
+  "first_package_review_failure": {
+    "native_packager_exit": 0,
+    "qualification_pass": false,
+    "reason": "PL image name was copied into the non-PL image header",
+    "outside_PL_different_bytes": 9,
+    "changed_byte_intervals": [
+      [
+        2388,
+        2389
+      ],
+      [
+        2392,
+        2400
+      ]
+    ],
+    "baseline_PL_image_name": "ai7030_top_disable_icap.bit",
+    "first_candidate_name": "ai7030_edif_top_disable_icap.bit",
+    "firmware_bytes_identical": true,
+    "board_access": false,
+    "BOOT_writes": 0
+  },
+  "bit_native": {
+    "stage": "bit-closure",
+    "pid": 3844,
+    "command": [
+      "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\logs\\bit-closure.vivado.log",
+      "-source",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\bit-closure.tcl"
+    ],
+    "started": 1794667909.3085716,
+    "state": "completed",
+    "exit_code": 0,
+    "seconds": 129.23559045791626
+  },
+  "procise_native": {
+    "stage": "procise",
+    "pid": 29364,
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\call_procise_disable_icap.bat"
+    ],
+    "started": 1794668052.6648571,
+    "state": "completed",
+    "exit_code": 0,
+    "seconds": 4.261688709259033
+  },
+  "package_native": {
+    "command": [
+      "C:\\FudanMicro\\Procise\\bin\\procise.exe",
+      "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\boot-package-r2\\boot-package.tcl"
+    ],
+    "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\nt4\\boot-package-r2",
+    "pid": 26604,
+    "started_utc": "2026-11-14T14:55:33.084535+00:00",
+    "native_exit": 0,
+    "elapsed_seconds": 3.387434400006896
+  },
+  "reports": {
+    "timing-final.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\timing-final.rpt",
+      "sha256": "d466cc12d667ff156281276c0932ef09c0db154c92cd6952ff29c46b22750c57"
+    },
+    "drc-final.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\drc-final.rpt",
+      "sha256": "b88e3e9386fb787f465eaa9bb03c61f6c9435d4805c655147c79346db50a945c"
+    },
+    "route-status-final.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\route-status-final.rpt",
+      "sha256": "7354c7619e409af4aa1986e4140d4194ae6c74af4662c204c5007d3debbd37fc"
+    },
+    "bus-skew-final.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\bus-skew-final.rpt",
+      "sha256": "b452bc33678d6760a9eccdebf14dc40a2783845390a0167fcbefd7f4c45b773f"
+    },
+    "npu-trace-cdc.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\npu-trace-cdc.rpt",
+      "sha256": "b51d2a031741f13ba49c77f8a0747c93ccc7108ea221e48b9d0d5a29afc03ea4"
+    },
+    "npu-trace-cdc-endpoints.tsv": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\npu-trace-cdc-endpoints.tsv",
+      "sha256": "c8bbd7193c2212e596a091120e376a609fec333c4432382f10d7f8857f062869"
+    },
+    "total-utilization.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\total-utilization.rpt",
+      "sha256": "0b1cdec4e61bfb842c78dc5e23c501632fb10ff89974c6f7d49d2453ac4e16cb"
+    },
+    "npu-trace-from-max.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\npu-trace-from-max.rpt",
+      "sha256": "1ffd2b1205a419fb33b45ed3862752bbe498063a2a5c948c43ed9250ff6e196a"
+    },
+    "npu-trace-from-min.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\npu-trace-from-min.rpt",
+      "sha256": "c19a269f62017be3fc535484b3bcde8263ada4751285a6a3ee02586f48142592"
+    },
+    "npu-trace-to-max.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\npu-trace-to-max.rpt",
+      "sha256": "54573e221bc8ac305089edebf04ac0794811490cfd2225623cac1d330fa90958"
+    },
+    "npu-trace-to-min.rpt": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\npu-trace-to-min.rpt",
+      "sha256": "936cf08d86a75061feda3e1b2524f57ff94e073ec62f99bd238f95c5ceef62ab"
+    },
+    "final-native-facts.tsv": {
+      "path": ".local\\nt4\\reports\\physical-final-closure\\final-native-facts.tsv",
+      "sha256": "5e862b7221a048e24f515a1d0dbf9109107bd19e087c693ccad72cf0b4a0a499"
+    }
+  },
+  "board_tested": false
+}

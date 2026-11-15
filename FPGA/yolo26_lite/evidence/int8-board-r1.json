@@ -1,0 +1,2343 @@
+{
+  "schema": 1,
+  "runs": {
+    "baseline": {
+      "identities": {
+        "model.json": "992964d5f6825cac6a210e1d76d092162496d590a19db76fa061d350853fd35d",
+        "model.raw": "24b533b709a05155c65e210c6934da2aafaa807da020a3d9d0f92fa6d567c696",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "76be990d49184b6e693662d6adce2e80d0d899124c22eb855264526a61295ad6"
+      },
+      "timings": {
+        "clear_ms": {
+          "samples": 12,
+          "mean": 0.01466,
+          "median": 0.014675,
+          "p95": 0.01515,
+          "p99": 0.01515,
+          "maximum": 0.01515,
+          "minimum": 0.01415
+        },
+        "final_wait_ms": {
+          "samples": 12,
+          "mean": 102.55821583333334,
+          "median": 102.554025,
+          "p95": 102.61371,
+          "p99": 102.61371,
+          "maximum": 102.61371,
+          "minimum": 102.48739
+        },
+        "forward_ms": {
+          "samples": 12,
+          "mean": 9.252243333333332,
+          "median": 9.240615,
+          "p95": 9.36177,
+          "p99": 9.36177,
+          "maximum": 9.36177,
+          "minimum": 9.19646
+        },
+        "input_write_ms": {
+          "samples": 12,
+          "mean": 3.176371666666667,
+          "median": 3.174805,
+          "p95": 3.27413,
+          "p99": 3.27413,
+          "maximum": 3.27413,
+          "minimum": 3.13143
+        },
+        "normalize_ms": {
+          "samples": 12,
+          "mean": 4.5688125,
+          "median": 4.546085,
+          "p95": 4.71321,
+          "p99": 4.71321,
+          "maximum": 4.71321,
+          "minimum": 4.51134
+        },
+        "output_read_ms": {
+          "samples": 12,
+          "mean": 12.507309166666667,
+          "median": 12.50759,
+          "p95": 13.046,
+          "p99": 13.046,
+          "maximum": 13.046,
+          "minimum": 12.13389
+        },
+        "postprocess_ms": {
+          "samples": 12,
+          "mean": 6.5815725,
+          "median": 6.578555,
+          "p95": 6.67579,
+          "p99": 6.67579,
+          "maximum": 6.67579,
+          "minimum": 6.51984
+        },
+        "forward_wait_ms": {
+          "samples": 12,
+          "mean": 111.81045916666666,
+          "median": 111.80894,
+          "p95": 111.87783,
+          "p99": 111.87783,
+          "maximum": 111.87783,
+          "minimum": 111.72672
+        },
+        "complete_call_ms": {
+          "samples": 12,
+          "mean": 138.66919916666666,
+          "median": 138.61996,
+          "p95": 139.48723,
+          "p99": 139.48723,
+          "maximum": 139.48723,
+          "minimum": 138.19574
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 66.94638933333337,
+        "Transpose": 20.497237333333302,
+        "Copy": 6.328319999999993,
+        "Add": 2.9289813333333408,
+        "Cast": 1.793962666666667,
+        "Upsample": 1.6465919999999992,
+        "Softmax": 1.0837333333333323,
+        "Matmul": 0.5601280000000066,
+        "Multiply": 0.3746133333333346,
+        "MaxPool2d": 0.35106133333332884,
+        "Concat": 0.11895466666666714,
+        "AlignAxis": 0.10001066666666397,
+        "PruneAxis": 0.03857066666666651,
+        "Slice": 0.020138666666673088,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "ranked_operations": [
+        {
+          "operation": 3339,
+          "kind": "Conv2d",
+          "first_layer": 54,
+          "layer_count": 1,
+          "origin_ops": [
+            1508,
+            1509
+          ],
+          "input_values": [
+            264
+          ],
+          "output_values": [
+            270
+          ],
+          "instruction_bytes": 1048192,
+          "logical_io_bytes": 8192000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 5.400576000000001,
+            "median": 5.400576000000001,
+            "p95": 5.400576000000001,
+            "p99": 5.400576000000001,
+            "maximum": 5.400576000000001,
+            "minimum": 5.400576000000001
+          }
+        },
+        {
+          "operation": 3322,
+          "kind": "Conv2d",
+          "first_layer": 26,
+          "layer_count": 1,
+          "origin_ops": [
+            1466,
+            1467
+          ],
+          "input_values": [
+            135
+          ],
+          "output_values": [
+            141
+          ],
+          "instruction_bytes": 968960,
+          "logical_io_bytes": 16384000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 5.251754666666668,
+            "median": 5.253119999999999,
+            "p95": 5.253120000000003,
+            "p99": 5.253120000000003,
+            "maximum": 5.253120000000003,
+            "minimum": 5.249024000000001
+          }
+        },
+        {
+          "operation": 3321,
+          "kind": "Conv2d",
+          "first_layer": 25,
+          "layer_count": 1,
+          "origin_ops": [
+            1464,
+            1465
+          ],
+          "input_values": [
+            6696
+          ],
+          "output_values": [
+            6698
+          ],
+          "instruction_bytes": 183424,
+          "logical_io_bytes": 26214400,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 3.499349333333333,
+            "median": 3.4995199999999986,
+            "p95": 3.500032000000001,
+            "p99": 3.500032000000001,
+            "maximum": 3.500032000000001,
+            "minimum": 3.4984959999999994
+          }
+        },
+        {
+          "operation": 3694,
+          "kind": "Transpose",
+          "first_layer": 213,
+          "layer_count": 1,
+          "origin_ops": [
+            2578
+          ],
+          "input_values": [
+            6685
+          ],
+          "output_values": [
+            6686
+          ],
+          "instruction_bytes": 768,
+          "logical_io_bytes": 26214400,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 2.8503040000000013,
+            "median": 2.849280000000006,
+            "p95": 2.852351999999999,
+            "p99": 2.852351999999999,
+            "maximum": 2.852351999999999,
+            "minimum": 2.849279999999999
+          }
+        },
+        {
+          "operation": 3305,
+          "kind": "Conv2d",
+          "first_layer": 3,
+          "layer_count": 1,
+          "origin_ops": [
+            1424,
+            1425
+          ],
+          "input_values": [
+            6
+          ],
+          "output_values": [
+            12
+          ],
+          "instruction_bytes": 534912,
+          "logical_io_bytes": 19660800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 2.5581226666666668,
+            "median": 2.556416,
+            "p95": 2.5661440000000004,
+            "p99": 2.5661440000000004,
+            "maximum": 2.5661440000000004,
+            "minimum": 2.5518080000000003
+          }
+        },
+        {
+          "operation": 3304,
+          "kind": "Conv2d",
+          "first_layer": 2,
+          "layer_count": 1,
+          "origin_ops": [
+            1422,
+            1423
+          ],
+          "input_values": [
+            2271
+          ],
+          "output_values": [
+            6
+          ],
+          "instruction_bytes": 457600,
+          "logical_io_bytes": 15564800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 2.066432,
+            "median": 2.066432,
+            "p95": 2.066944,
+            "p99": 2.066944,
+            "maximum": 2.066944,
+            "minimum": 2.06592
+          }
+        },
+        {
+          "operation": 3338,
+          "kind": "Conv2d",
+          "first_layer": 51,
+          "layer_count": 1,
+          "origin_ops": [
+            1506,
+            1507
+          ],
+          "input_values": [
+            6691
+          ],
+          "output_values": [
+            6693
+          ],
+          "instruction_bytes": 2061568,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.8974720000000016,
+            "median": 1.8974720000000016,
+            "p95": 1.8974720000000016,
+            "p99": 1.8974720000000016,
+            "maximum": 1.8974720000000016,
+            "minimum": 1.8974720000000016
+          }
+        },
+        {
+          "operation": 3394,
+          "kind": "Conv2d",
+          "first_layer": 214,
+          "layer_count": 1,
+          "origin_ops": [
+            1832,
+            1833
+          ],
+          "input_values": [
+            6686
+          ],
+          "output_values": [
+            6688
+          ],
+          "instruction_bytes": 516736,
+          "logical_io_bytes": 16384000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.73482666666667,
+            "median": 1.7346560000000026,
+            "p95": 1.7351680000000052,
+            "p99": 1.7351680000000052,
+            "maximum": 1.7351680000000052,
+            "minimum": 1.7346560000000026
+          }
+        },
+        {
+          "operation": 3717,
+          "kind": "Transpose",
+          "first_layer": 346,
+          "layer_count": 1,
+          "origin_ops": [
+            2102
+          ],
+          "input_values": [
+            2273
+          ],
+          "output_values": [
+            5490
+          ],
+          "instruction_bytes": 2304,
+          "logical_io_bytes": 5644800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.7305599999999977,
+            "median": 1.7305599999999977,
+            "p95": 1.7315840000000025,
+            "p99": 1.7315840000000025,
+            "maximum": 1.7315840000000025,
+            "minimum": 1.7295359999999929
+          }
+        },
+        {
+          "operation": 3466,
+          "kind": "Copy",
+          "first_layer": 53,
+          "layer_count": 1,
+          "origin_ops": [
+            2585
+          ],
+          "input_values": [
+            6695
+          ],
+          "output_values": [
+            264
+          ],
+          "instruction_bytes": 2688,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.6008533333333326,
+            "median": 1.6010239999999976,
+            "p95": 1.6010239999999976,
+            "p99": 1.6010239999999976,
+            "maximum": 1.6010239999999976,
+            "minimum": 1.6005120000000024
+          }
+        },
+        {
+          "operation": 3664,
+          "kind": "Transpose",
+          "first_layer": 50,
+          "layer_count": 1,
+          "origin_ops": [
+            2582
+          ],
+          "input_values": [
+            6690
+          ],
+          "output_values": [
+            6691
+          ],
+          "instruction_bytes": 1920,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.4914560000000008,
+            "median": 1.491456000000002,
+            "p95": 1.491456000000002,
+            "p99": 1.491456000000002,
+            "maximum": 1.491456000000002,
+            "minimum": 1.4914559999999983
+          }
+        },
+        {
+          "operation": 3665,
+          "kind": "Transpose",
+          "first_layer": 52,
+          "layer_count": 1,
+          "origin_ops": [
+            2583
+          ],
+          "input_values": [
+            6693
+          ],
+          "output_values": [
+            6694
+          ],
+          "instruction_bytes": 1152,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.4767786666666651,
+            "median": 1.4766080000000001,
+            "p95": 1.4771199999999953,
+            "p99": 1.4771199999999953,
+            "maximum": 1.4771199999999953,
+            "minimum": 1.4766080000000001
+          }
+        },
+        {
+          "operation": 3410,
+          "kind": "Conv2d",
+          "first_layer": 239,
+          "layer_count": 1,
+          "origin_ops": [
+            1872,
+            1873
+          ],
+          "input_values": [
+            944
+          ],
+          "output_values": [
+            950
+          ],
+          "instruction_bytes": 276224,
+          "logical_io_bytes": 4096000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.456810666666667,
+            "median": 1.4566399999999995,
+            "p95": 1.4571520000000018,
+            "p99": 1.4571520000000018,
+            "maximum": 1.4571520000000018,
+            "minimum": 1.4566399999999995
+          }
+        },
+        {
+          "operation": 3696,
+          "kind": "Transpose",
+          "first_layer": 236,
+          "layer_count": 1,
+          "origin_ops": [
+            2589
+          ],
+          "input_values": [
+            6699
+          ],
+          "output_values": [
+            6700
+          ],
+          "instruction_bytes": 768,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.4199466666666702,
+            "median": 1.4197760000000126,
+            "p95": 1.4202880000000004,
+            "p99": 1.4202880000000004,
+            "maximum": 1.4202880000000004,
+            "minimum": 1.419775999999998
+          }
+        },
+        {
+          "operation": 3659,
+          "kind": "Conv2d",
+          "first_layer": 330,
+          "layer_count": 1,
+          "origin_ops": [
+            2062
+          ],
+          "input_values": [
+            1270
+          ],
+          "output_values": [
+            1274
+          ],
+          "instruction_bytes": 32000,
+          "logical_io_bytes": 4300800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.3704533333333384,
+            "median": 1.3706240000000107,
+            "p95": 1.3706240000000107,
+            "p99": 1.3706240000000107,
+            "maximum": 1.3706240000000107,
+            "minimum": 1.3701119999999938
+          }
+        },
+        {
+          "operation": 3427,
+          "kind": "Conv2d",
+          "first_layer": 266,
+          "layer_count": 1,
+          "origin_ops": [
+            1915,
+            1916
+          ],
+          "input_values": [
+            1076
+          ],
+          "output_values": [
+            1082
+          ],
+          "instruction_bytes": 279168,
+          "logical_io_bytes": 2048000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.3477546666666604,
+            "median": 1.3491199999999954,
+            "p95": 1.3496319999999977,
+            "p99": 1.3496319999999977,
+            "maximum": 1.3496319999999977,
+            "minimum": 1.344511999999988
+          }
+        },
+        {
+          "operation": 3452,
+          "kind": "Upsample",
+          "first_layer": 212,
+          "layer_count": 1,
+          "origin_ops": [
+            1830
+          ],
+          "input_values": [
+            816
+          ],
+          "output_values": [
+            818
+          ],
+          "instruction_bytes": 19840,
+          "logical_io_bytes": 8192000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.318399999999999,
+            "median": 1.3184000000000013,
+            "p95": 1.3184000000000013,
+            "p99": 1.3184000000000013,
+            "maximum": 1.3184000000000013,
+            "minimum": 1.3183999999999942
+          }
+        },
+        {
+          "operation": 3356,
+          "kind": "Conv2d",
+          "first_layer": 80,
+          "layer_count": 1,
+          "origin_ops": [
+            1550,
+            1551
+          ],
+          "input_values": [
+            393
+          ],
+          "output_values": [
+            399
+          ],
+          "instruction_bytes": 279168,
+          "logical_io_bytes": 2048000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.3180586666666665,
+            "median": 1.317887999999999,
+            "p95": 1.3184000000000013,
+            "p99": 1.3184000000000013,
+            "maximum": 1.3184000000000013,
+            "minimum": 1.317887999999999
+          }
+        },
+        {
+          "operation": 3433,
+          "kind": "Conv2d",
+          "first_layer": 310,
+          "layer_count": 1,
+          "origin_ops": [
+            2020,
+            2021
+          ],
+          "input_values": [
+            944
+          ],
+          "output_values": [
+            1188
+          ],
+          "instruction_bytes": 103040,
+          "logical_io_bytes": 4096000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.2330666666666656,
+            "median": 1.232896000000008,
+            "p95": 1.2334079999999958,
+            "p99": 1.2334079999999958,
+            "maximum": 1.2334079999999958,
+            "minimum": 1.2328959999999933
+          }
+        },
+        {
+          "operation": 3306,
+          "kind": "Conv2d",
+          "first_layer": 4,
+          "layer_count": 1,
+          "origin_ops": [
+            1426,
+            1427
+          ],
+          "input_values": [
+            12
+          ],
+          "output_values": [
+            18
+          ],
+          "instruction_bytes": 72704,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.1854506666666667,
+            "median": 1.1909120000000002,
+            "p95": 1.191424,
+            "p99": 1.191424,
+            "maximum": 1.191424,
+            "minimum": 1.1740159999999997
+          }
+        },
+        {
+          "operation": 3393,
+          "kind": "Conv2d",
+          "first_layer": 209,
+          "layer_count": 1,
+          "origin_ops": [
+            1828,
+            1829
+          ],
+          "input_values": [
+            6721
+          ],
+          "output_values": [
+            6723
+          ],
+          "instruction_bytes": 908288,
+          "logical_io_bytes": 4915200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.1432959999999996,
+            "median": 1.143296000000002,
+            "p95": 1.1438079999999973,
+            "p99": 1.1438079999999973,
+            "maximum": 1.1438079999999973,
+            "minimum": 1.1427839999999996
+          }
+        },
+        {
+          "operation": 3355,
+          "kind": "Conv2d",
+          "first_layer": 77,
+          "layer_count": 1,
+          "origin_ops": [
+            1548,
+            1549
+          ],
+          "input_values": [
+            6710
+          ],
+          "output_values": [
+            6712
+          ],
+          "instruction_bytes": 908288,
+          "logical_io_bytes": 4915200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.1427839999999996,
+            "median": 1.1427839999999996,
+            "p95": 1.1427839999999996,
+            "p99": 1.1427839999999996,
+            "maximum": 1.1427839999999996,
+            "minimum": 1.1427839999999996
+          }
+        },
+        {
+          "operation": 3378,
+          "kind": "Conv2d",
+          "first_layer": 186,
+          "layer_count": 1,
+          "origin_ops": [
+            1790,
+            1791
+          ],
+          "input_values": [
+            6716
+          ],
+          "output_values": [
+            6718
+          ],
+          "instruction_bytes": 908288,
+          "logical_io_bytes": 4915200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.0270720000000002,
+            "median": 1.0270720000000002,
+            "p95": 1.0270720000000002,
+            "p99": 1.0270720000000002,
+            "maximum": 1.0270720000000002,
+            "minimum": 1.0270720000000002
+          }
+        },
+        {
+          "operation": 3426,
+          "kind": "Conv2d",
+          "first_layer": 264,
+          "layer_count": 1,
+          "origin_ops": [
+            1913,
+            1914
+          ],
+          "input_values": [
+            6705
+          ],
+          "output_values": [
+            6707
+          ],
+          "instruction_bytes": 908288,
+          "logical_io_bytes": 4915200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.0269013333333326,
+            "median": 1.0275840000000025,
+            "p95": 1.0275840000000025,
+            "p99": 1.0275840000000025,
+            "maximum": 1.0275840000000025,
+            "minimum": 1.0255359999999927
+          }
+        },
+        {
+          "operation": 3409,
+          "kind": "Conv2d",
+          "first_layer": 237,
+          "layer_count": 1,
+          "origin_ops": [
+            1870,
+            1871
+          ],
+          "input_values": [
+            6700
+          ],
+          "output_values": [
+            6702
+          ],
+          "instruction_bytes": 290176,
+          "logical_io_bytes": 9830400,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.9565866666666649,
+            "median": 0.9564159999999975,
+            "p95": 0.9569279999999999,
+            "p99": 0.9569279999999999,
+            "maximum": 0.9569279999999999,
+            "minimum": 0.9564159999999975
+          }
+        }
+      ],
+      "numeric": {
+        "board_vs_simulation": {
+          "raw_max_abs": 7.28125,
+          "raw_rms": 0.12480530887842178,
+          "worst_index": [
+            0,
+            4,
+            233
+          ],
+          "worst_reference": -17.1875,
+          "worst_actual": -24.46875,
+          "expected_high_detections": [
+            [
+              110.28125,
+              236.125,
+              226.375,
+              535.125,
+              0.9635062217712402,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.3125,
+              284.5625,
+              510.375,
+              0.9469902515411377,
+              0.0
+            ],
+            [
+              475.78125,
+              234.0,
+              560.4375,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.25,
+              0.8933094143867493,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.25,
+              226.375,
+              535.125,
+              0.9645892381668091,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.53125,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.78125,
+              233.875,
+              560.4375,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.25,
+              0.8940516710281372,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9993128733283219,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0010830163955688477
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9988700491004956,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.00039076805114746094
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9995661605206074,
+              "max_coordinate_error": 0.125,
+              "score_error": 0.0
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 1.0,
+              "max_coordinate_error": 0.0,
+              "score_error": 0.0007422566413879395
+            }
+          ],
+          "fixture_passed": true
+        },
+        "board_vs_onnx": {
+          "raw_max_abs": 21.875133514404297,
+          "raw_rms": 0.4817159175872803,
+          "worst_index": [
+            0,
+            4,
+            6727
+          ],
+          "worst_reference": -28.656116485595703,
+          "worst_actual": -50.53125,
+          "expected_high_detections": [
+            [
+              110.30839538574219,
+              236.1220703125,
+              226.43516540527344,
+              535.3948974609375,
+              0.9616295695304871,
+              0.0
+            ],
+            [
+              82.52940368652344,
+              136.4774169921875,
+              555.1327514648438,
+              437.003173828125,
+              0.9523299336433411,
+              5.0
+            ],
+            [
+              212.55078125,
+              241.31723022460938,
+              284.4814147949219,
+              510.1308288574219,
+              0.9427850246429443,
+              0.0
+            ],
+            [
+              476.05517578125,
+              233.93856811523438,
+              560.6151123046875,
+              521.98876953125,
+              0.9414229989051819,
+              0.0
+            ],
+            [
+              79.99784851074219,
+              326.71759033203125,
+              126.78831481933594,
+              517.3414306640625,
+              0.8881140947341919,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              110.3125,
+              236.25,
+              226.375,
+              535.125,
+              0.9645892381668091,
+              0.0
+            ],
+            [
+              82.75,
+              136.625,
+              555.0,
+              436.75,
+              0.9536218643188477,
+              5.0
+            ],
+            [
+              212.5,
+              241.25,
+              284.53125,
+              510.25,
+              0.9473810195922852,
+              0.0
+            ],
+            [
+              475.78125,
+              233.875,
+              560.4375,
+              522.0,
+              0.944587230682373,
+              0.0
+            ],
+            [
+              80.15625,
+              326.875,
+              126.765625,
+              517.25,
+              0.8940516710281372,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9981179999635829,
+              "max_coordinate_error": 0.2698974609375,
+              "score_error": 0.0029596686363220215
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9979198859039596,
+              "max_coordinate_error": 0.253173828125,
+              "score_error": 0.0012919306755065918
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9979112401026579,
+              "max_coordinate_error": 0.119171142578125,
+              "score_error": 0.00459599494934082
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9944198346853852,
+              "max_coordinate_error": 0.27392578125,
+              "score_error": 0.003164231777191162
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.994829550568121,
+              "max_coordinate_error": 0.1584014892578125,
+              "score_error": 0.0059375762939453125
+            }
+          ],
+          "fixture_passed": true
+        },
+        "output_sha256": "5aca9bc26f1ac9f4365f9d71054aa73c952c19343ff56020f75944981852681b",
+        "simulation_sha256": "7e214a0228cf50f394fa894edfcd1733c0efbbde084734d5bb8aa217020dffb9",
+        "bitwise_simulation": false,
+        "input_rgb_normalized_matches_simulation": true,
+        "proxy_accuracy_baseline": 0.5996897372804864,
+        "original_fp32_fixture_is_not_performance_gate": false,
+        "camera_fps_measured": false
+      },
+      "outcome": {
+        "boot_id": "e32bda71-ec2e-4c0e-80a5-81d9ebb3ace1",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "views_consistent": true,
+      "archive_sha256": "8f0b4bfea9f2a45d97046e9b3a748fd5f91e2660dbce1533627b4b48b781a35d",
+      "timer_checks": [
+        {
+          "frame": 15,
+          "validation_error": null,
+          "returned_layer_count": 347,
+          "api_sum_ms": 102.77862399999998,
+          "api_last_ms": 1.7295359999999929,
+          "api_calc_time_ms": 125.15660858154297,
+          "collection_ns": 658160,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3409,
+            "counter_last": 401479,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 102.77862399999998,
+            "aggregate_minus_layers_ms": 22.37798458154299,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 16,
+          "validation_error": null,
+          "returned_layer_count": 347,
+          "api_sum_ms": 102.82521600000004,
+          "api_last_ms": 1.7305599999999977,
+          "api_calc_time_ms": 124.84378051757812,
+          "collection_ns": 679270,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3407,
+            "counter_last": 401661,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 102.82521600000004,
+            "aggregate_minus_layers_ms": 22.018564517578085,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 17,
+          "validation_error": null,
+          "returned_layer_count": 347,
+          "api_sum_ms": 102.76223999999995,
+          "api_last_ms": 1.7315840000000025,
+          "api_calc_time_ms": 125.27948760986328,
+          "collection_ns": 632480,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3409,
+            "counter_last": 401415,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 102.76223999999995,
+            "aggregate_minus_layers_ms": 22.517247609863333,
+            "independently_measured_clock": false
+          }
+        }
+      ],
+      "camera_fps_measured": false
+    },
+    "psa32": {
+      "identities": {
+        "model.json": "77dca9ac74f87b701c21a11b8e47976f533dbea148811354d5d888ab4f3ee889",
+        "model.raw": "bf07b99d042046a240aad6485038555e11b53a07bc3245d2c3f0cac7e6a406c3",
+        "input.rgb": "d30a0ed67c802a368af45aff9d4dd03f3d5b6a4b56d3dca7dedaeec7d4c8e9d6",
+        "yolo26_infer_probe": "76be990d49184b6e693662d6adce2e80d0d899124c22eb855264526a61295ad6"
+      },
+      "timings": {
+        "clear_ms": {
+          "samples": 12,
+          "mean": 0.014720833333333334,
+          "median": 0.01471,
+          "p95": 0.01537,
+          "p99": 0.01537,
+          "maximum": 0.01537,
+          "minimum": 0.01373
+        },
+        "final_wait_ms": {
+          "samples": 12,
+          "mean": 63.25888833333333,
+          "median": 63.249705000000006,
+          "p95": 63.36935,
+          "p99": 63.36935,
+          "maximum": 63.36935,
+          "minimum": 63.15297
+        },
+        "forward_ms": {
+          "samples": 12,
+          "mean": 9.540595833333333,
+          "median": 9.318225,
+          "p95": 10.4741,
+          "p99": 10.4741,
+          "maximum": 10.4741,
+          "minimum": 9.20174
+        },
+        "input_write_ms": {
+          "samples": 12,
+          "mean": 3.3378441666666667,
+          "median": 3.24805,
+          "p95": 3.76371,
+          "p99": 3.76371,
+          "maximum": 3.76371,
+          "minimum": 3.20184
+        },
+        "normalize_ms": {
+          "samples": 12,
+          "mean": 4.561995,
+          "median": 4.538209999999999,
+          "p95": 4.77368,
+          "p99": 4.77368,
+          "maximum": 4.77368,
+          "minimum": 4.52009
+        },
+        "output_read_ms": {
+          "samples": 12,
+          "mean": 12.636694166666667,
+          "median": 12.548945,
+          "p95": 13.68132,
+          "p99": 13.68132,
+          "maximum": 13.68132,
+          "minimum": 12.1271
+        },
+        "postprocess_ms": {
+          "samples": 12,
+          "mean": 6.256428333333333,
+          "median": 6.03265,
+          "p95": 7.57937,
+          "p99": 7.57937,
+          "maximum": 7.57937,
+          "minimum": 5.94949
+        },
+        "forward_wait_ms": {
+          "samples": 12,
+          "mean": 72.79948416666667,
+          "median": 72.61739,
+          "p95": 73.79888,
+          "p99": 73.79888,
+          "maximum": 73.79888,
+          "minimum": 72.39473
+        },
+        "complete_call_ms": {
+          "samples": 12,
+          "mean": 99.61696416666666,
+          "median": 99.00861499999999,
+          "p95": 102.29173,
+          "p99": 102.29173,
+          "maximum": 102.29173,
+          "minimum": 98.36958
+        }
+      },
+      "kinds_ms": {
+        "Conv2d": 46.90619733333334,
+        "Cast": 4.514218666666661,
+        "Transpose": 3.4126506666666767,
+        "Matmul": 2.9958826666666623,
+        "Copy": 1.8092373333333338,
+        "Add": 1.1183786666666762,
+        "Softmax": 1.0830506666666648,
+        "Upsample": 0.8248319999999998,
+        "Multiply": 0.3747840000000033,
+        "MaxPool2d": 0.16588800000000142,
+        "Concat": 0.11861333333333217,
+        "AlignAxis": 0.09983999999999772,
+        "PruneAxis": 0.03874133333333278,
+        "Slice": 0.02048000000000199,
+        "Reshape": 0.0,
+        "Split": 0.0
+      },
+      "ranked_operations": [
+        {
+          "operation": 3505,
+          "kind": "Conv2d",
+          "first_layer": 327,
+          "layer_count": 1,
+          "origin_ops": [
+            2126,
+            2127
+          ],
+          "input_values": [
+            1252
+          ],
+          "output_values": [
+            1258
+          ],
+          "instruction_bytes": 113920,
+          "logical_io_bytes": 6553600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 4.583594666666669,
+            "median": 4.583424000000006,
+            "p95": 4.583936000000001,
+            "p99": 4.583936000000001,
+            "maximum": 4.583936000000001,
+            "minimum": 4.583423999999999
+          }
+        },
+        {
+          "operation": 3507,
+          "kind": "Conv2d",
+          "first_layer": 329,
+          "layer_count": 1,
+          "origin_ops": [
+            2130,
+            2131
+          ],
+          "input_values": [
+            1264
+          ],
+          "output_values": [
+            1270
+          ],
+          "instruction_bytes": 113920,
+          "logical_io_bytes": 6553600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 4.583253333333334,
+            "median": 4.583423999999999,
+            "p95": 4.583424000000006,
+            "p99": 4.583424000000006,
+            "maximum": 4.583424000000006,
+            "minimum": 4.582911999999997
+          }
+        },
+        {
+          "operation": 3404,
+          "kind": "Conv2d",
+          "first_layer": 51,
+          "layer_count": 1,
+          "origin_ops": [
+            1538,
+            1539
+          ],
+          "input_values": [
+            264
+          ],
+          "output_values": [
+            270
+          ],
+          "instruction_bytes": 564352,
+          "logical_io_bytes": 4096000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 2.831530666666667,
+            "median": 2.8313600000000005,
+            "p95": 2.832384000000002,
+            "p99": 2.832384000000002,
+            "maximum": 2.832384000000002,
+            "minimum": 2.8308479999999983
+          }
+        },
+        {
+          "operation": 3369,
+          "kind": "Conv2d",
+          "first_layer": 2,
+          "layer_count": 1,
+          "origin_ops": [
+            1448,
+            1449
+          ],
+          "input_values": [
+            2297
+          ],
+          "output_values": [
+            6
+          ],
+          "instruction_bytes": 457600,
+          "logical_io_bytes": 15564800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 2.077696,
+            "median": 2.072576,
+            "p95": 2.0894719999999998,
+            "p99": 2.0894719999999998,
+            "maximum": 2.0894719999999998,
+            "minimum": 2.07104
+          }
+        },
+        {
+          "operation": 3443,
+          "kind": "Conv2d",
+          "first_layer": 187,
+          "layer_count": 1,
+          "origin_ops": [
+            1832,
+            1833
+          ],
+          "input_values": [
+            693
+          ],
+          "output_values": [
+            699
+          ],
+          "instruction_bytes": 142976,
+          "logical_io_bytes": 2457600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.9447466666666673,
+            "median": 1.944576000000001,
+            "p95": 1.9450879999999997,
+            "p99": 1.9450879999999997,
+            "maximum": 1.9450879999999997,
+            "minimum": 1.944576000000001
+          }
+        },
+        {
+          "operation": 3516,
+          "kind": "Cast",
+          "first_layer": 3,
+          "layer_count": 1,
+          "origin_ops": [
+            1450
+          ],
+          "input_values": [
+            6
+          ],
+          "output_values": [
+            3743
+          ],
+          "instruction_bytes": 16640,
+          "logical_io_bytes": 19660800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.8235733333333335,
+            "median": 1.7776639999999997,
+            "p95": 1.9266560000000004,
+            "p99": 1.9266560000000004,
+            "maximum": 1.9266560000000004,
+            "minimum": 1.7664000000000002
+          }
+        },
+        {
+          "operation": 3783,
+          "kind": "Transpose",
+          "first_layer": 350,
+          "layer_count": 1,
+          "origin_ops": [
+            2180
+          ],
+          "input_values": [
+            2299
+          ],
+          "output_values": [
+            5659
+          ],
+          "instruction_bytes": 2304,
+          "logical_io_bytes": 5644800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.7349973333333353,
+            "median": 1.7351679999999978,
+            "p95": 1.7351680000000052,
+            "p99": 1.7351680000000052,
+            "maximum": 1.7351680000000052,
+            "minimum": 1.7346560000000026
+          }
+        },
+        {
+          "operation": 3386,
+          "kind": "Conv2d",
+          "first_layer": 27,
+          "layer_count": 1,
+          "origin_ops": [
+            1494,
+            1495
+          ],
+          "input_values": [
+            129
+          ],
+          "output_values": [
+            135
+          ],
+          "instruction_bytes": 307200,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.6621226666666669,
+            "median": 1.6619520000000012,
+            "p95": 1.662464,
+            "p99": 1.662464,
+            "maximum": 1.662464,
+            "minimum": 1.6619519999999992
+          }
+        },
+        {
+          "operation": 3387,
+          "kind": "Conv2d",
+          "first_layer": 28,
+          "layer_count": 1,
+          "origin_ops": [
+            1496,
+            1497
+          ],
+          "input_values": [
+            135
+          ],
+          "output_values": [
+            141
+          ],
+          "instruction_bytes": 510848,
+          "logical_io_bytes": 8192000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.5472639999999998,
+            "median": 1.5467520000000003,
+            "p95": 1.5482880000000006,
+            "p99": 1.5482880000000006,
+            "maximum": 1.5482880000000006,
+            "minimum": 1.5467519999999986
+          }
+        },
+        {
+          "operation": 3747,
+          "kind": "Conv2d",
+          "first_layer": 330,
+          "layer_count": 1,
+          "origin_ops": [
+            2132
+          ],
+          "input_values": [
+            1270
+          ],
+          "output_values": [
+            1274
+          ],
+          "instruction_bytes": 32000,
+          "logical_io_bytes": 4300800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.3694293333333336,
+            "median": 1.3695999999999986,
+            "p95": 1.369600000000006,
+            "p99": 1.369600000000006,
+            "maximum": 1.369600000000006,
+            "minimum": 1.369087999999996
+          }
+        },
+        {
+          "operation": 3476,
+          "kind": "Conv2d",
+          "first_layer": 233,
+          "layer_count": 1,
+          "origin_ops": [
+            1917,
+            1918
+          ],
+          "input_values": [
+            953
+          ],
+          "output_values": [
+            959
+          ],
+          "instruction_bytes": 113536,
+          "logical_io_bytes": 2048000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.3306880000000019,
+            "median": 1.3306880000000019,
+            "p95": 1.3306880000000019,
+            "p99": 1.3306880000000019,
+            "maximum": 1.3306880000000019,
+            "minimum": 1.3306880000000019
+          }
+        },
+        {
+          "operation": 3498,
+          "kind": "Conv2d",
+          "first_layer": 308,
+          "layer_count": 1,
+          "origin_ops": [
+            2078,
+            2079
+          ],
+          "input_values": [
+            2281
+          ],
+          "output_values": [
+            1188
+          ],
+          "instruction_bytes": 103040,
+          "logical_io_bytes": 4096000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.2349440000000032,
+            "median": 1.2349440000000032,
+            "p95": 1.2349440000000032,
+            "p99": 1.2349440000000032,
+            "maximum": 1.2349440000000032,
+            "minimum": 1.2349440000000032
+          }
+        },
+        {
+          "operation": 3602,
+          "kind": "Matmul",
+          "first_layer": 4,
+          "layer_count": 1,
+          "origin_ops": [
+            1452
+          ],
+          "input_values": [
+            3745
+          ],
+          "output_values": [
+            3748
+          ],
+          "instruction_bytes": 98176,
+          "logical_io_bytes": 13107200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.203712,
+            "median": 1.2047359999999998,
+            "p95": 1.2052479999999997,
+            "p99": 1.2052479999999997,
+            "maximum": 1.2052479999999997,
+            "minimum": 1.201152
+          }
+        },
+        {
+          "operation": 3459,
+          "kind": "Conv2d",
+          "first_layer": 210,
+          "layer_count": 1,
+          "origin_ops": [
+            1874,
+            1875
+          ],
+          "input_values": [
+            821
+          ],
+          "output_values": [
+            827
+          ],
+          "instruction_bytes": 176256,
+          "logical_io_bytes": 8192000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.1658240000000004,
+            "median": 1.1658240000000004,
+            "p95": 1.166336000000003,
+            "p99": 1.166336000000003,
+            "maximum": 1.166336000000003,
+            "minimum": 1.1653119999999981
+          }
+        },
+        {
+          "operation": 3370,
+          "kind": "Conv2d",
+          "first_layer": 5,
+          "layer_count": 1,
+          "origin_ops": [
+            1454,
+            1455
+          ],
+          "input_values": [
+            2267
+          ],
+          "output_values": [
+            12
+          ],
+          "instruction_bytes": 372608,
+          "logical_io_bytes": 9830400,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.1176960000000002,
+            "median": 1.117696,
+            "p95": 1.1197440000000005,
+            "p99": 1.1197440000000005,
+            "maximum": 1.1197440000000005,
+            "minimum": 1.1156480000000002
+          }
+        },
+        {
+          "operation": 3403,
+          "kind": "Conv2d",
+          "first_layer": 50,
+          "layer_count": 1,
+          "origin_ops": [
+            1536,
+            1537
+          ],
+          "input_values": [
+            258
+          ],
+          "output_values": [
+            264
+          ],
+          "instruction_bytes": 237440,
+          "logical_io_bytes": 6553600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 1.1098453333333334,
+            "median": 1.1100159999999997,
+            "p95": 1.1100159999999997,
+            "p99": 1.1100159999999997,
+            "maximum": 1.1100159999999997,
+            "minimum": 1.1095040000000007
+          }
+        },
+        {
+          "operation": 3504,
+          "kind": "Conv2d",
+          "first_layer": 326,
+          "layer_count": 1,
+          "origin_ops": [
+            2124,
+            2125
+          ],
+          "input_values": [
+            2287
+          ],
+          "output_values": [
+            1252
+          ],
+          "instruction_bytes": 96128,
+          "logical_io_bytes": 6553600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.9495893333333322,
+            "median": 0.9497599999999947,
+            "p95": 0.949760000000002,
+            "p99": 0.949760000000002,
+            "maximum": 0.949760000000002,
+            "minimum": 0.9492479999999996
+          }
+        },
+        {
+          "operation": 3506,
+          "kind": "Conv2d",
+          "first_layer": 328,
+          "layer_count": 1,
+          "origin_ops": [
+            2128,
+            2129
+          ],
+          "input_values": [
+            1258
+          ],
+          "output_values": [
+            1264
+          ],
+          "instruction_bytes": 96128,
+          "logical_io_bytes": 6553600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.9458346666666645,
+            "median": 0.9456639999999971,
+            "p95": 0.9461759999999995,
+            "p99": 0.9461759999999995,
+            "maximum": 0.9461759999999995,
+            "minimum": 0.9456639999999971
+          }
+        },
+        {
+          "operation": 3621,
+          "kind": "Cast",
+          "first_layer": 0,
+          "layer_count": 1,
+          "origin_ops": [
+            1442
+          ],
+          "input_values": [
+            0
+          ],
+          "output_values": [
+            2295
+          ],
+          "instruction_bytes": 20096,
+          "logical_io_bytes": 9830400,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.8735573333333334,
+            "median": 0.8737280000000001,
+            "p95": 0.8737280000000001,
+            "p99": 0.8737280000000001,
+            "maximum": 0.8737280000000001,
+            "minimum": 0.873216
+          }
+        },
+        {
+          "operation": 3474,
+          "kind": "Conv2d",
+          "first_layer": 231,
+          "layer_count": 1,
+          "origin_ops": [
+            1912,
+            1913
+          ],
+          "input_values": [
+            938
+          ],
+          "output_values": [
+            944
+          ],
+          "instruction_bytes": 121344,
+          "logical_io_bytes": 4915200,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.7067306666666676,
+            "median": 0.706560000000005,
+            "p95": 0.7070720000000001,
+            "p99": 0.7070720000000001,
+            "maximum": 0.7070720000000001,
+            "minimum": 0.7065599999999976
+          }
+        },
+        {
+          "operation": 3475,
+          "kind": "Conv2d",
+          "first_layer": 232,
+          "layer_count": 1,
+          "origin_ops": [
+            1914,
+            1915
+          ],
+          "input_values": [
+            944
+          ],
+          "output_values": [
+            950
+          ],
+          "instruction_bytes": 153856,
+          "logical_io_bytes": 2048000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.6975146666666648,
+            "median": 0.6973439999999973,
+            "p95": 0.6978559999999998,
+            "p99": 0.6978559999999998,
+            "maximum": 0.6978559999999998,
+            "minimum": 0.6973439999999973
+          }
+        },
+        {
+          "operation": 3622,
+          "kind": "Cast",
+          "first_layer": 1,
+          "layer_count": 1,
+          "origin_ops": [
+            1447
+          ],
+          "input_values": [
+            3733
+          ],
+          "output_values": [
+            2297
+          ],
+          "instruction_bytes": 12928,
+          "logical_io_bytes": 7372800,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.6748160000000001,
+            "median": 0.6748160000000001,
+            "p95": 0.6748160000000001,
+            "p99": 0.6748160000000001,
+            "maximum": 0.6748160000000001,
+            "minimum": 0.674816
+          }
+        },
+        {
+          "operation": 3530,
+          "kind": "Upsample",
+          "first_layer": 209,
+          "layer_count": 1,
+          "origin_ops": [
+            1872
+          ],
+          "input_values": [
+            816
+          ],
+          "output_values": [
+            818
+          ],
+          "instruction_bytes": 10112,
+          "logical_io_bytes": 4096000,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.6579199999999995,
+            "median": 0.6579199999999983,
+            "p95": 0.6584320000000007,
+            "p99": 0.6584320000000007,
+            "maximum": 0.6584320000000007,
+            "minimum": 0.6574079999999994
+          }
+        },
+        {
+          "operation": 3371,
+          "kind": "Conv2d",
+          "first_layer": 6,
+          "layer_count": 1,
+          "origin_ops": [
+            1456,
+            1457
+          ],
+          "input_values": [
+            12
+          ],
+          "output_values": [
+            18
+          ],
+          "instruction_bytes": 129664,
+          "logical_io_bytes": 6553600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.6446079999999993,
+            "median": 0.645119999999999,
+            "p95": 0.6456319999999997,
+            "p99": 0.6456319999999997,
+            "maximum": 0.6456319999999997,
+            "minimum": 0.6430719999999992
+          }
+        },
+        {
+          "operation": 3420,
+          "kind": "Conv2d",
+          "first_layer": 73,
+          "layer_count": 1,
+          "origin_ops": [
+            1578,
+            1579
+          ],
+          "input_values": [
+            387
+          ],
+          "output_values": [
+            393
+          ],
+          "instruction_bytes": 142976,
+          "logical_io_bytes": 2457600,
+          "milliseconds": {
+            "samples": 3,
+            "mean": 0.6190080000000004,
+            "median": 0.6190080000000017,
+            "p95": 0.6190080000000017,
+            "p99": 0.6190080000000017,
+            "maximum": 0.6190080000000017,
+            "minimum": 0.619007999999998
+          }
+        }
+      ],
+      "numeric": {
+        "board_vs_simulation": {
+          "raw_max_abs": 22.21875,
+          "raw_rms": 0.5734977722167969,
+          "worst_index": [
+            0,
+            4,
+            7624
+          ],
+          "worst_reference": -23.65625,
+          "worst_actual": -45.875,
+          "expected_high_detections": [
+            [
+              84.875,
+              137.25,
+              549.25,
+              436.0,
+              0.9556514620780945,
+              5.0
+            ],
+            [
+              110.4375,
+              237.25,
+              226.9375,
+              534.875,
+              0.9539660811424255,
+              0.0
+            ],
+            [
+              476.21875,
+              235.375,
+              560.6875,
+              523.125,
+              0.9453993439674377,
+              0.0
+            ],
+            [
+              212.125,
+              241.5,
+              284.34375,
+              510.625,
+              0.8976953029632568,
+              0.0
+            ],
+            [
+              80.109375,
+              328.0625,
+              126.609375,
+              517.25,
+              0.879974365234375,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              84.375,
+              137.125,
+              550.0,
+              436.25,
+              0.956308901309967,
+              5.0
+            ],
+            [
+              110.5625,
+              237.375,
+              226.5625,
+              534.875,
+              0.9553191661834717,
+              0.0
+            ],
+            [
+              476.34375,
+              235.5,
+              560.8125,
+              522.75,
+              0.9437636137008667,
+              0.0
+            ],
+            [
+              212.375,
+              241.625,
+              284.40625,
+              510.375,
+              0.9190633296966553,
+              0.0
+            ],
+            [
+              80.109375,
+              328.0625,
+              126.515625,
+              517.4375,
+              0.8807970285415649,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9960650335217053,
+              "max_coordinate_error": 0.75,
+              "score_error": 0.0006574392318725586
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9952899654453263,
+              "max_coordinate_error": 0.375,
+              "score_error": 0.0013530850410461426
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9953147702205793,
+              "max_coordinate_error": 0.375,
+              "score_error": 0.001635730266571045
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9942904281084516,
+              "max_coordinate_error": 0.25,
+              "score_error": 0.021368026733398438
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9969977582995814,
+              "max_coordinate_error": 0.1875,
+              "score_error": 0.0008226633071899414
+            }
+          ],
+          "fixture_passed": false
+        },
+        "board_vs_onnx": {
+          "raw_max_abs": 38.695953369140625,
+          "raw_rms": 1.3374265432357788,
+          "worst_index": [
+            0,
+            4,
+            7929
+          ],
+          "worst_reference": -50.375640869140625,
+          "worst_actual": -11.6796875,
+          "expected_high_detections": [
+            [
+              110.30839538574219,
+              236.1220703125,
+              226.43516540527344,
+              535.3948974609375,
+              0.9616295695304871,
+              0.0
+            ],
+            [
+              82.52940368652344,
+              136.4774169921875,
+              555.1327514648438,
+              437.003173828125,
+              0.9523299336433411,
+              5.0
+            ],
+            [
+              212.55078125,
+              241.31723022460938,
+              284.4814147949219,
+              510.1308288574219,
+              0.9427850246429443,
+              0.0
+            ],
+            [
+              476.05517578125,
+              233.93856811523438,
+              560.6151123046875,
+              521.98876953125,
+              0.9414229989051819,
+              0.0
+            ],
+            [
+              79.99784851074219,
+              326.71759033203125,
+              126.78831481933594,
+              517.3414306640625,
+              0.8881140947341919,
+              0.0
+            ]
+          ],
+          "actual_high_detections": [
+            [
+              84.375,
+              137.125,
+              550.0,
+              436.25,
+              0.956308901309967,
+              5.0
+            ],
+            [
+              110.5625,
+              237.375,
+              226.5625,
+              534.875,
+              0.9553191661834717,
+              0.0
+            ],
+            [
+              476.34375,
+              235.5,
+              560.8125,
+              522.75,
+              0.9437636137008667,
+              0.0
+            ],
+            [
+              212.375,
+              241.625,
+              284.40625,
+              510.375,
+              0.9190633296966553,
+              0.0
+            ],
+            [
+              80.109375,
+              328.0625,
+              126.515625,
+              517.4375,
+              0.8807970285415649,
+              0.0
+            ]
+          ],
+          "high_detection_matches": [
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9908209807181538,
+              "max_coordinate_error": 1.2529296875,
+              "score_error": 0.006310403347015381
+            },
+            {
+              "class_id": 5,
+              "matched": true,
+              "iou": 0.9806420035804626,
+              "max_coordinate_error": 5.13275146484375,
+              "score_error": 0.0039789676666259766
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9944793035292773,
+              "max_coordinate_error": 0.307769775390625,
+              "score_error": 0.023721694946289062
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9862916212895017,
+              "max_coordinate_error": 1.561431884765625,
+              "score_error": 0.0023406147956848145
+            },
+            {
+              "class_id": 0,
+              "matched": true,
+              "iou": 0.9842992056584755,
+              "max_coordinate_error": 1.34490966796875,
+              "score_error": 0.007317066192626953
+            }
+          ],
+          "fixture_passed": false
+        },
+        "output_sha256": "fe4ece558b2ccaf51121dff5a47da2a0c8021882cc166bbd10cb1f435208450a",
+        "simulation_sha256": "64c4ce5930f7ba435166c64ec8a72d70cda925db73f43fa95040271187ebd33f",
+        "bitwise_simulation": false,
+        "input_rgb_normalized_matches_simulation": true,
+        "proxy_accuracy_baseline": 0.5996897372804864,
+        "original_fp32_fixture_is_not_performance_gate": true,
+        "camera_fps_measured": false
+      },
+      "outcome": {
+        "boot_id": "9669d38a-fcc8-44e3-8668-352705c3a9b2",
+        "native_exit": 0,
+        "completed": 18,
+        "native_shutdown_complete": true,
+        "allocation_count_after": 0,
+        "sdk_starts": 1,
+        "capture_starts": 0,
+        "boot_writes": 0,
+        "reboots": 0,
+        "device_owners": [],
+        "source": "file_replay",
+        "camera_30fps_claim": false
+      },
+      "views_consistent": true,
+      "archive_sha256": "d2dec5a090489c5c40a3ececf9091e4937a6a7e2a6aacb01c52b37f7e0d1f0e2",
+      "timer_checks": [
+        {
+          "frame": 15,
+          "validation_error": null,
+          "returned_layer_count": 351,
+          "api_sum_ms": 63.419136000000016,
+          "api_last_ms": 1.7351679999999978,
+          "api_calc_time_ms": 84.8253402709961,
+          "collection_ns": 656100,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3413,
+            "counter_last": 247731,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 63.419136000000016,
+            "aggregate_minus_layers_ms": 21.406204270996078,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 16,
+          "validation_error": null,
+          "returned_layer_count": 351,
+          "api_sum_ms": 63.41708800000001,
+          "api_last_ms": 1.7351680000000052,
+          "api_calc_time_ms": 84.68864440917969,
+          "collection_ns": 628920,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3411,
+            "counter_last": 247723,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 63.41708800000001,
+            "aggregate_minus_layers_ms": 21.27155640917968,
+            "independently_measured_clock": false
+          }
+        },
+        {
+          "frame": 17,
+          "validation_error": null,
+          "returned_layer_count": 351,
+          "api_sum_ms": 63.61216000000004,
+          "api_last_ms": 1.7346560000000026,
+          "api_calc_time_ms": 84.90675354003906,
+          "collection_ns": 633670,
+          "read_tile_counts": [
+            0,
+            0
+          ],
+          "write_tile_counts": [
+            0,
+            0
+          ],
+          "encoding_check": {
+            "raw_api_max_error_ms": 0.0,
+            "counter_first": 3413,
+            "counter_last": 248485,
+            "raw_counter_monotonic": true,
+            "tick_cycles": 256,
+            "sdk_clock_hz": 1000000000.0,
+            "timer_sum_ms": 63.61216000000004,
+            "aggregate_minus_layers_ms": 21.294593540039024,
+            "independently_measured_clock": false
+          }
+        }
+      ],
+      "camera_fps_measured": false
+    }
+  },
+  "sdk_starts": 2,
+  "inferences": 36,
+  "normal_reboots": 2,
+  "boot_writes": 0,
+  "capture_starts": 0,
+  "source_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-board-r2",
+  "complete_call_speedup": 1.3920239421737715,
+  "serial_call_hz": 10.038450863920374,
+  "target_30fps_achieved": false,
+  "accepted_simulator_proxy_map": 0.5996897372804864,
+  "board_proxy_map_measured": false,
+  "board_accuracy_evaluation_deferred": true,
+  "initial_baseline_wrapper_failure": {
+    "same_prior_board_output": true,
+    "actual_sha256": "5aca9bc26f1ac9f4365f9d71054aa73c952c19343ff56020f75944981852681b",
+    "prior_sha256": "5aca9bc26f1ac9f4365f9d71054aa73c952c19343ff56020f75944981852681b",
+    "same_simulator_difference_as_prior": true,
+    "fixtures_passed": true,
+    "new_inference": 0,
+    "original_report_sha256": "8179930bf943faf4f16ae781b41c6a8350db3776bf489191f4ccb82f9048939b",
+    "original_wrapper_failure": "Required board versus generated simulator bitwise equality, which the existing baseline never had.",
+    "correction": "Retain complete differences; require existing detection fixture and exact prior board output."
+  },
+  "int8_original_fixture_passed": false,
+  "note": "INT8 has five matching detections, IoU >= 0.99429 versus simulator; one score error 0.021368 exceeds old 0.02. Full failures retained, performance-phase acceptance does not rewrite accuracy pass."
+}

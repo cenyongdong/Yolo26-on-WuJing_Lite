@@ -1,0 +1,61 @@
+diff --git a/FPGA/yolo26_lite/software/src/postprocess.cpp b/FPGA/yolo26_lite/software/src/postprocess.cpp
+index 04876f9b..cdec19e2 100644
+--- a/FPGA/yolo26_lite/software/src/postprocess.cpp
++++ b/FPGA/yolo26_lite/software/src/postprocess.cpp
+@@ -15,22 +15,37 @@ std::array<float, kAnchors> checked_class_maxima(const float* tensor) {
+     std::array<float, kAnchors> maxima;
+     maxima.fill(-std::numeric_limits<float>::infinity());
+ #if defined(__aarch64__) && !defined(YOLO26_FORCE_SCALAR)
+-    static_assert(kAnchors % 4 == 0, "NEON scan needs complete four-float groups");
++    static_assert(kAnchors % 16 == 0, "NEON scan needs complete sixteen-anchor blocks");
+     static_assert(sizeof(float) == 4 && std::numeric_limits<float>::is_iec559, "FP32 tensor required");
+-    // 连续四个锚点一组；检查 IEEE754 指数是否全 1，同时覆盖坐标和未入选类别。
+-    // 先累积错误掩码，整次扫描后统一隔离。NaN/Inf 永远不会进入 TopK 或结果发布。
++    // 每块 16 个锚点的最大值留在寄存器，遍历全部类别后只写回一次。
++    // 原通道优先扫描会对 33.6KB maxima 重复读写 80 次，超过部分 CPU 的一级数据缓存。
++    // 仍检查全部坐标及未入选类别的 IEEE754 指数，NaN/Inf 在 TopK 前统一隔离。
+     const auto exponent = vdupq_n_u32(0x7f800000U);
+     auto invalid = vdupq_n_u32(0);
+-    for (std::size_t channel = 0; channel < 4 + kClasses; ++channel) {
+-        const float* values = tensor + channel * kAnchors;
+-        for (std::size_t anchor = 0; anchor < kAnchors; anchor += 4) {
+-            const auto value = vld1q_f32(values + anchor);
+-            const auto bits = vreinterpretq_u32_f32(value);
+-            invalid = vorrq_u32(invalid, vceqq_u32(vandq_u32(bits, exponent), exponent));
++    for (std::size_t anchor = 0; anchor < kAnchors; anchor += 16) {
++        auto maximum0 = vdupq_n_f32(-std::numeric_limits<float>::infinity());
++        auto maximum1 = maximum0, maximum2 = maximum0, maximum3 = maximum0;
++        for (std::size_t channel = 0; channel < 4 + kClasses; ++channel) {
++            const float* values = tensor + channel * kAnchors + anchor;
++            const auto value0 = vld1q_f32(values);
++            const auto value1 = vld1q_f32(values + 4);
++            const auto value2 = vld1q_f32(values + 8);
++            const auto value3 = vld1q_f32(values + 12);
++            invalid = vorrq_u32(invalid, vceqq_u32(vandq_u32(vreinterpretq_u32_f32(value0), exponent), exponent));
++            invalid = vorrq_u32(invalid, vceqq_u32(vandq_u32(vreinterpretq_u32_f32(value1), exponent), exponent));
++            invalid = vorrq_u32(invalid, vceqq_u32(vandq_u32(vreinterpretq_u32_f32(value2), exponent), exponent));
++            invalid = vorrq_u32(invalid, vceqq_u32(vandq_u32(vreinterpretq_u32_f32(value3), exponent), exponent));
+             if (channel >= 4) {
+-                vst1q_f32(maxima.data() + anchor, vmaxq_f32(vld1q_f32(maxima.data() + anchor), value));
++                maximum0 = vmaxq_f32(maximum0, value0);
++                maximum1 = vmaxq_f32(maximum1, value1);
++                maximum2 = vmaxq_f32(maximum2, value2);
++                maximum3 = vmaxq_f32(maximum3, value3);
+             }
+         }
++        vst1q_f32(maxima.data() + anchor, maximum0);
++        vst1q_f32(maxima.data() + anchor + 4, maximum1);
++        vst1q_f32(maxima.data() + anchor + 8, maximum2);
++        vst1q_f32(maxima.data() + anchor + 12, maximum3);
+     }
+     const bool valid = vmaxvq_u32(invalid) == 0;
+ #else
+@@ -91,7 +106,7 @@ std::uint32_t rounded_ratio(std::uint64_t numerator, std::uint32_t denominator)
+ 
+ const char* postprocess_scan_backend() noexcept {
+ #if defined(__aarch64__) && !defined(YOLO26_FORCE_SCALAR)
+-    return "aarch64_neon";
++    return "aarch64_neon_anchor16";
+ #else
+     return "portable_scalar";
+ #endif

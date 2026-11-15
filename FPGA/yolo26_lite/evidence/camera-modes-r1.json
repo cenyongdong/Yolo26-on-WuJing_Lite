@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "full_evidence": ".local\\yolo26-camera-modes-r1",
+  "source_identity": {
+    "software/src/camera_probe.cpp": "0e5a895f379285d94e0a043b874bfa83cde123294b968cc3607aaa31de8dda7e",
+    "camera_board.py": "baa2c664849a6415d4607e820025f54244261de933f1c3e6a9cb73cd2c5cfd29"
+  },
+  "native_tests": 11,
+  "compile_native_exit": 0,
+  "compile_warnings": 0,
+  "modes": [
+    {
+      "format": {
+        "kind": "format",
+        "epoch": 20201384306820,
+        "requested_width": 640,
+        "requested_height": 480,
+        "requested_fps": 30,
+        "width": 640,
+        "height": 480,
+        "stride": 1280,
+        "size_image": 614400,
+        "buffers": 4,
+        "interval_numerator": 1,
+        "interval_denominator": 30,
+        "colorspace": 0,
+        "ycbcr_encoding": 0,
+        "quantization": 0,
+        "transfer_function": 0,
+        "extended_fields_valid": true
+      },
+      "summary": {
+        "kind": "summary",
+        "measurement_start_ns": 20202535258960,
+        "measurement_end_ns": 20207535258960,
+        "duration_seconds": 5,
+        "interrupted": false,
+        "new_frames": 41,
+        "mean_fps": 8.2,
+        "windows": [
+          9,
+          8,
+          8,
+          8,
+          8
+        ],
+        "dequeued": 45,
+        "published": 45,
+        "driver_sequence_gaps": 0,
+        "duplicates_or_reordered": 0,
+        "flagged_error": 0,
+        "invalid_bytes": 0,
+        "invalid_timestamp": 0,
+        "latest_replaced": 0,
+        "pool_exhausted": 0,
+        "poll_timeouts": 50,
+        "driver_timestamps": 45,
+        "receive_timestamps": 0,
+        "pool_available": 6,
+        "clean_shutdown": true
+      },
+      "captured_gap_ns": {
+        "minimum": 119992000,
+        "median": 119997500.0,
+        "maximum": 123997000
+      },
+      "raw_frame_sha256": "00887aa23d3deecf437efba73eb0310d4f6fa4b2496ef5991695fc53395cb81f",
+      "native_exit": 0
+    },
+    {
+      "format": {
+        "kind": "format",
+        "epoch": 20207584068190,
+        "requested_width": 320,
+        "requested_height": 240,
+        "requested_fps": 30,
+        "width": 320,
+        "height": 240,
+        "stride": 640,
+        "size_image": 153600,
+        "buffers": 4,
+        "interval_numerator": 1,
+        "interval_denominator": 30,
+        "colorspace": 0,
+        "ycbcr_encoding": 0,
+        "quantization": 0,
+        "transfer_function": 0,
+        "extended_fields_valid": true
+      },
+      "summary": {
+        "kind": "summary",
+        "measurement_start_ns": 20208588212160,
+        "measurement_end_ns": 20213588212160,
+        "duration_seconds": 5,
+        "interrupted": false,
+        "new_frames": 42,
+        "mean_fps": 8.4,
+        "windows": [
+          9,
+          8,
+          8,
+          8,
+          9
+        ],
+        "dequeued": 45,
+        "published": 45,
+        "driver_sequence_gaps": 0,
+        "duplicates_or_reordered": 0,
+        "flagged_error": 0,
+        "invalid_bytes": 0,
+        "invalid_timestamp": 0,
+        "latest_replaced": 0,
+        "pool_exhausted": 0,
+        "poll_timeouts": 51,
+        "driver_timestamps": 45,
+        "receive_timestamps": 0,
+        "pool_available": 6,
+        "clean_shutdown": true
+      },
+      "captured_gap_ns": {
+        "minimum": 119974000,
+        "median": 119997500.0,
+        "maximum": 124013000
+      },
+      "raw_frame_sha256": "6e9c3d31f63d6fd3fe9752bba28c08e8aa795ec468092db9b0dded3548ae9235",
+      "native_exit": 0
+    },
+    {
+      "format": {
+        "kind": "format",
+        "epoch": 20213719282150,
+        "requested_width": 160,
+        "requested_height": 120,
+        "requested_fps": 30,
+        "width": 160,
+        "height": 120,
+        "stride": 320,
+        "size_image": 38400,
+        "buffers": 4,
+        "interval_numerator": 1,
+        "interval_denominator": 30,
+        "colorspace": 0,
+        "ycbcr_encoding": 0,
+        "quantization": 0,
+        "transfer_function": 0,
+        "extended_fields_valid": true
+      },
+      "summary": {
+        "kind": "summary",
+        "measurement_start_ns": 20214722502980,
+        "measurement_end_ns": 20219722502980,
+        "duration_seconds": 5,
+        "interrupted": false,
+        "new_frames": 42,
+        "mean_fps": 8.4,
+        "windows": [
+          9,
+          8,
+          8,
+          8,
+          9
+        ],
+        "dequeued": 45,
+        "published": 45,
+        "driver_sequence_gaps": 0,
+        "duplicates_or_reordered": 0,
+        "flagged_error": 0,
+        "invalid_bytes": 0,
+        "invalid_timestamp": 0,
+        "latest_replaced": 0,
+        "pool_exhausted": 0,
+        "poll_timeouts": 51,
+        "driver_timestamps": 45,
+        "receive_timestamps": 0,
+        "pool_available": 6,
+        "clean_shutdown": true
+      },
+      "captured_gap_ns": {
+        "minimum": 120233000,
+        "median": 121862500.0,
+        "maximum": 121882000
+      },
+      "raw_frame_sha256": "d94096f6b1cb7247b61c39d87e102249eebb7b29b5b30b4ef34086a3fd13e7f7",
+      "native_exit": 0
+    }
+  ],
+  "cleanup": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 3,
+    "lease_held_until_children_returned": true
+  },
+  "decision": "Retain 640x480 default; lower resolutions did not improve fresh frame rate in current conditions",
+  "sdk_starts": 0,
+  "npu_executed": false,
+  "strict_camera_30fps_passed": false
+}

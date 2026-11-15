@@ -1,0 +1,368 @@
+{
+  "records": [
+    {
+      "operation": 3404,
+      "task_count": 5632,
+      "etm": [
+        {
+          "Base": 0,
+          "Size": 26214400,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 0,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 6
+        },
+        {
+          "Base": 0,
+          "Size": 262144,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 0,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 140
+        },
+        {
+          "Base": 65536,
+          "Size": 1024,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 4,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 140
+        },
+        {
+          "Base": 0,
+          "Size": 26214400,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 0,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 141
+        }
+      ],
+      "global_queue_count": 0,
+      "global_queue_same_pointers": false,
+      "initial_weights": []
+    },
+    {
+      "operation": 3405,
+      "task_count": 17608,
+      "etm": [
+        {
+          "Base": 0,
+          "Size": 26214400,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 0,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 141
+        },
+        {
+          "Base": 0,
+          "Size": 2359296,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 0,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 142
+        },
+        {
+          "Base": 589824,
+          "Size": 1024,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 4,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 142
+        },
+        {
+          "Base": 0,
+          "Size": 6553600,
+          "Unit": 0,
+          "Memid": 0,
+          "Dtype": 0,
+          "Flag": 0,
+          "OcmOfst": 0,
+          "ChunkId": 143
+        }
+      ],
+      "global_queue_count": 0,
+      "global_queue_same_pointers": false,
+      "initial_weights": [
+        {
+          "task_id": 3,
+          "source": {
+            "kind": 5,
+            "unit": 32,
+            "base": 0,
+            "width": 288,
+            "height": 2,
+            "width_stride": 1,
+            "height_stride": 2304,
+            "column": 2,
+            "row": 0,
+            "sub_id": 1,
+            "dtype": 0,
+            "int8_half": 0,
+            "sub_count": 1,
+            "sub_stride": 0,
+            "group": -1,
+            "core": 0,
+            "external_control": 0
+          },
+          "destinations": [
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 2,
+              "row": 4,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            },
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 1,
+              "row": 4,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            }
+          ]
+        },
+        {
+          "task_id": 43,
+          "source": {
+            "kind": 5,
+            "unit": 32,
+            "base": 9216,
+            "width": 288,
+            "height": 2,
+            "width_stride": 1,
+            "height_stride": 2304,
+            "column": 2,
+            "row": 0,
+            "sub_id": 1,
+            "dtype": 0,
+            "int8_half": 0,
+            "sub_count": 1,
+            "sub_stride": 0,
+            "group": -1,
+            "core": 0,
+            "external_control": 0
+          },
+          "destinations": [
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 2,
+              "row": 3,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            },
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 1,
+              "row": 3,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            }
+          ]
+        },
+        {
+          "task_id": 83,
+          "source": {
+            "kind": 5,
+            "unit": 32,
+            "base": 18432,
+            "width": 288,
+            "height": 2,
+            "width_stride": 1,
+            "height_stride": 2304,
+            "column": 2,
+            "row": 0,
+            "sub_id": 1,
+            "dtype": 0,
+            "int8_half": 0,
+            "sub_count": 1,
+            "sub_stride": 0,
+            "group": -1,
+            "core": 0,
+            "external_control": 0
+          },
+          "destinations": [
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 2,
+              "row": 2,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            },
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 1,
+              "row": 2,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            }
+          ]
+        },
+        {
+          "task_id": 123,
+          "source": {
+            "kind": 5,
+            "unit": 32,
+            "base": 27648,
+            "width": 288,
+            "height": 2,
+            "width_stride": 1,
+            "height_stride": 2304,
+            "column": 2,
+            "row": 0,
+            "sub_id": 1,
+            "dtype": 0,
+            "int8_half": 0,
+            "sub_count": 1,
+            "sub_stride": 0,
+            "group": -1,
+            "core": 0,
+            "external_control": 0
+          },
+          "destinations": [
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 2,
+              "row": 1,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            },
+            {
+              "kind": 1,
+              "unit": 32,
+              "base": 0,
+              "width": 288,
+              "height": 2,
+              "width_stride": 1,
+              "height_stride": 288,
+              "column": 1,
+              "row": 1,
+              "sub_id": 2,
+              "dtype": 0,
+              "int8_half": 0,
+              "sub_count": 1,
+              "sub_stride": 0,
+              "group": -1,
+              "core": 0,
+              "external_control": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "device_access": false,
+  "schema": 1,
+  "source": {
+    "yolo26l_adapted.json": "0b4c7d09ee4cf0285c2b82531d536f310814ac3d033ce776d85c36c796c96a45",
+    "yolo26l_adapted.raw": "07f6bca6c5a488978905910f05358ed81b1d95537a81a53d0aaaf8e3300cd732",
+    "yolo26l_ZG.json": "42ae1374714b0dd6b4dbe27fa69d845c34fe5d216e039155ad490e005eccf2b9",
+    "yolo26l_ZG.raw": "c2edc20012aa196181b3962b7eea6470f3c8e35f2911b3b619b7e15ceeb054fd"
+  },
+  "sdk": {
+    "zg_codegen.dll": "87a62d8d8074cc233127cde5bcf228c63ffa24db0a182657316d1483f71d70e8",
+    "icraft_zhuge_codegen.dll": "b4cd5892b615ee062f78400d45ff49bbd20c09c468739100c0a4d1af54f16ada",
+    "byzg-task.dll": "56f98343742951afc68dcfee5b423b98e8f680c29db6da18f80825e2bd16f81d",
+    "byzg-code.dll": "e93d66723e9bf67cd0d4fe3329634c0450d7e8e9f207d2bf15bb8d7417f39c5d",
+    "byzg-tile.dll": "b1ccc930cacd1220cbd393fbb07fd83e9ca90267531cc08373bef59340d3dfbd"
+  },
+  "extraction": "public native tasks2Codes before instruction generation; no pointer persistence",
+  "source_model_unchanged": true
+}

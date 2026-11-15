@@ -1,0 +1,61 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-dma-20261114-023404-465317",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_dma_descriptor.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_dma_mm2s.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_dma_s2mm.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_dma.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-dma-20261114-023404-465317",
+      "pid": 16676,
+      "started_utc": "2026-11-13T18:34:04.477734+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8280000000013388
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_dma",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-dma-20261114-023404-465317",
+      "pid": 26052,
+      "started_utc": "2026-11-13T18:34:05.304691+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 2.6719999999986612
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-dma-20261114-023404-465317",
+      "pid": 24728,
+      "started_utc": "2026-11-13T18:34:07.976656+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.484000000004016
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 83,
+    "cycles": 64651,
+    "seed": "2600cafe"
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+    "rtl\\y26_dma_mm2s.sv": "3b60fbbe11eb1c1c529edd46b7c1eb19332b25b5c4fd1d110b04dee506d22a47",
+    "rtl\\y26_dma_s2mm.sv": "6280d490d2b4f5bcbab5c8a23e0abf897581a140ac5cbd5628cfcf6a0497a339",
+    "tb\\tb_dma.sv": "1db480c8d689639f8f6cf31c05941206f89109630ebd7d88ca647fd5ed3cc9d7"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "kind": "registered RGB stream before S2MM; buffered item included in joint drain proof",
+  "source_identity": {
+    "rtl\\y26_dma_descriptor.sv": "72d0a981f9c88eeb28636f7244d5e44e386ed90840da327c2a9baa12ff506ef6",
+    "rtl\\y26_dma_mm2s.sv": "3b60fbbe11eb1c1c529edd46b7c1eb19332b25b5c4fd1d110b04dee506d22a47",
+    "rtl\\y26_color_pipeline.sv": "0b81f5081308e4e06cf6bc954f794e96199c028d9809c39f726aab63d5d5f763",
+    "rtl\\y26_pixel_unpack.sv": "b91e54d6e89b6c1be9d9bf8d2fa6502e64e2284d34f537fb4a4a6d9578203f56",
+    "rtl\\y26_resize_letterbox.sv": "0acc4618918017f07111cde8a4ee0a614869ae9af84d66eedd2c40c5c70d2aab",
+    "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+    "rtl\\y26_dma_s2mm.sv": "6280d490d2b4f5bcbab5c8a23e0abf897581a140ac5cbd5628cfcf6a0497a339",
+    "rtl\\y26_stream_register.sv": "957504575a664323408d0670ad04dc0048e2ea0decaf019f9b3acb6a9c6a3585",
+    "rtl\\y26_preprocess.sv": "b368bf8fed5850511263aeecbb69107c72a1e78d61ddfe509c53e28dbfd27d58",
+    "rtl\\y26_register_bank.sv": "7ee1b8db6c9efc958b603310a7de49a69489fcb9df5684d59b2afa16623afae7",
+    "rtl\\y26_mailbox.sv": "3b456938c7f7821abb5b4f22c1cc9b5dd58d583a54f2b57230f3e52dbd017e6d",
+    "rtl\\y26_command_dispatch.sv": "29de52fe2dbeb56dcf916aff45d1cd13276901d1aafa99749ab196e3c08f3815",
+    "rtl\\y26_control.sv": "597bd9cf8fe424b88a06c1d2d757cdf75607c8775489f3ff6165cedf116a6f6e",
+    "rtl\\y26_peripheral.sv": "91a578f5c4251d37f25412d8c3a684bc01cf84714624eb078d2707091876fe2e",
+    "constraints\\y26_control_cdc.tcl": "95177b0af19e2b468c74c01f00141efd7f8136ef5acbfc48d1e330785b486e49"
+  },
+  "tests": {
+    "stream": {
+      "full_evidence": "FPGA\\yolo26_lite\\build\\xsim-stream-20261114-060703-508779",
+      "result": {
+        "passed": true,
+        "cases": 4,
+        "cycles": 14990,
+        "words": 8081
+      },
+      "native_exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    "preprocess": {
+      "full_evidence": "FPGA\\yolo26_lite\\build\\xsim-preprocess-20261114-061244-905636",
+      "result": {
+        "passed": true,
+        "cases": 11,
+        "cycles": 10445919,
+        "full_frames": 3,
+        "output": [
+          640,
+          640
+        ]
+      },
+      "native_exits": [
+        0,
+        0,
+        0
+      ]
+    },
+    "soc": {
+      "full_evidence": "FPGA\\yolo26_lite\\build\\xsim-soc-20261114-061114-489196",
+      "result": {
+        "passed": true,
+        "cases": 1127,
+        "cycles": 3517124,
+        "frame_cycles": 3389122,
+        "output_bytes_compared": 1228800
+      },
+      "native_exits": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "synthesis": {
+    "native": {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\vivado.bat",
+        "-mode",
+        "batch",
+        "-notrace",
+        "-source",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-peripheral-synth-r3\\synthesize.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-peripheral-synth-r3",
+      "pid": 28088,
+      "started_utc": "2026-11-13T22:12:03.457367+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 75.62336830000277
+    },
+    "top": "y26_peripheral",
+    "proxy_part": "xc7z030ffg676-2",
+    "physical_target": "JFMQL30TAI676H",
+    "synthesis_passed": true,
+    "timing_budget_ns": 5,
+    "integrated_timing_passed": false,
+    "bit_generated": false,
+    "board_tested": false
+  },
+  "full_synthesis_evidence": ".local\\yolo26-peripheral-synth-r3",
+  "report_identity": {
+    "timing_estimate.rpt": "956715692feda9c4d1713955b4ec26306c5c6e839097227409a1094d596fd5ba",
+    "utilization.rpt": "0317b87cff0e43e22e4689923de521d12c829f6e2d3a43b38c254afb957c14e7",
+    "worst_paths.rpt": "29f1ddad90d9ff6d9fea562cbe71e6fae0cc8e3856e654d4d30594f3a6d769e4",
+    "cdc.rpt": "a3b9587fe14f6a0777d6cdde1f2626c5c23659a9abe8688810cbad7892b2e7c9",
+    "exception_coverage.rpt": "b4d366a45805a827bca1bf2ead1c0aeda0ad88c387ce3af57a643b5325ffccaa",
+    "synthesized.dcp": "012924144a994c3e771618c25780edd8dbc2faa40ad3b58c5145a26c227001db"
+  },
+  "estimate": {
+    "wns_ns": 0.173,
+    "whs_ns": 0.088,
+    "setup_failing_endpoints": 0,
+    "hold_failing_endpoints": 0,
+    "unconstrained_internal_endpoints": 0,
+    "lut": 4220,
+    "flip_flops": 4905,
+    "bram36_equivalent": 4,
+    "dsp": 35
+  },
+  "cdc": {
+    "three_stage_single_bit": 3,
+    "held_bus_warnings": 533,
+    "new_exceptions": 0
+  },
+  "scope": "OOC estimate only; frozen full SoC route excludes this and the X-error pipeline revision",
+  "bit_generated": false,
+  "board_tested": false
+}

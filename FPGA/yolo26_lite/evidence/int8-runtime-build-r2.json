@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "build": {
+    "command": [
+      "cmake",
+      "--build",
+      "/root/yolo26-int8-build-20261114-r2/build",
+      "--parallel",
+      "1"
+    ],
+    "native_exit": 0,
+    "child_returned": true
+  },
+  "tests": {
+    "native_exit": 0,
+    "tests": [
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_postprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_frames"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_preprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_compose"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_metrics"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_display_buffers"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_display_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_inference_completion"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_video_engine"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-int8-build-20261114-r2/build/test_capture_color"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      }
+    ]
+  },
+  "closed": {
+    "before": {
+      "boot_id": "9669d38a-fcc8-44e3-8668-352705c3a9b2",
+      "startup_consumed": true,
+      "prior_outcome": "/root/yolo26-int8-psa32-20261114-r1/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "9669d38a-fcc8-44e3-8668-352705c3a9b2",
+      "startup_consumed": true,
+      "prior_outcome": "/root/yolo26-int8-psa32-20261114-r1/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "manifest": {
+    "purpose": "finite_cpu_only_modules",
+    "sdk_starts": 0,
+    "camera_starts": 0,
+    "sources": {
+      "CMakeLists.txt": "e2d4324b1418ff0c6847439296e795589b84a23428630cdebfb7b34ebb1fb769",
+      "camera_board.py": "baa2c664849a6415d4607e820025f54244261de933f1c3e6a9cb73cd2c5cfd29",
+      "software/src/camera_probe.cpp": "0e5a895f379285d94e0a043b874bfa83cde123294b968cc3607aaa31de8dda7e",
+      "software/src/capture.cpp": "d6b68a3ab4034532219965cf0692a7af5e7a13126afec0014c8fe56cbe16b644",
+      "software/src/capture_color.cpp": "31920055ed6246baed9bebd16b6b686b539e1fff382dfa8ef3c87f104e6e1f88",
+      "software/src/compose.cpp": "65c6398025aec8cb3d5469d8404a5a0f48eb09d4b621a383297893de927cff3c",
+      "software/src/control.cpp": "dfe2dbef36c06e30ddfec7cf709ad8a7ea1fe19edeb78a6c31e37ef7f9ce81a2",
+      "software/src/cpu_benchmark.cpp": "073602224915011a7dd3ec0b11b24fdff22e7b0153186a0647c2f5fae36674cb",
+      "software/src/display_buffers.cpp": "5681249a8f27ba7877ff62e6ed858d61bfcfb4d7dd196865a442460d750a2ab3",
+      "software/src/display_control.cpp": "024e36f607cf47c8ae49bf4e47f1a2408fc94a51b068c950384b0758c8f6d16a",
+      "software/src/frames.cpp": "61d4d185af80cd77ee9425a5b6a400363a8694a7417ecd4221bf57a65061f149",
+      "software/src/icraft_diagnostics.cpp": "b064253244166394d6150eeff891249409728acaaab861156d7cde5eea80b922",
+      "software/src/icraft_diagnostics.hpp": "37170c501056c216a8c5aea4b5ab96025f0643199185922da2383b8249ad2865",
+      "software/src/icraft_runtime.cpp": "1546673a4a50f261b3d9015eea02a6b8a690ba2125202a3ad4b21c308bb4d993",
+      "software/src/icraft_video_io.cpp": "ba57c55ee7fc5ab5c024bda56c8592ad0001be4df4d4a5f8a0ff3612fa843201",
+      "software/src/icraft_video_io.hpp": "d8240b6cf5ddd2272fcaa790de7a0caa53c7488f8466dce9102e2df0efa26ad1",
+      "software/src/inference_completion.cpp": "29a7e4274016b506dbe2e70ff19d8fa82f9a2cb0be81a389aa1099bfe803859f",
+      "software/src/infer_probe.cpp": "064ee4946ae8c9de553037fef7204da3e5fa25a59313c7e3ea73ff9c4c2cc767",
+      "software/src/live_pipeline.cpp": "16bffbbf876275c7ca0ac07a745fba65de8d0951bd93cd100cd9614b82c1840e",
+      "software/src/metrics.cpp": "05ccce231c47808e2ae0824d2f077f866c6a6872f31780148bf4db8f532aa964",
+      "software/src/postprocess.cpp": "6e848b6c1f977ecac58b913bb6d4ae41e801134923c007bdb57f370d6684ea5e",
+      "software/src/preprocess.cpp": "75efb35e1167c9d51f5ea75130cbc6bfeae55d0d3d14623d5725346c9ce03560",
+      "software/src/video_engine.cpp": "55052eed0d07b6ba12a501f2cae0796a92d72dfd35388e9ec313e5335cefb602",
+      "software/tests/compose_fixture.cpp": "01010346762d1e00c8ed18a1f5d8ef2e060102c0f824a97a7a1f82824a3000c5",
+      "software/tests/postprocess_fixture.cpp": "6054704234d4ee4aec72edae9b23c78e2a3d02c30efd3aa3e5769365aa566652",
+      "software/tests/test_capture_color.cpp": "ea9f5b31cb6c1f8a181707f3c8d198af4fca1f903daef61b0e8973d12abb5871",
+      "software/tests/test_compose.cpp": "5199be41ee416d2965b0b18549f6a6f323796271e1f0f41a9b4be5d636d2ad44",
+      "software/tests/test_control.cpp": "3476a6fa85c10876fa865ca23212d5b66f9029d43fa0e2bdbf501c1821d7963a",
+      "software/tests/test_display_buffers.cpp": "56f436ac85f70e5759d46d7bcd23d8bb4eba057fd1b4a6b7e87de9974b2f8f4e",
+      "software/tests/test_display_control.cpp": "8c91fbdb27474240e952914da43f6fae65ffd85d1eeaeeecd5a36ac8224da31d",
+      "software/tests/test_frames.cpp": "ce4638aea1c6cad0f05499f2f36a15d95aac4cbb901e75f8952abb92ac3225fd",
+      "software/tests/test_inference_completion.cpp": "897383ff9ec3719442e0571c92c1628bcfadc0ffd8987d988a4e3fffc4e3ba3f",
+      "software/tests/test_metrics.cpp": "dcb1ca49dfe6b4ce8629ba652d4c6ae55a46d53704e51a1f19ae6fb9ef513d7a",
+      "software/tests/test_postprocess.cpp": "e901f08a0032514f8d40f044cf0d280456a90bd9f0207eeadd98de10cd64af42",
+      "software/tests/test_preprocess.cpp": "a49e77c3133b8a671c73d85ecc23161496672769a700cca14c43fbf43406636c",
+      "software/tests/test_video_engine.cpp": "80d35e1512c2330ddb3c3a448bcad841c34ec418aed0aff80ddff9052a66ebc3",
+      "software/include/yolo26/capture.hpp": "e0febd014cc9188056107227b7816e206bae9cb56c0c522dc3899ebf4fca3ca6",
+      "software/include/yolo26/compose.hpp": "1575097e429523fe282696843e100c9a7739ea31744714d9da8bcc41288178aa",
+      "software/include/yolo26/control.hpp": "35e5f8b8473c21adc51de390197114a6c7695d6a685765c9381b5e8ecedd6a13",
+      "software/include/yolo26/display_buffers.hpp": "7dd84b8b28f5b3ee6d015dac949f8fe3eb3a0cdda6db10b2434d6e5cf45382d8",
+      "software/include/yolo26/display_control.hpp": "64c318f35144445788432d4e24476a318719d9710dceda37f54306b530fcc0fc",
+      "software/include/yolo26/frames.hpp": "ddedb4fe4cbd80a3208d24fc599cd8603353463325212c2daa137bf9071ab9df",
+      "software/include/yolo26/icraft_runtime.hpp": "4ac79d7101ab8b70ac5b795f3bb955625416b7dd68fccc38c4afa75319b8c21d",
+      "software/include/yolo26/inference_completion.hpp": "7aeed0f4a3a5c0e56cc928e29dbf89673d488d43604d54d3acc8c607e1dbe430",
+      "software/include/yolo26/latest_slot.hpp": "64b80e0bf0b0709e8a4b44354e22236652fd9995a6dd18793031cb07f3701c90",
+      "software/include/yolo26/live_pipeline.hpp": "229a6b264f106fcab5cc12c84517a50b826e903a3ed54a62e965feb3a17a1ea9",
+      "software/include/yolo26/metrics.hpp": "f8d287a2310e8d5db81a45cfa4853383b02b3175106e0587fc1fd07060aa0a1d",
+      "software/include/yolo26/postprocess.hpp": "74e10214b5cc52a4470981e6fa7e5eed122d94d1a0602693c48cec668093a2bd",
+      "software/include/yolo26/preprocess.hpp": "914d3e945992893cf85ca75965b24c33c471d050dd438467d3240d0567cbf585",
+      "software/include/yolo26/video_engine.hpp": "767c668a21e568d4b17fe0d860b6fc1bd8b22ea30bbf0bebc424387f8ddd7249",
+      "benchmark_contract.py": "f0fc35193a0f67195e9d553ec48b2af96cd6f038edef4459ecd42c27b4b7684e",
+      "support/release_guard.hpp": "abc6ab842fed2ec8f163fa8af5ee22dec313d17a5d96295ec814bd44046a7ed4"
+    }
+  },
+  "artifact_directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-int8-build-r2\\returned",
+  "elf_sha256": "40a55d595cc3188182e9f2b93735d7a2fd1528bba4409870e8ece7c77d2d6076",
+  "python_contract_tests_passed": 11,
+  "sdk_starts": 0
+}

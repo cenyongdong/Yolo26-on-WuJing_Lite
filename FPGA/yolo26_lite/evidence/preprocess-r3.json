@@ -1,0 +1,73 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-preprocess-20261114-022935-235876",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_dma_mm2s.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_pixel_unpack.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_resize_letterbox.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_pixel_pack.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_dma_s2mm.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_preprocess.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\axi_memory_model.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_preprocess.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-preprocess-20261114-022935-235876",
+      "pid": 5560,
+      "started_utc": "2026-11-13T18:29:38.361879+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8899999999994179
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_preprocess",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-preprocess-20261114-022935-235876",
+      "pid": 20916,
+      "started_utc": "2026-11-13T18:29:39.245968+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 3.6410000000032596
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-preprocess-20261114-022935-235876",
+      "pid": 9568,
+      "started_utc": "2026-11-13T18:29:42.894234+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 59.57799999999406
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 10,
+    "cycles": 10466440,
+    "full_frames": 3,
+    "output": [
+      640,
+      640
+    ]
+  },
+  "board_tested": false,
+  "sources": {
+    "rtl\\y26_dma_mm2s.sv": "3642199b703e5fc1d1364b01e8be13ac39c2c305324f7cea919251618255834e",
+    "rtl\\y26_pixel_unpack.sv": "0a946c1626bb457e2b94bd3512378ada7ffa1b568c84e25aa0c57852a9ae8b19",
+    "rtl\\y26_resize_letterbox.sv": "162991037fe309e94a7f86613d79c0b9d097210068d413c36dc07babfa0f0ecb",
+    "rtl\\y26_pixel_pack.sv": "ed510ceac6ecb5f15a124807e95d1b556c536a80de5aeec4ededfc02826ab4fa",
+    "rtl\\y26_dma_s2mm.sv": "88e1acafeeef52086038c96c93eb15e1a53fad7faa4f9f13e59f50ae6ae6ad85",
+    "rtl\\y26_preprocess.sv": "730add00f405f9205ecd9978f24696d2bf14bb4877133214bb6d46c0141a3277",
+    "tb\\axi_memory_model.sv": "e3b54a8325776754b02d11f52e3f6ce8ab56f88f31c23fe260dd3827d0d41eff",
+    "tb\\tb_preprocess.sv": "9bafe2b22eede1efbd68756a8fcf1769a9c4e45f519da5b780b0efa83bb660a5"
+  }
+}

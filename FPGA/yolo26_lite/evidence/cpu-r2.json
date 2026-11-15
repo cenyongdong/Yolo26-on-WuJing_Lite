@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "kind": "arm64_neon_cpu",
+  "date": "2026-11-14",
+  "full_evidence": ".local/yolo26-cpu-r2",
+  "measurements": [
+    {
+      "kind": "cpu_module",
+      "module": "one_to_one_tail",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 5150386,
+      "p50_ns": 5150580,
+      "p95_ns": 5187700,
+      "p99_ns": 5227320,
+      "maximum_ns": 5253970,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "rgb888_to_nhwc_fp32",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 4479837,
+      "p50_ns": 4464010,
+      "p95_ns": 4589100,
+      "p99_ns": 4623340,
+      "maximum_ns": 4659700,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "yuyv_vga_to_720p_with_boxes",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 13796195,
+      "p50_ns": 13725290,
+      "p95_ns": 13821740,
+      "p99_ns": 15928320,
+      "maximum_ns": 15969230,
+      "npu_executed": false
+    },
+    {
+      "kind": "cpu_module",
+      "module": "host_rgb565_copy",
+      "iterations": 100,
+      "warmup": 16,
+      "mean_ns": 926887,
+      "p50_ns": 920290,
+      "p95_ns": 955010,
+      "p99_ns": 991240,
+      "maximum_ns": 1069630,
+      "npu_executed": false
+    },
+    {
+      "kind": "summary",
+      "input": "repeated_synthetic_fixture",
+      "checksum": 31088,
+      "postprocess_scan": "aarch64_neon",
+      "sdk_starts": 0,
+      "camera_starts": 0,
+      "npu_executed": false
+    }
+  ],
+  "comparison": {
+    "passed": true,
+    "relative_tolerance": 1e-06,
+    "absolute_tolerance": 1e-07,
+    "cases": [
+      {
+        "case": 0,
+        "rows": 300,
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0,
+        "native_timing": {
+          "repetitions": 50,
+          "mean_ms": 7.16394,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "case": 1,
+        "rows": 300,
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0,
+        "native_timing": {
+          "repetitions": 50,
+          "mean_ms": 6.13739,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      },
+      {
+        "case": 2,
+        "rows": 300,
+        "bitwise_equal": true,
+        "maximum_absolute_difference": 0.0,
+        "native_timing": {
+          "repetitions": 50,
+          "mean_ms": 6.58016,
+          "detections": 300,
+          "npu_executed": false,
+          "scan_backend": "aarch64_neon"
+        }
+      }
+    ]
+  },
+  "tests": {
+    "native_exit": 0,
+    "tests": [
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_postprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_frames"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_preprocess"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_control"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_compose"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_metrics"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      },
+      {
+        "command": [
+          "/root/yolo26-lite-cpu-20261114-r2/build/test_display_buffers"
+        ],
+        "native_exit": 0,
+        "child_returned": true
+      }
+    ]
+  },
+  "cleanup": {
+    "before": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "after": {
+      "boot_id": "de1912cf-1dd1-40dc-8eb6-3e317100610e",
+      "startup_consumed": true,
+      "prior_outcome": "/root/topk-fusion-20261113-r1/model-r7/outcome.json",
+      "prior_shutdown_proven": true,
+      "device_owners": []
+    },
+    "sdk_starts": 0,
+    "boot_writes": 0,
+    "reboots": 0,
+    "capture_starts": 0,
+    "lease_held_until_children_returned": true
+  },
+  "sources": {
+    "CMakeLists.txt": "8aa7129c36565269d26086882500283e60535217548983438ab2df2b2acfb084",
+    "camera_board.py": "ee0d9d02546225e3ace2a9e3d17bbb8289007c1d370992dc60ecafedf94332fa",
+    "software/src/camera_probe.cpp": "9d0bd7ff5fbc2c5e0c5935f2642bd150c057bdb54abc2210a1d7e523f8af6ec0",
+    "software/src/capture.cpp": "9e16555d3a13b28a874f7c92271e3bb7aeb2da31e5eda136f0eb1ea26997a8d9",
+    "software/src/compose.cpp": "051f2357ab74cbaf48c1dc328842a6e87ae48e81dedd026c26771f0769684ce2",
+    "software/src/control.cpp": "dfe2dbef36c06e30ddfec7cf709ad8a7ea1fe19edeb78a6c31e37ef7f9ce81a2",
+    "software/src/cpu_benchmark.cpp": "ca60779a5ffd7ed494573b79c83835db18f6b94a887fda7a811d9e6f1bc27baf",
+    "software/src/display_buffers.cpp": "5681249a8f27ba7877ff62e6ed858d61bfcfb4d7dd196865a442460d750a2ab3",
+    "software/src/frames.cpp": "facae8d166218005f3fc91945df6b469f9004446d4038d7ea764ee36f4101d24",
+    "software/src/metrics.cpp": "05ccce231c47808e2ae0824d2f077f866c6a6872f31780148bf4db8f532aa964",
+    "software/src/postprocess.cpp": "6e848b6c1f977ecac58b913bb6d4ae41e801134923c007bdb57f370d6684ea5e",
+    "software/src/preprocess.cpp": "5edd7720ad0cdef20b458a1c527575d9f26137513251d168543b4805fba2645d",
+    "software/tests/postprocess_fixture.cpp": "6054704234d4ee4aec72edae9b23c78e2a3d02c30efd3aa3e5769365aa566652",
+    "software/tests/test_compose.cpp": "5199be41ee416d2965b0b18549f6a6f323796271e1f0f41a9b4be5d636d2ad44",
+    "software/tests/test_control.cpp": "3476a6fa85c10876fa865ca23212d5b66f9029d43fa0e2bdbf501c1821d7963a",
+    "software/tests/test_display_buffers.cpp": "56f436ac85f70e5759d46d7bcd23d8bb4eba057fd1b4a6b7e87de9974b2f8f4e",
+    "software/tests/test_frames.cpp": "ce4638aea1c6cad0f05499f2f36a15d95aac4cbb901e75f8952abb92ac3225fd",
+    "software/tests/test_metrics.cpp": "dcb1ca49dfe6b4ce8629ba652d4c6ae55a46d53704e51a1f19ae6fb9ef513d7a",
+    "software/tests/test_postprocess.cpp": "e901f08a0032514f8d40f044cf0d280456a90bd9f0207eeadd98de10cd64af42",
+    "software/tests/test_preprocess.cpp": "abd87503dba0c183ba5e5b2f6fb96f019577df1e6a03224f0d0bf6cb7c52c6d4",
+    "software/include/yolo26/capture.hpp": "c57e79d2e9ddded37fd679810050696abf9721428a502cb48a2869ce65467e1c",
+    "software/include/yolo26/compose.hpp": "1575097e429523fe282696843e100c9a7739ea31744714d9da8bcc41288178aa",
+    "software/include/yolo26/control.hpp": "35e5f8b8473c21adc51de390197114a6c7695d6a685765c9381b5e8ecedd6a13",
+    "software/include/yolo26/display_buffers.hpp": "7dd84b8b28f5b3ee6d015dac949f8fe3eb3a0cdda6db10b2434d6e5cf45382d8",
+    "software/include/yolo26/frames.hpp": "3e881ff74a809a8837fe354d9ffd6a67aaf1ddc154153fd2f7fd217567b880fe",
+    "software/include/yolo26/latest_slot.hpp": "64b80e0bf0b0709e8a4b44354e22236652fd9995a6dd18793031cb07f3701c90",
+    "software/include/yolo26/metrics.hpp": "f8d287a2310e8d5db81a45cfa4853383b02b3175106e0587fc1fd07060aa0a1d",
+    "software/include/yolo26/postprocess.hpp": "74e10214b5cc52a4470981e6fa7e5eed122d94d1a0602693c48cec668093a2bd",
+    "software/include/yolo26/preprocess.hpp": "e921984c2feec69ddbffc3c93358f2245693afbe44e484b3f4a4644969dffa1e",
+    "fixtures/case-0.f32": "e958e6dda31b2784c1563c3eeb40b1428508e7f50ac70419a82bbafb0ab063aa",
+    "fixtures/case-1.f32": "e1961c13052f2ea5249f7996cbf78cc0a6849519017f6a9a5f3c7c6bd24ad477",
+    "fixtures/case-2.f32": "cb9f4fefa917910a52a080e8f653ba9d69f910a0f8e9d516c1dd63e7afad5ab3"
+  }
+}

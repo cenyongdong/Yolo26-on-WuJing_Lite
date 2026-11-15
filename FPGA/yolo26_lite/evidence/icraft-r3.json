@@ -1,0 +1,135 @@
+{
+  "stage": "offline FP16 compilation only",
+  "board_tested": false,
+  "source_onnx": {
+    "source": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-model-r2\\yolo26l_dense.onnx",
+    "onnx_sha256": "4e5d1f0bef3fbc248792da8adf40b9d162f97b8bcab98e63ba07c6f61c666d7a",
+    "config_sha256": "78eba60b53bd987f745006302f964c3ecefdce4e6ab1b0a754b77ef340e839e5",
+    "runtime_manifest_sha256": "830c5b572395e77d79154ebfd1ec173b3d7a9dbabbbf502875b9e397372a4c7c",
+    "board_access": false
+  },
+  "stages": [
+    {
+      "stage": "parse",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "parse",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-r3",
+        "pid": 24360,
+        "started_utc": "2026-11-13T17:44:52.358983+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 3.0607477000012295
+      },
+      "host_ops": 456
+    },
+    {
+      "stage": "optimize",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "optimize",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-r3",
+        "pid": 20852,
+        "started_utc": "2026-11-13T17:44:55.663488+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 3.1619808999967063
+      },
+      "host_ops": 463
+    },
+    {
+      "stage": "quantize",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "quantize",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-r3",
+        "pid": 10392,
+        "started_utc": "2026-11-13T17:44:59.065069+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 1.5049327000015182
+      },
+      "host_ops": 0
+    },
+    {
+      "stage": "adapt",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "adapt",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-r3",
+        "pid": 22564,
+        "started_utc": "2026-11-13T17:45:00.711831+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 4.651664100005291
+      },
+      "host_ops": 0
+    },
+    {
+      "stage": "generate",
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "generate",
+          "yolo26l.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-icraft-r3",
+        "pid": 15584,
+        "started_utc": "2026-11-13T17:45:05.507685+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 19.1773738999982
+      },
+      "host_ops": 0
+    }
+  ],
+  "generated": {
+    "json_sha256": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+    "raw_sha256": "b9317cc986b4779875414153d1cc1532b88f2609ca0f6608ab1e2b0041875ed6",
+    "raw_bytes": 62264272,
+    "operators": {
+      "icraft::xir::Input": 1,
+      "icraft::xir::HardOp": 399,
+      "icraft::xir::Output": 1
+    },
+    "ports": {
+      "Input": [
+        {
+          "_type_key": "icraft::xir::TensorType",
+          "element_dtype": "@fp(32)",
+          "layout": "@layout(NHWC)",
+          "merged_distrs": [],
+          "shape": [
+            1,
+            640,
+            640,
+            3
+          ]
+        }
+      ],
+      "Output": [
+        {
+          "_type_key": "icraft::xir::TensorType",
+          "element_dtype": "@fp(32)",
+          "layout": "@layout(**C)",
+          "merged_distrs": [
+            "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+          ],
+          "shape": [
+            1,
+            84,
+            8400
+          ]
+        }
+      ]
+    },
+    "host_compute": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "reference_map50_95": 0.6103656470590925,
+  "experiments": {
+    "base32": {
+      "calibration_count": 32,
+      "native_batch": 1,
+      "images_per_partition": 32,
+      "profile": "detection_attention",
+      "map50": 0.7567930058615743,
+      "map50_95": 0.5897104344479946,
+      "delta_vs_fp32_pp": -2.0655212611097817,
+      "graph_sha256": "c5154bc461f408d3e42c34b5ebc016d95b2f98b788318dd71e4639e4892b1f50",
+      "within_proxy_one_point_target": false
+    },
+    "groups32": {
+      "calibration_count": 32,
+      "native_batch": 2,
+      "images_per_partition": 16,
+      "profile": "detection_attention",
+      "map50": 0.7789948290233677,
+      "map50_95": 0.6061101118741883,
+      "delta_vs_fp32_pp": -0.425553518490418,
+      "graph_sha256": "63eb91ce758d40841112e27d81888993ae0a1839894f2e94a5646b87ff61bacf",
+      "within_proxy_one_point_target": true
+    },
+    "cal96": {
+      "calibration_count": 96,
+      "native_batch": 6,
+      "images_per_partition": 16,
+      "profile": "detection_attention",
+      "map50": 0.7783672206138769,
+      "map50_95": 0.6041927522354981,
+      "delta_vs_fp32_pp": -0.6172894823594399,
+      "graph_sha256": "2c4b8275c8a62d1aabd62f1a2e5ac3e2fea3462ba8f6cef8204098ffa295dab0",
+      "within_proxy_one_point_target": true
+    },
+    "psa32": {
+      "calibration_count": 32,
+      "native_batch": 1,
+      "images_per_partition": 32,
+      "profile": "psa_detection",
+      "map50": 0.7709233486891757,
+      "map50_95": 0.5996897372804864,
+      "delta_vs_fp32_pp": -1.0675909778606107,
+      "graph_sha256": "77dca9ac74f87b701c21a11b8e47976f533dbea148811354d5d888ab4f3ee889",
+      "within_proxy_one_point_target": false
+    },
+    "stem32": {
+      "calibration_count": 32,
+      "native_batch": 1,
+      "images_per_partition": 32,
+      "profile": "stem2_detection",
+      "map50": 0.7497263513823578,
+      "map50_95": 0.5905555407366411,
+      "delta_vs_fp32_pp": -1.9810106322451393,
+      "graph_sha256": "cbd8ff21093e6e96a9f77ffa630a2a7906f536418aefa4904cb30dd7c3603546",
+      "within_proxy_one_point_target": false
+    }
+  },
+  "effects": [
+    {
+      "factor": "partition",
+      "before": "base32",
+      "after": "groups32",
+      "delta_map50_pp": 2.220182316179342,
+      "delta_map50_95_pp": 1.6399677426193637
+    },
+    {
+      "factor": "calibration_count",
+      "before": "groups32",
+      "after": "cal96",
+      "delta_map50_pp": -0.06276084094908319,
+      "delta_map50_95_pp": -0.19173596386902192
+    },
+    {
+      "factor": "precision",
+      "before": "base32",
+      "after": "psa32",
+      "delta_map50_pp": 1.4130342827601394,
+      "delta_map50_95_pp": 0.997930283249171
+    },
+    {
+      "factor": "precision",
+      "before": "base32",
+      "after": "stem32",
+      "delta_map50_pp": -0.7066654479216505,
+      "delta_map50_95_pp": 0.08451062886464245
+    }
+  ],
+  "held_out_images": 32,
+  "labels": 218,
+  "classes": 46,
+  "board_performance_measured": false,
+  "official_coco_validation": false,
+  "limit": "Deterministic comparison on a small fixed proxy set; no population accuracy claim or isolated-layer causality from cumulative traces."
+}

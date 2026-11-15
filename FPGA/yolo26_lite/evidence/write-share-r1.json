@@ -1,0 +1,53 @@
+{
+  "directory": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-write_share-20261114-031705-402034",
+  "stages": [
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xvlog.bat",
+        "--sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\rtl\\y26_axi_write_share.sv",
+        "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\tb\\tb_write_share.sv"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-write_share-20261114-031705-402034",
+      "pid": 19972,
+      "started_utc": "2026-11-13T19:17:05.424016+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 0.8289999999979045
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xelab.bat",
+        "tb_write_share",
+        "-s",
+        "test_snapshot",
+        "-debug",
+        "typical"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-write_share-20261114-031705-402034",
+      "pid": 25216,
+      "started_utc": "2026-11-13T19:17:06.232122+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 4.468000000000757
+    },
+    {
+      "command": [
+        "D:\\vivado18.3\\Vivado\\2018.3\\bin\\xsim.bat",
+        "test_snapshot",
+        "-tclbatch",
+        "run.tcl"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\FPGA\\yolo26_lite\\build\\xsim-write_share-20261114-031705-402034",
+      "pid": 16544,
+      "started_utc": "2026-11-13T19:17:10.715618+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 6.938000000001921
+    }
+  ],
+  "result": {
+    "passed": true,
+    "cases": 260,
+    "bursts_per_client": 128,
+    "fault_scenarios": 4
+  },
+  "board_tested": false
+}

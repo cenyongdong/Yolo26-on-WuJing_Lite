@@ -1,0 +1,1249 @@
+{
+  "schema": 1,
+  "graph_sha256": "1a95382d7751d2faba964ec743395f20b62813409a30993bd0d7015249d37efb",
+  "raw_sha256": "3e7977bdb1f981ae0f22d86a64d6f84d8d433d2546612c7fcb4eb92169efc8b6",
+  "candidate": {
+    "schema": 1,
+    "transformation": "complete_split_concat_prefix_copy_elision",
+    "groups": [
+      {
+        "split": 3355,
+        "concat": 3477,
+        "copies": [
+          3364,
+          3365
+        ],
+        "source_chunk": 1,
+        "destination_chunk": 4,
+        "prefix_bytes": 6553600,
+        "concat_bytes": 13107200,
+        "logical_copy_io_bytes": 13107200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3364,
+          3365
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1428,
+        "adapted_concat": 1463,
+        "adapted_copies": [
+          2560,
+          2561
+        ],
+        "parent_value": 18,
+        "source_values": [
+          20,
+          22
+        ],
+        "removed_values": [
+          6652,
+          6654
+        ],
+        "concat_output": 129,
+        "concat_prefix_values": [
+          18
+        ],
+        "materialized_value": 22
+      },
+      {
+        "split": 3356,
+        "concat": 3480,
+        "copies": [
+          3366,
+          3367
+        ],
+        "source_chunk": 5,
+        "destination_chunk": 8,
+        "prefix_bytes": 3276800,
+        "concat_bytes": 6553600,
+        "logical_copy_io_bytes": 6553600,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3366,
+          3367
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1470,
+        "adapted_concat": 1505,
+        "adapted_copies": [
+          2562,
+          2563
+        ],
+        "parent_value": 147,
+        "source_values": [
+          149,
+          151
+        ],
+        "removed_values": [
+          6656,
+          6658
+        ],
+        "concat_output": 258,
+        "concat_prefix_values": [
+          147
+        ],
+        "materialized_value": 151
+      },
+      {
+        "split": 3357,
+        "concat": 3483,
+        "copies": [
+          3368,
+          3369
+        ],
+        "source_chunk": 9,
+        "destination_chunk": 12,
+        "prefix_bytes": 1638400,
+        "concat_bytes": 3276800,
+        "logical_copy_io_bytes": 3276800,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3368,
+          3369
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1512,
+        "adapted_concat": 1547,
+        "adapted_copies": [
+          2564,
+          2565
+        ],
+        "parent_value": 276,
+        "source_values": [
+          278,
+          280
+        ],
+        "removed_values": [
+          6660,
+          6662
+        ],
+        "concat_output": 387,
+        "concat_prefix_values": [
+          276
+        ],
+        "materialized_value": 280
+      },
+      {
+        "split": 3358,
+        "concat": 3486,
+        "copies": [
+          3370,
+          3371
+        ],
+        "source_chunk": 13,
+        "destination_chunk": 16,
+        "prefix_bytes": 409600,
+        "concat_bytes": 819200,
+        "logical_copy_io_bytes": 819200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3370,
+          3371
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1554,
+        "adapted_concat": 1589,
+        "adapted_copies": [
+          2566,
+          2567
+        ],
+        "parent_value": 405,
+        "source_values": [
+          407,
+          409
+        ],
+        "removed_values": [
+          6664,
+          6666
+        ],
+        "concat_output": 516,
+        "concat_prefix_values": [
+          405
+        ],
+        "materialized_value": 409
+      },
+      {
+        "split": 3360,
+        "concat": 3492,
+        "copies": [
+          3373,
+          3374
+        ],
+        "source_chunk": 41,
+        "destination_chunk": 44,
+        "prefix_bytes": 1638400,
+        "concat_bytes": 3276800,
+        "logical_copy_io_bytes": 3276800,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3373,
+          3374
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1792,
+        "adapted_concat": 1827,
+        "adapted_copies": [
+          2569,
+          2570
+        ],
+        "parent_value": 699,
+        "source_values": [
+          701,
+          703
+        ],
+        "removed_values": [
+          6670,
+          6672
+        ],
+        "concat_output": 810,
+        "concat_prefix_values": [
+          699
+        ],
+        "materialized_value": 703
+      },
+      {
+        "split": 3361,
+        "concat": 3496,
+        "copies": [
+          3375,
+          3376
+        ],
+        "source_chunk": 46,
+        "destination_chunk": 49,
+        "prefix_bytes": 3276800,
+        "concat_bytes": 6553600,
+        "logical_copy_io_bytes": 6553600,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3375,
+          3376
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1834,
+        "adapted_concat": 1869,
+        "adapted_copies": [
+          2571,
+          2572
+        ],
+        "parent_value": 827,
+        "source_values": [
+          829,
+          831
+        ],
+        "removed_values": [
+          6674,
+          6676
+        ],
+        "concat_output": 938,
+        "concat_prefix_values": [
+          827
+        ],
+        "materialized_value": 831
+      },
+      {
+        "split": 3362,
+        "concat": 3500,
+        "copies": [
+          3377,
+          3378
+        ],
+        "source_chunk": 51,
+        "destination_chunk": 54,
+        "prefix_bytes": 1638400,
+        "concat_bytes": 3276800,
+        "logical_copy_io_bytes": 3276800,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3377,
+          3378
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1877,
+        "adapted_concat": 1912,
+        "adapted_copies": [
+          2573,
+          2574
+        ],
+        "parent_value": 959,
+        "source_values": [
+          961,
+          963
+        ],
+        "removed_values": [
+          6678,
+          6680
+        ],
+        "concat_output": 1070,
+        "concat_prefix_values": [
+          959
+        ],
+        "materialized_value": 963
+      },
+      {
+        "split": 3363,
+        "concat": 3502,
+        "copies": [
+          3379,
+          3380
+        ],
+        "source_chunk": 56,
+        "destination_chunk": 67,
+        "prefix_bytes": 409600,
+        "concat_bytes": 614400,
+        "logical_copy_io_bytes": 819200,
+        "mean_copy_ms": null,
+        "prefix_writers": [
+          3379,
+          3380
+        ],
+        "candidate": true,
+        "exclusion_reasons": [],
+        "producer_direct_write_proven": false,
+        "transformed_graph_validated": false,
+        "adapted_split": 1920,
+        "adapted_concat": 2017,
+        "adapted_copies": [
+          2575,
+          2576
+        ],
+        "parent_value": 1091,
+        "source_values": [
+          1093,
+          1095
+        ],
+        "removed_values": [
+          6682,
+          6684
+        ],
+        "concat_output": 1176,
+        "concat_prefix_values": [
+          1091
+        ],
+        "materialized_value": 1095
+      }
+    ],
+    "source": {
+      "ZG": "210365bc0fe22f4e01eb3db4f08fa0b993c512f71f3fb65e859f44b32d28175d",
+      "adapted": "f5ecacccf83a3659fa9561d2157ca1c0668859f67f36eff83fa0915e39f366f8"
+    },
+    "source_raw_sha256": "00c78f114b8a2f8424502bd991f0dd8712aaaca93324c99c6fe02023fe096ef9",
+    "candidate_adapted_sha256": "b6f9688f3a039d3de7f1208760988b382fa40174469a52857c8627859c43128d",
+    "board_access": false
+  },
+  "generate": {
+    "run": {
+      "command": [
+        "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+        "generate",
+        "candidate.toml"
+      ],
+      "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-slice-r3",
+      "pid": 6576,
+      "started_utc": "2026-11-14T03:42:48.763143+00:00",
+      "native_exit": 0,
+      "elapsed_seconds": 20.728208500004257
+    },
+    "graph": {
+      "json_sha256": "1a95382d7751d2faba964ec743395f20b62813409a30993bd0d7015249d37efb",
+      "raw_sha256": "3e7977bdb1f981ae0f22d86a64d6f84d8d433d2546612c7fcb4eb92169efc8b6",
+      "raw_bytes": 62257808,
+      "operators": {
+        "icraft::xir::Input": 1,
+        "icraft::xir::HardOp": 383,
+        "icraft::xir::Output": 1
+      },
+      "ports": {
+        "Input": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(NHWC)",
+            "merged_distrs": [],
+            "shape": [
+              1,
+              640,
+              640,
+              3
+            ]
+          }
+        ],
+        "Output": [
+          {
+            "_type_key": "icraft::xir::TensorType",
+            "element_dtype": "@fp(32)",
+            "layout": "@layout(**C)",
+            "merged_distrs": [
+              "@merged_distr([2]^ZERO:{v:[0, 8400)})"
+            ],
+            "shape": [
+              1,
+              84,
+              8400
+            ]
+          }
+        ]
+      },
+      "host_compute": []
+    }
+  },
+  "storage": [
+    {
+      "parent_value": 18,
+      "concat_output": 129,
+      "destination_chunk": 3,
+      "base_offset": 0,
+      "prefix_bytes": 6553600,
+      "producer": 2910,
+      "prefix_writers": [
+        2910
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 147,
+      "concat_output": 258,
+      "destination_chunk": 6,
+      "base_offset": 0,
+      "prefix_bytes": 3276800,
+      "producer": 2927,
+      "prefix_writers": [
+        2927
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 276,
+      "concat_output": 387,
+      "destination_chunk": 9,
+      "base_offset": 0,
+      "prefix_bytes": 1638400,
+      "producer": 2944,
+      "prefix_writers": [
+        2944
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 405,
+      "concat_output": 516,
+      "destination_chunk": 12,
+      "base_offset": 0,
+      "prefix_bytes": 409600,
+      "producer": 2961,
+      "prefix_writers": [
+        2961
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 699,
+      "concat_output": 810,
+      "destination_chunk": 39,
+      "base_offset": 0,
+      "prefix_bytes": 1638400,
+      "producer": 2982,
+      "prefix_writers": [
+        2982
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 827,
+      "concat_output": 938,
+      "destination_chunk": 43,
+      "base_offset": 0,
+      "prefix_bytes": 3276800,
+      "producer": 2998,
+      "prefix_writers": [
+        2998
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 959,
+      "concat_output": 1070,
+      "destination_chunk": 47,
+      "base_offset": 0,
+      "prefix_bytes": 1638400,
+      "producer": 3015,
+      "prefix_writers": [
+        3015
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    },
+    {
+      "parent_value": 1091,
+      "concat_output": 1176,
+      "destination_chunk": 59,
+      "base_offset": 0,
+      "prefix_bytes": 409600,
+      "producer": 3032,
+      "prefix_writers": [
+        3032
+      ],
+      "static_storage_pass": true,
+      "numerical_pass": false,
+      "board_pass": false
+    }
+  ],
+  "full_view_constraints": [
+    {
+      "operation": 3116,
+      "kind": "Reshape",
+      "chunk": 0,
+      "values": {
+        "2269": 0,
+        "3681": 0
+      }
+    },
+    {
+      "operation": 3153,
+      "kind": "Concat",
+      "chunk": 1,
+      "values": {
+        "58": 0,
+        "64": 1638400,
+        "67": 0
+      }
+    },
+    {
+      "operation": 3154,
+      "kind": "Concat",
+      "chunk": 2,
+      "values": {
+        "109": 0,
+        "115": 1638400,
+        "118": 0
+      }
+    },
+    {
+      "operation": 3155,
+      "kind": "Concat",
+      "chunk": 3,
+      "values": {
+        "18": 0,
+        "73": 6553600,
+        "124": 9830400,
+        "129": 0
+      }
+    },
+    {
+      "operation": 3156,
+      "kind": "Concat",
+      "chunk": 4,
+      "values": {
+        "187": 0,
+        "193": 819200,
+        "196": 0
+      }
+    },
+    {
+      "operation": 3157,
+      "kind": "Concat",
+      "chunk": 5,
+      "values": {
+        "238": 0,
+        "244": 819200,
+        "247": 0
+      }
+    },
+    {
+      "operation": 3158,
+      "kind": "Concat",
+      "chunk": 6,
+      "values": {
+        "147": 0,
+        "202": 3276800,
+        "253": 4915200,
+        "258": 0
+      }
+    },
+    {
+      "operation": 3159,
+      "kind": "Concat",
+      "chunk": 7,
+      "values": {
+        "316": 0,
+        "322": 409600,
+        "325": 0
+      }
+    },
+    {
+      "operation": 3160,
+      "kind": "Concat",
+      "chunk": 8,
+      "values": {
+        "367": 0,
+        "373": 409600,
+        "376": 0
+      }
+    },
+    {
+      "operation": 3161,
+      "kind": "Concat",
+      "chunk": 9,
+      "values": {
+        "276": 0,
+        "331": 1638400,
+        "382": 2457600,
+        "387": 0
+      }
+    },
+    {
+      "operation": 3162,
+      "kind": "Concat",
+      "chunk": 10,
+      "values": {
+        "445": 0,
+        "451": 102400,
+        "454": 0
+      }
+    },
+    {
+      "operation": 3163,
+      "kind": "Concat",
+      "chunk": 11,
+      "values": {
+        "496": 0,
+        "502": 102400,
+        "505": 0
+      }
+    },
+    {
+      "operation": 3164,
+      "kind": "Concat",
+      "chunk": 12,
+      "values": {
+        "405": 0,
+        "460": 409600,
+        "511": 614400,
+        "516": 0
+      }
+    },
+    {
+      "operation": 3165,
+      "kind": "Concat",
+      "chunk": 13,
+      "values": {
+        "526": 0,
+        "528": 204800,
+        "530": 409600,
+        "532": 614400,
+        "537": 0
+      }
+    },
+    {
+      "operation": 3057,
+      "kind": "Split",
+      "chunk": 14,
+      "values": {
+        "552": 0,
+        "554": 0,
+        "555": 204800
+      }
+    },
+    {
+      "operation": 3117,
+      "kind": "Reshape",
+      "chunk": 15,
+      "values": {
+        "4254": 0,
+        "4256": 0
+      }
+    },
+    {
+      "operation": 3118,
+      "kind": "Reshape",
+      "chunk": 16,
+      "values": {
+        "4258": 0,
+        "563": 0
+      }
+    },
+    {
+      "operation": 3119,
+      "kind": "Reshape",
+      "chunk": 17,
+      "values": {
+        "3649": 0,
+        "4292": 0
+      }
+    },
+    {
+      "operation": 3120,
+      "kind": "Reshape",
+      "chunk": 18,
+      "values": {
+        "5497": 0,
+        "4304": 0
+      }
+    },
+    {
+      "operation": 3121,
+      "kind": "Reshape",
+      "chunk": 19,
+      "values": {
+        "3663": 0,
+        "579": 0
+      }
+    },
+    {
+      "operation": 3122,
+      "kind": "Reshape",
+      "chunk": 20,
+      "values": {
+        "3651": 0,
+        "4354": 0
+      }
+    },
+    {
+      "operation": 3123,
+      "kind": "Reshape",
+      "chunk": 21,
+      "values": {
+        "4359": 0,
+        "4363": 0
+      }
+    },
+    {
+      "operation": 3124,
+      "kind": "Reshape",
+      "chunk": 22,
+      "values": {
+        "4365": 0,
+        "584": 0
+      }
+    },
+    {
+      "operation": 3125,
+      "kind": "Reshape",
+      "chunk": 23,
+      "values": {
+        "5521": 0,
+        "4371": 0
+      }
+    },
+    {
+      "operation": 3126,
+      "kind": "Reshape",
+      "chunk": 24,
+      "values": {
+        "4373": 0,
+        "586": 0
+      }
+    },
+    {
+      "operation": 3127,
+      "kind": "Reshape",
+      "chunk": 25,
+      "values": {
+        "4454": 0,
+        "4456": 0
+      }
+    },
+    {
+      "operation": 3128,
+      "kind": "Reshape",
+      "chunk": 26,
+      "values": {
+        "4458": 0,
+        "625": 0
+      }
+    },
+    {
+      "operation": 3129,
+      "kind": "Reshape",
+      "chunk": 27,
+      "values": {
+        "3653": 0,
+        "4492": 0
+      }
+    },
+    {
+      "operation": 3130,
+      "kind": "Reshape",
+      "chunk": 28,
+      "values": {
+        "5501": 0,
+        "4504": 0
+      }
+    },
+    {
+      "operation": 3131,
+      "kind": "Reshape",
+      "chunk": 29,
+      "values": {
+        "3667": 0,
+        "641": 0
+      }
+    },
+    {
+      "operation": 3132,
+      "kind": "Reshape",
+      "chunk": 30,
+      "values": {
+        "3655": 0,
+        "4554": 0
+      }
+    },
+    {
+      "operation": 3133,
+      "kind": "Reshape",
+      "chunk": 31,
+      "values": {
+        "4559": 0,
+        "4563": 0
+      }
+    },
+    {
+      "operation": 3134,
+      "kind": "Reshape",
+      "chunk": 32,
+      "values": {
+        "4565": 0,
+        "646": 0
+      }
+    },
+    {
+      "operation": 3135,
+      "kind": "Reshape",
+      "chunk": 33,
+      "values": {
+        "5527": 0,
+        "4571": 0
+      }
+    },
+    {
+      "operation": 3136,
+      "kind": "Reshape",
+      "chunk": 34,
+      "values": {
+        "4573": 0,
+        "648": 0
+      }
+    },
+    {
+      "operation": 3166,
+      "kind": "Concat",
+      "chunk": 35,
+      "values": {
+        "6668": 0,
+        "679": 204800,
+        "682": 0
+      }
+    },
+    {
+      "operation": 3167,
+      "kind": "Concat",
+      "chunk": 36,
+      "values": {
+        "690": 0,
+        "393": 1638400,
+        "693": 0
+      }
+    },
+    {
+      "operation": 3168,
+      "kind": "Concat",
+      "chunk": 37,
+      "values": {
+        "739": 0,
+        "745": 409600,
+        "748": 0
+      }
+    },
+    {
+      "operation": 3169,
+      "kind": "Concat",
+      "chunk": 38,
+      "values": {
+        "790": 0,
+        "796": 409600,
+        "799": 0
+      }
+    },
+    {
+      "operation": 3170,
+      "kind": "Concat",
+      "chunk": 39,
+      "values": {
+        "699": 0,
+        "754": 1638400,
+        "805": 2457600,
+        "810": 0
+      }
+    },
+    {
+      "operation": 3171,
+      "kind": "Concat",
+      "chunk": 40,
+      "values": {
+        "818": 0,
+        "264": 6553600,
+        "821": 0
+      }
+    },
+    {
+      "operation": 3172,
+      "kind": "Concat",
+      "chunk": 41,
+      "values": {
+        "867": 0,
+        "873": 819200,
+        "876": 0
+      }
+    },
+    {
+      "operation": 3173,
+      "kind": "Concat",
+      "chunk": 42,
+      "values": {
+        "918": 0,
+        "924": 819200,
+        "927": 0
+      }
+    },
+    {
+      "operation": 3174,
+      "kind": "Concat",
+      "chunk": 43,
+      "values": {
+        "827": 0,
+        "882": 3276800,
+        "933": 4915200,
+        "938": 0
+      }
+    },
+    {
+      "operation": 3175,
+      "kind": "Concat",
+      "chunk": 44,
+      "values": {
+        "950": 0,
+        "816": 819200,
+        "953": 0
+      }
+    },
+    {
+      "operation": 3176,
+      "kind": "Concat",
+      "chunk": 45,
+      "values": {
+        "999": 0,
+        "1005": 409600,
+        "1008": 0
+      }
+    },
+    {
+      "operation": 3177,
+      "kind": "Concat",
+      "chunk": 46,
+      "values": {
+        "1050": 0,
+        "1056": 409600,
+        "1059": 0
+      }
+    },
+    {
+      "operation": 3178,
+      "kind": "Concat",
+      "chunk": 47,
+      "values": {
+        "959": 0,
+        "1014": 1638400,
+        "1065": 2457600,
+        "1070": 0
+      }
+    },
+    {
+      "operation": 3179,
+      "kind": "Concat",
+      "chunk": 48,
+      "values": {
+        "1082": 0,
+        "688": 409600,
+        "1085": 0
+      }
+    },
+    {
+      "operation": 3137,
+      "kind": "Reshape",
+      "chunk": 49,
+      "values": {
+        "5081": 0,
+        "5083": 0
+      }
+    },
+    {
+      "operation": 3138,
+      "kind": "Reshape",
+      "chunk": 50,
+      "values": {
+        "5085": 0,
+        "1118": 0
+      }
+    },
+    {
+      "operation": 3139,
+      "kind": "Reshape",
+      "chunk": 51,
+      "values": {
+        "3657": 0,
+        "5119": 0
+      }
+    },
+    {
+      "operation": 3140,
+      "kind": "Reshape",
+      "chunk": 52,
+      "values": {
+        "5505": 0,
+        "5131": 0
+      }
+    },
+    {
+      "operation": 3141,
+      "kind": "Reshape",
+      "chunk": 53,
+      "values": {
+        "3671": 0,
+        "1134": 0
+      }
+    },
+    {
+      "operation": 3142,
+      "kind": "Reshape",
+      "chunk": 54,
+      "values": {
+        "3659": 0,
+        "5181": 0
+      }
+    },
+    {
+      "operation": 3143,
+      "kind": "Reshape",
+      "chunk": 55,
+      "values": {
+        "5186": 0,
+        "5190": 0
+      }
+    },
+    {
+      "operation": 3144,
+      "kind": "Reshape",
+      "chunk": 56,
+      "values": {
+        "5192": 0,
+        "1139": 0
+      }
+    },
+    {
+      "operation": 3145,
+      "kind": "Reshape",
+      "chunk": 57,
+      "values": {
+        "5533": 0,
+        "5198": 0
+      }
+    },
+    {
+      "operation": 3146,
+      "kind": "Reshape",
+      "chunk": 58,
+      "values": {
+        "5200": 0,
+        "1141": 0
+      }
+    },
+    {
+      "operation": 3180,
+      "kind": "Concat",
+      "chunk": 59,
+      "values": {
+        "1091": 0,
+        "1172": 409600,
+        "1176": 0
+      }
+    },
+    {
+      "operation": 3147,
+      "kind": "Reshape",
+      "chunk": 60,
+      "values": {
+        "1198": 0,
+        "1364": 0
+      }
+    },
+    {
+      "operation": 3148,
+      "kind": "Reshape",
+      "chunk": 61,
+      "values": {
+        "1218": 0,
+        "1368": 0
+      }
+    },
+    {
+      "operation": 3149,
+      "kind": "Reshape",
+      "chunk": 62,
+      "values": {
+        "1238": 0,
+        "1372": 0
+      }
+    },
+    {
+      "operation": 3181,
+      "kind": "Concat",
+      "chunk": 63,
+      "values": {
+        "1366": 0,
+        "1370": 51200,
+        "1374": 64000,
+        "1246": 0
+      }
+    },
+    {
+      "operation": 3150,
+      "kind": "Reshape",
+      "chunk": 64,
+      "values": {
+        "1274": 0,
+        "1376": 0
+      }
+    },
+    {
+      "operation": 3151,
+      "kind": "Reshape",
+      "chunk": 65,
+      "values": {
+        "1306": 0,
+        "1380": 0
+      }
+    },
+    {
+      "operation": 3152,
+      "kind": "Reshape",
+      "chunk": 66,
+      "values": {
+        "1338": 0,
+        "1384": 0
+      }
+    },
+    {
+      "operation": 3182,
+      "kind": "Concat",
+      "chunk": 67,
+      "values": {
+        "1378": 0,
+        "1382": 1024000,
+        "1386": 1280000,
+        "1346": 0
+      }
+    },
+    {
+      "operation": 2901,
+      "kind": "Cast",
+      "chunk": 68,
+      "values": {
+        "5490": 0,
+        "2275": 0
+      }
+    }
+  ],
+  "simulations": [
+    {
+      "case": 0,
+      "input_sha256": "d4e05bfc32af71b56bac53465531642c4a5824f39e042c89f34ffbc4884a7966",
+      "output_sha256": "1770f5e544cd910247297e1dd72b9e430e5256cd1d564f711c9a18799915ee0c",
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-slice-sim-case0-r3",
+        "pid": 27700,
+        "started_utc": "2026-11-14T03:43:38.118481+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 69.875
+      }
+    },
+    {
+      "case": 1,
+      "input_sha256": "abccb27013c30fddd12c5ea3bd76c4dbba8c9fbc40d7a8bb389b777fdaf6631c",
+      "output_sha256": "c088c552a104c845ec13c78e8ec2b189309cfc4062c75198b10cc7277d63a577",
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-slice-sim-case1-r3",
+        "pid": 6376,
+        "started_utc": "2026-11-14T03:43:38.013768+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 70.71899999999732
+      }
+    },
+    {
+      "case": 2,
+      "input_sha256": "8898eb40f1ecdd53c4f277084e8e13b36ed1e9beee4ea0f77c695d2a26b03603",
+      "output_sha256": "c9925b1b4bc4c0a044791680747c06276f853ef2f73426af07a44cd5b29cfa60",
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "run": {
+        "command": [
+          "C:\\Icraft\\CLI v3.39.0\\bin\\icraft.exe",
+          "run",
+          "run.toml"
+        ],
+        "cwd": "C:\\Users\\cenyongdong\\.codex\\worktrees\\f52e\\FPGACompetitionProject\\.local\\yolo26-copy-slice-sim-case2-r3",
+        "pid": 21424,
+        "started_utc": "2026-11-14T03:43:38.292014+00:00",
+        "native_exit": 0,
+        "elapsed_seconds": 70.40599999998813
+      }
+    }
+  ],
+  "board_tested": false
+}
