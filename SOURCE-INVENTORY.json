@@ -64228,6 +64228,13 @@
       "category": "project"
     },
     {
+      "file": "FPGA/yolo26_lite/figures/system-architecture.png",
+      "origin": "prepared/docs/system-architecture.png",
+      "bytes": 143483,
+      "sha256": "d8d2f34761cb119777f5fad0eed30f3eb8cb47435d591528314911cf8490d1e5",
+      "category": "docs"
+    },
+    {
       "file": "FPGA/yolo26_lite/HP2.md",
       "origin": "project/FPGA/yolo26_lite/HP2.md",
       "bytes": 3334,
@@ -65668,8 +65675,8 @@
     {
       "file": "README.md",
       "origin": "prepared/drafts/README.md",
-      "bytes": 4539,
-      "sha256": "c395a7481514cb2e728ecef9098d74c088a2fe6bb9a6c8ce4121b18c74f4b691",
+      "bytes": 3889,
+      "sha256": "ba9bede1e413d7f065e98898061554d7099fd6333321ee8c8482e02ff8399e64",
       "category": "docs",
       "modified_in_export": true
     },
